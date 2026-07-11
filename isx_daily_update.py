@@ -21,7 +21,7 @@ HEADERS = {
     )
 }
 
-# حدود بوابة التحقق — قابلة للتعديل بسهولة
+# حدود بوابة التحقق
 MIN_EXPECTED_SYMBOLS = 80
 MAX_EXPECTED_SYMBOLS = 130
 MAX_REJECTED_RATIO = 0.10  # 10%
@@ -48,7 +48,6 @@ def parse_date_ddmmyyyy(date_str: str):
 
 
 def get_today_daily_report():
-    """بوابة تحقق 1: يجلب أول صف 'يومي' من الصفحة الأولى لأرشيف البورصة."""
     print(f"[بوابة 1] جاري فحص: {LIST_URL}")
     resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -81,7 +80,6 @@ def get_today_daily_report():
 
 
 def validate_report_date(report_date_str: str):
-    """بوابة تحقق 2: تاريخ التقرير يجب أن يكون قريباً وضمن النطاق المعقول."""
     report_date = parse_date_ddmmyyyy(report_date_str)
     if report_date is None:
         raise QualityGateError(f"تعذّر تحليل تاريخ التقرير: '{report_date_str}'")
@@ -92,17 +90,13 @@ def validate_report_date(report_date_str: str):
     if diff_days < 0:
         raise QualityGateError(f"تاريخ التقرير بالمستقبل؟! ({report_date}) — مشبوه، يوقَف التنفيذ.")
     if diff_days > 4:
-        raise QualityGateError(
-            f"تاريخ التقرير قديم جداً ({report_date}، أقدم بـ{diff_days} يوماً من اليوم) "
-            f"— يُشتبه أن الموقع متوقف عن التحديث أو يعرض بيانات عالقة."
-        )
+        raise QualityGateError(f"تاريخ التقرير قديم جداً ({report_date})")
 
-    print(f"[بوابة 2] ✅ نجحت — تاريخ التقرير ({report_date}) ضمن نطاق معقول ({diff_days} يوم فرق).")
+    print(f"[بوابة 2] ✅ نجحت — تاريخ التقرير ({report_date}) ضمن نطاق معقول.")
     return report_date
 
 
 def download_excel(url: str):
-    """بوابة تحقق 3: يفشل بوضوح عند أي خطأ شبكة أثناء تحميل الملف."""
     print(f"[بوابة 3] جاري تحميل: {url}")
     try:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -114,9 +108,9 @@ def download_excel(url: str):
 
 
 def find_header_row_and_map(sheet):
-    """تعديل دقيق بناءً على ترتيب ومسميات خلايا ملف الإكسل الجديد للحساب."""
+    """البحث بالأسماء العربية المتوقعة من ملف الإكسل وربطها بالمفاتيح الإنجليزية للـ JSON التاريخي."""
     HEADER_ALIASES = {
-        "open": ["فتح", "سعر الفتح", "سعر فتح"],
+        "open": ["افتتاح", "فتح", "سعر الفتح"],
         "high": ["اعلى سعر", "أعلى سعر", "أعلى", "اعلى"],
         "low": ["ادنى سعر", "أدنى سعر", "أدنى", "ادنى"],
         "close": ["سعر الاغلاق", "سعر الإغلاق", "اغلاق", "إغلاق", "سعر القفل"],
@@ -135,15 +129,14 @@ def find_header_row_and_map(sheet):
             if not text:
                 continue
             
-            # مطابقة مرنة ومباشرة للمسميات التي زودتنا بها
             for field, aliases in HEADER_ALIASES.items():
-                if text in aliases or any(alias == text for alias in aliases):
+                if text in aliases:
                     col_map[field] = col_idx
                     
-            if text in SYMBOL_HEADER_ALIASES or any(s_alias == text for s_alias in SYMBOL_HEADER_ALIASES):
+            if text in SYMBOL_HEADER_ALIASES:
                 symbol_col = col_idx
 
-        # التحقق من العثور على الأعمدة المالية الأربعة الرئيسية لاعتماد الصف كـ رأس للجدول
+        # التحقق من الأعمدة المالية الأساسية لاعتماد صف عنوان الجدول
         core_fields = {"open", "high", "low", "close"}
         if core_fields.issubset(col_map.keys()):
             return row_idx, col_map, symbol_col
@@ -164,7 +157,7 @@ def extract_session_date_from_excel(sheet) -> str:
 
 
 def parse_daily_excel(excel_bytes: bytes) -> dict:
-    """يستخرج كل الأسهم بالاعتماد على أسماء الأعمدة الجديدة والمحدثة بالكامل."""
+    """تستخرج البيانات وتصيغ القاموس النهائي بالمفاتيح الإنجليزية المتوافقة مع أرشيف الـ JSON."""
     wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
     results = {}
 
@@ -213,6 +206,7 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
                 v = row_str[col]
                 return v if v and v != "None" else "-"
 
+            # هنا التحويل الحقيقي للتسميات لتطابق ملف الـ JSON القديم تماماً
             results[symbol] = {
                 "date": session_date or "",
                 "open": get_field("open"),
@@ -228,18 +222,16 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
 
 
 def check_symbol_count(day_data: dict):
-    """بوابة تحقق 4: التأكد من أن عدد الأسهم المستخرجة يطابق حجم السوق الطبيعي."""
     count = len(day_data)
     if count < MIN_EXPECTED_SYMBOLS or count > MAX_EXPECTED_SYMBOLS:
         raise QualityGateError(
-            f"عدد الأسهم المستخرجة ({count}) خارج النطاق المتوقع "
-            f"({MIN_EXPECTED_SYMBOLS}-{MAX_EXPECTED_SYMBOLS}) — يُشتبه بخلل بنيوي بالملف."
+            f"عدد الأسهم المستخرجة ({count}) خارج النطاق المتوقع ({MIN_EXPECTED_SYMBOLS}-{MAX_EXPECTED_SYMBOLS})."
         )
-    print(f"[بوابة 4] ✅ نجحت — {count} سهم مستخرج (ضمن النطاق المتوقع).")
+    print(f"[بوابة 4] ✅ نجحت — تم استخراج {count} سهم وتوزيع مسمياتها الإنجليزية.")
 
 
 def validate_records(day_data: dict):
-    """بوابة تحقق 5 و6: فحص سلامة البيانات لضمان عدم وجود انزياح للقيم والأعمدة."""
+    """فحص جودة السجلات بناءً على التسميات الجديدة المتوافقة."""
     valid = {}
     rejected = []
 
@@ -253,12 +245,15 @@ def validate_records(day_data: dict):
             except (ValueError, TypeError):
                 return None
 
-        high, low, close = as_float("high"), as_float("low"), as_float("close")
+        high = as_float("high")
+        low = as_float("low")
+        close = as_float("close")
+        
         problems = []
         if high is not None and low is not None and high < low:
             problems.append(f"High({high}) < Low({low})")
         if close is not None and high is not None and low is not None and not (low <= close <= high):
-            problems.append(f"Close({close}) خارج [{low}, {high}]")
+            problems.append(f"Close({close}) خارج النطاق [{low}, {high}]")
 
         if problems:
             rejected.append(f"{symbol}: " + " | ".join(problems))
@@ -266,18 +261,12 @@ def validate_records(day_data: dict):
             valid[symbol] = r
 
     ratio = len(rejected) / len(day_data) if day_data else 1.0
-    print(f"[بوابة 5] فحص جودة السجلات: {len(valid)} سليم، {len(rejected)} مرفوض من أصل {len(day_data)}.")
-    if rejected:
-        for w in rejected[:10]:
-            print(f"           - {w}")
+    print(f"[بوابة 5] فحص الجودة: {len(valid)} سليم، {len(rejected)} مرفوض.")
 
     if ratio > MAX_REJECTED_RATIO:
-        raise QualityGateError(
-            f"نسبة السجلات المرفوضة ({ratio:.1%}) تتجاوز الحد المسموح "
-            f"({MAX_REJECTED_RATIO:.0%}) — يُشتبه بخلل بنيوي (مثل انزياح أعمدة)، "
-            f"وليس أخطاء بيانات معزولة."
-        )
-    print(f"[بوابة 5+6] ✅ نجحتا — نسبة الرفض ({ratio:.1%}) ضمن الحد المسموح.")
+        raise QualityGateError(f"نسبة السجلات المرفوضة ({ratio:.1%}) تتجاوز الحد المسموح به.")
+    
+    print(f"[بوابة 5+6] ✅ نجحتا — البيانات متناسقة وجاهزة للدمج.")
     return valid
 
 
@@ -296,35 +285,29 @@ def save_json(data: dict, path: str):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="التحديث اليومي التلقائي لأرشيف أسهم ISX (لـ GitHub Actions)")
+    parser = argparse.ArgumentParser(description="التحديث اليومي التلقائي لأرشيف أسهم ISX")
     parser.add_argument("--existing", default="isx_history_all.json")
     parser.add_argument("--output", default="isx_history_all.json")
     args = parser.parse_args()
 
     try:
-        report = get_today_daily_report()               # بوابة 1
-        validate_report_date(report["date"])             # بوابة 2
-        excel_bytes = download_excel(report["url"])       # بوابة 3
+        report = get_today_daily_report()
+        validate_report_date(report["date"])
+        excel_bytes = download_excel(report["url"])
         day_data = parse_daily_excel(excel_bytes)
-        check_symbol_count(day_data)                      # بوابة 4
-        valid_data = validate_records(day_data)            # بوابة 5+6
+        check_symbol_count(day_data)
+        valid_data = validate_records(day_data)
 
     except QualityGateError as e:
         print(f"\n❌ توقف التنفيذ — فشلت بوابة تحقق: {e}", file=sys.stderr)
-        print("لن يتم تعديل isx_history_all.json. الملف بالمستودع يبقى كما هو.", file=sys.stderr)
         sys.exit(1)
 
-    except Exception as e:
-        print(f"\n❌ خطأ غير متوقع: {e}", file=sys.stderr)
-        sys.exit(1)
-
-    print("\n✅ كل بوابات التحقق نجحت. جاري الدمج مع الأرشيف الموجود...")
+    print("\n✅ كل بوابات التحقق نجحت وبنيت الهياكل بنجاح. جاري الدمج مع ملف الـ JSON التاريخي...")
 
     data = load_existing(args.existing)
     existing_dates = {sym: {r["date"] for r in recs if r.get("date")} for sym, recs in data.items()}
 
     added_count = 0
-    skipped_count = 0
     for symbol, record in valid_data.items():
         record_date = record.get("date") or report["date"]
         record["date"] = record_date
@@ -334,7 +317,6 @@ def main():
             existing_dates[symbol] = set()
 
         if record_date in existing_dates[symbol]:
-            skipped_count += 1
             continue
 
         data[symbol].insert(0, record)
@@ -342,16 +324,11 @@ def main():
         added_count += 1
 
     if added_count == 0:
-        print(f"لا توجد سجلات جديدة لإضافتها (كلها موجودة مسبقاً — {skipped_count} تم تخطيها). لن يُعدَّل الملف.")
+        print(f"لا توجد سجلات جديدة لإضافتها. الملف يبقى كما هو دون تعديل.")
         sys.exit(0)
 
     save_json(data, args.output)
-
-    print(f"\n✅ تم بنجاح:")
-    print(f"   - تاريخ الجلسة المضافة: {report['date']}")
-    print(f"   - عدد الأسهم المحدَّثة: {added_count}")
-    print(f"   - عدد الأسهم المتخطاة (مكررة): {skipped_count}")
-    print(f"   - إجمالي الأسهم بالملف: {len(data)}")
+    print(f"\n✅ تم التحديث بنجاح! حُفظت البيانات بالمسميات الإنجليزية لتتطابق تماماً وبشكل سلس مع مستودع GitHub.")
     sys.exit(0)
 
 
