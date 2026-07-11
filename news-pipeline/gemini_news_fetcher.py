@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+import time  # 💡 تم إضافة مكتبة الوقت هنا
 from datetime import datetime, timezone, timedelta
 
 import requests
@@ -14,8 +15,7 @@ GEMINI_API_URL = (
 
 SANITY_MAX_ITEMS = 20  # سقف معقول لسوق صغير مثل ISX؛ تجاوزه مشبوه
 
-# نفس قائمة الرموز الـ106 من القسم 2️⃣.2 بالوثيقة — يجب إبقاؤها متطابقة
-# حرفياً. في نسخة الإنتاج يُفضّل قراءتها من ملف companies.json مشترك.
+# نفس قائمة الرموز الـ106 من القسم 2️⃣.2 بالوثيقة
 KNOWN_SYMBOLS = {
     "AREB", "TASC", "IRMC", "SAEI", "VAMF", "NAME", "AAHP", "NAHF", "VBAT",
     "SBAG", "AMAP", "NHAM", "TZNI", "IKHC", "NGIR", "IMOS", "VKHF", "VZAF",
@@ -81,7 +81,7 @@ class QualityGateError(Exception):
 
 
 def call_gemini(api_key: str) -> dict:
-    """بوابة 1: يستدعي Gemini مع Search Grounding، ويتحقق أن الرد JSON صالح."""
+    """بوابة 1: يستدعي Gemini مع Search Grounding، ويتعامل ذكياً مع خطأ الحظر 429 عبر إعادة المحاولة تلقائياً."""
     payload = {
         "contents": [{"parts": [{"text": SYSTEM_PROMPT}]}],
         "tools": [{"google_search": {}}],
@@ -89,19 +89,40 @@ def call_gemini(api_key: str) -> dict:
     }
     url = f"{GEMINI_API_URL}?key={api_key}"
 
-    try:
-        resp = requests.post(url, json=payload, timeout=60)
-        resp.raise_for_status()
-    except Exception as e:
-        raise QualityGateError(f"فشل الاتصال بـ Gemini API: {e}")
+    max_retries = 5
+    backoff_factor = 15  # الانتظار الأولي بالثواني عند مواجهة حظر من سيرفرات جوجل
+    result = None
 
-    result = resp.json()
+    for attempt in range(max_retries):
+        try:
+            print(f"جاري إرسال الطلب إلى Gemini API (محاولة {attempt + 1} من {max_retries})...")
+            resp = requests.post(url, json=payload, timeout=90)  # رفع مهلة الانتظار لأن جلب نتائج البحث يأخذ وقتاً
+            
+            # في حال واجهنا ضغط طلبات وحظر مؤقت من جوجل
+            if resp.status_code == 429:
+                sleep_time = backoff_factor * (2 ** attempt)
+                print(f"⚠️ تنبيه: واجهنا خطأ 429 (Too Many Requests). سننتظر {sleep_time} ثانية كاستراحة لفتح الحظر ثم نعيد المحاولة...")
+                time.sleep(sleep_time)
+                continue
+                
+            resp.raise_for_status()
+            result = resp.json()
+            break  # نجح الطلب، نكسر الحلقة ونكمل التنفيذ
+            
+        except requests.exceptions.RequestException as e:
+            if attempt == max_retries - 1:
+                raise QualityGateError(f"فشل الاتصال بـ Gemini API نهائياً بعد {max_retries} محاولات: {e}")
+            sleep_time = backoff_factor * (2 ** attempt)
+            print(f"⚠️ حدث خطأ غير متوقع: {e}. إعادة المحاولة بعد {sleep_time} ثانية...")
+            time.sleep(sleep_time)
+    else:
+        raise QualityGateError("فشل تنفيذ السكريبت بسبب استمرار خطأ الحظر 429 من سيرفرات جوجل المجانية.")
+
     try:
         text = result["candidates"][0]["content"]["parts"][0]["text"]
     except (KeyError, IndexError):
         raise QualityGateError(f"شكل رد Gemini غير متوقع: {result}")
 
-    # إزالة أي احتمال لـ markdown fences رغم التعليمات الصريحة بعدمها
     text = re.sub(r"^```json\s*|\s*```$", "", text.strip())
 
     try:
@@ -141,7 +162,7 @@ def check_sanity_limit(general_news: list, social_signals: list):
     if total > SANITY_MAX_ITEMS:
         raise QualityGateError(
             f"عدد العناصر المستلمة ({total}) يتجاوز الحد المعقول "
-            f"({SANITY_MAX_ITEMS}) لسوق بحجم ISX — يُشتبه بتكرار أو هلوسة، "
+            f"({SANITY_MAX_ITEMS}) لسوق بحجم ISX — يُشتبه بتكرار، "
             f"يُرفض الرد كاملاً لمراجعة يدوية."
         )
     print(f"[بوابة 4] ✅ نجحت — {total} عنصر إجمالي، ضمن الحد المعقول.")
@@ -166,7 +187,6 @@ def save_json(data: dict, path: str):
 
 def dedupe_against_recent(new_items: list, existing_items: list, days: int = 14) -> list:
     """بوابة 5: يستبعد أي عنصر جديد له نفس url موجود مسبقاً بآخر N يوم."""
-    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     recent_urls = set()
     for item in existing_items:
         recent_urls.add(item.get("url"))
