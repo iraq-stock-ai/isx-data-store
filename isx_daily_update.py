@@ -21,7 +21,7 @@ HEADERS = {
     )
 }
 
-# حدود بوابة التحقق (بند 4 و6 بالتوثيق أعلاه) — قابلة للتعديل بسهولة
+# حدود بوابة التحقق — قابلة للتعديل بسهولة
 MIN_EXPECTED_SYMBOLS = 80
 MAX_EXPECTED_SYMBOLS = 130
 MAX_REJECTED_RATIO = 0.10  # 10%
@@ -48,11 +48,7 @@ def parse_date_ddmmyyyy(date_str: str):
 
 
 def get_today_daily_report():
-    """
-    بوابة تحقق 1: يجلب أول صف 'يومي' من الصفحة الأولى (الأحدث) لأرشيف
-    uploadedFilesList.html فقط — لا يتصفح صفحات إضافية، لأن هذا سكريبت
-    يومي يتوقع دائماً تقريراً واحداً جديداً بالمقدمة.
-    """
+    """بوابة تحقق 1: يجلب أول صف 'يومي' من الصفحة الأولى لأرشيف البورصة."""
     print(f"[بوابة 1] جاري فحص: {LIST_URL}")
     resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -85,14 +81,7 @@ def get_today_daily_report():
 
 
 def validate_report_date(report_date_str: str):
-    """
-    بوابة تحقق 2: تاريخ التقرير يجب أن يكون اليوم أو الأمس (بتوقيت UTC،
-    مع هامش يوم واحد لفروق التوقيت والتأخر المحتمل بنشر التقرير).
-
-    يمنع سيناريو: الموقع يعرض بالخطأ تقريراً قديماً كـ"الأحدث" (مثلاً
-    بسبب عطل بالموقع)، فيُعاد استيراد يوم قديم فوق بيانات موجودة أصلاً،
-    أو الأسوأ: يُستبدل تاريخ حديث ببيانات قديمة إن وُجد تكرار بالمعالجة.
-    """
+    """بوابة تحقق 2: تاريخ التقرير يجب أن يكون قريباً وضمن النطاق المعقول."""
     report_date = parse_date_ddmmyyyy(report_date_str)
     if report_date is None:
         raise QualityGateError(f"تعذّر تحليل تاريخ التقرير: '{report_date_str}'")
@@ -103,8 +92,6 @@ def validate_report_date(report_date_str: str):
     if diff_days < 0:
         raise QualityGateError(f"تاريخ التقرير بالمستقبل؟! ({report_date}) — مشبوه، يوقَف التنفيذ.")
     if diff_days > 4:
-        # حتى مع عطلات نهاية الأسبوع (الجمعة/السبت بالعراق)، فجوة أكبر من
-        # 4 أيام تعني على الأرجح أن الصفحة تعرض بيانات قديمة عالقة
         raise QualityGateError(
             f"تاريخ التقرير قديم جداً ({report_date}، أقدم بـ{diff_days} يوماً من اليوم) "
             f"— يُشتبه أن الموقع متوقف عن التحديث أو يعرض بيانات عالقة."
@@ -115,7 +102,7 @@ def validate_report_date(report_date_str: str):
 
 
 def download_excel(url: str):
-    """بوابة تحقق 3: يفشل بوضوح (يرفع استثناء) عند أي خطأ شبكة."""
+    """بوابة تحقق 3: يفشل بوضوح عند أي خطأ شبكة أثناء تحميل الملف."""
     print(f"[بوابة 3] جاري تحميل: {url}")
     try:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -127,32 +114,36 @@ def download_excel(url: str):
 
 
 def find_header_row_and_map(sheet):
-    """نفس منطق isx_backfill_and_export.py المُختبَر — يقرأ صف الرأس
-    الفعلي ويربط كل عمود باسمه، بدل الاعتماد على موقع نسبي ثابت."""
+    """تعديل دقيق بناءً على ترتيب ومسميات خلايا ملف الإكسل الجديد للحساب."""
     HEADER_ALIASES = {
-        "open": ["فتح"],
-        "high": ["أعلى", "اعلى"],
-        "low": ["أدنى", "ادنى"],
-        "close": ["اغلاق", "إغلاق"],
-        "volume": ["الأسهم المتداولة", "الاسهم المتداولة"],
-        "value": ["القيمة المتداولة", "القيمة المتدوالة"],
-        "trades": ["عدد الصفقات"],
+        "open": ["فتح", "سعر الفتح", "سعر فتح"],
+        "high": ["اعلى سعر", "أعلى سعر", "أعلى", "اعلى"],
+        "low": ["ادنى سعر", "أدنى سعر", "أدنى", "ادنى"],
+        "close": ["سعر الاغلاق", "سعر الإغلاق", "اغلاق", "إغلاق", "سعر القفل"],
+        "volume": ["الاسهم المتداولة", "الأسهم المتداولة", "حجم التداول"],
+        "value": ["القيمة المتداولة", "القيمة المتدوالة", "قيمة التداول"],
+        "trades": ["الصفقات", "عدد الصفقات"],
     }
-    SYMBOL_HEADER_ALIASES = ["الرمز", "رمز الشركة", "Symbol"]
+    SYMBOL_HEADER_ALIASES = ["رمز الشركة", "الرمز", "رمز", "Symbol"]
 
     for row_idx, row in enumerate(sheet.iter_rows(max_row=15, values_only=True)):
         row_texts = [clean_text(c) for c in row]
         col_map = {}
         symbol_col = None
+        
         for col_idx, text in enumerate(row_texts):
             if not text:
                 continue
+            
+            # مطابقة مرنة ومباشرة للمسميات التي زودتنا بها
             for field, aliases in HEADER_ALIASES.items():
-                if text in aliases:
+                if text in aliases or any(alias == text for alias in aliases):
                     col_map[field] = col_idx
-            if text in SYMBOL_HEADER_ALIASES:
+                    
+            if text in SYMBOL_HEADER_ALIASES or any(s_alias == text for s_alias in SYMBOL_HEADER_ALIASES):
                 symbol_col = col_idx
 
+        # التحقق من العثور على الأعمدة المالية الأربعة الرئيسية لاعتماد الصف كـ رأس للجدول
         core_fields = {"open", "high", "low", "close"}
         if core_fields.issubset(col_map.keys()):
             return row_idx, col_map, symbol_col
@@ -173,8 +164,7 @@ def extract_session_date_from_excel(sheet) -> str:
 
 
 def parse_daily_excel(excel_bytes: bytes) -> dict:
-    """يستخرج كل الأسهم، بالاعتماد على أسماء الأعمدة الفعلية (نفس منطق
-    isx_backfill_and_export.py المُختبَر مسبقاً)."""
+    """يستخرج كل الأسهم بالاعتماد على أسماء الأعمدة الجديدة والمحدثة بالكامل."""
     wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
     results = {}
 
@@ -238,7 +228,7 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
 
 
 def check_symbol_count(day_data: dict):
-    """بوابة تحقق 4: عدد الأسهم المستخرجة ضمن نطاق معقول."""
+    """بوابة تحقق 4: التأكد من أن عدد الأسهم المستخرجة يطابق حجم السوق الطبيعي."""
     count = len(day_data)
     if count < MIN_EXPECTED_SYMBOLS or count > MAX_EXPECTED_SYMBOLS:
         raise QualityGateError(
@@ -249,8 +239,7 @@ def check_symbol_count(day_data: dict):
 
 
 def validate_records(day_data: dict):
-    """بوابة تحقق 5 و6: فحص High/Low/Close لكل سجل، ورفض السجلات
-    المخالفة، مع التحقق أن نسبة المرفوض لا تتجاوز الحد الأقصى."""
+    """بوابة تحقق 5 و6: فحص سلامة البيانات لضمان عدم وجود انزياح للقيم والأعمدة."""
     valid = {}
     rejected = []
 
@@ -279,7 +268,7 @@ def validate_records(day_data: dict):
     ratio = len(rejected) / len(day_data) if day_data else 1.0
     print(f"[بوابة 5] فحص جودة السجلات: {len(valid)} سليم، {len(rejected)} مرفوض من أصل {len(day_data)}.")
     if rejected:
-        for w in rejected[:10]:  # لا نطبع أكثر من 10 سطر تحذير تجنباً لإغراق السجل
+        for w in rejected[:10]:
             print(f"           - {w}")
 
     if ratio > MAX_REJECTED_RATIO:
@@ -323,13 +312,12 @@ def main():
     except QualityGateError as e:
         print(f"\n❌ توقف التنفيذ — فشلت بوابة تحقق: {e}", file=sys.stderr)
         print("لن يتم تعديل isx_history_all.json. الملف بالمستودع يبقى كما هو.", file=sys.stderr)
-        sys.exit(1)  # GitHub Actions سيقرأ هذا كفشل، ولن يعمل commit
+        sys.exit(1)
 
     except Exception as e:
         print(f"\n❌ خطأ غير متوقع: {e}", file=sys.stderr)
         sys.exit(1)
 
-    # كل البوابات نجحت — الآن فقط ندمج ونحفظ
     print("\n✅ كل بوابات التحقق نجحت. جاري الدمج مع الأرشيف الموجود...")
 
     data = load_existing(args.existing)
@@ -347,16 +335,15 @@ def main():
 
         if record_date in existing_dates[symbol]:
             skipped_count += 1
-            continue  # هذا اليوم مُضاف مسبقاً لهذا السهم (تشغيل مكرر لنفس اليوم)
+            continue
 
         data[symbol].insert(0, record)
         existing_dates[symbol].add(record_date)
         added_count += 1
 
     if added_count == 0:
-        print(f"لا توجد سجلات جديدة لإضافتها (كلها موجودة مسبقاً — {skipped_count} تم تخطيها). "
-              f"لن يُعدَّل الملف.")
-        sys.exit(0)  # نجاح، لكن بلا تغيير — GitHub Actions لن يجد فرقاً ليعمل commit له
+        print(f"لا توجد سجلات جديدة لإضافتها (كلها موجودة مسبقاً — {skipped_count} تم تخطيها). لن يُعدَّل الملف.")
+        sys.exit(0)
 
     save_json(data, args.output)
 
