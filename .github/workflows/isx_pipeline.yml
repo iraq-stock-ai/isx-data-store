@@ -3,12 +3,9 @@ name: تحديث بيانات ISX (أسعار + إفصاحات + أخبار)
 on:
   schedule:
     # ===== جدولة الأسعار: 4 محاولات، الأحد-الخميس فقط (أيام تداول ISX) =====
-    # كل محاولة تشغّل نفس السكريبت المحمي ببوابات تحقق؛ لو الملف اليومي
-    # من ISX لم يُنشر بعد، بوابة "تاريخ حديث" أو "عدد أسهم معقول" ترفضه
-    # بأمان دون أي commit خاطئ. أول محاولة تنجح فعلياً هي التي تُحدِّث الملف.
     - cron: '0 11 * * 0-4'   # 2:00 عصراً بغداد (UTC+3) — بعد الإغلاق بساعة
     - cron: '0 13 * * 0-4'   # 4:00 عصراً بغداد — احتياط أول
-    - cron: '0 17 * * 0-4'   # 8:00 مساءً بغداد — احتياط ثانٍ + هذا التوقيت يُشغِّل الإفصاحات وGemini أيضاً
+    - cron: '0 17 * * 0-4'   # 8:00 مساءً بغداد — احتياط ثانٍ + تشغيل الإفصاحات وGemini
     - cron: '0 6 * * 0-4'    # 9:00 صباحاً بغداد اليوم التالي — يلتقط تقارير متأخرة
   workflow_dispatch: {}
 
@@ -16,10 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  # ============================================================
-  # Job 1: تحديث الأسعار — يعمل بكل المحاولات الأربع أعلاه
-  # ============================================================
-  update-prices:
+  update-all-data:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,116 +22,49 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install requests beautifulsoup4 openpyxl
+      # تثبيت كل المكتبات المطلوبة في حاسبة واحدة
+      - name: تثبيت المكتبات
+        run: pip install requests beautifulsoup4 openpyxl
 
-      - name: تشغيل سكريبت الأسعار (مع بوابات التحقق الست)
+      # [1] تشغيل سكريبت الأسعار (يعمل في كل المحاولات الأربع)
+      - name: تشغيل سكريبت الأسعار
         run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
 
-      - name: فحص وجود تغييرات فعلية
-        id: check_changes
-        run: |
-          if git diff --quiet isx_history_all.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Commit ورفع تحديث الأسعار
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.name "isx-data-bot"
-          git config user.email "actions@github.com"
-          git add isx_history_all.json
-          git commit -m "تحديث أسعار ISX اليومي - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase
-          git push
-
-      - name: تنبيه عند الفشل
-        if: failure()
-        run: |
-          echo "❌ فشلت محاولة تحديث الأسعار بهذا التوقيت — طبيعي إذا لم يُنشر التقرير اليومي بعد."
-          echo "سيُعاد المحاولة تلقائياً بالتوقيت التالي المجدول. لا حاجة لتدخل عاجل."
-
-  # ============================================================
-  # Job 2: الإفصاحات الرسمية من isc.gov.iq — بدون Gemini
-  # يعمل فقط بمحاولة الساعة 8 مساءً (مرة واحدة باليوم كافية)
-  # ============================================================
-  update-disclosures:
-    runs-on: ubuntu-latest
-    if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - run: pip install requests beautifulsoup4
-
-      - name: تشغيل سكريبت الإفصاحات (isc.gov.iq مباشرة)
+      # [2] تشغيل سكريبت الإفصاحات (يعمل فقط الساعة 8 مساءً أو عند التشغيل اليدوي)
+      - name: تشغيل سكريبت الإفصاحات
+        if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
         run: python news-pipeline/isc_disclosures_fetcher.py --existing isx_news.json --output isx_news.json
 
-      - name: فحص وجود تغييرات فعلية
-        id: check_changes
-        run: |
-          if git diff --quiet isx_news.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Commit ورفع الإفصاحات الجديدة
-        if: steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.name "isx-data-bot"
-          git config user.email "actions@github.com"
-          git add isx_news.json
-          git commit -m "تحديث الإفصاحات الرسمية - $(date -u +'%Y-%m-%d')"
-          git pull --rebase
-          git push
-
-  # ============================================================
-  # Job 3: الأخبار العامة وإشارات التواصل الاجتماعي — عبر Gemini
-  # مرة واحدة فقط باليوم (نفس توقيت الإفصاحات، 8 مساءً)
-  # ============================================================
-  update-gemini-news:
-    runs-on: ubuntu-latest
-    if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - run: pip install requests
-
-      - name: تشغيل سكريبت Gemini (مع بوابات التحقق الخمس)
+      # [3] تشغيل سكريبت Gemini للأخبار (يعمل فقط الساعة 8 مساءً أو عند التشغيل اليدوي)
+      - name: تشغيل سكريبت Gemini
+        if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python news-pipeline/gemini_news_fetcher.py --existing isx_news.json --output isx_news.json
 
+      # [4] فحص ذكي يشمل الملفات المعدلة والملفات الجديدة تماماً (isx_news.json)
       - name: فحص وجود تغييرات فعلية
         id: check_changes
         run: |
-          if git diff --quiet isx_news.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit ورفع الأخبار الجديدة
+      # [5] رفع كل الملفات الناتجة دفعة واحدة وبأمان تام
+      - name: Commit ورفع جميع التحديثات
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
-          git add isx_news.json
-          git commit -m "تحديث الأخبار العامة والتواصل الاجتماعي - $(date -u +'%Y-%m-%d')"
+          git add isx_history_all.json isx_news.json
+          git commit -m "تحديث تلقائي شامل لبيانات ISX - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase
           git push
 
       - name: تنبيه عند الفشل
         if: failure()
         run: |
-          echo "❌ فشلت بوابة تحقق بسكريبت Gemini — راجع السجل أعلاه."
-          echo "الملف isx_news.json لم يتغيّر. سيُعاد المحاولة غداً بنفس التوقيت."
+          echo "❌ حدث خطأ في إحدى خطوات المعالجة، يرجى مراجعة السجل أعلاه."
