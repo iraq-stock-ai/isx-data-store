@@ -24,7 +24,7 @@ jobs:
 
       # تثبيت المكتبات المطلوبة
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 openpyxl
+        run: pip install requests beautifulsoup4 openpyxl lxml
 
       # [1] تشغيل سكريبت الأسعار -> يحفظ في ملف الأسعار الخاص به
       - name: تشغيل سكريبت الأسعار
