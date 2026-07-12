@@ -4,26 +4,28 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime
 
 import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://www.isc.gov.iq"
-# تحويل الرابط إلى القسم العربي مباشرة
 LIST_URL = f"{BASE_URL}/news?category=7"
 
+# إضافة توجيهات المتصفح لإجبار السيرفر على فهم أننا نريد لغة عربية
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
-    )
+    ),
+    "Accept-Language": "ar-IQ,ar;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": BASE_URL
 }
 
 COMPANY_NAMES_TO_SYMBOLS = {
     "الريباس للدواجن والاعلاف": "AREB", "اسياسيل للاتصالات": "TASC",
-    "اللبسة الجاهزة": "IRMC", "الامين للاستثمارات العقارية": "SAEI",
+    "الالبسة الجاهزة": "IRMC", "الامين للاستثمارات العقارية": "SAEI",
     "الامين للاستثمار المالي": "VAMF", "الامين للتأمين": "NAME",
     "الاهلية للانتاج الزراعي": "AAHP", "الاهلية للتأمين": "NAHF",
     "الباتك للاستثمار المالي": "VBAT", "البادية للنقل العام": "SBAG",
@@ -56,7 +58,7 @@ def fetch_disclosure_list(max_pages: int = MAX_PAGES) -> list:
             break
 
         soup = BeautifulSoup(resp.content, "html.parser")
-        # تعديل الريجكس ليتوافق مع الروابط العربية
+        # اقتناص الروابط حتى لو كانت تحتوي على en بسبب التحويل التلقائي للسيرفر
         links = soup.find_all("a", href=re.compile(r"/news/\d+$"))
 
         page_items = []
@@ -65,7 +67,11 @@ def fetch_disclosure_list(max_pages: int = MAX_PAGES) -> list:
             title = clean_text(link.get_text())
             if not title or not href:
                 continue
+            
             full_url = href if href.startswith("http") else BASE_URL + href
+            # الكبسولة السحرية: حذف مسار الإنجليزي فوراً لفتح الصفحة العربية حصراً
+            full_url = full_url.replace("/en/news/", "/news/")
+            
             page_items.append({"title": title, "url": full_url})
 
         print(f"  صفحة {page}: {len(page_items)} إفصاح.")
@@ -90,6 +96,8 @@ def match_company(text: str):
 
 def fetch_disclosure_detail(url: str) -> dict:
     try:
+        # التأكيد مرة أخرى على تنظيف رابط التفاصيل قبل استدعائه
+        url = url.replace("/en/news/", "/news/")
         resp = requests.get(url, headers=HEADERS, timeout=20)
         resp.raise_for_status()
     except Exception as e:
@@ -163,14 +171,14 @@ def main():
         }
         data["official_disclosures"].insert(0, record)
         added += 1
-        time.sleep(1)
+        time.sleep(1.5) # زيادة طفيفة لتفادي حظر السيرفر
 
     if added == 0:
         print("لا توجد إفصاحات جديدة للعربية.")
         return
 
     save_json(data, args.output)
-    print(f"\n✅ تم بنجاح تحديث ملف الإفصاحات المفرز بالعربية.")
+    print(f"\n✅ تم بنجاح تحديث ملف الإفصاحات المفرز بالعربية الكاملة.")
 
 if __name__ == "__main__":
     main()
