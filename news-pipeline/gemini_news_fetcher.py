@@ -5,21 +5,21 @@ import time
 import requests
 from datetime import datetime
 
-# اعتماد الموديل الخفيف والأسرع (Lite) لتجنب الـ 429 تماماً واستقرار السكربت
+# اعتماد الموديل الخفيف والسريع
 MODEL_NAME = "gemini-2.0-flash-lite"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
 API_KEY = os.environ.get("GEMINI_API_KEY")
 
 if not API_KEY:
-    print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_API_KEY.")
+    print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_API_KEY.", flush=True)
     sys.exit(1)
 
-def fetch_gemini_news_radar(max_retries=5):
+def fetch_gemini_news_radar(max_retries=3):
     current_date = datetime.now().strftime("%Y-%m-%d")
     
     prompt_text = (
         f"اليوم هو {current_date}. بصفتك رادار مالي ذكي وخبير في أسواق المال العربية والعالمية، "
-        "قم بالبحث التام واستخدام محرك البحث المدمج لديك لتجميع أحدث الأخبار والتحليلات والإشارات الحية "
+        "قم بالبحث التام واستخدم محرك البحث المدمج لديك لتجميع أحدث الأخبار والتحليلات والإشارات الحية "
         "عن سوق العراق للأوراق المالية (ISX)، والشركات العراقية المدرجة (مثل مصرف بغداد، آسيا سيل، مصرف المنصور، إلخ) "
         "من مواقع البورصات العالمية، الأخبار الاقتصادية الحكومية والعالمية، ومنصات التواصل الاجتماعي.\n\n"
         "شروط التجميع مفرزة كالتالي:\n"
@@ -44,30 +44,31 @@ def fetch_gemini_news_radar(max_retries=5):
         "generationConfig": {"responseMimeType": "application/json"}
     }
 
-    # نظام حماية وانتظار ذكي
-    delay = 20 
+    # تقليل فترات الانتظار وعدد المحاولات ليعمل السكربت بسرعة خاطفة
+    delay = 5  
     for attempt in range(1, max_retries + 1):
         try:
-            print(f"🔄 جميناي يبدأ تشمشم الويب باستخدام {MODEL_NAME}... محاولة رقم {attempt} من {max_retries}")
-            response = requests.post(f"{GEMINI_API_URL}?key={API_KEY}", headers=headers, json=payload, timeout=120)
+            print(f"🔄 جميناي يبدأ تشمشم الويب باستخدام {MODEL_NAME}... محاولة رقم {attempt} من {max_retries}", flush=True)
+            
+            # تقليص وقت الانتظار إلى 30 ثانية كحد أقصى لاستجابة السيرفر
+            response = requests.post(f"{GEMINI_API_URL}?key={API_KEY}", headers=headers, json=payload, timeout=30)
             
             if response.status_code == 200:
                 res_json = response.json()
                 ai_text = res_json['candidates'][0]['content']['parts'][0]['text']
-                # تنظيف أي وسم ماركداون إضافي قد يضعه الموديل
                 ai_text = ai_text.strip().removeprefix("```json").removesuffix("```").strip()
                 return json.loads(ai_text)
                 
             elif response.status_code == 429:
-                print(f"⏳ تنبيه (429): قيود طلبات الموديل ممتلئة. جاري التهدئة والانتظار لمدة {delay} ثانية...")
+                print(f"⏳ تنبيه (429): قيود الطلبات ممتلئة. تهدئة سريعة لمدة {delay} ثوانٍ...", flush=True)
                 time.sleep(delay)
                 delay *= 2  
                 continue
             else:
-                print(f"❌ فشل سيرفر جميناي: كود الخطأ {response.status_code}")
+                print(f"❌ فشل سيرفر جميناي: كود الخطأ {response.status_code}", flush=True)
                 return None
         except Exception as e:
-            print(f"❌ خطأ في الاتصال أو التحليل: {e}")
+            print(f"❌ خطأ في الاتصال أو التحليل: {e}", flush=True)
             time.sleep(delay)
             delay *= 2
             
@@ -76,14 +77,14 @@ def fetch_gemini_news_radar(max_retries=5):
 def main():
     radar_data = fetch_gemini_news_radar()
     if not radar_data:
-        print("⚠️ لم يتم جلب بيانات جديدة من جميناي بعد استنفاد المحاولات المتاحة.")
+        print("⚠️ لم يتم جلب بيانات جديدة من جميناي.", flush=True)
         sys.exit(1)
 
     output_file = "isx_news.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(radar_data, f, ensure_ascii=False, indent=2)
         
-    print(f"🎉 نجاح تام! تم تشمشم الأخبار الخارجية والإشارات بنجاح بواسطة {MODEL_NAME} وحُفظت في {output_file}!")
+    print(f"🎉 نجاح تام! تم تشمشم الأخبار الخارجية بنجاح وحُفظت في {output_file}!", flush=True)
 
 if __name__ == "__main__":
     main()
