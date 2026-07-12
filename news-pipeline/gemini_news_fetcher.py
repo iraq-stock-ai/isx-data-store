@@ -12,14 +12,45 @@ HEADERS = {
                   "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 }
 
+OUTPUT_FILE = "isx_news.json"
 
-def fetch_free_web_radar():
+# كلمات مفتاحية موسّعة: مصطلحات سوقية عامة + أسماء شركات مدرجة معروفة
+KEYWORDS = [
+    "سوق العراق للأوراق المالية",
+    "أسهم العراق",
+    "بورصة بغداد",
+    "مؤشر ISX60",
+    "مصرف بغداد اسهم",
+    "مصرف المنصور اسهم",
+    "آسيا سيل",
+    "الشرق الاوسط للاستثمار المالي",
+    "بورصة العراق تداول",
+]
+
+# حد أقصى للأخبار الجديدة بكل تشغيلة (بعد التصفية)
+MAX_NEW_ARTICLES_PER_RUN = 30
+
+TRUSTED_SOURCES = [
+    "رويترز", "reuters", "cnbc", "الجزيرة", "العربية",
+    "مستقل", "حكومي", "الوكالة", "واع", "shafaq", "ina",
+]
+
+
+def normalize_title(title: str) -> str:
+    """توحيد شكل العنوان لتسهيل كشف التكرار (إزالة مسافات زائدة واسم المصدر اللاحق)"""
+    if not title:
+        return ""
+    # Google News يضيف غالباً "- اسم المصدر" بآخر العنوان
+    cleaned = title.split(" - ")[0].strip()
+    return " ".join(cleaned.split()).lower()
+
+
+def fetch_raw_articles():
     print("🔄 جاري تشمشم الويب عبر رادار البحث الحُر (Google News)...")
-
-    keywords = ["سوق العراق للأوراق المالية", "أسهم العراق", "بورصة بغداد"]
     all_articles = []
+    seen_urls = set()
 
-    for kw in keywords:
+    for kw in KEYWORDS:
         encoded_kw = urllib.parse.quote(kw)
         rss_url = f"https://news.google.com/rss/search?q={encoded_kw}&hl=ar&gl=IQ&ceid=IQ:ar"
 
@@ -44,77 +75,89 @@ def fetch_free_web_radar():
                 except Exception:
                     date_str = datetime.now().strftime("%Y-%m-%d")
 
-                article = {
+                if link in seen_urls:
+                    continue
+                seen_urls.add(link)
+
+                all_articles.append({
                     "title": title,
                     "url": link,
                     "date": date_str,
                     "source": source,
-                }
-
-                if article["url"] not in [a["url"] for a in all_articles]:
-                    all_articles.append(article)
+                })
 
         except Exception as e:
             print(f"⚠️ تحذير أثناء البحث عن ({kw}): {e}")
 
     all_articles.sort(key=lambda x: x["date"], reverse=True)
+    return all_articles
 
-    general_news = []
-    social_signals = []
 
-    trusted_sources = ["رويترز", "reuters", "cnbc", "الجزيرة", "العربية",
-                        "مستقل", "حكومي", "الوكالة", "واع", "shafaq", "ina"]
-
-    recent_articles = all_articles[:15]
-    target_general_count = max(1, round(len(recent_articles) * 0.6))
-
-    # تصحيح: نتحقق من الطول الفعلي للقائمة أثناء اللوب، مو من رقم ثابت
-    for art in recent_articles:
-        source_lower = art["source"].lower()
-        is_trusted = any(src in source_lower for src in trusted_sources)
-
-        if is_trusted or len(general_news) < target_general_count:
-            general_news.append({
-                "date": art["date"],
-                "source": art["source"],
-                "title": art["title"],
-                "content": (
-                    f"تقرير إخباري خارجي تم رصده من منصة {art['source']} "
-                    f"يتحدث عن: {art['title']}. الرابط المباشر: {art['url']}"
-                ),
-            })
-        else:
-            social_signals.append({
-                "date": art["date"],
-                "platform": art["source"] if art["source"] else "منصات عامة",
-                "sentiment": "Neutral",
-                "summary": (
-                    f"تداولات ونقاشات عامة في الفضاء الرقمي وموقع "
-                    f"{art['source']} حول: {art['title']}"
-                ),
-            })
-
-    if not general_news:
-        general_news.append({
-            "date": datetime.now().strftime("%Y-%m-%d"),
-            "source": "رادار البورصة العالمي",
-            "title": "استقرار في حركة مؤشرات أسعار الأسهم العراقية بالأسواق الخارجية",
-            "content": "تشهد الأسهم القيادية في سوق العراق حركة مستقرة وهادئة في التداولات الخارجية الصباحية.",
-        })
-
-    return {"general_news": general_news, "social_signals": social_signals}
+def load_existing_data():
+    """تحميل الملف الحالي إن وجد، لدمج البيانات الجديدة معه"""
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                data.setdefault("general_news", [])
+                data.setdefault("social_signals", [])
+                return data
+        except Exception as e:
+            print(f"⚠️ تعذّر قراءة الملف القديم ({e})، سيتم البدء بملف جديد.")
+    return {"general_news": [], "social_signals": []}
 
 
 def main():
-    radar_data = fetch_free_web_radar()
+    existing_data = load_existing_data()
 
-    output_file = "isx_news.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(radar_data, f, ensure_ascii=False, indent=2)
+    # مجموعة العناوين الموحّدة الموجودة مسبقاً بالملف، لمنع التكرار عبر التشغيلات
+    existing_titles = {
+        normalize_title(item.get("title", ""))
+        for item in existing_data["general_news"]
+    }
+
+    raw_articles = fetch_raw_articles()
+
+    new_general_news = []
+    seen_this_run = set()
+
+    for art in raw_articles:
+        norm_title = normalize_title(art["title"])
+        if not norm_title:
+            continue
+        # تجاهل لو الخبر موجود سابقاً بالملف، أو تكرر بنفس التشغيلة الحالية
+        if norm_title in existing_titles or norm_title in seen_this_run:
+            continue
+
+        seen_this_run.add(norm_title)
+        new_general_news.append({
+            "date": art["date"],
+            "source": art["source"],
+            "title": art["title"],
+            "content": (
+                f"تقرير إخباري خارجي تم رصده من منصة {art['source']} "
+                f"يتحدث عن: {art['title']}. الرابط المباشر: {art['url']}"
+            ),
+        })
+
+        if len(new_general_news) >= MAX_NEW_ARTICLES_PER_RUN:
+            break
+
+    # الدمج التراكمي: الجديد يُضاف بأول القائمة (الأحدث أولاً)
+    combined_general_news = new_general_news + existing_data["general_news"]
+
+    # social_signals متروك مؤقتاً كما هو موجود بالملف (بدون تحديث حالياً)
+    result = {
+        "general_news": combined_general_news,
+        "social_signals": existing_data["social_signals"],
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
 
     print(
-        f"🎉 نجاح! تم جلب {len(radar_data['general_news'])} خبر عام و"
-        f"{len(radar_data['social_signals'])} إشارة تواصل، وحُفظت في {output_file}"
+        f"🎉 نجاح! أُضيف {len(new_general_news)} خبر جديد. "
+        f"الإجمالي التراكمي الآن: {len(combined_general_news)} خبر في general_news."
     )
 
 
