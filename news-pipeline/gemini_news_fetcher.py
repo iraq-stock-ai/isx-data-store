@@ -130,14 +130,13 @@ def main():
             continue
 
         seen_this_run.add(norm_title)
+        
+        # التعديل هنا: تم إزالة الجزء الخاص بالروابط لتقليل حجم البيانات والذاكرة
         new_general_news.append({
             "date": art["date"],
             "source": art["source"],
             "title": art["title"],
-            "content": (
-                f"تقرير إخباري خارجي تم رصده من منصة {art['source']} "
-                f"يتحدث عن: {art['title']}. الرابط المباشر: {art['url']}"
-            ),
+            "content": f"تقرير إخباري خارجي تم رصده من منصة {art['source']} يتحدث عن: {art['title']}.",
         })
 
         if len(new_general_news) >= MAX_NEW_ARTICLES_PER_RUN:
