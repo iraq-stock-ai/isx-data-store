@@ -188,6 +188,7 @@ def fetch_disclosure_detail(url: str) -> dict:
     soup = BeautifulSoup(resp.content, "html.parser")
     full_text = clean_text(soup.get_text())
 
+    # نبحث عن التاريخ بالنص الكامل أولاً (نحتاج full_text عشان نطابق الشركات بدقة)
     date_match = re.search(r"(\d{2}/\d{2}/\d{4})", full_text)
     date_str = date_match.group(1) if date_match else None
 
@@ -196,8 +197,18 @@ def fetch_disclosure_detail(url: str) -> dict:
     if not symbols:
         symbols = match_companies(url)
 
+    # مهم: نشيل التاريخ من النص قبل نحفظه كـ content، عشان ما يضل ملتصق
+    # بأول كلمة من الخبر (مشكلة شائعة لأن full_text يجمع كل نص الصفحة بدون
+    # فواصل واضحة بين العناصر). نضيف مسافة مكانه للتأكد من الفصل.
+    content_text = full_text
+    if date_match:
+        content_text = (
+            full_text[: date_match.start()] + " " + full_text[date_match.end() :]
+        )
+        content_text = clean_text(content_text)
+
     return {
-        "content": full_text[:1000],
+        "content": content_text[:1000],
         "date": date_str,
         "related_symbols": symbols,
     }
