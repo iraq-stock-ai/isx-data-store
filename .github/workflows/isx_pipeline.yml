@@ -22,27 +22,27 @@ jobs:
         with:
           python-version: '3.11'
 
-      # تثبيت كل المكتبات المطلوبة في حاسبة واحدة
+      # تثبيت المكتبات المطلوبة
       - name: تثبيت المكتبات
         run: pip install requests beautifulsoup4 openpyxl
 
-      # [1] تشغيل سكريبت الأسعار (يعمل في كل المحاولات الأربع)
+      # [1] تشغيل سكريبت الأسعار -> يحفظ في ملف الأسعار الخاص به
       - name: تشغيل سكريبت الأسعار
         run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
 
-      # [2] تشغيل سكريبت الإفصاحات (يعمل فقط الساعة 8 مساءً أو عند التشغيل اليدوي)
+      # [2] تشغيل سكريبت الإفصاحات -> الآن يحفظ في ملف منفصل تماماً (isx_disclosures.json)
       - name: تشغيل سكريبت الإفصاحات
         if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
-        run: python news-pipeline/isc_disclosures_fetcher.py --existing isx_news.json --output isx_news.json
+        run: python news-pipeline/isc_disclosures_fetcher.py --existing isx_disclosures.json --output isx_disclosures.json
 
-      # [3] تشغيل سكريبت Gemini للأخبار (يعمل فقط الساعة 8 مساءً أو عند التشغيل اليدوي)
+      # [3] تشغيل سكريبت Gemini للأخبار -> الآن يحفظ في ملف منفصل تماماً (isx_news.json)
       - name: تشغيل سكريبت Gemini
         if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python news-pipeline/gemini_news_fetcher.py --existing isx_news.json --output isx_news.json
 
-      # [4] فحص ذكي يشمل الملفات المعدلة والملفات الجديدة تماماً (isx_news.json)
+      # [4] فحص التغييرات في جميع الملفات
       - name: فحص وجود تغييرات فعلية
         id: check_changes
         run: |
@@ -53,14 +53,14 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      # [5] رفع كل الملفات الناتجة دفعة واحدة وبأمان تام
+      # [5] رفع الملفات الثلاثة معاً إلى المستودع الرئيسي كأخوة متجاورين
       - name: Commit ورفع جميع التحديثات
         if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
-          git add isx_history_all.json isx_news.json
-          git commit -m "تحديث تلقائي شامل لبيانات ISX - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git add isx_history_all.json isx_disclosures.json isx_news.json
+          git commit -m "تحديث تلقائي شامل ومنفصل لملفات ISX - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase
           git push
 
@@ -68,3 +68,4 @@ jobs:
         if: failure()
         run: |
           echo "❌ حدث خطأ في إحدى خطوات المعالجة، يرجى مراجعة السجل أعلاه."
+
