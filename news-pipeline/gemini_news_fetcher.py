@@ -39,7 +39,7 @@ DISCLOSURE_TYPE_PATTERNS = [
     ("توزيع_ارباح", ["توزيع", "أرباح", "ارباح"]),
     ("زيادة_راس_المال", ["زيادة راس المال", "زيادة رأس المال", "زياده راس مال"]),
     ("قوائم_مالية", ["البيانات المالية", "القوائم المالية", "بيانات مالية"]),
-    ("اجتماع_هيئة_عامة", ["اجتماع الهيئة العامة", "إجتماع الهيئة العامة", "الجمعية العمومية"]),
+    ("اجتماع_هيئة_عامة", ["اجتماع الهيئة العامة", "إيجماع الهيئة العامة", "الجمعية العمومية"]),
     ("قرار_رفض_او_عدم_موافقة", ["عدم الموافقة", "رفض"]),
     ("حركة_تداول_خاصة", ["أمر متقابل", "امر متقابل", "تنفيذ أمر"]),
     ("تعليق_او_ايقاف_تداول", ["ايقاف التداول", "إيقاف التداول", "تعليق التداول"]),
@@ -65,13 +65,18 @@ def classify_disclosure(title: str) -> str:
 
 def fetch_story_list(story_type: int, max_pages: int = MAX_LIST_PAGES) -> list:
     """
-    يجلب قائمة الإفصاحات (type=1) أو أخبار السوق (type=2) من صفحة القائمة.
+    يجلب قائمة الإفصاحات (type=1) أو أخبار السوق (type=2) مباشرة من الروابط المخفية (API).
     """
     items = []
-    active_tab = 0 if story_type == 1 else 1
+    
+    # تحديد اسم الميثود المناسب بناءً على نوع الخبر لضمان جلب البيانات ديناميكياً
+    method_name = "getAnnouncementStoryList" if story_type == 1 else "getNewsStoryList"
 
     for page in range(1, max_pages + 1):
-        params = {"activeTab": active_tab, "page": page}
+        params = {
+            "methodName": method_name,
+            "page": page
+        }
         try:
             resp = requests.get(STORY_LIST_URL, headers=HEADERS, params=params, timeout=20)
             resp.raise_for_status()
