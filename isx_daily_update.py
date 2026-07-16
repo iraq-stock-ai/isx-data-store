@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import json
+import zipfile  # تم إضافة هذه المكتبة للتعامل مع الخطأ
 from datetime import datetime, timezone, date, timedelta
 
 import requests
@@ -158,9 +159,14 @@ def extract_session_date_from_excel(sheet) -> str:
 
 def parse_daily_excel(excel_bytes: bytes) -> dict:
     """تستخرج البيانات وتصيغ القاموس النهائي بالمفاتيح الإنجليزية المتوافقة مع أرشيف الـ JSON."""
-    wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
-    results = {}
+    
+    # حماية ضد الملفات التالفة
+    try:
+        wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
+    except (zipfile.BadZipFile, Exception) as e:
+        raise QualityGateError(f"فشل معالجة ملف Excel (ربما الملف تالف أو ليس Excel): {e}")
 
+    results = {}
     pure_symbol_pattern = re.compile(r"^[A-Z]{3,5}$")
     bracket_pattern = re.compile(r"\((_?[A-Z]{3,5})\)")
 
