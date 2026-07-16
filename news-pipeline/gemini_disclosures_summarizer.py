@@ -1,60 +1,47 @@
 import os
 import requests
-from bs4 import BeautifulSoup
 import google.generativeai as genai
-from datetime import datetime
 import json
 import argparse
-import pdfplumber
 
-# إعداد مفتاح API
+# إعداد مفتاح الـ API
 GEMINI_KEY = os.getenv("GEMINI_DISCLOSURES_API_KEY") or os.getenv("GEMINI_API_KEY")
-if GEMINI_KEY:
-    genai.configure(api_key=GEMINI_KEY)
+genai.configure(api_key=GEMINI_KEY)
 
-BASE_URL = "http://www.isx-iq.net/isxportal/portal/"
-URL = f"{BASE_URL}storyList.html?methodName=getAnnouncementStoryList"
+# الرابط
+TARGET_URL = "http://www.isx-iq.net/isxportal/portal/storyList.html?methodName=getAnnouncementStoryList"
 
-def fetch_today_stories():
-    today = datetime.now().strftime("%d/%m")
-    stories = []
+def get_raw_html(url):
     try:
-        response = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
-        soup = BeautifulSoup(response.text, "html.parser")
-        table = soup.find("table")
-        if table:
-            for row in table.find_all("tr"):
-                if today in row.text:
-                    link_tag = row.find("a", href=True)
-                    if link_tag:
-                        href = link_tag['href']
-                        if not href.startswith("http"): href = BASE_URL + href
-                        stories.append({"title": link_tag.text.strip(), "url": href})
+        response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=20)
+        return response.text
     except Exception as e:
-        print(f"خطأ: {e}")
-    return stories
+        print(f"فشل الاتصال: {e}")
+        return ""
 
-def extract_content(url):
-    try:
-        response = requests.get(url, timeout=15)
-        soup = BeautifulSoup(response.text, "html.parser")
-        pdf_tag = soup.find("a", href=lambda h: h and h.lower().endswith(".pdf"))
-        if pdf_tag:
-            pdf_url = pdf_tag['href'] if pdf_url.startswith("http") else "https://www.isx-iq.net" + pdf_tag['href']
-            res = requests.get(pdf_url, timeout=15)
-            with open("temp.pdf", "wb") as f: f.write(res.content)
-            with pdfplumber.open("temp.pdf") as pdf:
-                text = "".join([p.extract_text() or "" for p in pdf.pages])
-            os.remove("temp.pdf")
-            return text
-        return soup.get_text(separator="\n", strip=True)
-    except: return "فشل استخراج المحتوى"
+def ask_gemini_to_extract(html_content):
+    model = genai.GenerativeModel("gemini-1.5-flash")
+    
+    # التعليمات (Prompt) - هنا جمناي هو المسؤول عن الفهم
+    prompt = f"""
+    أنت خبير في تحليل صفحات سوق العراق للأوراق المالية (ISX).
+    هذا هو محتوى HTML لصفحة الإفصاحات:
+    {html_content[:15000]} 
 
-def analyze(title, content):
+    المطلوب منك:
+    1. استخرج أحدث الإفصاحات فقط (عناوين الأخبار والروابط الكاملة لها).
+    2. لا تكرر الأخبار القديمة.
+    3. أرجع النتيجة بتنسيق JSON فقط (قائمة تحتوي على {"title": "...", "url": "..."}).
+    4. إذا لم توجد أخبار جديدة، أرجع قائمة فارغة [].
+    """
+    
+    response = model.generate_content(prompt)
     try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        return model.generate_content(f"حلل الإفصاح المالي: {title}\nالمحتوى: {content}\nالمطلوب: ملخص 3 نقاط + هل الخبر إيجابي أم سلبي؟").text
-    except Exception as e: return f"خطأ: {e}"
+        # تنظيف الرد لاستخراج الـ JSON
+        raw_json = response.text.replace('```json', '').replace('```', '').strip()
+        return json.loads(raw_json)
+    except:
+        return []
 
 def main():
     parser = argparse.ArgumentParser()
@@ -62,20 +49,22 @@ def main():
     parser.add_argument("--output")
     args = parser.parse_args()
 
-    # تحميل البيانات الموجودة
+    html = get_raw_html(TARGET_URL)
+    if not html: return
+
+    new_items = ask_gemini_to_extract(html)
+    
+    # دمج مع البيانات القديمة
     data = []
     if os.path.exists(args.existing):
         with open(args.existing, 'r', encoding='utf-8') as f:
-            data = json.load(f)
+            try: data = json.load(f)
+            except: data = []
 
-    stories = fetch_today_stories()
-    for item in stories:
+    # إضافة العناصر الجديدة فقط (بدون تكرار)
+    for item in new_items:
         if not any(d['title'] == item['title'] for d in data):
-            print(f"معالجة: {item['title']}")
-            content = extract_content(item['url'])
-            analysis = analyze(item['title'], content)
-            item['analysis'] = analysis
-            item['date'] = datetime.now().strftime("%Y-%m-%d")
+            print(f"تم العثور على إفصاح جديد: {item['title']}")
             data.append(item)
 
     with open(args.output, 'w', encoding='utf-8') as f:
