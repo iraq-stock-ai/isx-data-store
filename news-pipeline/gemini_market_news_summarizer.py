@@ -18,12 +18,9 @@ target_url = "http://www.isx-iq.net/isxportal/portal/storyList.html?methodName=g
 response = requests.get(target_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
 html_content = response.text
 
-model_url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={api_key}"
+model_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
 
-    "أنت خبير في تحليل صفحات سوق العراق للأوراق المالية. هذا محتوى صفحة الأخبار:\n" 
-    + html_content[:15000] + 
-    "\nالمطلوب: استخرج أحدث الأخبار (عنوان ورابط). أرجع JSON فقط كقائمة: [{\"title\": \"...\", \"url\": \"...\"}]. إذا لا يوجد جديد أرجع []."
-)
+prompt = "أنت خبير في تحليل صفحات سوق العراق للأوراق المالية. هذا محتوى صفحة الأخبار: " + html_content[:15000] + "\nالمطلوب: استخرج أحدث الأخبار (عنوان ورابط). أرجع JSON فقط كقائمة: [{\"title\": \"...\", \"url\": \"...\"}]. إذا لا يوجد جديد أرجع []."
 
 payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
