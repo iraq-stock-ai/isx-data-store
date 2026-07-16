@@ -4,7 +4,6 @@ import json
 import argparse
 import sys
 
-# إعداد المتغيرات
 parser = argparse.ArgumentParser()
 parser.add_argument("--existing")
 parser.add_argument("--output")
@@ -16,12 +15,10 @@ if not api_key:
 
 target_url = "http://www.isx-iq.net/isxportal/portal/storyList.html?methodName=getAnnouncementStoryList"
 
-# جلب البيانات
 response = requests.get(target_url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
 html_content = response.text
 
-# تجهيز الطلب
-model_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+model_url = f"https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key={api_key}"
 prompt = (
     "أنت خبير في تحليل صفحات سوق العراق للأوراق المالية. هذا محتوى الصفحة:\n" 
     + html_content[:15000] + 
@@ -30,7 +27,6 @@ prompt = (
 
 payload = {"contents": [{"parts": [{"text": prompt}]}]}
 
-# إرسال الطلب
 gemini_response = requests.post(model_url, json=payload, headers={'Content-Type': 'application/json'}, timeout=60)
 
 if gemini_response.status_code == 200:
@@ -42,7 +38,6 @@ else:
     print(f"Error: {gemini_response.status_code} - {gemini_response.text}")
     new_items = []
 
-# حفظ البيانات
 existing_data = []
 if args.existing and os.path.exists(args.existing):
     with open(args.existing, 'r', encoding='utf-8') as f:
