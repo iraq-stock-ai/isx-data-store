@@ -1,13 +1,7 @@
 import os
 import requests
-import google.generativeai as genai
 import json
 import argparse
-
-# إعداد مفتاح API
-GEMINI_KEY = os.getenv("GEMINI_DISCLOSURES_API_KEY") or os.getenv("GEMINI_API_KEY")
-if GEMINI_KEY:
-    genai.configure(api_key=GEMINI_KEY)
 
 TARGET_URL = "http://www.isx-iq.net/isxportal/portal/storyList.html?methodName=getAnnouncementStoryList"
 
@@ -18,19 +12,29 @@ def get_raw_html(url):
     except: return ""
 
 def ask_gemini_to_extract(html_content):
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    api_key = os.getenv("GEMINI_DISCLOSURES_API_KEY") or os.getenv("GEMINI_API_KEY")
+    if not api_key: return []
     
-    # تم تغيير الطريقة لدمج النصوص لتجنب تداخل الأقواس
-    part1 = "\nأنت خبير في تحليل صفحات سوق العراق للأوراق المالية (ISX). هذا محتوى الـ HTML للصفحة:\n"
-    part2 = "\nالمطلوب: استخرج أحدث الإفصاحات (عنوان ورابط). لا تكرر القديم. أرجع JSON فقط كقائمة: [{\"title\": \"...\", \"url\": \"...\"}]. إذا لا يوجد جديد أرجع []."
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
     
-    full_prompt = part1 + html_content[:15000] + part2
+    prompt = (
+        "أنت خبير في تحليل صفحات سوق العراق للأوراق المالية (ISX). "
+        "هذا محتوى الـ HTML للصفحة:\n" + html_content[:15000] + 
+        "\nالمطلوب: استخرج أحدث الإفصاحات (عنوان ورابط). لا تكرر القديم. أرجع JSON فقط كقائمة: [{\"title\": \"...\", \"url\": \"...\"}]. إذا لا يوجد جديد أرجع []."
+    )
     
-    response = model.generate_content(full_prompt)
+    payload = {"contents": [{"parts": [{"text": prompt}]}]}
+    
     try:
-        raw_json = response.text.replace('```json', '').replace('```', '').strip()
+        response = requests.post(url, json=payload, headers={'Content-Type': 'application/json'}, timeout=30)
+        response.raise_for_status()
+        result = response.json()
+        text = result['candidates'][0]['content']['parts'][0]['text']
+        raw_json = text.replace('```json', '').replace('```', '').strip()
         return json.loads(raw_json)
-    except: return []
+    except Exception as e:
+        print(f"Error: {e}")
+        return []
 
 def main():
     parser = argparse.ArgumentParser()
@@ -50,7 +54,7 @@ def main():
             except: data = []
 
     for item in new_items:
-        if not any(d['title'] == item['title'] for d in data):
+        if not any(d['title'] == item.get('title') for d in data):
             data.append(item)
 
     with open(args.output, 'w', encoding='utf-8') as f:
