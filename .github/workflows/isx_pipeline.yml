@@ -42,9 +42,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      # هنا ضفنا google-generativeai و pdfplumber معاً للوظيفة الأولى ⬇️
+      # تم إضافة --upgrade لضمان جلب النسخ الحديثة وحل مشاكل الـ API القديمة
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 openpyxl lxml pdfplumber google-generativeai
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade requests beautifulsoup4 openpyxl lxml pdfplumber google-generativeai
 
       - name: تشغيل سكريبت الأسعار
         run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
@@ -100,9 +102,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      # وهنا ضفنا google-generativeai و pdfplumber معاً للوظيفة الثانية ⬇️
+      # تم إضافة --upgrade لضمان جلب النسخ الحديثة وحل مشاكل الـ API القديمة هنا أيضاً
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 lxml pdfplumber google-generativeai
+        run: |
+          python -m pip install --upgrade pip
+          pip install --upgrade requests beautifulsoup4 lxml pdfplumber google-generativeai
 
       - name: تلخيص إفصاح واحد جديد عبر Gemini
         env:
