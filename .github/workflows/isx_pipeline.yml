@@ -37,11 +37,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      # تم فرض إعادة التثبيت بدون استخدام Cache القديم
-      - name: تثبيت المكتبات (تثبيت إجباري)
+      - name: تثبيت المكتبات
         run: |
           pip install --upgrade pip
-          pip install --no-cache-dir --force-reinstall google-generativeai requests beautifulsoup4 openpyxl lxml pdfplumber
+          pip install "google-generativeai>=0.8.4" requests beautifulsoup4 openpyxl lxml pdfplumber
+          pip show google-generativeai
 
       - name: تشغيل سكريبت الأسعار
         run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
@@ -90,11 +90,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      # تم فرض إعادة التثبيت بدون استخدام Cache القديم هنا أيضاً
-      - name: تثبيت المكتبات (تثبيت إجباري)
+      - name: تثبيت المكتبات
         run: |
           pip install --upgrade pip
-          pip install --no-cache-dir --force-reinstall google-generativeai requests beautifulsoup4 lxml pdfplumber
+          pip install "google-generativeai>=0.8.4" requests beautifulsoup4 lxml pdfplumber
+          pip show google-generativeai
 
       - name: تلخيص إفصاح جديد
         env:
@@ -105,6 +105,16 @@ jobs:
         env:
           GEMINI_MARKET_NEWS_API_KEY: ${{ secrets.GEMINI_MARKET_NEWS_API_KEY }}
         run: python news-pipeline/gemini_market_news_summarizer.py --existing isx_market_news.json --output isx_market_news.json
+
+      - name: فحص وجود تغييرات فعلية
+        id: check_changes
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Commit ورفع التحديثات
         if: steps.check_changes.outputs.changed == 'true'
