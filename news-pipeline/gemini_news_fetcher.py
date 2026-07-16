@@ -1,102 +1,240 @@
 import os
+import sys
+import json
+import urllib.parse
 import requests
 from bs4 import BeautifulSoup
-import google.generativeai as genai
 from datetime import datetime
 
-# إعداد مفتاح API
-GEMINI_KEY = os.getenv("GEMINI_API_KEY")
-if GEMINI_KEY:
-    genai.configure(api_key=GEMINI_KEY)
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+}
 
-# إعداد PDF
-try:
-    import pdfplumber
-    HAS_PDFPLUMBER = True
-except ImportError:
-    HAS_PDFPLUMBER = False
+OUTPUT_FILE = "isx_news.json"
 
-BASE_URL = "http://www.isx-iq.net/isxportal/portal/"
-ANNOUNCEMENT_URL = f"{BASE_URL}storyList.html?methodName=getAnnouncementStoryList"
-NEWS_URL = f"{BASE_URL}storyList.html?methodName=getNewsStoryList"
+# ==============================================================================
+# مرحلة 1: كلمات البحث (موسّعة عمداً لتغطية احتمالات كافية)
+# ==============================================================================
+KEYWORDS = [
+    "سوق العراق للأوراق المالية",
+    "أسهم العراق",
+    "بورصة بغداد",
+    "مؤشر ISX60",
+    "مصرف بغداد اسهم",
+    "مصرف المنصور اسهم",
+    "اسياسيل للاتصالات",
+    "بورصة العراق تداول",
+]
 
-def fetch_today_stories(url):
-    # نستخدم جزءاً من التاريخ (اليوم/الشهر) للبحث، لأن السنة قد تكون ثابتة
-    today_check = datetime.now().strftime("%d/%m") 
-    print(f"جاري البحث عن روابط بتاريخ (يوم/شهر): {today_check}")
-    
-    stories = []
-    try:
-        response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
-        soup = BeautifulSoup(response.text, "html.parser")
-        
-        table = soup.find("table")
-        if not table: return stories
-            
-        for row in table.find_all("tr"):
-            # نقوم بالبحث عن التاريخ داخل النص المكتوب في السطر
-            if today_check in row.text:
-                link_tag = row.find("a", href=True)
-                if link_tag:
-                    title = link_tag.text.strip()
-                    href = link_tag['href']
-                    if not href.startswith("http"):
-                        href = BASE_URL + href
-                    stories.append({"title": title, "url": href})
-                    print(f"تم العثور على: {title}")
-    except Exception as e:
-        print(f"خطأ: {e}")
-    return stories
+MAX_NEW_ARTICLES_PER_RUN = 30
 
-def extract_content_from_details(details_url):
-    try:
-        response = requests.get(details_url, timeout=15)
-        soup = BeautifulSoup(response.text, "html.parser")
-        
-        # البحث عن رابط الـ PDF بأي طريقة
-        pdf_tag = soup.find("a", href=lambda h: h and h.lower().endswith(".pdf"))
-        if pdf_tag:
-            pdf_url = pdf_tag['href']
-            if not pdf_url.startswith("http"):
-                pdf_url = "https://www.isx-iq.net" + pdf_url
-            return extract_pdf_text(pdf_url)
-        
-        return soup.get_text(separator="\n", strip=True)
-    except: return ""
+# ==============================================================================
+# مرحلة 2: فلتر الرفض الصارم
+# ==============================================================================
 
-def extract_pdf_text(pdf_url):
-    if not HAS_PDFPLUMBER: return "pdfplumber غير مثبت"
-    try:
-        res = requests.get(pdf_url, timeout=15)
-        temp_path = "temp.pdf"
-        with open(temp_path, "wb") as f: f.write(res.content)
-        text = ""
-        with pdfplumber.open(temp_path) as pdf:
-            for page in pdf.pages:
-                text += page.extract_text() + "\n"
-        os.remove(temp_path)
-        return text
-    except: return "فشل استخراج الـ PDF"
+# أسماء شركات عراقية مدرجة معروفة (لو ذُكر أي منها بالعنوان، الخبر يُقبل
+# دائماً بغض النظر عن باقي الفلتر - لأنه مرتبط مباشرة بسهم محدد)
+COMPANY_NAME_HINTS = [
+    "مصرف بغداد", "مصرف المنصور", "اسياسيل", "آسيا سيل", "الخاتم للاتصالات",
+    "مصرف بابل", "دار السلام للتأمين", "الخياطة الحديثة", "فندق بغداد",
+    "المصرف المتحد", "مصرف اربيل", "الهلال الصناعية", "الشرق الاوسط لانتاج",
+    # ملاحظة: "الشرق الاوسط للاستثمار المالي" اسم غامض يتشارك مع شركات
+    # خليجية أخرى (كويتية خصوصاً) - لذلك استُبعد من هذه القائمة عمداً؛
+    # سيُفلتر عبر الكلمات الجغرافية أدناه بدلاً من ذلك.
+]
 
-def analyze_with_gemini(title, content):
-    if not GEMINI_KEY: return "لا يوجد API KEY"
-    try:
-        model = genai.GenerativeModel("gemini-1.5-flash")
-        prompt = f"حلل هذا الإفصاح المالي: {title}\nالمحتوى: {content}\nالمطلوب: ملخص بـ 3 نقاط + هل الخبر إيجابي/سلبي؟"
-        return model.generate_content(prompt).text
-    except Exception as e: return f"خطأ في Gemini: {e}"
+# كلمات تدل على حدث مؤثر فعلي على السهم (قرار، قضية، توسع...) - إذا وُجدت
+# مع سياق عراقي، الخبر يُقبل
+IMPACT_KEYWORDS = [
+    "قرار", "قضية", "دعوى", "توسع", "فرع جديد", "استحواذ", "اندماج",
+    "إفلاس", "افلاس", "تحقيق", "غرامة", "عقوبة", "ترخيص", "توقيع اتفاقية",
+    "شراكة", "مشروع جديد", "تغيير الإدارة", "تعيين مدير", "استقالة",
+]
+
+# كلمات "ضجيج" شائعة تدل على محتوى روتيني عام بدون قيمة تحليلية مباشرة
+NOISE_KEYWORDS = [
+    "سعر صرف الدولار", "أسعار الدولار", "صرف الدولار", "الدولار في بغداد",
+    "الدولار في اربيل", "إغلاق التداول.. ارتفاع", "مزاد العملة",
+]
+
+# كلمات تدل على أسواق أو دول أخرى غير العراق (تُستبعد إلا لو فيها اسم
+# شركة عراقية معروفة بنفس الوقت)
+FOREIGN_MARKET_KEYWORDS = [
+    "الكويت", "الإمارات", "الامارات", "السعودية", "قطر", "البحرين",
+    "مصر", "الأردن", "الاردن", "بورصة دبي", "سوق أبوظبي", "الرياض",
+]
+
+TRUSTED_SOURCES = [
+    "رويترز", "reuters", "cnbc", "الجزيرة", "العربية",
+    "مستقل", "حكومي", "الوكالة", "واع", "shafaq", "ina",
+]
+
+
+def normalize_title(title: str) -> str:
+    """توحيد شكل العنوان لتسهيل كشف التكرار (إزالة مسافات زائدة واسم المصدر اللاحق)"""
+    if not title:
+        return ""
+    cleaned = title.split(" - ")[0].strip()
+    return " ".join(cleaned.split()).lower()
+
+
+def is_relevant_news(title: str) -> bool:
+    """
+    فلتر الرفض الصارم. يرجع True فقط إذا كان الخبر يحمل قيمة تحليلية
+    حقيقية لسهم عراقي، ويرفض الضجيج والأخبار البعيدة.
+
+    منطق القرار بالترتيب:
+    1. إذا ذُكرت شركة عراقية معروفة صراحة بالعنوان -> يُقبل دائماً
+    2. إذا كان العنوان عن سوق خليجي/عربي آخر (بدون ذكر شركة عراقية) -> يُرفض
+    3. إذا كان العنوان "ضجيج" معروف (صرف الدولار اليومي..) -> يُرفض
+    4. إذا احتوى كلمة تأثير حقيقي (قرار، قضية، توسع...) -> يُقبل
+    5. غير ذلك -> يُرفض (احتياطاً، لتفادي التسرب العشوائي)
+    """
+    if not title:
+        return False
+
+    # 1) شركة عراقية معروفة مذكورة صراحة -> قبول فوري
+    if any(name in title for name in COMPANY_NAME_HINTS):
+        return True
+
+    # 2) سوق أجنبي مذكور بدون شركة عراقية -> رفض
+    if any(country in title for country in FOREIGN_MARKET_KEYWORDS):
+        return False
+
+    # 3) ضجيج معروف -> رفض
+    if any(noise in title for noise in NOISE_KEYWORDS):
+        return False
+
+    # 4) كلمة تأثير حقيقي موجودة + العنوان يذكر السوق/العراق بشكل ما -> قبول
+    has_impact_word = any(kw in title for kw in IMPACT_KEYWORDS)
+    if has_impact_word:
+        return True
+
+    # 5) افتراضياً: رفض (نفضّل تفويت خبر حدّي على قبول ضجيج)
+    return False
+
+
+def fetch_raw_articles():
+    print("🔄 جاري تشمشم الويب عبر رادار البحث الحُر (Google News)...")
+    all_articles = []
+    seen_urls = set()
+
+    for kw in KEYWORDS:
+        encoded_kw = urllib.parse.quote(kw)
+        rss_url = f"https://news.google.com/rss/search?q={encoded_kw}&hl=ar&gl=IQ&ceid=IQ:ar"
+
+        try:
+            resp = requests.get(rss_url, headers=HEADERS, timeout=15)
+            if resp.status_code != 200:
+                print(f"⚠️ فشل الطلب لـ ({kw}): كود {resp.status_code}")
+                continue
+
+            soup = BeautifulSoup(resp.content, "xml")
+            items = soup.find_all("item")
+
+            for item in items:
+                title = item.title.text if item.title else ""
+                link = item.link.text if item.link else ""
+                pub_date = item.pubDate.text if item.pubDate else ""
+                source = item.source.text if item.source else "مصدر عالمي"
+
+                try:
+                    dt = datetime.strptime(pub_date, "%a, %d %b %Y %H:%M:%S %Z")
+                    date_str = dt.strftime("%Y-%m-%d")
+                except Exception:
+                    date_str = datetime.now().strftime("%Y-%m-%d")
+
+                if link in seen_urls:
+                    continue
+                seen_urls.add(link)
+
+                all_articles.append({
+                    "title": title,
+                    "url": link,
+                    "date": date_str,
+                    "source": source,
+                })
+
+        except Exception as e:
+            print(f"⚠️ تحذير أثناء البحث عن ({kw}): {e}")
+
+    all_articles.sort(key=lambda x: x["date"], reverse=True)
+    return all_articles
+
+
+def load_existing_data():
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                data.setdefault("general_news", [])
+                data.setdefault("social_signals", [])
+                return data
+        except Exception as e:
+            print(f"⚠️ تعذّر قراءة الملف القديم ({e})، سيتم البدء بملف جديد.")
+    return {"general_news": [], "social_signals": []}
+
 
 def main():
-    all_items = fetch_today_stories(ANNOUNCEMENT_URL) + fetch_today_stories(NEWS_URL)
-    if not all_items:
-        print("لا توجد بيانات جديدة.")
-        return
+    existing_data = load_existing_data()
 
-    for item in all_items:
-        print(f"معالجة: {item['title']}")
-        content = extract_content_from_details(item['url'])
-        analysis = analyze_with_gemini(item['title'], content)
-        print(f"النتيجة:\n{analysis}")
+    existing_titles = {
+        normalize_title(item.get("title", ""))
+        for item in existing_data["general_news"]
+    }
+
+    raw_articles = fetch_raw_articles()
+    print(f"📥 إجمالي الأخبار الخام المجلوبة قبل الفلترة: {len(raw_articles)}")
+
+    new_general_news = []
+    seen_this_run = set()
+    rejected_count = 0
+
+    for art in raw_articles:
+        norm_title = normalize_title(art["title"])
+        if not norm_title:
+            continue
+        if norm_title in existing_titles or norm_title in seen_this_run:
+            continue
+
+        # تطبيق فلتر الرفض الصارم قبل القبول
+        if not is_relevant_news(art["title"]):
+            rejected_count += 1
+            continue
+
+        seen_this_run.add(norm_title)
+        new_general_news.append({
+            "date": art["date"],
+            "source": art["source"],
+            "title": art["title"],
+            "content": (
+                f"تقرير إخباري خارجي تم رصده من منصة {art['source']} "
+                f"يتحدث عن: {art['title']}."
+            ),
+        })
+
+        if len(new_general_news) >= MAX_NEW_ARTICLES_PER_RUN:
+            break
+
+    print(f"🚫 أخبار مرفوضة (ضجيج/بعيدة عن الهدف): {rejected_count}")
+    print(f"✅ أخبار مقبولة (مرتبطة فعلياً بالسهم): {len(new_general_news)}")
+
+    combined_general_news = new_general_news + existing_data["general_news"]
+
+    result = {
+        "general_news": combined_general_news,
+        "social_signals": existing_data["social_signals"],
+    }
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+
+    print(
+        f"🎉 نجاح! أُضيف {len(new_general_news)} خبر جديد. "
+        f"الإجمالي التراكمي الآن: {len(combined_general_news)} خبر في general_news."
+    )
+
 
 if __name__ == "__main__":
     main()
