@@ -1,321 +1,146 @@
-import argparse
-import json
 import os
-import re
-import time
-from datetime import datetime
-
 import requests
 from bs4 import BeautifulSoup
+import google.generativeai as genai
 
+# إعداد مفتاح API لـ Gemini
+GEMINI_KEY = os.getenv("GEMINI_API_KEY")
+if GEMINI_KEY:
+    genai.configure(api_key=GEMINI_KEY)
+else:
+    print("تحذير: لم يتم العثور على مفتاح GEMINI_API_KEY في البيئة!")
+
+# محاولة استيراد مكتبة قراءة الـ PDF
 try:
     import pdfplumber
-    PDF_SUPPORT = True
+    HAS_PDFPLUMBER = True
 except ImportError:
-    PDF_SUPPORT = False
+    print("تحذير: مكتبة pdfplumber غير مثبتة. سيتم تخطي استخراج نصوص الـ PDF.")
+    HAS_PDFPLUMBER = False
 
-BASE_URL = "http://www.isx-iq.net/isxportal/portal"
-HOME_URL = f"{BASE_URL}/homePage.html"
-STORY_LIST_URL = f"{BASE_URL}/storyList.html"
-STORY_DETAILS_URL = f"{BASE_URL}/storyDetails.html"
+# روابط سوق العراق للأوراق المالية المباشرة (AJAX Endpoints)
+BASE_URL = "http://www.isx-iq.net/isxportal/portal/"
+ANNOUNCEMENT_URL = f"{BASE_URL}storyList.html?methodName=getAnnouncementStoryList"
+NEWS_URL = f"{BASE_URL}storyList.html?methodName=getNewsStoryList"
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "ar-IQ,ar;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Referer": HOME_URL,
-}
-
-MAX_LIST_PAGES = 5
-
-# ==============================================================================
-# تصنيف نوع الإفصاح بناءً على كلمات مفتاحية شائعة بعناوين isx-iq.net الفعلية
-# مرتبة بحيث تُفحص الأنماط الأكثر تحديداً أولاً
-# ==============================================================================
-DISCLOSURE_TYPE_PATTERNS = [
-    ("توزيع_ارباح", ["توزيع", "أرباح", "ارباح"]),
-    ("زيادة_راس_المال", ["زيادة راس المال", "زيادة رأس المال", "زياده راس مال"]),
-    ("قوائم_مالية", ["البيانات المالية", "القوائم المالية", "بيانات مالية"]),
-    ("اجتماع_هيئة_عامة", ["اجتماع الهيئة العامة", "إيجماع الهيئة العامة", "الجمعية العمومية"]),
-    ("قرار_رفض_او_عدم_موافقة", ["عدم الموافقة", "رفض"]),
-    ("حركة_تداول_خاصة", ["أمر متقابل", "امر متقابل", "تنفيذ أمر"]),
-    ("تعليق_او_ايقاف_تداول", ["ايقاف التداول", "إيقاف التداول", "تعليق التداول"]),
-]
-
-
-def clean_text(txt: str) -> str:
-    if txt is None:
-        return ""
-    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
-    return re.sub(r"\s+", " ", txt).strip()
-
-
-def classify_disclosure(title: str) -> str:
-    """يصنف نوع الإفصاح بمطابقة كلمات مفتاحية بعنوانه. يرجع 'اخرى' إذا لم يطابق أي نمط."""
-    if not title:
-        return "اخرى"
-    for disclosure_type, keywords in DISCLOSURE_TYPE_PATTERNS:
-        if any(kw in title for kw in keywords):
-            return disclosure_type
-    return "اخرى"
-
-
-def fetch_story_list(story_type: int, max_pages: int = MAX_LIST_PAGES) -> list:
-    """
-    يجلب قائمة الإفصاحات (type=1) أو أخبار السوق (type=2) مباشرة من الروابط المخفية (API).
-    """
-    items = []
-    active_tab = 0 if story_type == 1 else 1
-    method_name = "getAnnouncementStoryList" if story_type == 1 else "getNewsStoryList"
-
-    # استخدام Session للحفاظ على الكوكيز والـ SessionID بين الطلبات
-    session = requests.Session()
-    
-    # 1. زيارة الصفحة الهيكلية أولاً للحصول على جلسة صالحة وكوكيز من السيرفر
-    skeleton_url = f"{STORY_LIST_URL}?activeTab={active_tab}"
+def fetch_stories(url):
+    """جلب الأخبار والإفصاحات من روابط الـ AJAX"""
+    stories = []
     try:
-        session.get(skeleton_url, headers=HEADERS, timeout=15)
-    except Exception as e:
-        print(f"  تحذير: فشل تهيئة الجلسة: {e}")
-
-    for page in range(1, max_pages + 1):
-        # 2. إعداد هيدرز الـ AJAX ليوهم السيرفر بأن الطلب قادم من الصفحة كـ XMLHttpRequest
-        ajax_headers = HEADERS.copy()
-        ajax_headers["X-Requested-With"] = "XMLHttpRequest"
-        ajax_headers["Referer"] = skeleton_url
-
-        params = {
-            "methodName": method_name,
-            "page": page
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
         }
-        try:
-            resp = session.get(STORY_LIST_URL, headers=ajax_headers, params=params, timeout=20)
-            resp.raise_for_status()
-        except Exception as e:
-            print(f"  تحذير: فشل تحميل صفحة {page} (النوع {story_type}): {e}")
-            break
-
-        soup = BeautifulSoup(resp.content, "html.parser")
-        links = soup.find_all("a", href=re.compile(r"storyDetails\.html\?storyId=\d+"))
-
-        page_items = []
+        response = requests.get(url, headers=headers, timeout=15)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, "html.parser")
+        links = soup.find_all("a")
+        
         for link in links:
             href = link.get("href", "")
-            title = clean_text(link.get_text())
-            if not title or not href:
+            title = link.text.strip()
+            if not title:
                 continue
-
-            story_id_match = re.search(r"storyId=(\d+)", href)
-            if not story_id_match:
-                continue
-            story_id = story_id_match.group(1)
-
-            full_url = f"{STORY_DETAILS_URL}?storyId={story_id}&type={story_type}"
-            page_items.append({"story_id": story_id, "title": title, "url": full_url})
-
-        print(f"  صفحة {page} (النوع {story_type}): {len(page_items)} عنصر.")
-        items.extend(page_items)
-        if not page_items:
-            break
-        time.sleep(1.5)
-
-    seen = set()
-    unique_items = []
-    for item in items:
-        if item["story_id"] not in seen:
-            seen.add(item["story_id"])
-            unique_items.append(item)
-    return unique_items
-
-
-def extract_pdf_text(pdf_url: str) -> dict:
-    """
-    يحمّل ملف PDF ويستخرج نصه. يرجع dict فيه النص وحالة الاستخراج،
-    بدل ما يفشل بصمت لو كان الملف صورة ممسوحة أو غير قابل للقراءة.
-    """
-    if not PDF_SUPPORT:
-        return {"text": "", "status": "pdfplumber_not_installed"}
-
-    try:
-        resp = requests.get(pdf_url, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
+            
+            # تحويل الروابط النسبية إلى روابط كاملة
+            if href and not href.startswith("http"):
+                href = BASE_URL + href
+            
+            if "storyDetails" in href or href.endswith(".pdf"):
+                stories.append({
+                    "title": title,
+                    "url": href
+                })
     except Exception as e:
-        return {"text": "", "status": f"download_failed: {e}"}
+        print(f"خطأ أثناء جلب البيانات من {url}: {e}")
+    return stories
 
-    tmp_path = "/tmp/_isx_temp_disclosure.pdf"
+def extract_pdf_text(pdf_url):
+    """تحميل ملف الـ PDF وقراءته سطر بسطر"""
+    if not HAS_PDFPLUMBER:
+        return ""
     try:
-        with open(tmp_path, "wb") as f:
-            f.write(resp.content)
-
-        extracted_pages = []
-        with pdfplumber.open(tmp_path) as pdf:
+        response = requests.get(pdf_url, timeout=15)
+        response.raise_for_status()
+        
+        temp_filename = "temp_disclosure.pdf"
+        with open(temp_filename, "wb") as f:
+            f.write(response.content)
+        
+        text = ""
+        with pdfplumber.open(temp_filename) as pdf:
             for page in pdf.pages:
                 page_text = page.extract_text()
                 if page_text:
-                    extracted_pages.append(page_text)
-
-        full_text = clean_text(" ".join(extracted_pages))
-
-        if not full_text or len(full_text) < 10:
-            # النص فاضي أو قصير جداً - على الأرجح PDF صورة ممسوحة (scanned)
-            return {"text": "", "status": "needs_manual_review_possibly_scanned"}
-
-        return {"text": full_text, "status": "success"}
-
+                    text += page_text + "\n"
+        
+        if os.path.exists(temp_filename):
+            os.remove(temp_filename)
+        return text
     except Exception as e:
-        return {"text": "", "status": f"extraction_failed: {e}"}
-    finally:
-        if os.path.exists(tmp_path):
-            os.remove(tmp_path)
+        print(f"خطأ أثناء قراءة ملف الـ PDF من الرابط {pdf_url}: {e}")
+        return ""
 
-
-def fetch_story_detail(url: str, story_type: int) -> dict:
+def analyze_with_gemini(title, content):
+    """إرسال الخبر لـ Gemini لتحليله وتلخيصه"""
+    if not GEMINI_KEY:
+        return "مفتاح الـ API غير متوفر لإجراء التحليل."
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        prompt = f"""
+        أنت محلل مالي خبير في سوق العراق للأوراق المالية (ISX).
+        قم بتحليل وتلخيص هذا الإفصاح أو الخبر المرفق بلغة عربية مبسطة وواضحة للمستثمرين العراقيين:
+        
+        العنوان: {title}
+        المحتوى التفصيلي:
+        {content}
+        
+        المطلوب منك:
+        1. ملخص سريع ومفهوم للخبر بـ 3 نقاط أساسية كحد أقصى.
+        2. هل الخبر (إيجابي / سلبي / محايد) على حركة السهم؟ مع تعليل مبسط جداً.
+        """
+        response = model.generate_content(prompt)
+        return response.text
     except Exception as e:
-        print(f"    تحذير: فشل فتح {url}: {e}")
-        return {}
-
-    soup = BeautifulSoup(resp.content, "html.parser")
-
-    # استخراج رمز الشركة مباشرة من رابط "شركات ذات صلة" - أدق من أي مطابقة نصية
-    related_symbols = []
-    for link in soup.find_all("a", href=re.compile(r"companyCode=([A-Za-z0-9]+)")):
-        match = re.search(r"companyCode=([A-Za-z0-9]+)", link.get("href", ""))
-        if match:
-            symbol = match.group(1)
-            if symbol not in related_symbols:
-                related_symbols.append(symbol)
-
-    # استخراج تاريخ الإفصاح (صيغة يوم/شهر/سنة)
-    page_text = clean_text(soup.get_text())
-    date_match = re.search(r"(\d{2}/\d{2}/\d{4})", page_text)
-    date_str = date_match.group(1) if date_match else None
-
-    # البحث عن رابط PDF المرفق
-    pdf_link = None
-    pdf_tag = soup.find("a", href=re.compile(r"\.pdf$", re.IGNORECASE))
-    if pdf_tag:
-        pdf_href = pdf_tag.get("href", "")
-        pdf_link = pdf_href if pdf_href.startswith("http") else f"http://www.isx-iq.net{pdf_href}"
-
-    result = {
-        "date": date_str,
-        "related_symbols": related_symbols,
-        "pdf_url": pdf_link,
-        "content": "",
-        "pdf_extraction_status": "no_pdf_attached",
-    }
-
-    if pdf_link:
-        pdf_result = extract_pdf_text(pdf_link)
-        result["content"] = pdf_result["text"]
-        result["pdf_extraction_status"] = pdf_result["status"]
-
-    return result
-
-
-def load_existing(path: str) -> dict:
-    if not os.path.exists(path):
-        return {"official_disclosures": [], "market_news": []}
-    with open(path, "r", encoding="utf-8") as f:
-        try:
-            data = json.load(f)
-        except Exception:
-            return {"official_disclosures": [], "market_news": []}
-    data.setdefault("official_disclosures", [])
-    data.setdefault("market_news", [])
-    return data
-
-
-def save_json(data: dict, path: str):
-    tmp_path = path + ".tmp"
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    os.replace(tmp_path, path)
-
-
-def process_story_type(story_type: int, known_ids: set, label: str) -> list:
-    """يجلب ويعالج كل القصص من نوع معين (إفصاحات أو أخبار سوق)."""
-    print(f"\nجاري فحص: {label}")
-    listing = fetch_story_list(story_type)
-    new_items = [item for item in listing if item["story_id"] not in known_ids]
-    print(f"{label} جديدة مكتشفة: {len(new_items)}")
-
-    records = []
-    for item in new_items:
-        print(f"  [{len(records) + 1}/{len(new_items)}] {item['title'][:60]}...")
-        detail = fetch_story_detail(item["url"], story_type)
-        if not detail:
-            continue
-
-        symbols = detail.get("related_symbols", [])
-        if symbols:
-            print(f"      ↳ شركات مرتبطة: {', '.join(symbols)}")
-
-        pdf_status = detail.get("pdf_extraction_status", "")
-        if pdf_status == "success":
-            print(f"      ↳ تم استخراج نص PDF بنجاح ({len(detail['content'])} حرف)")
-        elif pdf_status == "needs_manual_review_possibly_scanned":
-            print(f"      ⚠️ PDF يحتاج مراجعة يدوية (ربما صورة ممسوحة)")
-        elif pdf_status.startswith("download_failed") or pdf_status.startswith("extraction_failed"):
-            print(f"      ⚠️ مشكلة بمعالجة PDF: {pdf_status}")
-
-        record = {
-            "id": item["story_id"],
-            "title": item["title"],
-            "disclosure_type": classify_disclosure(item["title"]) if story_type == 1 else None,
-            "content": detail.get("content", ""),
-            "source": "سوق العراق للأوراق المالية (isx-iq.net)",
-            "url": item["url"],
-            "pdf_url": detail.get("pdf_url"),
-            "pdf_extraction_status": pdf_status,
-            "date": detail.get("date") or datetime.now().strftime("%d/%m/%Y"),
-            "related_symbols": symbols,
-        }
-        records.append(record)
-        time.sleep(1.5)
-
-    return records
-
+        return f"خطأ أثناء التحليل باستخدام Gemini: {e}"
 
 def main():
-    parser = argparse.ArgumentParser(description="جلب إفصاحات وأخبار سوق العراق للأوراق المالية من isx-iq.net")
-    parser.add_argument("--existing", default="isx_disclosures.json")
-    parser.add_argument("--output", default="isx_disclosures.json")
-    args = parser.parse_args()
-
-    if not PDF_SUPPORT:
-        print("⚠️ تحذير: مكتبة pdfplumber غير مثبتة. لن يتم استخراج نصوص PDF.")
-        print("   ثبّتها بـ: pip install pdfplumber")
-
-    data = load_existing(args.existing)
-    known_ids = {
-        item["id"] for item in data["official_disclosures"] + data["market_news"]
-        if "id" in item
-    }
-
-    new_disclosures = process_story_type(1, known_ids, "الإفصاحات الرسمية")
-    new_market_news = process_story_type(2, known_ids, "أخبار السوق")
-
-    data["official_disclosures"] = new_disclosures + data["official_disclosures"]
-    data["market_news"] = new_market_news + data["market_news"]
-
-    total_added = len(new_disclosures) + len(new_market_news)
-    if total_added == 0:
-        print("\nلا توجد إفصاحات أو أخبار جديدة.")
+    print("جاري جلب آخر تحديثات سوق العراق للأوراق المالية...")
+    
+    announcements = fetch_stories(ANNOUNCEMENT_URL)
+    news = fetch_stories(NEWS_URL)
+    
+    all_items = announcements + news
+    print(f"تم العثور على {len(all_items)} تحديث محتمل.")
+    
+    if not all_items:
+        print("لم يتم العثور على أي بيانات جديدة. تأكد من عمل الموقع الإلكتروني.")
         return
 
-    save_json(data, args.output)
-    print(
-        f"\n✅ تم بنجاح. أُضيف {len(new_disclosures)} إفصاح جديد و"
-        f"{len(new_market_news)} خبر سوق جديد."
-    )
-
+    # سنقوم بتحليل أول 5 أخبار جديدة فقط لتوفير وقت التشغيل وحدود الـ API
+    for i, item in enumerate(all_items[:5]):
+        print(f"\n[{i+1}/{len(all_items[:5])}] جاري معالجة: {item['title']}")
+        
+        content = ""
+        if item['url'].endswith(".pdf"):
+            print(f"جاري تنزيل وقراءة ملف الـ PDF: {item['url']}")
+            content = extract_pdf_text(item['url'])
+        else:
+            try:
+                res = requests.get(item['url'], timeout=15)
+                detail_soup = BeautifulSoup(res.text, "html.parser")
+                content = detail_soup.get_text(separator="\n", strip=True)
+            except Exception as e:
+                print(f"تعذر جلب تفاصيل الرابط: {e}")
+        
+        if not content or content.strip() == "":
+            content = "تعذر استخراج النص التفصيلي تلقائياً. يرجى مراجعة الرابط المباشر."
+            
+        analysis = analyze_with_gemini(item['title'], content)
+        print("=" * 50)
+        print(f"تحليل الخبر: {item['title']}")
+        print(analysis)
+        print("=" * 50)
 
 if __name__ == "__main__":
     main()
