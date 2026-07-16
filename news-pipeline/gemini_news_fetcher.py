@@ -68,17 +68,31 @@ def fetch_story_list(story_type: int, max_pages: int = MAX_LIST_PAGES) -> list:
     يجلب قائمة الإفصاحات (type=1) أو أخبار السوق (type=2) مباشرة من الروابط المخفية (API).
     """
     items = []
-    
-    # تحديد اسم الميثود المناسب بناءً على نوع الخبر لضمان جلب البيانات ديناميكياً
+    active_tab = 0 if story_type == 1 else 1
     method_name = "getAnnouncementStoryList" if story_type == 1 else "getNewsStoryList"
 
+    # استخدام Session للحفاظ على الكوكيز والـ SessionID بين الطلبات
+    session = requests.Session()
+    
+    # 1. زيارة الصفحة الهيكلية أولاً للحصول على جلسة صالحة وكوكيز من السيرفر
+    skeleton_url = f"{STORY_LIST_URL}?activeTab={active_tab}"
+    try:
+        session.get(skeleton_url, headers=HEADERS, timeout=15)
+    except Exception as e:
+        print(f"  تحذير: فشل تهيئة الجلسة: {e}")
+
     for page in range(1, max_pages + 1):
+        # 2. إعداد هيدرز الـ AJAX ليوهم السيرفر بأن الطلب قادم من الصفحة كـ XMLHttpRequest
+        ajax_headers = HEADERS.copy()
+        ajax_headers["X-Requested-With"] = "XMLHttpRequest"
+        ajax_headers["Referer"] = skeleton_url
+
         params = {
             "methodName": method_name,
             "page": page
         }
         try:
-            resp = requests.get(STORY_LIST_URL, headers=HEADERS, params=params, timeout=20)
+            resp = session.get(STORY_LIST_URL, headers=ajax_headers, params=params, timeout=20)
             resp.raise_for_status()
         except Exception as e:
             print(f"  تحذير: فشل تحميل صفحة {page} (النوع {story_type}): {e}")
@@ -106,7 +120,7 @@ def fetch_story_list(story_type: int, max_pages: int = MAX_LIST_PAGES) -> list:
         items.extend(page_items)
         if not page_items:
             break
-        time.sleep(1)
+        time.sleep(1.5)
 
     seen = set()
     unique_items = []
