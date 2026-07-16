@@ -1,6 +1,118 @@
 {
   "official_disclosures": [
     {
+      "id": "17755",
+      "title": "إعلان - تجهيز معدات Back Office",
+      "date": "16/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_7_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17755&type=1"
+    },
+    {
+      "id": "17756",
+      "title": "إعلان - تجهيز معدات Eqlipse",
+      "date": "16/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_8_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17756&type=1"
+    },
+    {
+      "id": "17757",
+      "title": "إيقاف التداول على أسهم الشركات المساهمة المدرجة إعتباراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BASH",
+        "BBAY",
+        "BNAI",
+        "BNOR",
+        "HISH",
+        "HSAD",
+        "IELI",
+        "IMCM",
+        "ITLI",
+        "NGIR",
+        "NHAM",
+        "SIGT",
+        "SILT",
+        "VBAT",
+        "VKHF",
+        "VMES",
+        "VZAF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_38_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17757&type=1"
+    },
+    {
+      "id": "17760",
+      "title": "إنتهاء إجراءات وتعديل عقد تأسيس شركة مصرف الاقليم التجاري للاستثمار والتمويل",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_21_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17760&type=1"
+    },
+    {
+      "id": "17761",
+      "title": "إفصاح - قدمت شركة المصرف الوطني الإسلامي البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_40_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17761&type=1"
+    },
+    {
+      "id": "17762",
+      "title": "إفصاح - قدمت شركة مصرف الاتحاد العراقي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BUOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_42_4.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17762&type=1"
+    },
+    {
+      "id": "17763",
+      "title": "إفصاح - قدمت شركة فندق بابل البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "HBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_42_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17763&type=1"
+    },
+    {
+      "id": "17764",
+      "title": "إفصاح - قدمت شركة الامين للاستثمار المالي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "VAMF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_43_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17764&type=1"
+    },
+    {
+      "id": "17765",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الاقليم التجاري إعبتاراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_44_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17765&type=1"
+    },
+    {
+      "id": "17766",
+      "title": "سيتم إطلاق التداول على أسهم شركة المصرف الوطني الاسلامي إعتباراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_46_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17766&type=1"
+    },
+    {
       "id": "17740",
       "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الطيف الاسلامي في جلسة الاثنين الموافق 2026/7/13",
       "date": "13/07/2026",
@@ -143,5 +255,5 @@
       "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17754&type=1"
     }
   ],
-  "last_known_story_id": 17754
+  "last_known_story_id": 17766
 }
