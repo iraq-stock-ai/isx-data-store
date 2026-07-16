@@ -1,85 +1,113 @@
+import argparse
 import json
 import os
-import sys
+import re
 import time
 from datetime import datetime
 
 import requests
+from bs4 import BeautifulSoup
 
-MODEL_NAME = "gemini-3.1-flash-lite"
-GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
-API_KEY = os.environ.get("GEMINI_DISCLOSURES_API_KEY")
+BASE_URL = "http://www.isx-iq.net/isxportal/portal"
+STORY_DETAILS_URL = f"{BASE_URL}/storyDetails.html"
 
-DISCLOSURES_LIST_URL = "http://www.isx-iq.net/isxportal/portal/storyList.html?activeTab=0"
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "ar-IQ,ar;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": STORY_DETAILS_URL,
+}
+
+# كم رقم storyId نحاول بعد آخر رقم ناجح، قبل ما نستسلم بهذه التشغيلة
+# (يغطي الفجوات الصغيرة بالترقيم، مثل الفجوة اللي لاحظناها بين 17754 و17755)
+MAX_GAP_ATTEMPTS = 15
+
+# سقف أعلى: لا نعالج أكثر من هذا العدد من الإفصاحات الجديدة بتشغيلة واحدة
+MAX_NEW_PER_RUN = 20
 
 
-def call_gemini(prompt_text: str, max_retries: int = 3) -> dict:
-    """يستدعي Gemini API مع أداة googleSearch المدمجة، ويرجع JSON من الرد."""
-    if not API_KEY:
-        print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_DISCLOSURES_API_KEY.")
+def clean_text(txt: str) -> str:
+    if txt is None:
+        return ""
+    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
+    return re.sub(r"\s+", " ", txt).strip()
+
+
+def fetch_story_details(story_id: str) -> dict:
+    """
+    يجلب تفاصيل إفصاح واحد. يرجع None إذا كانت الصفحة فارغة (رقم غير
+    موجود أو فجوة بالترقيم)، أو dict فيه البيانات إذا نجح.
+    """
+    url = f"{STORY_DETAILS_URL}?storyId={story_id}&type=1"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"    تحذير: فشل فتح storyId={story_id}: {e}")
         return None
 
-    headers = {"Content-Type": "application/json"}
-    payload = {
-        "contents": [{"parts": [{"text": prompt_text}]}],
-        "tools": [{"googleSearch": {}}],
-        "generationConfig": {"responseMimeType": "application/json"},
+    soup = BeautifulSoup(resp.content, "html.parser")
+    page_text = clean_text(soup.get_text())
+
+    # علامة صفحة فارغة: تحتوي "This content is not available in english"
+    if "not available in english" in page_text:
+        return None
+
+    # الصيغة الفعلية بالصفحة: التاريخ ثم الوقت، مثال "15/07/2026 10:40"
+    date_match = re.search(r"(\d{2}/\d{2}/\d{4})\s+(\d{2}:\d{2})", page_text)
+    if not date_match:
+        # لا يوجد تاريخ بهذه الصيغة = على الأغلب صفحة فارغة/فجوة بالترقيم
+        return None
+
+    date_str = date_match.group(1)
+
+    # العنوان الفعلي يبدأ مباشرة بعد "المؤشرات المالية" (آخر عنصر بالقائمة
+    # الجانبية الثابتة الموجودة بكل صفحات الموقع)، وينتهي عند التاريخ
+    title = f"إفصاح رقم {story_id}"
+    marker = "المؤشرات المالية"
+    if marker in page_text:
+        after_marker = page_text.split(marker, 1)[1]
+        title_match = re.search(
+            r"^\s*([^\n]{10,300}?)\s+\d{2}/\d{2}/\d{4}\s+\d{2}:\d{2}", after_marker
+        )
+        if title_match:
+            title = clean_text(title_match.group(1))
+
+    related_symbols = []
+    for link in soup.find_all("a", href=re.compile(r"companyCode=([A-Za-z0-9]+)")):
+        match = re.search(r"companyCode=([A-Za-z0-9]+)", link.get("href", ""))
+        if match and match.group(1) not in related_symbols:
+            related_symbols.append(match.group(1))
+
+    pdf_link = None
+    pdf_tag = soup.find("a", href=re.compile(r"\.pdf$", re.IGNORECASE))
+    if pdf_tag:
+        pdf_href = pdf_tag.get("href", "")
+        pdf_link = pdf_href if pdf_href.startswith("http") else f"http://www.isx-iq.net{pdf_href}"
+
+    return {
+        "id": story_id,
+        "title": title,
+        "date": date_str,
+        "related_symbols": related_symbols,
+        "pdf_url": pdf_link,
+        "url": url,
     }
-
-    delay = 5
-    for attempt in range(1, max_retries + 1):
-        try:
-            print(f"🔄 إرسال لـ Gemini (مع أداة البحث)... محاولة {attempt}/{max_retries}")
-            response = requests.post(
-                f"{GEMINI_API_URL}?key={API_KEY}", headers=headers, json=payload, timeout=60
-            )
-
-            if response.status_code == 200:
-                res_json = response.json()
-                candidate = res_json.get("candidates", [{}])[0]
-                content = candidate.get("content", {})
-                parts = content.get("parts", [])
-                ai_text = "".join(p.get("text", "") for p in parts)
-
-                if not ai_text.strip():
-                    print("⚠️ رد Gemini فارغ تماماً (لم يستطع استخراج أي محتوى).")
-                    print(f"   الرد الخام الكامل للتشخيص: {json.dumps(res_json, ensure_ascii=False)[:500]}")
-                    return None
-
-                ai_text = ai_text.strip().removeprefix("```json").removesuffix("```").strip()
-                return json.loads(ai_text)
-
-            elif response.status_code == 429:
-                print(f"⏳ (429) تهدئة {delay} ثوانٍ...")
-                time.sleep(delay)
-                delay *= 2
-                continue
-            else:
-                print(f"❌ فشل سيرفر Gemini: كود {response.status_code}")
-                print(f"   تفاصيل: {response.text[:500]}")
-                return None
-
-        except json.JSONDecodeError as e:
-            print(f"❌ رد Gemini لم يكن JSON صالحاً: {e}")
-            print(f"   النص المستلم: {ai_text[:500] if 'ai_text' in dir() else '(غير متاح)'}")
-            return None
-        except Exception as e:
-            print(f"❌ خطأ اتصال/تحليل: {e}")
-            time.sleep(delay)
-            delay *= 2
-
-    return None
 
 
 def load_existing(path: str) -> dict:
     if not os.path.exists(path):
-        return {"official_disclosures": []}
+        return {"official_disclosures": [], "last_known_story_id": None}
     with open(path, "r", encoding="utf-8") as f:
         try:
             data = json.load(f)
         except Exception:
-            return {"official_disclosures": []}
+            return {"official_disclosures": [], "last_known_story_id": None}
     data.setdefault("official_disclosures", [])
+    data.setdefault("last_known_story_id", None)
     return data
 
 
@@ -91,76 +119,64 @@ def save_json(data: dict, path: str):
 
 
 def main():
-    output_path = "isx_disclosures.json"
-    data = load_existing(output_path)
-    known_ids = [item.get("id") for item in data["official_disclosures"] if "id" in item]
-    known_ids_text = ", ".join(known_ids) if known_ids else "لا يوجد (هذه أول تشغيلة)"
-
-    prompt_text = (
-        "استخدم أداة البحث المتوفرة لديك لزيارة هذا الرابط وقراءة محتواه بالكامل:\n"
-        f"{DISCLOSURES_LIST_URL}\n\n"
-        "هذه صفحة \"اعلانات\" (إفصاحات رسمية) بسوق العراق للأوراق المالية. "
-        "تحتوي قائمة بعناوين إفصاحات، كل عنصر له رقم معرّف (storyId) ضمن رابطه.\n\n"
-        f"المعرّفات (storyId) التي سبق معالجتها ويجب تجاهلها: {known_ids_text}\n\n"
-        "مهمتك:\n"
-        "1. حدد أقدم إفصاح بالقائمة لم يُعالج سابقاً (رقم معرّفه غير موجود بالقائمة أعلاه).\n"
-        "2. افتح تفاصيل هذا الإفصاح تحديداً واقرأ محتواه الكامل.\n"
-        "3. استخرج المعلومات المالية الجوهرية إن وُجدت صراحة بالنص فقط، دون اختلاق أي رقم.\n\n"
-        "إذا لم تجد أي إفصاح جديد بالصفحة، أو تعذّر عليك الوصول لمحتوى الصفحة "
-        "فعلياً، أجب بـ: {\"found\": false, \"reason\": \"وصف موجز لسبب الفشل\"}\n\n"
-        "إذا نجحت، أجب حصراً بصيغة JSON نقية 100% وبدون أي علامات markdown:\n"
-        "{\n"
-        '  "found": true,\n'
-        '  "story_id": "المعرّف الرقمي المستخرج من رابط الإفصاح",\n'
-        '  "title": "العنوان الكامل كما ورد",\n'
-        '  "url": "الرابط الكامل لصفحة تفاصيل هذا الإفصاح",\n'
-        '  "disclosure_type": "توزيع_ارباح | زيادة_راس_المال | قوائم_مالية | '
-        'اجتماع_هيئة_عامة | قرار_رفض_او_عدم_موافقة | حركة_تداول_خاصة | اخرى",\n'
-        '  "company_name": "اسم الشركة أو null",\n'
-        '  "raas_al_mal": "رقم رأس المال أو null",\n'
-        '  "net_profit": "صافي الربح أو null",\n'
-        '  "total_debts": "إجمالي الديون أو null",\n'
-        '  "dividend_per_share": "قيمة التوزيع للسهم أو null",\n'
-        '  "dividend_percentage": "نسبة التوزيع أو null",\n'
-        '  "dividend_date": "تاريخ التوزيع إن ذُكر أو null",\n'
-        '  "date": "تاريخ الإفصاح بصيغة يوم/شهر/سنة",\n'
-        '  "summary": "ملخص من جملتين إلى ثلاث بالعربية الفصحى"\n'
-        "}"
+    parser = argparse.ArgumentParser(description="جلب إفصاحات isx-iq.net بتجربة أرقام storyId تصاعدياً")
+    parser.add_argument("--existing", default="isx_disclosures.json")
+    parser.add_argument("--output", default="isx_disclosures.json")
+    parser.add_argument(
+        "--start-id",
+        type=int,
+        default=None,
+        help="أول رقم storyId نبدأ منه إذا لم يوجد last_known_story_id بالملف (أول تشغيلة فقط)",
     )
+    args = parser.parse_args()
 
-    result = call_gemini(prompt_text)
+    data = load_existing(args.existing)
+    last_known_id = data.get("last_known_story_id")
 
-    if not result:
-        print("❌ فشل الاتصال بـ Gemini أو معالجة الرد. سيُعاد المحاولة بالتشغيلة القادمة.")
-        sys.exit(1)
+    if last_known_id is None:
+        if args.start_id is None:
+            print("❌ خطأ: لا يوجد last_known_story_id بالملف، ولم تحدد --start-id.")
+            print("   مرر --start-id برقم storyId معروف حديث (مثال: 17754) لأول تشغيلة.")
+            return
+        current_id = args.start_id
+        print(f"أول تشغيلة، سنبدأ من storyId={current_id}")
+    else:
+        current_id = int(last_known_id) + 1
+        print(f"آخر رقم مُعالج سابقاً: {last_known_id}. سنبدأ من storyId={current_id}")
 
-    if not result.get("found"):
-        reason = result.get("reason", "غير محدد")
-        print(f"ℹ️ Gemini لم يجد إفصاحاً جديداً أو تعذّر الوصول. السبب المُبلّغ: {reason}")
+    new_records = []
+    consecutive_failures = 0
+    highest_successful_id = int(last_known_id) if last_known_id else None
+
+    while len(new_records) < MAX_NEW_PER_RUN and consecutive_failures < MAX_GAP_ATTEMPTS:
+        print(f"  تجربة storyId={current_id}...")
+        detail = fetch_story_details(str(current_id))
+
+        if detail is None:
+            consecutive_failures += 1
+            print(f"    (فارغ - فجوة أو نهاية القائمة، محاولة {consecutive_failures}/{MAX_GAP_ATTEMPTS})")
+        else:
+            consecutive_failures = 0
+            highest_successful_id = current_id
+            print(f"    ✅ إفصاح موجود: {detail['title'][:60]}")
+            new_records.append(detail)
+
+        current_id += 1
+        time.sleep(1)
+
+    if not new_records:
+        print("\n✅ لا يوجد إفصاح جديد بعد آخر رقم معروف.")
         return
 
-    record = {
-        "id": result.get("story_id", "unknown"),
-        "title": result.get("title", ""),
-        "source": "سوق العراق للأوراق المالية (isx-iq.net) - ملخص Gemini المباشر",
-        "url": result.get("url", DISCLOSURES_LIST_URL),
-        "date": result.get("date") or datetime.now().strftime("%d/%m/%Y"),
-        "disclosure_type": result.get("disclosure_type"),
-        "company_name": result.get("company_name"),
-        "raas_al_mal": result.get("raas_al_mal"),
-        "net_profit": result.get("net_profit"),
-        "total_debts": result.get("total_debts"),
-        "dividend_per_share": result.get("dividend_per_share"),
-        "dividend_percentage": result.get("dividend_percentage"),
-        "dividend_date": result.get("dividend_date"),
-        "summary": result.get("summary"),
-    }
+    data["official_disclosures"] = new_records + data["official_disclosures"]
+    data["last_known_story_id"] = highest_successful_id
 
-    data["official_disclosures"].insert(0, record)
-    save_json(data, output_path)
-
-    print(f"\n✅ تم تلخيص وحفظ الإفصاح بنجاح: {record['title'][:60]}")
-    print(f"   الإجمالي الآن: {len(data['official_disclosures'])}")
+    save_json(data, args.output)
+    print(
+        f"\n🎉 نجاح! أُضيف {len(new_records)} إفصاح جديد. "
+        f"آخر رقم معروف الآن: {highest_successful_id}. "
+        f"الإجمالي: {len(data['official_disclosures'])}"
+    )
 
 
 if __name__ == "__main__":
