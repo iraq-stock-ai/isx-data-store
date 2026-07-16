@@ -2,66 +2,149 @@ name: تحديث بيانات ISX (أسعار + إفصاحات + أخبار)
 
 on:
   schedule:
-    - cron: '0 11 * * 0-4'
-    - cron: '0 13 * * 0-4'
-    - cron: '0 17 * * 0-4'
-    - cron: '0 6 * * 0-4'
-    - cron: '5 11 * * 0-4'
-    - cron: '45 11 * * 0-4'
-    - cron: '25 12 * * 0-4'
-    - cron: '5 13 * * 0-4'
-    - cron: '45 13 * * 0-4'
-    - cron: '25 14 * * 0-4'
-    - cron: '5 15 * * 0-4'
-    - cron: '45 15 * * 0-4'
-    - cron: '25 16 * * 0-4'
-    - cron: '5 17 * * 0-4'
-    - cron: '45 17 * * 0-4'
+    # ===== جدولة الأسعار: 4 محاولات، الأحد-الخميس فقط (أيام تداول ISX) =====
+    - cron: '0 11 * * 0-4'   # 2:00 عصراً بغداد (UTC+3) — بعد الإغلاق بساعة
+    - cron: '0 13 * * 0-4'   # 4:00 عصراً بغداد — احتياط أول
+    - cron: '0 17 * * 0-4'   # 8:00 مساءً بغداد — احتياط ثانٍ
+    - cron: '0 6 * * 0-4'    # 9:00 صباحاً بغداد اليوم التالي — يلتقط تقارير متأخرة
+
+    # ===== جدولة الإفصاحات وأخبار السوق عبر Gemini: 11 مرة باليوم، كل 40 دقيقة =====
+    # محصورة بفترة 2 ظهراً - 8:40 مساءً بتوقيت بغداد فقط (بعد إغلاق جلسة
+    # التداول وحتى نهاية اليوم)، وليس على مدار 24 ساعة. بغداد UTC+3.
+    # 11 تشغيلة تكفي لتغطية أقصى عدد إفصاحات/أخبار ملحوظ فعلياً (~9 باليوم)
+    # مع هامش أمان. كل تشغيلة تعالج عنصراً واحداً فقط (إفصاح واحد + خبر سوق
+    # واحد)، وتخرج فوراً بدون استدعاء Gemini إذا لم يوجد جديد.
+    - cron: '5 11 * * 0-4'    # 2:05 عصراً بغداد
+    - cron: '45 11 * * 0-4'   # 2:45 عصراً بغداد
+    - cron: '25 12 * * 0-4'   # 3:25 عصراً بغداد
+    - cron: '5 13 * * 0-4'    # 4:05 عصراً بغداد
+    - cron: '45 13 * * 0-4'   # 4:45 عصراً بغداد
+    - cron: '25 14 * * 0-4'   # 5:25 عصراً بغداد
+    - cron: '5 15 * * 0-4'    # 6:05 مساءً بغداد
+    - cron: '45 15 * * 0-4'   # 6:45 مساءً بغداد
+    - cron: '25 16 * * 0-4'   # 7:25 مساءً بغداد
+    - cron: '5 17 * * 0-4'    # 8:05 مساءً بغداد
+    - cron: '45 17 * * 0-4'   # 8:45 مساءً بغداد
+
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 jobs:
-  update-prices:
+  update-prices-and-legacy-disclosures:
+    # هذه الوظيفة تُشغّل فقط بجدولة الأسعار الأربع (لا تتكرر كل نص ساعة)
+    if: |
+      github.event.schedule == '0 11 * * 0-4' ||
+      github.event.schedule == '0 13 * * 0-4' ||
+      github.event.schedule == '0 17 * * 0-4' ||
+      github.event.schedule == '0 6 * * 0-4' ||
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 openpyxl lxml pdfplumber
+        run: pip install requests beautifulsoup4 openpyxl lxml
+
       - name: تشغيل سكريبت الأسعار
         run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
-      - name: Commit ورفع الأسعار
+
+      # سكربت الأخبار الخارجية (Google News RSS مع فلترة صارمة) - يبقى مستقلاً
+      # كمصدر تكميلي للتغطية الإعلامية الخارجية (غير موجودة بموقع isx-iq.net نفسه)
+      - name: تشغيل سكريبت الأخبار الخارجية
+        if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
+        run: python news-pipeline/gemini_news_fetcher.py
+
+      - name: فحص وجود تغييرات فعلية
+        id: check_changes
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit ورفع تحديثات الأسعار والأخبار الخارجية
+        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
-          git add isx_history_all.json
-          git commit -m "تحديث الأسعار - $(date -u +'%Y-%m-%d')" || echo "No changes"
+          git add isx_history_all.json isx_news.json
+          git commit -m "تحديث تلقائي (أسعار + أخبار خارجية) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase
           git push
 
-  process-ai-news:
+      - name: تنبيه عند الفشل
+        if: failure()
+        run: |
+          echo "❌ حدث خطأ في إحدى خطوات المعالجة، يرجى مراجعة السجل أعلاه."
+
+  process-single-disclosure-and-news-via-gemini:
+    # هذه الوظيفة تُشغّل فقط بجدولة Gemini الـ 11 (2:05 عصراً - 8:45 مساءً بغداد)،
+    # لمعالجة عنصر واحد بكل مرة
+    if: |
+      github.event.schedule == '5 11 * * 0-4' ||
+      github.event.schedule == '45 11 * * 0-4' ||
+      github.event.schedule == '25 12 * * 0-4' ||
+      github.event.schedule == '5 13 * * 0-4' ||
+      github.event.schedule == '45 13 * * 0-4' ||
+      github.event.schedule == '25 14 * * 0-4' ||
+      github.event.schedule == '5 15 * * 0-4' ||
+      github.event.schedule == '45 15 * * 0-4' ||
+      github.event.schedule == '25 16 * * 0-4' ||
+      github.event.schedule == '5 17 * * 0-4' ||
+      github.event.schedule == '45 17 * * 0-4' ||
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 lxml pdfplumber
-      - name: تشغيل سكريبت الذكاء الاصطناعي
+        run: pip install requests beautifulsoup4 lxml
+
+      # يعالج إفصاح رسمي واحد فقط (إن وُجد)، ثم يخرج
+      - name: تلخيص إفصاح واحد جديد عبر Gemini
         env:
           GEMINI_DISCLOSURES_API_KEY: ${{ secrets.GEMINI_DISCLOSURES_API_KEY }}
+        run: python news-pipeline/gemini_disclosures_summarizer.py --existing isx_disclosures.json --output isx_disclosures.json
+
+      # يعالج خبر سوق واحد فقط (إن وُجد)، ثم يخرج
+      - name: تلخيص خبر سوق واحد جديد عبر Gemini
+        env:
           GEMINI_MARKET_NEWS_API_KEY: ${{ secrets.GEMINI_MARKET_NEWS_API_KEY }}
+        run: python news-pipeline/gemini_market_news_summarizer.py --existing isx_market_news.json --output isx_market_news.json
+
+      - name: فحص وجود تغييرات فعلية
+        id: check_changes
         run: |
-          python news-pipeline/gemini_disclosures_summarizer.py --existing isx_disclosures.json --output isx_disclosures.json
-          python news-pipeline/gemini_market_news_summarizer.py --existing isx_market_news.json --output isx_market_news.json
-      - name: Commit ورفع البيانات
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit ورفع تحديثات الإفصاحات وأخبار السوق
+        if: steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
           git add isx_disclosures.json isx_market_news.json
-          git commit -m "تحديث AI - $(date -u +'%Y-%m-%d')" || echo "No changes"
+          git commit -m "تحديث تدريجي (إفصاحات/أخبار سوق عبر Gemini) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase
           git push
+
+      - name: تنبيه عند الفشل
+        if: failure()
+        run: |
+          echo "❌ حدث خطأ في معالجة الإفصاح أو الخبر، سيُعاد المحاولة بالتشغيلة القادمة."
