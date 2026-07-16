@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "id": "17743",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الوئام للاستثمار المالي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "13/07/2026",
+      "related_symbols": [
+        "VWIF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_17_53.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17743&type=1",
+      "pdf_extraction_status": "empty_or_scanned"
+    },
+    {
       "id": "17742",
       "type": "إفصاح",
       "title": "افصاح- قدمت شركة بغداد العراق للنقل العام البيانات المالية الفصلية للفصل الثاني لعام 2026",
@@ -55,5 +67,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17742
+  "last_known_story_id": 17743
 }
