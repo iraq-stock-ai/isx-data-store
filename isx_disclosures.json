@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17741",
+      "type": "إفصاح",
+      "title": "اطلاق التداول على اسهم شركة مصرف كوردستان الدولي الاسلامي في جلسة الثلاثاء 2026/7/14",
+      "date": "13/07/2026",
+      "related_symbols": [
+        "BKUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_11_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17741&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف كوردستان الدولي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة مصرف كوردستان الدولي الإسلامي. تم تحديد موعد بدء التداول في جلسة يوم الثلاثاء الموافق 2026/7/14.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17740",
       "type": "إفصاح",
       "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الطيف الاسلامي في جلسة الاثنين الموافق 2026/7/13",
@@ -22,5 +43,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17740
+  "last_known_story_id": 17741
 }
