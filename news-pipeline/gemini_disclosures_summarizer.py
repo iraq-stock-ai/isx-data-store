@@ -8,7 +8,7 @@ import requests
 
 MODEL_NAME = "gemini-3.1-flash-lite"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
-API_KEY = os.environ.get("GEMINI_MARKET_NEWS_API_KEY")
+API_KEY = os.environ.get("GEMINI_DISCLOSURES_API_KEY")
 
 DISCLOSURES_LIST_URL = "http://www.isx-iq.net/isxportal/portal/storyList.html?activeTab=0"
 
@@ -16,7 +16,7 @@ DISCLOSURES_LIST_URL = "http://www.isx-iq.net/isxportal/portal/storyList.html?ac
 def call_gemini(prompt_text: str, max_retries: int = 3) -> dict:
     """يستدعي Gemini API مع أداة googleSearch المدمجة، ويرجع JSON من الرد."""
     if not API_KEY:
-        print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_MARKET_NEWS_API_KEY.")
+        print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_DISCLOSURES_API_KEY.")
         return None
 
     headers = {"Content-Type": "application/json"}
