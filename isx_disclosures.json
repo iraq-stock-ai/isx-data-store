@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "id": "17742",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة بغداد العراق للنقل العام البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "13/07/2026",
+      "related_symbols": [
+        "SBPT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_15_56.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17742&type=1",
+      "pdf_extraction_status": "empty_or_scanned"
+    },
+    {
       "id": "17741",
       "type": "إفصاح",
       "title": "اطلاق التداول على اسهم شركة مصرف كوردستان الدولي الاسلامي في جلسة الثلاثاء 2026/7/14",
@@ -43,5 +55,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17741
+  "last_known_story_id": 17742
 }
