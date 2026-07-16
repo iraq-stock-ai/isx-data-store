@@ -1,162 +1,300 @@
-import os
-import sys
+import argparse
 import json
-import urllib.parse
-import requests
-from bs4 import BeautifulSoup
+import os
+import re
+import time
 from datetime import datetime
 
-# مهم جداً: Google News يحظر الطلبات بدون User-Agent يشبه متصفح حقيقي (403)
+import requests
+from bs4 import BeautifulSoup
+
+try:
+    import pdfplumber
+    PDF_SUPPORT = True
+except ImportError:
+    PDF_SUPPORT = False
+
+BASE_URL = "http://www.isx-iq.net/isxportal/portal"
+HOME_URL = f"{BASE_URL}/homePage.html"
+STORY_LIST_URL = f"{BASE_URL}/storyList.html"
+STORY_DETAILS_URL = f"{BASE_URL}/storyDetails.html"
+
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "ar-IQ,ar;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": HOME_URL,
 }
 
-OUTPUT_FILE = "isx_news.json"
+MAX_LIST_PAGES = 5
 
-# كلمات مفتاحية موسّعة: مصطلحات سوقية عامة + أسماء شركات مدرجة معروفة
-KEYWORDS = [
-    "سوق العراق للأوراق المالية",
-    "أسهم العراق",
-    "بورصة بغداد",
-    "مؤشر ISX60",
-    "مصرف بغداد اسهم",
-    "مصرف المنصور اسهم",
-    "آسيا سيل",
-    "الشرق الاوسط للاستثمار المالي",
-    "بورصة العراق تداول",
-]
-
-# حد أقصى للأخبار الجديدة بكل تشغيلة (بعد التصفية)
-MAX_NEW_ARTICLES_PER_RUN = 30
-
-TRUSTED_SOURCES = [
-    "رويترز", "reuters", "cnbc", "الجزيرة", "العربية",
-    "مستقل", "حكومي", "الوكالة", "واع", "shafaq", "ina",
+# ==============================================================================
+# تصنيف نوع الإفصاح بناءً على كلمات مفتاحية شائعة بعناوين isx-iq.net الفعلية
+# مرتبة بحيث تُفحص الأنماط الأكثر تحديداً أولاً
+# ==============================================================================
+DISCLOSURE_TYPE_PATTERNS = [
+    ("توزيع_ارباح", ["توزيع", "أرباح", "ارباح"]),
+    ("زيادة_راس_المال", ["زيادة راس المال", "زيادة رأس المال", "زياده راس مال"]),
+    ("قوائم_مالية", ["البيانات المالية", "القوائم المالية", "بيانات مالية"]),
+    ("اجتماع_هيئة_عامة", ["اجتماع الهيئة العامة", "إجتماع الهيئة العامة", "الجمعية العمومية"]),
+    ("قرار_رفض_او_عدم_موافقة", ["عدم الموافقة", "رفض"]),
+    ("حركة_تداول_خاصة", ["أمر متقابل", "امر متقابل", "تنفيذ أمر"]),
+    ("تعليق_او_ايقاف_تداول", ["ايقاف التداول", "إيقاف التداول", "تعليق التداول"]),
 ]
 
 
-def normalize_title(title: str) -> str:
-    """توحيد شكل العنوان لتسهيل كشف التكرار (إزالة مسافات زائدة واسم المصدر اللاحق)"""
-    if not title:
+def clean_text(txt: str) -> str:
+    if txt is None:
         return ""
-    # Google News يضيف غالباً "- اسم المصدر" بآخر العنوان
-    cleaned = title.split(" - ")[0].strip()
-    return " ".join(cleaned.split()).lower()
+    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
+    return re.sub(r"\s+", " ", txt).strip()
 
 
-def fetch_raw_articles():
-    print("🔄 جاري تشمشم الويب عبر رادار البحث الحُر (Google News)...")
-    all_articles = []
-    seen_urls = set()
+def classify_disclosure(title: str) -> str:
+    """يصنف نوع الإفصاح بمطابقة كلمات مفتاحية بعنوانه. يرجع 'اخرى' إذا لم يطابق أي نمط."""
+    if not title:
+        return "اخرى"
+    for disclosure_type, keywords in DISCLOSURE_TYPE_PATTERNS:
+        if any(kw in title for kw in keywords):
+            return disclosure_type
+    return "اخرى"
 
-    for kw in KEYWORDS:
-        encoded_kw = urllib.parse.quote(kw)
-        rss_url = f"https://news.google.com/rss/search?q={encoded_kw}&hl=ar&gl=IQ&ceid=IQ:ar"
 
+def fetch_story_list(story_type: int, max_pages: int = MAX_LIST_PAGES) -> list:
+    """
+    يجلب قائمة الإفصاحات (type=1) أو أخبار السوق (type=2) من صفحة القائمة.
+    """
+    items = []
+    active_tab = 0 if story_type == 1 else 1
+
+    for page in range(1, max_pages + 1):
+        params = {"activeTab": active_tab, "page": page}
         try:
-            resp = requests.get(rss_url, headers=HEADERS, timeout=15)
-            if resp.status_code != 200:
-                print(f"⚠️ فشل الطلب لـ ({kw}): كود {resp.status_code}")
+            resp = requests.get(STORY_LIST_URL, headers=HEADERS, params=params, timeout=20)
+            resp.raise_for_status()
+        except Exception as e:
+            print(f"  تحذير: فشل تحميل صفحة {page} (النوع {story_type}): {e}")
+            break
+
+        soup = BeautifulSoup(resp.content, "html.parser")
+        links = soup.find_all("a", href=re.compile(r"storyDetails\.html\?storyId=\d+"))
+
+        page_items = []
+        for link in links:
+            href = link.get("href", "")
+            title = clean_text(link.get_text())
+            if not title or not href:
                 continue
 
-            soup = BeautifulSoup(resp.content, "xml")
-            items = soup.find_all("item")
+            story_id_match = re.search(r"storyId=(\d+)", href)
+            if not story_id_match:
+                continue
+            story_id = story_id_match.group(1)
 
-            for item in items:
-                title = item.title.text if item.title else ""
-                link = item.link.text if item.link else ""
-                pub_date = item.pubDate.text if item.pubDate else ""
-                source = item.source.text if item.source else "مصدر عالمي"
+            full_url = f"{STORY_DETAILS_URL}?storyId={story_id}&type={story_type}"
+            page_items.append({"story_id": story_id, "title": title, "url": full_url})
 
-                try:
-                    dt = datetime.strptime(pub_date, "%a, %d %b %Y %H:%M:%S %Z")
-                    date_str = dt.strftime("%Y-%m-%d")
-                except Exception:
-                    date_str = datetime.now().strftime("%Y-%m-%d")
+        print(f"  صفحة {page} (النوع {story_type}): {len(page_items)} عنصر.")
+        items.extend(page_items)
+        if not page_items:
+            break
+        time.sleep(1)
 
-                if link in seen_urls:
-                    continue
-                seen_urls.add(link)
-
-                all_articles.append({
-                    "title": title,
-                    "url": link,
-                    "date": date_str,
-                    "source": source,
-                })
-
-        except Exception as e:
-            print(f"⚠️ تحذير أثناء البحث عن ({kw}): {e}")
-
-    all_articles.sort(key=lambda x: x["date"], reverse=True)
-    return all_articles
+    seen = set()
+    unique_items = []
+    for item in items:
+        if item["story_id"] not in seen:
+            seen.add(item["story_id"])
+            unique_items.append(item)
+    return unique_items
 
 
-def load_existing_data():
-    """تحميل الملف الحالي إن وجد، لدمج البيانات الجديدة معه"""
-    if os.path.exists(OUTPUT_FILE):
+def extract_pdf_text(pdf_url: str) -> dict:
+    """
+    يحمّل ملف PDF ويستخرج نصه. يرجع dict فيه النص وحالة الاستخراج،
+    بدل ما يفشل بصمت لو كان الملف صورة ممسوحة أو غير قابل للقراءة.
+    """
+    if not PDF_SUPPORT:
+        return {"text": "", "status": "pdfplumber_not_installed"}
+
+    try:
+        resp = requests.get(pdf_url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+    except Exception as e:
+        return {"text": "", "status": f"download_failed: {e}"}
+
+    tmp_path = "/tmp/_isx_temp_disclosure.pdf"
+    try:
+        with open(tmp_path, "wb") as f:
+            f.write(resp.content)
+
+        extracted_pages = []
+        with pdfplumber.open(tmp_path) as pdf:
+            for page in pdf.pages:
+                page_text = page.extract_text()
+                if page_text:
+                    extracted_pages.append(page_text)
+
+        full_text = clean_text(" ".join(extracted_pages))
+
+        if not full_text or len(full_text) < 10:
+            # النص فاضي أو قصير جداً - على الأرجح PDF صورة ممسوحة (scanned)
+            return {"text": "", "status": "needs_manual_review_possibly_scanned"}
+
+        return {"text": full_text, "status": "success"}
+
+    except Exception as e:
+        return {"text": "", "status": f"extraction_failed: {e}"}
+    finally:
+        if os.path.exists(tmp_path):
+            os.remove(tmp_path)
+
+
+def fetch_story_detail(url: str, story_type: int) -> dict:
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"    تحذير: فشل فتح {url}: {e}")
+        return {}
+
+    soup = BeautifulSoup(resp.content, "html.parser")
+
+    # استخراج رمز الشركة مباشرة من رابط "شركات ذات صلة" - أدق من أي مطابقة نصية
+    related_symbols = []
+    for link in soup.find_all("a", href=re.compile(r"companyCode=([A-Za-z0-9]+)")):
+        match = re.search(r"companyCode=([A-Za-z0-9]+)", link.get("href", ""))
+        if match:
+            symbol = match.group(1)
+            if symbol not in related_symbols:
+                related_symbols.append(symbol)
+
+    # استخراج تاريخ الإفصاح (صيغة يوم/شهر/سنة)
+    page_text = clean_text(soup.get_text())
+    date_match = re.search(r"(\d{2}/\d{2}/\d{4})", page_text)
+    date_str = date_match.group(1) if date_match else None
+
+    # البحث عن رابط PDF المرفق
+    pdf_link = None
+    pdf_tag = soup.find("a", href=re.compile(r"\.pdf$", re.IGNORECASE))
+    if pdf_tag:
+        pdf_href = pdf_tag.get("href", "")
+        pdf_link = pdf_href if pdf_href.startswith("http") else f"http://www.isx-iq.net{pdf_href}"
+
+    result = {
+        "date": date_str,
+        "related_symbols": related_symbols,
+        "pdf_url": pdf_link,
+        "content": "",
+        "pdf_extraction_status": "no_pdf_attached",
+    }
+
+    if pdf_link:
+        pdf_result = extract_pdf_text(pdf_link)
+        result["content"] = pdf_result["text"]
+        result["pdf_extraction_status"] = pdf_result["status"]
+
+    return result
+
+
+def load_existing(path: str) -> dict:
+    if not os.path.exists(path):
+        return {"official_disclosures": [], "market_news": []}
+    with open(path, "r", encoding="utf-8") as f:
         try:
-            with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
-                data = json.load(f)
-                data.setdefault("general_news", [])
-                data.setdefault("social_signals", [])
-                return data
-        except Exception as e:
-            print(f"⚠️ تعذّر قراءة الملف القديم ({e})، سيتم البدء بملف جديد.")
-    return {"general_news": [], "social_signals": []}
+            data = json.load(f)
+        except Exception:
+            return {"official_disclosures": [], "market_news": []}
+    data.setdefault("official_disclosures", [])
+    data.setdefault("market_news", [])
+    return data
+
+
+def save_json(data: dict, path: str):
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, path)
+
+
+def process_story_type(story_type: int, known_ids: set, label: str) -> list:
+    """يجلب ويعالج كل القصص من نوع معين (إفصاحات أو أخبار سوق)."""
+    print(f"\nجاري فحص: {label}")
+    listing = fetch_story_list(story_type)
+    new_items = [item for item in listing if item["story_id"] not in known_ids]
+    print(f"{label} جديدة مكتشفة: {len(new_items)}")
+
+    records = []
+    for item in new_items:
+        print(f"  [{len(records) + 1}/{len(new_items)}] {item['title'][:60]}...")
+        detail = fetch_story_detail(item["url"], story_type)
+        if not detail:
+            continue
+
+        symbols = detail.get("related_symbols", [])
+        if symbols:
+            print(f"      ↳ شركات مرتبطة: {', '.join(symbols)}")
+
+        pdf_status = detail.get("pdf_extraction_status", "")
+        if pdf_status == "success":
+            print(f"      ↳ تم استخراج نص PDF بنجاح ({len(detail['content'])} حرف)")
+        elif pdf_status == "needs_manual_review_possibly_scanned":
+            print(f"      ⚠️ PDF يحتاج مراجعة يدوية (ربما صورة ممسوحة)")
+        elif pdf_status.startswith("download_failed") or pdf_status.startswith("extraction_failed"):
+            print(f"      ⚠️ مشكلة بمعالجة PDF: {pdf_status}")
+
+        record = {
+            "id": item["story_id"],
+            "title": item["title"],
+            "disclosure_type": classify_disclosure(item["title"]) if story_type == 1 else None,
+            "content": detail.get("content", ""),
+            "source": "سوق العراق للأوراق المالية (isx-iq.net)",
+            "url": item["url"],
+            "pdf_url": detail.get("pdf_url"),
+            "pdf_extraction_status": pdf_status,
+            "date": detail.get("date") or datetime.now().strftime("%d/%m/%Y"),
+            "related_symbols": symbols,
+        }
+        records.append(record)
+        time.sleep(1.5)
+
+    return records
 
 
 def main():
-    existing_data = load_existing_data()
+    parser = argparse.ArgumentParser(description="جلب إفصاحات وأخبار سوق العراق للأوراق المالية من isx-iq.net")
+    parser.add_argument("--existing", default="isx_disclosures.json")
+    parser.add_argument("--output", default="isx_disclosures.json")
+    args = parser.parse_args()
 
-    # مجموعة العناوين الموحّدة الموجودة مسبقاً بالملف، لمنع التكرار عبر التشغيلات
-    existing_titles = {
-        normalize_title(item.get("title", ""))
-        for item in existing_data["general_news"]
+    if not PDF_SUPPORT:
+        print("⚠️ تحذير: مكتبة pdfplumber غير مثبتة. لن يتم استخراج نصوص PDF.")
+        print("   ثبّتها بـ: pip install pdfplumber")
+
+    data = load_existing(args.existing)
+    known_ids = {
+        item["id"] for item in data["official_disclosures"] + data["market_news"]
+        if "id" in item
     }
 
-    raw_articles = fetch_raw_articles()
+    new_disclosures = process_story_type(1, known_ids, "الإفصاحات الرسمية")
+    new_market_news = process_story_type(2, known_ids, "أخبار السوق")
 
-    new_general_news = []
-    seen_this_run = set()
+    data["official_disclosures"] = new_disclosures + data["official_disclosures"]
+    data["market_news"] = new_market_news + data["market_news"]
 
-    for art in raw_articles:
-        norm_title = normalize_title(art["title"])
-        if not norm_title:
-            continue
-        # تجاهل لو الخبر موجود سابقاً بالملف، أو تكرر بنفس التشغيلة الحالية
-        if norm_title in existing_titles or norm_title in seen_this_run:
-            continue
+    total_added = len(new_disclosures) + len(new_market_news)
+    if total_added == 0:
+        print("\nلا توجد إفصاحات أو أخبار جديدة.")
+        return
 
-        seen_this_run.add(norm_title)
-        
-        # التعديل هنا: تم إزالة الجزء الخاص بالروابط لتقليل حجم البيانات والذاكرة
-        new_general_news.append({
-            "date": art["date"],
-            "source": art["source"],
-            "title": art["title"],
-            "content": f"تقرير إخباري خارجي تم رصده من منصة {art['source']} يتحدث عن: {art['title']}.",
-        })
-
-        if len(new_general_news) >= MAX_NEW_ARTICLES_PER_RUN:
-            break
-
-    # الدمج التراكمي: الجديد يُضاف بأول القائمة (الأحدث أولاً)
-    combined_general_news = new_general_news + existing_data["general_news"]
-
-    # social_signals متروك مؤقتاً كما هو موجود بالملف (بدون تحديث حالياً)
-    result = {
-        "general_news": combined_general_news,
-        "social_signals": existing_data["social_signals"],
-    }
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=2)
-
+    save_json(data, args.output)
     print(
-        f"🎉 نجاح! أُضيف {len(new_general_news)} خبر جديد. "
-        f"الإجمالي التراكمي الآن: {len(combined_general_news)} خبر في general_news."
+        f"\n✅ تم بنجاح. أُضيف {len(new_disclosures)} إفصاح جديد و"
+        f"{len(new_market_news)} خبر سوق جديد."
     )
 
 
