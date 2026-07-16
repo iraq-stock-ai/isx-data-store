@@ -6,7 +6,7 @@ from datetime import datetime
 
 import requests
 
-MODEL_NAME = "gemini-2.0-flash-lite"
+MODEL_NAME = "gemini-3.1-flash-lite"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
 API_KEY = os.environ.get("GEMINI_DISCLOSURES_API_KEY")
 
