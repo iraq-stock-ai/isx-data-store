@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "id": "17740",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الطيف الاسلامي في جلسة الاثنين الموافق 2026/7/13",
+      "date": "13/07/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_58_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17740&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الطيف الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "تم تنفيذ أمر تداول متقابل مقصود على أسهم شركة مصرف الطيف الإسلامي في جلسة يوم الاثنين الموافق 2026/7/13. شملت العملية تداول 4,500,000,000 سهم من أسهم المصرف.",
+      "pdf_extraction_status": "success"
+    }
+  ],
+  "last_known_story_id": 17740
+}
