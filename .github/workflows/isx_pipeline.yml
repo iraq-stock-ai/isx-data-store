@@ -153,11 +153,10 @@ jobs:
         run: pip install requests beautifulsoup4 lxml pdfplumber
 
       # يعالج إفصاح أو خبر سوق واحد فقط (إن وُجد)، ثم يخرج
-      # [تعديل مؤقت للتشغيل الأول] مضاف هنا --start-id 17740
       - name: جلب وتلخيص إفصاح/خبر واحد جديد
         env:
           GEMINI_DISCLOSURES_API_KEY: ${{ secrets.GEMINI_DISCLOSURES_API_KEY }}
-        run: python news-pipeline/fetch_and_summarize_isx.py --existing isx_disclosures.json --output isx_disclosures.json --start-id 17740
+        run: python news-pipeline/fetch_and_summarize_isx.py --existing isx_disclosures.json --output isx_disclosures.json
 
       - name: فحص وجود تغييرات فعلية
         id: check_changes
