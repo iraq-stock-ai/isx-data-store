@@ -8,12 +8,13 @@ import argparse
 import pdfplumber
 
 # إعداد مفتاح API
-GEMINI_KEY = os.getenv("GEMINI_DISCLOSURES_API_KEY") or os.getenv("GEMINI_API_KEY")
+GEMINI_KEY = os.getenv("GEMINI_MARKET_NEWS_API_KEY") or os.getenv("GEMINI_API_KEY")
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
 
 BASE_URL = "http://www.isx-iq.net/isxportal/portal/"
-URL = f"{BASE_URL}storyList.html?methodName=getAnnouncementStoryList"
+# التغيير الوحيد هنا في رابط الأخبار
+URL = f"{BASE_URL}storyList.html?methodName=getNewsStoryList"
 
 def fetch_today_stories():
     today = datetime.now().strftime("%d/%m")
@@ -38,22 +39,13 @@ def extract_content(url):
     try:
         response = requests.get(url, timeout=15)
         soup = BeautifulSoup(response.text, "html.parser")
-        pdf_tag = soup.find("a", href=lambda h: h and h.lower().endswith(".pdf"))
-        if pdf_tag:
-            pdf_url = pdf_tag['href'] if pdf_url.startswith("http") else "https://www.isx-iq.net" + pdf_tag['href']
-            res = requests.get(pdf_url, timeout=15)
-            with open("temp.pdf", "wb") as f: f.write(res.content)
-            with pdfplumber.open("temp.pdf") as pdf:
-                text = "".join([p.extract_text() or "" for p in pdf.pages])
-            os.remove("temp.pdf")
-            return text
         return soup.get_text(separator="\n", strip=True)
     except: return "فشل استخراج المحتوى"
 
 def analyze(title, content):
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")
-        return model.generate_content(f"حلل الإفصاح المالي: {title}\nالمحتوى: {content}\nالمطلوب: ملخص 3 نقاط + هل الخبر إيجابي أم سلبي؟").text
+        return model.generate_content(f"حلل الخبر: {title}\nالمحتوى: {content}\nالمطلوب: ملخص 3 نقاط + هل الخبر إيجابي أم سلبي؟").text
     except Exception as e: return f"خطأ: {e}"
 
 def main():
@@ -62,7 +54,6 @@ def main():
     parser.add_argument("--output")
     args = parser.parse_args()
 
-    # تحميل البيانات الموجودة
     data = []
     if os.path.exists(args.existing):
         with open(args.existing, 'r', encoding='utf-8') as f:
