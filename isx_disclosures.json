@@ -1,28 +1,4 @@
-{
-  "items": [
-    {
-      "id": "17754",
-      "type": "إفصاح",
-      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فنادق عشتار المنعقد بتاريخ 2026/6/7",
-      "date": "15/07/2026",
-      "related_symbols": [
-        "HISH"
-      ],
-      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_40_26.pdf",
-      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17754&type=1",
-      "disclosure_type": "اجتماع_هيئة_عامة",
-      "company_name": "شركة فنادق عشتار",
-      "raas_al_mal": "7000000000",
-      "net_profit": null,
-      "total_debts": null,
-      "traded_shares_quantity": null,
-      "dividend_per_share": null,
-      "dividend_percentage": "72.08%",
-      "dividend_date": null,
-      "summary": "عقدت الهيئة العامة لشركة فنادق عشتار اجتماعها بتاريخ 2026/6/7 للمصادقة على الحسابات الختامية والبيانات المالية للسنوات المنتهية في 2023 و2024. تضمن الاجتماع مناقشة تقارير مجلس الإدارة والموافقة على توزيع أرباح نقدية بنسبة 72.08% من رأس المال البالغ 7 مليار دينار عراقي.",
-      "pdf_extraction_status": "success"
-    },
-    {
+  {
       "id": "17753",
       "type": "إفصاح",
       "title": "تنفيذ أمر خاص على أسهم شركة مصرف عبر العراق للاستثمار في جلسة الاربعاء الموافق 2026/7/15",
