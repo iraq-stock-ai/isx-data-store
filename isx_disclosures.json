@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17763,
+  "last_known_story_id": 17764,
   "items": [
+    {
+      "id": "17764",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الامين للاستثمار المالي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "VAMF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_43_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17764&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الأمين للاستثمار المالي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة الأمين للاستثمار المالي البيانات المالية الخاصة بالفصل الثاني لعام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية لغرض الاطلاع والتوثيق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17763",
       "type": "إفصاح",
