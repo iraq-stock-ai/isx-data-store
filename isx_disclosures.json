@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17751",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف العطاء الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "15/07/2026",
+      "related_symbols": [
+        "BLAD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_9_10_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17751&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف العطاء الاسلامي للاستثمار والتمويل",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "قدم مصرف العطاء الإسلامي للاستثمار والتمويل بياناته المالية المرحلية للفصل الثاني من عام 2026 إلى سوق العراق للأوراق المالية. يأتي هذا الإفصاح التزاماً بتعليمات الإفصاح الخاصة بالشركات المدرجة رقم 8 لسنة 2018.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17750",
       "type": "إفصاح",
       "title": "التقرير النصف سنوي لسوق العراق للأوراق المالية لعام 2026",
@@ -206,5 +227,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17750
+  "last_known_story_id": 17751
 }
