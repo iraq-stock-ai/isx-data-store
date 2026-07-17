@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17752",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف السنام الاسلامي في جلسة الاربعاء الموافق 2026/7/15",
+      "date": "15/07/2026",
+      "related_symbols": [
+        "BSAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_31_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17752&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف السنام الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "تم تنفيذ أمر متقابل مقصود على أسهم مصرف السنام الإسلامي في جلسة التداول ليوم الأربعاء الموافق 15 يوليو 2026. تضمن الإجراء تداول 500,000,000 سهم من أسهم المصرف وفقاً للأنظمة المتبعة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17751",
       "type": "إفصاح",
       "title": "افصاح- قدمت شركة مصرف العطاء الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
@@ -227,5 +248,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17751
+  "last_known_story_id": 17752
 }
