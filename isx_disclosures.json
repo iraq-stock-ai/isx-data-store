@@ -1,6 +1,37 @@
 {
-  "last_known_story_id": 17754,
+  "last_known_story_id": 17755,
   "items": [
+    {
+      "id": "17755",
+      "type": "إفصاح",
+      "title": "إعلان - تجهيز معدات Back Office",
+      "date": "16/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_7_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17755&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد شركات الوساطة في المرحلة الأولى",
+          "value": "10"
+        },
+        {
+          "label": "عدد شركات الوساطة المستهدف الوصول إليها",
+          "value": "20"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "يعلن سوق العراق للأوراق المالية عن تنفيذ مشروع تطوير البنية التحتية الأساسية، ويسعى للحصول على حل تقني متكامل يعتمد على تقنية Nutanix لتوفير بيئة استضافة عالية الموثوقية لشركات الوساطة. يتضمن المشروع متطلبات تقنية محددة للخوادم ومواصفات الأجهزة لضمان توسيع نطاق العمل ليشمل 20 شركة وساطة مع ضمان عزل البيانات والتحكم المركزي.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17754",
       "type": "إفصاح",
