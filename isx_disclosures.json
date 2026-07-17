@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17762,
+  "last_known_story_id": 17763,
   "items": [
+    {
+      "id": "17763",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة فندق بابل البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "HBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_42_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17763&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فندق بابل المساهمة المختلطة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة فندق بابل المساهمة المختلطة إفصاحاً إلى سوق العراق للأوراق المالية يتضمن إرسال الميزانية الفصلية الخاصة بالفصل الثاني لسنة 2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17762",
       "type": "إفصاح",
