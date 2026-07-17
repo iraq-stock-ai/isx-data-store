@@ -1,6 +1,25 @@
 {
   "items": [
     {
+      "id": "17750",
+      "type": "إفصاح",
+      "title": "التقرير النصف سنوي لسوق العراق للأوراق المالية لعام 2026",
+      "date": "15/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_8_38_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17750&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "يستعرض التقرير النصف سنوي لسوق العراق للأوراق المالية أداء التداول خلال عام 2026، حيث تم تنظيم 112 جلسة تداول تضمنت تداول أسهم 90 شركة مدرجة. شهدت المؤشرات أداءً إيجابياً بنمو ملحوظ في مؤشر ISX60 بنسبة 5.56% ومؤشر ISX15 بنسبة 16.52% مقارنة بالفترة المماثلة من عام 2025. كما تضمن التقرير إحصائيات حول إدراج وزيادة رؤوس أموال الشركات وتوزيعات الأرباح المعلنة من قبل الشركات المساهمة.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17749",
       "type": "إفصاح",
       "title": "الموافقة على إدراج وإيداع أسهم شركة مصرف العراق الاول الاسلامي في سوق العراق للأوراق المالية - منصة السوق النظامي",
@@ -187,5 +206,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17749
+  "last_known_story_id": 17750
 }
