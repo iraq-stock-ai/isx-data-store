@@ -1,6 +1,51 @@
 {
-  "last_known_story_id": 17756,
+  "last_known_story_id": 17757,
   "items": [
+    {
+      "id": "17757",
+      "type": "إفصاح",
+      "title": "إيقاف التداول على أسهم الشركات المساهمة المدرجة إعتباراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BASH",
+        "BBAY",
+        "BNAI",
+        "BNOR",
+        "HISH",
+        "HSAD",
+        "IELI",
+        "IMCM",
+        "ITLI",
+        "NGIR",
+        "NHAM",
+        "SIGT",
+        "SILT",
+        "VBAT",
+        "VKHF",
+        "VMES",
+        "VZAF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_38_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17757&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إيقاف التداول",
+          "value": "2026/7/19"
+        }
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات واضحة في القراءة الضوئية (OCR) مما يجعل تحديد أسماء الشركات أو أي بيانات مالية أخرى أمراً مستحيلاً.",
+      "summary": "يتضمن الإفصاح قراراً صادراً عن سوق العراق للأوراق المالية يقضي بإيقاف التداول على أسهم الشركات المساهمة المدرجة، وذلك اعتباراً من جلسة يوم الأحد الموافق 19 يوليو 2026. نظراً لعدم وضوح النص المستخرج بسبب عيوب تقنية في معالجة الملف، لم يتم تحديد أسماء الشركات المعنية بهذا القرار.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17756",
       "type": "إفصاح",
