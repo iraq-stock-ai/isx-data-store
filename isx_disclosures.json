@@ -1,6 +1,25 @@
 {
   "items": [
     {
+      "id": "17745",
+      "type": "إفصاح",
+      "title": "شركة الأهلي المتحد للوساطة ببيع وشراء الأوراق المالية - قصر نشاط الشركة",
+      "date": "14/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_8_2_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17745&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة الأهلي المتحد للوساطة ببيع وشراء الأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أعلنت شركة الأهلي المتحد للوساطة ببيع وشراء الأوراق المالية عن قرار هيئتها العامة غير العادية بالموافقة على قصر نشاط الشركة على الوساطة المالية فقط. يأتي هذا القرار في إطار مراجعة استراتيجيات العمل وتعديل عقد تأسيس الشركة بما يتماشى مع متطلبات هيئة الأوراق المالية. كما تم توجيه الشركة لاستكمال الإجراءات القانونية اللازمة لتنفيذ هذا التعديل وفقاً للقوانين والأنظمة النافذة.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17744",
       "type": "إفصاح",
       "title": "سيتم إطلاق التداول على أسهم شركة المنصور للصناعات الدوائية إعتباراً من جلسة الاربعاء الموافق 2026/7/15",
@@ -88,5 +107,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17744
+  "last_known_story_id": 17745
 }
