@@ -149,8 +149,11 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: تثبيت مكتبات النظام (Tesseract OCR بدعم العربية)
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
+
       - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 lxml pdfplumber
+        run: pip install requests beautifulsoup4 lxml pdfplumber pytesseract pdf2image
 
       # يعالج إفصاح أو خبر سوق واحد فقط (إن وُجد)، ثم يخرج
       - name: جلب وتلخيص إفصاح/خبر واحد جديد
