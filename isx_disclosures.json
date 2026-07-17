@@ -1,6 +1,53 @@
 {
-  "last_known_story_id": 17755,
+  "last_known_story_id": 17756,
   "items": [
+    {
+      "id": "17756",
+      "type": "إفصاح",
+      "title": "إعلان - تجهيز معدات Eqlipse",
+      "date": "16/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_9_8_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17756&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد خوادم قاعدة البيانات (DB Servers)",
+          "value": "1"
+        },
+        {
+          "label": "عدد خوادم نظام Eqlipse",
+          "value": "3"
+        },
+        {
+          "label": "عدد خوادم التحكم (Control Plane)",
+          "value": "3"
+        },
+        {
+          "label": "عدد عقد الإدارة (Admin Nodes)",
+          "value": "2"
+        },
+        {
+          "label": "عدد مفاتيح الشبكة (Cisco Switch 9300)",
+          "value": "1"
+        },
+        {
+          "label": "مدة الضمان الفني",
+          "value": "3 سنوات"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن طرح مناقصة لتجهيز وتنصيب معدات وخوادم خاصة بمشروع Eqlipse ونظام NCSD. تتضمن المناقصة توريد خوادم متطورة، أجهزة شبكات، وحواسيب محمولة، مع اشتراط التزام الشركة الموردة بتقديم الدعم الفني، وتوفير كادر تقني مرخص، وإتمام التركيب والتشغيل داخل مبنى السوق.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17755",
       "type": "إفصاح",
