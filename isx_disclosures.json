@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17764,
+  "last_known_story_id": 17765,
   "items": [
+    {
+      "id": "17765",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الاقليم التجاري إعبتاراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_44_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17765&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الاقليم التجاري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ المباشرة بالتداول",
+          "value": "2026/7/19"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف الإقليم التجاري، وذلك اعتباراً من جلسة يوم الأحد الموافق 19 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17764",
       "type": "إفصاح",
