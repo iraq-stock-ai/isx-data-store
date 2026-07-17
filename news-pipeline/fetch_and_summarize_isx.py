@@ -14,6 +14,13 @@ try:
 except ImportError:
     PDF_SUPPORT = False
 
+try:
+    import pytesseract
+    from pdf2image import convert_from_path
+    OCR_SUPPORT = True
+except ImportError:
+    OCR_SUPPORT = False
+
 BASE_URL = "http://www.isx-iq.net/isxportal/portal"
 STORY_DETAILS_URL = f"{BASE_URL}/storyDetails.html"
 
@@ -127,6 +134,34 @@ def find_next_new_item(last_known_id: int, start_id: int = None) -> tuple:
     return None, highest_tried
 
 
+def extract_pdf_text_via_ocr(pdf_path: str) -> str:
+    """
+    خطة بديلة: يحوّل صفحات PDF لصور، ثم يقرأ النص منها بصرياً عبر Tesseract
+    (بدعم اللغة العربية). أبطأ بكثير من pdfplumber لكنه يعمل حتى مع
+    الصفحات الممسوحة ضوئياً (scanned) أو ذات الترميز غير القياسي.
+    """
+    if not OCR_SUPPORT:
+        return ""
+
+    try:
+        images = convert_from_path(pdf_path, dpi=200)
+    except Exception as e:
+        print(f"      تحذير: فشل تحويل PDF لصور: {e}")
+        return ""
+
+    extracted_pages = []
+    # حد أقصى 5 صفحات لتفادي إبطاء التشغيلة كثيراً (أغلب الإفصاحات قصيرة)
+    for i, image in enumerate(images[:5]):
+        try:
+            page_text = pytesseract.image_to_string(image, lang="ara")
+            if page_text:
+                extracted_pages.append(page_text)
+        except Exception as e:
+            print(f"      تحذير: فشل OCR بالصفحة {i + 1}: {e}")
+
+    return clean_text(" ".join(extracted_pages))
+
+
 def extract_pdf_text(pdf_url: str) -> dict:
     """يحمّل PDF ويستخرج نصه. يرجع dict فيه النص وحالة الاستخراج."""
     if not PDF_SUPPORT:
@@ -152,10 +187,18 @@ def extract_pdf_text(pdf_url: str) -> dict:
 
         full_text = clean_text(" ".join(extracted_pages))
 
-        if not full_text or len(full_text) < 10:
-            return {"text": "", "status": "empty_or_scanned"}
+        if full_text and len(full_text) >= 10:
+            return {"text": full_text, "status": "success"}
 
-        return {"text": full_text, "status": "success"}
+        # pdfplumber لم يستخرج نصاً كافياً (على الأغلب صفحة ممسوحة ضوئياً أو
+        # ترميز خط غير قياسي) - نجرب OCR كخطة بديلة قبل الاستسلام
+        print("      ⚠️ pdfplumber لم يستخرج نصاً كافياً، تجربة OCR كخطة بديلة...")
+        ocr_text = extract_pdf_text_via_ocr(tmp_path)
+
+        if ocr_text and len(ocr_text) >= 10:
+            return {"text": ocr_text, "status": "success_via_ocr"}
+
+        return {"text": "", "status": "empty_or_scanned_ocr_also_failed"}
 
     except Exception as e:
         return {"text": "", "status": f"extraction_failed: {e}"}
@@ -302,7 +345,7 @@ def main():
     pdf_result = extract_pdf_text(item["pdf_url"])
     print(f"   حالة الاستخراج: {pdf_result['status']}")
 
-    if pdf_result["status"] != "success":
+    if pdf_result["status"] not in ("success", "success_via_ocr"):
         print("⚠️ فشل استخراج نص PDF. سيُحفظ الإفصاح بدون تلخيص مالي.")
         item["pdf_extraction_status"] = pdf_result["status"]
         data["items"].insert(0, item)
@@ -321,7 +364,7 @@ def main():
         return
 
     item.update(summary)
-    item["pdf_extraction_status"] = "success"
+    item["pdf_extraction_status"] = pdf_result["status"]
     data["items"].insert(0, item)
     save_json(data, args.output)
 
