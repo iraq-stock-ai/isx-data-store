@@ -1,6 +1,25 @@
 {
   "items": [
     {
+      "id": "17748",
+      "type": "إفصاح",
+      "title": "الموافقة على إدراج وإيداع أسهم شركة العالمية للتأمين في سوق العراق للأوراق المالية - منصة الشركات غير المدرجة OTC",
+      "date": "14/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_19_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17748&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة العالمية للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن الموافقة على إدراج وإيداع أسهم شركة العالمية للتأمين في منصة الشركات غير المدرجة (OTC). يأتي هذا الإجراء وفقاً لقرارات الهيئة، حيث تم تحديد الرموز الخاصة بالشركة وأرقام إيداع الأسهم في مركز إيداع الأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17747",
       "type": "إفصاح",
       "title": "إفصاح - قدمت الشركة الوطنية للصناعات الكيمياوية والبلاستيكية البيانات المالية الفصلية للفصل الثاني لعام 2026",
@@ -149,5 +168,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17747
+  "last_known_story_id": 17748
 }
