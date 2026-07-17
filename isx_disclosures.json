@@ -1,6 +1,25 @@
 {
   "items": [
     {
+      "id": "17749",
+      "type": "إفصاح",
+      "title": "الموافقة على إدراج وإيداع أسهم شركة مصرف العراق الاول الاسلامي في سوق العراق للأوراق المالية - منصة السوق النظامي",
+      "date": "14/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_20_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17749&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف العراق الاول الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن الموافقة على إدراج وإيداع أسهم مصرف العراق الأول الإسلامي في منصة السوق النظامي. يأتي هذا القرار استناداً إلى الإجراءات التنظيمية والرقابية المتبعة لتهيئة تداول أسهم المصرف في السوق.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17748",
       "type": "إفصاح",
       "title": "الموافقة على إدراج وإيداع أسهم شركة العالمية للتأمين في سوق العراق للأوراق المالية - منصة الشركات غير المدرجة OTC",
@@ -168,5 +187,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17748
+  "last_known_story_id": 17749
 }
