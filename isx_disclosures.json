@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17753",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر خاص على أسهم شركة مصرف عبر العراق للاستثمار في جلسة الاربعاء الموافق 2026/7/15",
+      "date": "15/07/2026",
+      "related_symbols": [
+        "BTRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_33_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17753&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف عبر العراق للاستثمار",
+      "raas_al_mal": "250,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "تم تنفيذ أمر خاص على أسهم شركة مصرف عبر العراق للاستثمار في جلسة يوم الأربعاء الموافق 15 يوليو 2026. بلغت كمية الأسهم المتداولة في هذه الصفقة 19,000,000,000 سهم. تمت العملية من خلال شركة الأثمار للوساطة المالية وفقاً للضوابط المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17752",
       "type": "إفصاح",
       "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف السنام الاسلامي في جلسة الاربعاء الموافق 2026/7/15",
@@ -248,5 +269,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17752
+  "last_known_story_id": 17753
 }
