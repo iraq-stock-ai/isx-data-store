@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17747",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة الوطنية للصناعات الكيمياوية والبلاستيكية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "14/07/2026",
+      "related_symbols": [
+        "INCP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_2_22.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17747&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الوطنية للصناعات الكيمياوية والبلاستيكية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أفصحت الشركة الوطنية للصناعات الكيمياوية والبلاستيكية عن بياناتها المالية للفصل الثاني من عام 2026. تضمن الإفصاح قوائم المركز المالي والدخل الشامل بنوعيها، بالإضافة إلى قائمة التدفقات النقدية وفق المعايير الدولية. تم توجيه نسخة من هذه البيانات إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17746",
       "type": "إفصاح",
       "title": "الموافقة على تمديد فترة إضافة أسهم الزيادة لشركة مصرف الموصل للتنمية والاستثمار",
@@ -128,5 +149,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17746
+  "last_known_story_id": 17747
 }
