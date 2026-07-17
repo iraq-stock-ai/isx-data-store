@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17757,
+  "last_known_story_id": 17760,
   "items": [
+    {
+      "id": "17760",
+      "type": "إفصاح",
+      "title": "إنتهاء إجراءات وتعديل عقد تأسيس شركة مصرف الاقليم التجاري للاستثمار والتمويل",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_21_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17760&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الاقليم التجاري للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "يؤكد الإفصاح الصادر عن وزارة التجارة / دائرة تسجيل الشركات انتهاء الإجراءات القانونية المتعلقة بتعديل عقد تأسيس مصرف الإقليم التجاري للاستثمار والتمويل. يأتي هذا الإجراء تنفيذاً لقرارات الهيئة العامة للمصرف وفقاً لأحكام قانون الشركات النافذ.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17757",
       "type": "إفصاح",
