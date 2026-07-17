@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17761,
+  "last_known_story_id": 17762,
   "items": [
+    {
+      "id": "17762",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الاتحاد العراقي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BUOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_42_4.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17762&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الاتحاد العراقي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف الاتحاد العراقي عن تقديمه للبيانات المالية الفصلية الخاصة بالفصل الثاني لعام 2026 إلى سوق العراق للأوراق المالية وهيئة الأوراق المالية. يغطي الإفصاح النتائج المالية للفترة المنتهية في 30 يونيو 2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17761",
       "type": "إفصاح",
