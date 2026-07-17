@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17760,
+  "last_known_story_id": 17761,
   "items": [
+    {
+      "id": "17761",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف الوطني الإسلامي البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_40_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17761&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الوطني الإسلامي",
+      "raas_al_mal": "400,000,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ البيانات المالية",
+          "value": "2026/03/31"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصح المصرف الوطني الإسلامي عن تقديمه للبيانات المالية المرحلية للفصل الأول المنتهي في 31 مارس 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. يأتي هذا الإفصاح في إطار الالتزام بالمتطلبات الرقضيات التنظيمية لشفافية الإفصاح المالي للشركات المساهمة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17760",
       "type": "إفصاح",
