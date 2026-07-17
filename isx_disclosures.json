@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17746",
+      "type": "إفصاح",
+      "title": "الموافقة على تمديد فترة إضافة أسهم الزيادة لشركة مصرف الموصل للتنمية والاستثمار",
+      "date": "14/07/2026",
+      "related_symbols": [
+        "BMFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_48_16.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17746&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "مصرف الموصل للتنمية والاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "وافقت هيئة الأوراق المالية على طلب شركة مصرف الموصل للتنمية والاستثمار بتمديد الفترة المحددة لإضافة أسهم الزيادة إلى التداول. تم منح الشركة مهلة إضافية مدتها شهر واحد اعتباراً من تاريخ 1/6/2017 لاستكمال إجراءات زيادة رأس المال.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17745",
       "type": "إفصاح",
       "title": "شركة الأهلي المتحد للوساطة ببيع وشراء الأوراق المالية - قصر نشاط الشركة",
@@ -107,5 +128,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17745
+  "last_known_story_id": 17746
 }
