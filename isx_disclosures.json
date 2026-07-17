@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "17744",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة المنصور للصناعات الدوائية إعتباراً من جلسة الاربعاء الموافق 2026/7/15",
+      "date": "14/07/2026",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_7_42_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17744&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المنصور للصناعات الدوائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن استئناف التداول على أسهم شركة المنصور للصناعات الدوائية. سيبدأ التداول الرسمي للشركة اعتباراً من جلسة يوم الأربعاء الموافق 15 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17743",
       "type": "إفصاح",
       "title": "افصاح- قدمت شركة الوئام للاستثمار المالي البيانات المالية الفصلية للفصل الثاني لعام 2026",
@@ -67,5 +88,5 @@
       "pdf_extraction_status": "success"
     }
   ],
-  "last_known_story_id": 17743
+  "last_known_story_id": 17744
 }
