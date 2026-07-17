@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17765,
+  "last_known_story_id": 17766,
   "items": [
+    {
+      "id": "17766",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة المصرف الوطني الاسلامي إعتباراً من جلسة الاحد الموافق 2026/7/19",
+      "date": "16/07/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_46_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17766&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "المصرف الوطني الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء التداول",
+          "value": "2026/7/19"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن تحديد يوم الأحد الموافق 2026/7/19 موعداً لإطلاق التداول على أسهم المصرف الوطني الإسلامي.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17765",
       "type": "إفصاح",
