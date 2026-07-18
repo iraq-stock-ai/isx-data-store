@@ -1,6 +1,376 @@
 {
   "items": [
     {
+      "id": "16329",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة بغداد للمشروبات الغازية في جلسة الاربعاء الموافق 2025/7/2",
+      "date": "01/07/2025",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_11_8_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16329&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/7/2"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن الموعد المقرر لإطلاق التداول على أسهم شركة بغداد للمشروبات الغازية. سيكون بدء التداول على أسهم الشركة في جلسة يوم الأربعاء الموافق 2025/7/2.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16328",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المصرف التجاري العراقي الاسلامي المنعقد بتاريخ 2025/5/24",
+      "date": "01/07/2025",
+      "related_symbols": [
+        "BCOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_11_5_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16328&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف التجاري العراقي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2025/5/24"
+        },
+        {
+          "label": "النسبة المئوية للاحتياطي القانوني من الأرباح لعام 2023",
+          "value": "5%"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد المصرف التجاري العراقي الإسلامي اجتماع الهيئة العامة بتاريخ 2025/5/24 للمصادقة على الحسابات الختامية للسنة المالية المنتهية في 2024/12/31. تضمن الاجتماع مناقشة التقرير السنوي لمجلس الإدارة وتقرير مراقب الحسابات. تم الاتفاق على استقطاع نسبة 5% من أرباح عام 2023 لصالح الاحتياطي القانوني. كما استعرض الاجتماع الموقف المالي للمصرف والإجراءات المتخذة بشأن الامتثال للمعايير والسياسات المعتمدة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16327",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة المصرف التجاري العراقي الاسلامي",
+      "date": "01/07/2025",
+      "related_symbols": [
+        "BCOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_11_4_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16327&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المصرف التجاري العراقي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير واضح ويحتوي على رموز غير مفهومة وتداخل في الحروف مما يعيق استخراج بيانات مالية دقيقة.",
+      "summary": "يتعلق المستند بإفصاح صادر عن وزارة التجارة العراقية، دائرة تسجيل الشركات، بخصوص المصرف التجاري العراقي الاسلامي. النص يحتوي على تداخل في البيانات ولا يتضمن أرقاماً مالية محددة أو قرارات استثمارية واضحة يمكن تلخيصها بسبب رداءة جودة استخراج النص.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16326",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الخياطة الحديثة البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "01/07/2025",
+      "related_symbols": [
+        "IMOS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_10_54_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16326&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الخياطة الحديثة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "فائض(عجز) العمليات الجارية",
+          "value": "475555"
+        }
+      ],
+      "confidence_note": "البيانات المالية في النص غير واضحة المعالم بسبب تداخل النصوص الناتجة عن عملية المسح الضوئي (OCR)، مما يجعل تحديد القيم المالية الدقيقة لرأس المال والمطلوبات أمراً غير مؤكد.",
+      "summary": "قدمت شركة الخياطة الحديثة بياناتها المالية للفصل الثاني لعام 2025. يتضمن المستند كشوفات للموجودات والمطلوبات وتدفقات العمليات الجارية. نظراً لرداءة جودة النص المستخرج، تعذر استخلاص قيم دقيقة وموثوقة للمؤشرات المالية الرئيسية مثل رأس المال وإجمالي الديون.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16325",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف جيهان للاستثمار والتمويل الاسلامي البيانات السنوية لعام 2024",
+      "date": "01/07/2025",
+      "related_symbols": [
+        "BCIH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_8_6_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16325&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف جيهان للاستثمار والتمويل الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير مقروء بشكل واضح (Garbled text) ويحتوي على رموز غير مفهومة، مما حال دون استخراج البيانات المالية المحددة.",
+      "summary": "تعذر استخراج تفاصيل مالية دقيقة من النص المرفق نظراً لعدم وضوح البيانات المستخرجة من ملف الـ PDF. الإفصاح يشير إلى تقديم مصرف جيهان للاستثمار والتمويل الإسلامي لبياناته السنوية لعام 2024، إلا أن المحتوى الفعلي للنص يتضمن رموزاً غير مفهومة تمنع تحديد أي مؤشرات مالية أو أرقام إضافية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16324",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فنادق المنصور المنعقد بتاريخ 2025/5/7",
+      "date": "30/06/2025",
+      "related_symbols": [
+        "HMAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_11_10_37.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16324&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة فنادق المنصور",
+      "raas_al_mal": "2156855900",
+      "net_profit": null,
+      "total_debts": "2092293081",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "إجمالي المصروفات لعام 2023",
+          "value": "2653670745 دينار"
+        },
+        {
+          "label": "إجمالي الإيرادات لعام 2023",
+          "value": "567377664 دينار"
+        },
+        {
+          "label": "العجز المتراكم لعام 2022",
+          "value": "11457898 دينار"
+        },
+        {
+          "label": "نسبة حضور المساهمين",
+          "value": "73.78%"
+        }
+      ],
+      "confidence_note": "تم استخراج الأرقام بناءً على البيانات الواردة في محضر اجتماع الهيئة العامة لعام 2025 بخصوص الحسابات الختامية لعام 2023.",
+      "summary": "عقدت شركة فنادق المنصور اجتماع هيئتها العامة في 7 مايو 2025 بحضور نسبة 73.78% من المساهمين. ناقش الاجتماع الحسابات الختامية للشركة للسنة المالية المنتهية في 31 ديسمبر 2023، حيث بلغ إجمالي الإيرادات 567,377,664 دينار مقابل مصروفات بلغت 2,653,670,745 دينار. أشار التقرير إلى وجود عجز متراكم بلغ 2,092,293,081 دينار، كما تم التطرق إلى المقارنة مع أداء الشركة في السنوات المالية السابقة. لم يتم الإعلان عن أي توزيعات نقدية للأرباح في هذا الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16323",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة النخبة للمقاولات العامة في يوم الثلاثاء الموافق 2025/7/22",
+      "date": "30/06/2025",
+      "related_symbols": [
+        "SNUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_11_0_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16323&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة النخبة للمقاولات العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2025/7/22"
+        },
+        {
+          "label": "تاريخ توجيه الدعوة",
+          "value": "2025/6/29"
+        },
+        {
+          "label": "تاريخ آخر موعد لتسجيل الأسماء",
+          "value": "2025/7/16"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت شركة النخبة للمقاولات العامة عن عقد اجتماع الهيئة العامة في يوم الثلاثاء الموافق 2025/7/22. كما حددت الشركة تاريخ 2025/7/16 كآخر موعد لتسجيل أسماء المساهمين الراغبين في حضور الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16322",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 22 -25 حزيران 2025",
+      "date": "30/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_9_40_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16322&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2664668277",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "إجمالي قيمة الأسهم المتداولة",
+          "value": "6,622,532,180 دينار"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "4465 صفقة"
+        },
+        {
+          "label": "مؤشر ISX 60 عند الإغلاق",
+          "value": "977.65 نقطة"
+        },
+        {
+          "label": "مؤشر ISX 15 عند الإغلاق",
+          "value": "1,082.74 نقطة"
+        },
+        {
+          "label": "تداول المستثمرين غير العراقيين (شراء)",
+          "value": "26,000,000 سهم بقيمة 50,852,516 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "شهد سوق العراق للأوراق المالية خلال الفترة من 22 إلى 25 حزيران 2025 ارتفاعاً في مؤشرات التداول، حيث بلغ إجمالي عدد الأسهم المتداولة نحو 2.66 مليار سهم بقيمة إجمالية تجاوزت 6.6 مليار دينار عبر 4,465 صفقة. كما سجل مؤشرا السوق (ISX 60) و(ISX 15) ارتفاعاً بنسبتي 2.85% و2.17% على التوالي مقارنة بالأسبوع السابق، مع تسجيل نشاط استثماري للمستثمرين غير العراقيين في جلسة 25 حزيران.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16321",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة ابداع الشرق الاوسط للمقاولات العامة في يوم الثلاثاء الموافق 2025/7/22",
+      "date": "29/06/2025",
+      "related_symbols": [
+        "SIBD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_9_39_17.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16321&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة ابداع الشرق الاوسط للمقاولات العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ انعقاد اجتماع الهيئة العامة",
+          "value": "2025/7/22"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تعلن شركة ابداع الشرق الاوسط للمقاولات العامة عن عقد اجتماع الهيئة العامة للشركة في يوم الثلاثاء الموافق 2025/7/22. لم يتضمن النص المرفق تفاصيل حول بنود جدول الأعمال أو مؤشرات مالية إضافية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16320",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الشركة العراقية لانتاج وتسويق المنتجات الزراعية في جلسة الاثنين الموافق 2025/6/30",
+      "date": "29/06/2025",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_9_36_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16320&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة العراقية لانتاج وتسويق المنتجات الزراعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر الفتح للسهم",
+          "value": "14.900 دينار"
+        },
+        {
+          "label": "نسبة التذبذب المسموح بها",
+          "value": "10%"
+        },
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/6/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر إطلاق التداول على أسهم الشركة العراقية لإنتاج وتسويق المنتجات الزراعية في سوق العراق للأوراق المالية اعتباراً من جلسة يوم الاثنين الموافق 2025/6/30. سيكون سعر الفتح للسهم 14.900 دينار، مع السماح بنسبة تذبذب قدرها 10% صعوداً أو نزولاً عن سعر الفتح.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16319",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الاحرار العربية للصرافة في يوم الاحد الموافق 2025/8/10",
+      "date": "29/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_9_30_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16319&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الاحرار العربية للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة الأحرار العربية للصرافة بتاريخ 2025/8/10. سيناقش الاجتماع البنود المدرجة على جدول الأعمال وفقاً للسياقات التنظيمية المتبعة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16318",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة العابد للصرافة في يوم الاحد الموافق 2025/8/10",
+      "date": "29/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_9_27_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16318&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة العابد للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة العابد للصرافة في يوم الأحد الموافق 10 آب 2025 لمناقشة بنود جدول الأعمال المحددة للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16317",
       "type": "إفصاح",
       "title": "انتهاء اجراءات شركة المصرف الاهلي العراقي",
@@ -2267,5 +2637,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16317
+  "last_known_story_id": 16329
 }
