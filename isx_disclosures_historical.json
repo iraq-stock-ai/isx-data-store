@@ -1,6 +1,729 @@
 {
   "items": [
     {
+      "id": "16382",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المناخ للصرافة للصرافة في يوم الثلاثاء الموافق 2025/8/12",
+      "date": "14/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_10_37_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16382&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المناخ للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير مقروء ومبهم تماماً نتيجة تشوه الحروف والرموز (Garbage characters)، وتم استخلاص المعلومات الأساسية من العنوان المذكور في نص السؤال فقط.",
+      "summary": "تعلن شركة المناخ للصرافة عن عقد اجتماع هيئتها العامة في يوم الثلاثاء الموافق 12 آب 2025. لم يتسنَّ الحصول على تفاصيل إضافية حول جدول الأعمال أو البنود المالية نظراً لعدم وضوح نص الإفصاح المرفق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16381",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الشرق الاوسط للمقاولات والتجارة العامة في يوم الاربعاء الموافق 2025/8/13",
+      "date": "14/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_10_34_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16381&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الشرق الاوسط للمقاولات والتجارة العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تعلن شركة الشرق الأوسط للمقاولات والتجارة العامة عن عقد اجتماع الهيئة العامة للمساهمين بتاريخ 13 أغسطس 2025. يتضمن جدول الأعمال مناقشة التقارير السنوية والبيانات المالية للشركة عن السنوات السابقة، بالإضافة إلى مناقشة ومعالجة العجز المتراكم وانتخاب مجلس إدارة جديد للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16380",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف التنمية الدولي البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "14/07/2025",
+      "related_symbols": [
+        "BIDB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_8_1_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16380&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف التنمية الدولي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف التنمية الدولي عن تقديمه للبيانات المالية الخاصة بالفصل الثاني من عام 2025 إلى سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16379",
+      "type": "إفصاح",
+      "title": "بيان الاكتتاب على أسهم شركة امواج الدولية للاستثمارات العقارية إعتباراً من يوم الجمعة 2025/8/1",
+      "date": "14/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_7_57_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16379&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "شركة أمواج الدولية للاستثمارات العقارية",
+      "raas_al_mal": "25000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "40000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الأسهم المطروحة للاكتتاب",
+          "value": "40,000,000 سهم"
+        },
+        {
+          "label": "قيمة السهم الواحد",
+          "value": "250 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت شركة أمواج الدولية للاستثمارات العقارية عن بدء الاكتتاب على أسهمها اعتباراً من يوم الجمعة الموافق 2025/8/1. تضمن الإفصاح طرح 40,000,000 سهم للاكتتاب بقيمة اسمية تبلغ 250 دينار للسهم الواحد. يأتي هذا الإجراء كجزء من عملية زيادة رأس مال الشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16378",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المصرف الدولي الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "14/07/2025",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_6_6_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16378&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الدولي الاسلامي",
+      "raas_al_mal": "260846000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم المصرف الدولي الاسلامي بياناته المالية المرحلية للفصل الثاني المنتهي في 30 يونيو 2025 إلى سوق العراق للأوراق المالية. تضمنت المرفقات قائمة المركز المالي، قائمة الدخل، قائمة التغير في حقوق الملكية، وقائمة التدفقات النقدية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16377",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف الشمال البيانات المالية الفصلية للفصل الرابع لعام 2024",
+      "date": "14/07/2025",
+      "related_symbols": [
+        "BNOR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_6_1_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16377&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الشمال",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف الشمال عن إرسال بياناته المالية الخاصة بالفصل الرابع من عام 2024 إلى سوق العراق للأوراق المالية. يأتي هذا الإجراء التزاماً بمتطلبات الإفصاح عن التقارير المالية السنوية والفصلية للشركات المساهمة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16376",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة سما الندى للصرافة في يوم الاربعتء الموافق 2025/8/20",
+      "date": "14/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_5_57_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16376&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة سما الندى للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة سما الندى للصرافة في يوم الأربعاء الموافق 2025/08/20. يتضمن الاجتماع مناقشة جدول الأعمال الخاص بالشركة وفقاً للضوابط المعمول بها في وزارة التجارة - دائرة تسجيل الشركات.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16375",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق بابل البيانات المالية السنوية لعام 2024",
+      "date": "14/07/2025",
+      "related_symbols": [
+        "HBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_5_53_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16375&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فندق بابل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "لم تتضمن الوثيقة المرفقة أي أرقام مالية محددة؛ حيث اقتصر النص على الإشارة إلى إرسال البيانات المالية السنوية لعام 2024 والمصادق عليها من قبل ديوان الرقابة المالية الاتحادي.",
+      "summary": "أفصحت شركة فندق بابل عن تقديم بياناتها المالية السنوية الخاصة بعام 2024 إلى سوق العراق للأوراق المالية. وقد أكدت الشركة أن هذه البيانات المالية قد حصلت على المصادقة الرسمية من قبل ديوان الرقابة المالية الاتحادي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16374",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة دار السلام للتامين في جلسة الاثنين الموافق 2025/7/14",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "NDSA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_9_29_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16374&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة دار السلام للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "5%",
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر الفتح",
+          "value": "0.600 دينار"
+        },
+        {
+          "label": "تاريخ بدء التداول",
+          "value": "2025/7/14"
+        }
+      ],
+      "confidence_note": "نسبة 5% مذكورة في النص كنسبة تذبذب سعري، وليس كنسبة توزيع أرباح، لذا تم ترك حقل dividend_percentage فارغاً (null) للالتزام بتعليماتكم، وتم وضعها في الحقول الإضافية للتوضيح.",
+      "summary": "تقرر إطلاق التداول على أسهم شركة دار السلام للتأمين في جلسة يوم الاثنين الموافق 2025/7/14. سيكون سعر الفتح للسهم 0.600 دينار، مع تحديد نسبة تذبذب سعري قدرها 5%.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16373",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف العطاء الاسلامي في يوم الاثنين الموافق 2025/9/1",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "BLAD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_9_25_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16373&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف العطاء الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "يعلن مصرف العطاء الاسلامي عن عقد اجتماع الهيئة العامة للمصرف في يوم الاثنين الموافق 2025/9/1.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16372",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت الشركة الاهلية للانتاج الزراعي البيانات المالية السنوية لعام 2024",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "AAHP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_8_48_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16372&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الاهلية للانتاج الزراعي",
+      "raas_al_mal": "575000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت الشركة الاهلية للانتاج الزراعي الميزانية العامة والحسابات الختامية للسنة المالية المنتهية في عام 2024 إلى سوق العراق للأوراق المالية. تم ذكر رأس مال الشركة في الإفصاح ليبلغ 575 مليون دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16371",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 7 - 10 تموز 2025",
+      "date": "13/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_8_35_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16371&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة الأسهم المتداولة",
+          "value": "5,000,000,000 دينار"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "2980"
+        },
+        {
+          "label": "مؤشر ISX 60",
+          "value": "979.85 نقطة"
+        },
+        {
+          "label": "مؤشر ISX 15",
+          "value": "1116.53 نقطة"
+        },
+        {
+          "label": "عدد الشركات المدرجة",
+          "value": "104"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "استعرض التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 7 إلى 10 تموز 2025 نشاط التداول لـ 52 شركة مدرجة. شهد السوق انخفاضاً بنسبة 1% في عدد الأسهم المتداولة و2% في قيمتها مقارنة بالأسبوع السابق، مع تنفيذ 2980 صفقة. ارتفعت مؤشرات السوق الرئيسية ISX 60 و ISX 15 بنسبة 1.01% و 1.63% على التوالي. كما تضمن التقرير مؤشرات التداول للمستثمرين غير العراقيين وأداء الشركات في منصة ISX-OTC.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16370",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مدينة العاب الكرخ السياحية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "SKTA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_5_51_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16370&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة مدينة العاب الكرخ السياحية",
+      "raas_al_mal": "1500000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ الميزانية العامة",
+          "value": "2025/6/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدمت شركة مدينة العاب الكرخ السياحية بياناتها المالية للفصل الثاني من عام 2025 إلى سوق العراق للأوراق المالية. يتضمن الإفصاح الميزانية العامة وكشف التدفق النقدي وكشف الأرباح والخسائر للفترة المنتهية في 30 يونيو 2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16369",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة طريق الخازر لانتاج وتجارة المواد الانشائية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_5_46_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16369&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية والاستثمارات العقارية والمقاولات العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم كتاب الإفصاح",
+          "value": "1527"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصحت شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية عن تقديم بياناتها المالية للفصل الثاني من عام 2025. تضمن الإفصاح توجيه الحسابات المالية إلى سوق العراق للأوراق المالية مع مقارنتها بالفصل ذاته من العام الماضي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16368",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة طريق الخازرلانتاج وتجارة المواد الانشائية",
+      "date": "13/07/2025",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_5_42_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16368&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة طريق الخازر لانتاج وتجارة المواد الانشائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات كبيرة في جودة التعرف الضوئي على الحروف (OCR) مما يجعل استخراج الأرقام بدقة أمراً مستحيلاً.",
+      "summary": "يتعلق الإفصاح بإجراءات تخص شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية، إلا أن نص المستند غير واضح وقابل للقراءة بسبب رداءة جودة الملف المرفق. لا يمكن استخلاص أي بيانات مالية أو قرارات محددة من هذا النص نظراً لغياب الكلمات المفتاحية والأرقام الواضحة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16367",
+      "type": "إفصاح",
+      "title": "تقييم أداء شركات الوساطة لشهرحزيران 2025",
+      "date": "10/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_10_39_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16367&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "نسبة تداول شركة المستثمر الأولى",
+          "value": "30.22%"
+        },
+        {
+          "label": "نسبة تداول شركة الطيف",
+          "value": "20.08%"
+        },
+        {
+          "label": "نسبة تداول شركة آشور",
+          "value": "16.13%"
+        },
+        {
+          "label": "تاريخ التقرير",
+          "value": "حزيران 2025"
+        }
+      ],
+      "confidence_note": "النص عبارة عن جدول تقييم أداء شركات الوساطة لشهر حزيران 2025 الصادر عن سوق العراق للأوراق المالية، ولا يتضمن بيانات مالية لشركة معينة كأرباح أو ديون أو توزيعات.",
+      "summary": "يتضمن المستند تقييماً دورياً لأداء شركات الوساطة العاملة في سوق العراق للأوراق المالية عن شهر حزيران من عام 2025. يوضح الجدول نسب الأداء والمساهمة لكل شركة وساطة بناءً على معايير السوق المعتمدة. لا يحتوي التقرير على أي بيانات مالية تخص شركات مدرجة كالأرباح أو التوزيعات، بل يقتصر على نشاط التداول والوساطة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16366",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة مصرف المشرق العربي الاسلامي",
+      "date": "10/07/2025",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_9_0_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16366&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف المشرق العربي الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات كبيرة في المعالجة الضوئية (OCR) وتداخل في الحروف والرموز، مما يجعله غير قابل لقراءة أي بيانات مالية محددة أو دقيقة.",
+      "summary": "يحتوي المستند على إفصاح صادر من مسجل الشركات بوزارة التجارة العراقية يتعلق بانتهاء إجراءات شركة مصرف المشرق العربي الإسلامي. بسبب رداءة جودة النص المستخرج من ملف الـ PDF، يتعذر استخلاص أي بيانات مالية أو تفاصيل إجرائية محددة للشركة. يرجى مراجعة النسخة الأصلية الممسوحة ضوئياً للتأكد من فحوى القرار.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16365",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف المشرق العربي الاسلامي المنعقد بتاريخ 2025/5/10",
+      "date": "10/07/2025",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_8_57_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16365&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": "293500000000",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة العجز المتراكم كما في 31-12-2024",
+          "value": "160348343750 دينار"
+        },
+        {
+          "label": "خسارة السنة المالية 2024",
+          "value": "1447304000 دينار"
+        },
+        {
+          "label": "مبلغ إطفاء العجز المتراكم",
+          "value": "43500000000 دينار"
+        },
+        {
+          "label": "المبلغ المتبقي للعجز المتراكم بعد الإطفاء",
+          "value": "293500000000 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد مصرف المشرق العربي الإسلامي اجتماع هيئته العامة بتاريخ 2025/5/10 لمناقشة الحسابات الختامية للسنة المالية المنتهية في 2024/12/31. أقر الاجتماع إطفاء جزء من العجز المتراكم للمصرف والبالغ 160.34 مليار دينار باستخدام مبالغ من احتياطيات المصرف. كما تم استعراض الوضع المالي للمصرف وأداءه خلال السنة المالية المذكورة. لم يتم الإفصاح عن توزيعات أرباح نظراً للوضعية المالية المتمثلة في العجز المتراكم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16364",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الامين للاستثمارات العقارية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "10/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_8_52_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16364&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الأمين للاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة الأمين للاستثمارات العقارية البيانات المالية الفصلية الخاصة بالفصل الثاني لسنة 2025 إلى سوق العراق للأوراق المالية. تم توجيه الإفصاح لغرض الاطلاع وتأييد الاستلام.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16363",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المصرف العراقي الاسلامي المنعقد بتاريخ 2025/5/10",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_11_20_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16363&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف العراقي الإسلامي للاستثمار والتنمية",
+      "raas_al_mal": "251499192688",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "نسبة حضور الهيئة العامة",
+          "value": "71.26%"
+        },
+        {
+          "label": "خسارة بنسبة من رأس المال",
+          "value": "50%"
+        },
+        {
+          "label": "قيمة الزيادة في رأس المال المقترحة",
+          "value": "196 مليار دينار"
+        }
+      ],
+      "confidence_note": "الأرقام المالية الواردة تشير إلى نسب متعلقة بحالة المصرف المالية (خسائر متراكمة) ومقترحات لزيادة رأس المال، ولا يوجد نص صريح يفيد بتوزيع أرباح نقدية.",
+      "summary": "عقد المصرف العراقي الإسلامي للاستثمار والتنمية اجتماع الهيئة العامة بتاريخ 2025/5/10 بنسبة حضور بلغت 71.26%. ناقش الاجتماع الوضع المالي للمصرف الذي يعاني من بلوغ خسائره المتراكمة نسبة 50% من رأس المال. تمت الموافقة على خطة لمعالجة الوضع المالي تشمل زيادة رأس المال بمبلغ 196 مليار دينار. كما تم استعراض تقارير الأداء ومناقشة الإجراءات التصحيحية المطلوبة وفقاً للقوانين والأنظمة النافذة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16362",
+      "type": "إفصاح",
+      "title": "إطلاق أسهم شركة المصرف العراقي الاسلامي - أسهم الزيادة - إعتباراً من جلسة الخميس 2025/7/10",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_0_5_38_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16362&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "المصرف العراقي الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء تداول أسهم الزيادة",
+          "value": "2025/07/10"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت دائرة تسجيل الشركات عن إطلاق أسهم الزيادة الخاصة بالمصرف العراقي الإسلامي. وسيبدأ تداول هذه الأسهم الجديدة اعتباراً من جلسة يوم الخميس الموافق 2025/07/10.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16361",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الموصل لمدن الالعاب البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "SMOF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_9_45_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16361&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الموصل لمدن الالعاب والاستثمارات السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة الموصل لمدن الألعاب والاستثمارات السياحية بياناتها المالية الخاصة بالفصل الثاني لعام 2025 إلى سوق العراق للأوراق المالية. تضمنت الوثائق المرفقة الميزانية العامة، وحساب الأرباح والخسائر، وكشف التدفق النقدي، بالإضافة إلى مقارنة البيانات مع الفصل الثاني للعام السابق 2024.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16360",
+      "type": "إفصاح",
+      "title": "التقرير الشهري لسوق العراق للاوراق المالية لشهر حزيران 2025",
+      "date": "09/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_9_8_6.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16360&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "8937398100",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الشركات المدرجة",
+          "value": "104"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "14526"
+        },
+        {
+          "label": "قيمة الأسهم المتداولة بالدينار العراقي",
+          "value": "22703453092"
+        },
+        {
+          "label": "مؤشر ISX60 (نهاية شهر حزيران)",
+          "value": "965.73 نقطة"
+        },
+        {
+          "label": "مؤشر ISX15 (نهاية شهر حزيران)",
+          "value": "1093.16 نقطة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "استعرض التقرير الشهري لسوق العراق للأوراق المالية لشهر حزيران 2025 مؤشرات الأداء العام للسوق، حيث بلغ عدد الشركات المدرجة 104 شركة. شهد الشهر تداول 8,937,398,100 سهم بقيمة إجمالية بلغت 22,703,453,092 دينار عراقي من خلال 14,526 صفقة منفذة. سجل مؤشر ISX60 انخفاضاً ليغلق عند 965.73 نقطة، كما سجل مؤشر ISX15 انخفاضاً ليغلق عند 1093.16 نقطة مقارنة بشهر أيار. تضمن التقرير أيضاً إشارات إلى إفصاحات الشركات وقرارات الهيئة والأنشطة التنظيمية والإحصائية للسوق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16359",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف جيهان للاستثمار والتمويل الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "BCIH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_8_16_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16359&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف جيهان للاستثمار والتمويل الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم مصرف جيهان للاستثمار والتمويل الاسلامي البيانات المالية الخاصة بالربع الثاني من العام 2025، وذلك التزاماً بالتعليمات السارية في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16358",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الامين للتامين البيانات المالية الفصلية السنوية لعام 2024",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "NAME"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_8_11_56.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16358&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الأمين للتأمين",
+      "raas_al_mal": "5000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم شهادة التأسيس",
+          "value": "7607"
+        },
+        {
+          "label": "تاريخ شهادة التأسيس",
+          "value": "2000/7/31"
+        },
+        {
+          "label": "رقم إجازة ممارسة التأمين",
+          "value": "2000/2"
+        },
+        {
+          "label": "تاريخ إجازة ممارسة التأمين",
+          "value": "2000/11/9"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصحت شركة الأمين للتأمين عن تقديم بياناتها المالية السنوية لعام 2024 إلى هيئة الأوراق المالية. تم توجيه نسخة من هذا الإفصاح إلى سوق العراق للأوراق المالية لغرض العلم والمتابعة. المستند لا يحتوي على تفاصيل الأرباح أو الديون أو أية مؤشرات مالية إضافية سوى إشارة إلى تقديم القوائم المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "16357",
       "type": "إفصاح",
       "title": "افصاح- قدمت شركة المعمورة للاستثمارات العقارية البيانات المالية الفصلية للفصل الثاني لعام 2025",
@@ -3359,5 +4082,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16357
+  "last_known_story_id": 16382
 }
