@@ -1,6 +1,344 @@
 {
   "items": [
     {
+      "id": "16317",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة المصرف الاهلي العراقي",
+      "date": "25/06/2025",
+      "related_symbols": [
+        "BNOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_3_9_1_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16317&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المصرف الاهلي العراقي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تداخلات تقنية في الأحرف (Encoding Issues) تمنع قراءة أي بيانات مالية محددة أو تفاصيل إجرائية واضحة، لذا تم تصنيفه تحت 'أخرى'.",
+      "summary": "يتعلق الإفصاح بإجراءات صادرة عن وزارة التجارة/دائرة تسجيل الشركات تخص المصرف الأهلي العراقي، إلا أن النص المستخرج يحتوي على رموز غير مفهومة وتداخلات في البيانات تحول دون استخلاص أي تفاصيل مالية أو جوهرية تتعلق بقرارات محددة. لا يمكن تحديد طبيعة الإجراء بدقة نتيجة رداءة جودة النص المتاح للمعالجة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16316",
+      "type": "إفصاح",
+      "title": "تاجيل موعد اجتماع الهيئة العامة لسوق العراق للاوراق المالية لعام 2025",
+      "date": "25/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_3_9_48_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16316&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "سوق العراق للاوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "موعد اجتماع الهيئة العامة الجديد",
+          "value": "2025/07/02"
+        },
+        {
+          "label": "ساعة انعقاد الاجتماع",
+          "value": "10:00 صباحاً"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر تأجيل موعد اجتماع الهيئة العامة لسوق العراق للأوراق المالية لعام 2025. تم تحديد الموعد الجديد للانعقاد ليكون في يوم الأربعاء الموافق 2025/07/02 في تمام الساعة العاشرة صباحاً. يأتي هذا الإجراء بناءً على المداولات المتعلقة بتنظيم سير الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16315",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المصرف الاهلي العراقي المنعقد بتاريخ2025/3/27",
+      "date": "24/06/2025",
+      "related_symbols": [
+        "BNOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_11_9_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16315&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف الاهلي العراقي",
+      "raas_al_mal": "520,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "زيادة رأس المال المقترحة",
+          "value": "80,000,000,000 دينار"
+        },
+        {
+          "label": "إجمالي رأس المال بعد الزيادة",
+          "value": "600,000,000,000 دينار"
+        },
+        {
+          "label": "أرباح الأسهم الموزعة",
+          "value": "400,000,000,000 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد المصرف الأهلي العراقي اجتماع الهيئة العامة بتاريخ 27 مارس 2025 لمناقشة الحسابات الختامية والقرارات المالية. أقرت الهيئة العامة زيادة رأس مال المصرف بمقدار 80 مليار دينار ليصبح إجمالي رأس المال 600 مليار دينار عراقي. كما تمت الموافقة على توزيع أرباح نقدية على المساهمين بمبلغ إجمالي قدره 400 مليار دينار. شملت القرارات أيضاً المصادقة على التقارير المالية لعام 2024 وإبراء ذمة أعضاء مجلس الإدارة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16314",
+      "type": "إفصاح",
+      "title": "لن ينظم سوق العراق للاوراق المالية جلسة التداول ليوم الخميس 2025/6/26 لمناسبة الاول من محرم الحرام",
+      "date": "24/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_11_3_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16314&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ العطلة الرسمية",
+          "value": "2025/6/26"
+        },
+        {
+          "label": "تاريخ استئناف التداول",
+          "value": "2025/6/29"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن تعطيل جلسات التداول ليوم الخميس الموافق 2025/6/26 بمناسبة حلول الأول من محرم الحرام. كما أشار الإفصاح إلى أن جلسات التداول ستستأنف بشكل اعتيادي يوم الأحد الموافق 2025/6/29.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16313",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق اشور البيانات المالية السنوية لعام 2024",
+      "date": "24/06/2025",
+      "related_symbols": [
+        "HASH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_9_43_10.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16313&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "فندق اشور",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة فندق اشور الميزانية الختامية للسنة المالية المنتهية في 2024/12/31 إلى سوق العراق للأوراق المالية. تم تقديم البيانات المالية بعد مصادقتها من قبل ديوان الرقابة المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16312",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الموصل لمدن الالعاب والاستثمارات السياحية البيانات المالية السنوية لعام 2024",
+      "date": "24/06/2025",
+      "related_symbols": [
+        "SMOF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_9_32_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16312&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الموصل لمدن الألعاب والاستثمارات السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة الموصل لمدن الألعاب والاستثمارات السياحية إفصاحاً رسمياً يتضمن إرسال البيانات والحسابات الختامية السنوية للعام 2024 إلى هيئة الأوراق المالية العراقية وسوق العراق للأوراق المالية. تم توقيع الإفصاح من قبل المدير المفوض للشركة ياسر وعد الله يحيى البراوي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16311",
+      "type": "إفصاح",
+      "title": "تغيير مكان اجتماع الهيئة العامة لشركة مصرف اربيل للاستثمار والتمويل",
+      "date": "24/06/2025",
+      "related_symbols": [
+        "BERI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_9_21_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16311&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف أربيل للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلن مصرف أربيل للاستثمار والتمويل عن تغيير موقع انعقاد اجتماع الهيئة العامة للشركة. تقرر نقل مكان الاجتماع من مقر الإدارة العامة للمصرف إلى فندق شيراتون أربيل.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16310",
+      "type": "إفصاح",
+      "title": "اعلان- شركة مصرف بغداد - توزيع الارباح للمساهمين لعام2024",
+      "date": "24/06/2025",
+      "related_symbols": [
+        "BBOB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_9_18_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16310&type=1",
+      "disclosure_type": "توزيع_ارباح",
+      "company_name": "مصرف بغداد",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "60%",
+      "dividend_date": "يوم الاربعاء الموافق 5",
+      "other_important_figures": [
+        {
+          "label": "ساعات العمل لاستلام الارباح",
+          "value": "من الساعة التاسعة صباحا الى الساعة الثانية بعد الظهر"
+        }
+      ],
+      "confidence_note": "تاريخ توزيع الأرباح مذكور في النص بعبارة 'يوم الأربعاء الموافق 5' دون تحديد الشهر أو السنة بشكل كامل، على الرغم من الإشارة إلى أن الأرباح لعام 2024.",
+      "summary": "أعلن مصرف بغداد عن المباشرة بتوزيع الأرباح السنوية لعام 2024 على مساهمي المصرف بنسبة 60% من رأس المال. يتم التوزيع بناءً على موافقة البنك المركزي، وذلك من خلال مقر الإدارة العامة وفروع المصرف في بغداد والمحافظات للمساهمين الذين يمتلكون حسابات لديهم.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16309",
+      "type": "إفصاح",
+      "title": "إطلاق أسهم شركة المنصور للصناعات الدوائية والمستلزمات الطبية - أسهم الزيادة - إعتباراً من جلسة الثلاثاء 2025/6/24",
+      "date": "23/06/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_11_11_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16309&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "شركة المنصور للصناعات الدوائية والمستلزمات الطبية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2560000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء تداول أسهم الزيادة",
+          "value": "2025/6/24"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق أسهم الزيادة الخاصة بشركة المنصور للصناعات الدوائية والمستلزمات الطبية. سيتم المباشرة بتداول أسهم الزيادة والبالغ عددها 2,560,000,000 سهم اعتباراً من جلسة يوم الثلاثاء الموافق 2025/6/24.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16308",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الدلة الدولية للصرافة في يوم الاثنين الموافق 2025/7/21",
+      "date": "23/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_11_6_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16308&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الدلة الدولية للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج مشوش جداً وغير قابل للقراءة بشكل سليم، تم الاعتماد في استخراج البيانات على العنوان المذكور في طلب المستخدم فقط لعدم وضوح تفاصيل المستند المرفق.",
+      "summary": "تعلن شركة الدلة الدولية للصرافة عن موعد انعقاد اجتماع الهيئة العامة للشركة المقرر في يوم الاثنين الموافق 2025/7/21. نظراً لعدم وضوح نص المستند المرفق، لا يمكن استخلاص قرارات محددة أو بنود مالية إضافية من محضر الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16307",
+      "type": "إفصاح",
+      "title": "اعلان- شركة اسيا سيل للاتصالات - توزيع الارباح للمساهمين لعام2024",
+      "date": "23/06/2025",
+      "related_symbols": [
+        "TASC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_10_53_56.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16307&type=1",
+      "disclosure_type": "توزيع_ارباح",
+      "company_name": "شركة اسيا سيل للاتصالات",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "150%",
+      "dividend_date": "2025/06/25",
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلنت شركة آسيا سيل للاتصالات عن توزيع أرباح نقدية على المساهمين بنسبة 150% من رأس المال. تم تحديد تاريخ التوزيع ليكون في 25 حزيران 2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16306",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 16 -19 حزيران 2025",
+      "date": "23/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_8_7_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16306&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "سوق العراق للاوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "3000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة الأسهم المتداولة",
+          "value": "3000000000 دينار"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "3113 صفقة"
+        },
+        {
+          "label": "مؤشر ISX 60 في نهاية الأسبوع",
+          "value": "950.44 نقطة"
+        },
+        {
+          "label": "مؤشر ISX 15 في نهاية الأسبوع",
+          "value": "1082.74 نقطة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "استعرض التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 16 إلى 19 حزيران 2025 أداء التداولات، حيث سجل السوق تداول مليار سهم بقيمة إجمالية بلغت 3 مليارات دينار عبر 3113 صفقة. شهدت مؤشرات السوق انخفاضاً ملحوظاً، حيث تراجع مؤشر ISX 60 بنسبة 4.56% ومؤشر ISX 15 بنسبة 3.29% مقارنة بالأسبوع السابق. كما تضمن التقرير بيانات تفصيلية حول تداولات المستثمرين غير العراقيين وأداء الشركات المدرجة في منصة ISX-OTC.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16305",
       "type": "إفصاح",
       "title": "سيتم إطلاق التداول على أسهم شركة مصرف الراجح الاسلامي في جلسة الاثنين الموافق 2025/6/23",
@@ -1929,5 +2267,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16305
+  "last_known_story_id": 16317
 }
