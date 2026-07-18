@@ -1,0 +1,313 @@
+{
+  "items": [
+    {
+      "id": "16245",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الخليج العالمية للصرافة في يوم الاحد الموافق 2025/7/6",
+      "date": "02/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_5_26_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16245&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الخليج العالمية للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "سيعقد اجتماع الهيئة العامة لشركة الخليج العالمية للصرافة في يوم الأحد الموافق 2025/7/6، وذلك وفقاً لما ورد في نص الإفصاح المرفق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16244",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة البنان للصرافة في يوم الاربعاء الموافق 2025/6/25",
+      "date": "02/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_5_22_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16244&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة البنان للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2025/6/25"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة البنان للصرافة في يوم الأربعاء الموافق 25 يونيو 2025 لمناقشة بنود جدول الأعمال المحددة للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16243",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت مصرف الانصاري الاسلامي البيانات المالية (المرحلية) للفصل الاول لعام 2025",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_51_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16243&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الأنصاري الإسلامي للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "الفترة المالية للبيانات",
+          "value": "الفصل الأول لعام 2025"
+        },
+        {
+          "label": "تاريخ المركز المالي",
+          "value": "2025/3/31"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصح مصرف الأنصاري الإسلامي للاستثمار والتمويل عن تقديمه للبيانات المالية المرحلية المختصرة الخاصة بالفصل الأول من عام 2025. وتأتي هذه الخطوة امتثالاً لمتطلبات البنك المركزي العراقي بتقديم البيانات المالية بشكل فصلي، حيث تم إرسال الوثائق المصدقة من قبل رئيس مجلس الإدارة إلى كل من البنك المركزي وهيئة الأوراق المالية وسوق العراق للأوراق المالية لغرض الاطلاع والتأشير.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16242",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف عبر العراق للاستثمار البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "BTRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_45_50.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16242&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف عبر العراق للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم مصرف عبر العراق للاستثمار البيانات المالية المرحلية (الفصلية) للفصل الأول من عام 2025 إلى سوق العراق للأوراق المالية. تم إعداد هذه البيانات وفقاً للمعايير الدولية المعتمدة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16241",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المعمورة للاستثمارات العقارية البيانات المالية السنوية لعام 2024",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_40_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16241&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": "22780600",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "رقم رأس المال ورد في النص بطريقة غير واضحة (22.780.600.600) وقد تم استخراجه كـ 22,780,600 دينار بناءً على السياق الرقمي المتاح في النص المشوه، لذا يرجى مراجعة الوثيقة الأصلية للتأكد من دقة الرقم.",
+      "summary": "أفصحت شركة المعمورة للاستثمارات العقارية عن تقديم حساباتها الختامية للسنة المالية المنتهية في 31/12/2024 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. تضمن الإفصاح إرفاق نسخة من الميزانية العامة للشركة وكشف بأسماء المساهمين.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16240",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت مصرف الشرق الاوسط العراقي البيانات المالية (المرحلية) للفصل الاول لعام 2025",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "BIME"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_35_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16240&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الشرق الأوسط العراقي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف الشرق الأوسط العراقي عن تقديم البيانات المالية المرحلية للفترة المنتهية في 31 آذار 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، وذلك للإطلاع عليها وفقاً للأصول المتبعة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16239",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف اشور الدولي البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "BASH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_29_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16239&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف آشور الدولي للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم مصرف آشور الدولي للاستثمار البيانات المالية المرحلية (غير المدققة) الخاصة بالربع الأول من عام 2025 إلى البنك المركزي العراقي وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16238",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف اربيل للاستثمار البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "01/06/2025",
+      "related_symbols": [
+        "BERI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_23_16.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16238&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف أربيل للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم مصرف أربيل للاستثمار والتمويل البيانات المالية المرحلية للفصل الأول لعام 2025 إلى سوق العراق للأوراق المالية. يأتي هذا الإفصاح في إطار التزام المصرف بتقديم تقاريره المالية الدورية للهيئة الرقابية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16237",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف الموصل للتنمية والاستثمار البيانات المالية السنوية لعام 2024",
+      "date": "29/05/2025",
+      "related_symbols": [
+        "BMFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_5_4_9_32_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16237&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الموصل للتنمية والاستثمار",
+      "raas_al_mal": "252.500.000.000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف الموصل للتنمية والاستثمار عن تقديم الميزانية العمومية المصدقة الخاصة بالسنة المالية المنتهية في 2024 إلى سوق العراق للأوراق المالية. يأتي هذا الإجراء التزاماً من المصرف بتقديم بياناته المالية وفق المتطلبات الرقابية المعمول بها.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16236",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف سومر التجاري البيانات المالية المرحلية للفصل الاول لعام 2025",
+      "date": "29/05/2025",
+      "related_symbols": [
+        "BSUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_5_4_9_3_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16236&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف سومر التجاري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ البيانات المالية المرحلية",
+          "value": "2025/3/31"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدم مصرف سومر التجاري البيانات المالية المرحلية (البيانات الفصلية) كما في 2025/3/31 إلى سوق العراق للأوراق المالية، وذلك استجابةً لمخاطبات الجهات الرقابية ذات الصلة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16235",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف الثقة الدولي الاسلامي البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "29/05/2025",
+      "related_symbols": [
+        "BTRU"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_5_4_8_58_9.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16235&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الثقة الدولي الاسلامي",
+      "raas_al_mal": "250,000,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "الفترة المالية",
+          "value": "الأشهر الثلاثة المنتهية في 31 آذار 2025"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدم مصرف الثقة الدولي الإسلامي البيانات المالية المرحلية الموجزة للفصل الأول من عام 2025. يتضمن الإفصاح إرسال التقارير المالية الخاصة بالأشهر الثلاثة المنتهية في 31 آذار 2025 إلى سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16234",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة دار السلام للتامين البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "29/05/2025",
+      "related_symbols": [
+        "NDSA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_5_4_8_53_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16234&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة دار السلام للتأمين",
+      "raas_al_mal": "7000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة دار السلام للتأمين البيانات المالية للفصل الأول لعام 2025 إلى ديوان التأمين وهيئة الأوراق المالية وسوق العراق للأوراق المالية. يأتي هذا الإفصاح استجابةً لمتطلبات الإفصاح المالي المعتمدة لدى السوق.",
+      "pdf_extraction_status": "success_via_ocr"
+    }
+  ],
+  "last_known_story_id": 16245
+}
