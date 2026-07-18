@@ -344,50 +344,31 @@ def save_json(data: dict, path: str):
     os.replace(tmp_path, path)
 
 
-def main():
-    parser = argparse.ArgumentParser(description="جلب وتلخيص إفصاح/خبر واحد جديد عبر Gemini لكل تشغيلة")
-    parser.add_argument("--existing", default="isx_disclosures.json")
-    parser.add_argument("--output", default="isx_disclosures.json")
-    parser.add_argument("--start-id", type=int, default=None)
-    args = parser.parse_args()
-
-    data = load_existing(args.existing)
-    last_known_id = data.get("last_known_story_id")
-
-    if last_known_id is None and args.start_id is None:
-        print("❌ خطأ: لا يوجد last_known_story_id بالملف، ولم تحدد --start-id.")
-        return
-
-    item, new_last_known_id = find_next_new_item(last_known_id, args.start_id)
+def process_one_item(data: dict, last_known_id, start_id) -> tuple:
+    """
+    يعالج عنصراً واحداً (إفصاح أو خبر سوق): يكتشفه، يستخرج PDF إن وجد،
+    يلخصه عبر Gemini إن لزم، ويضيفه لـ data['items'] مباشرة.
+    يرجع (success: bool, new_last_known_id أو None).
+    """
+    item, new_last_known_id = find_next_new_item(last_known_id, start_id)
 
     if item is None:
-        # لم نجد شيئاً جديداً: لا نحدّث last_known_story_id إطلاقاً، حتى
-        # يُعاد فحص نفس نطاق الأرقام بالكامل بالتشغيلة القادمة (قد تُنشر
-        # الإفصاحات لاحقاً على الموقع بعد ساعات أو أيام)
-        print("\n✅ لا يوجد عنصر جديد حالياً. لم يتم تحديث last_known_story_id.")
-        return
-
-    # وجدنا عنصراً بنجاح: نتقدّم بـ last_known_story_id لرقمه فقط
-    data["last_known_story_id"] = new_last_known_id
+        print("\n✅ لا يوجد عنصر جديد حالياً بهذا النطاق.")
+        return False, None
 
     # فقط الإفصاحات (type=1) تحتاج تلخيص مالي مفصّل عبر PDF. أخبار السوق
-    # (type=2) نكتفي بحفظ العنوان والتفاصيل الأساسية بدون استدعاء Gemini،
-    # توفيراً لاستهلاك الـ API على ما يستحق التحليل المالي فعلاً.
+    # (type=2) نكتفي بحفظ العنوان والتفاصيل الأساسية بدون استدعاء Gemini.
     if item["type"] == "خبر_سوق":
         print("\nℹ️ هذا خبر سوق عام (type=2)، سيُحفظ بدون تلخيص Gemini.")
         item["disclosure_type"] = None
         item["summary"] = None
         data["items"].insert(0, item)
-        save_json(data, args.output)
-        print(f"✅ تم الحفظ. الإجمالي: {len(data['items'])}")
-        return
+        return True, new_last_known_id
 
     if not item.get("pdf_url"):
         print("\nℹ️ لا يوجد PDF مرفق بهذا الإفصاح، سيُحفظ بدون تلخيص Gemini.")
         data["items"].insert(0, item)
-        save_json(data, args.output)
-        print(f"✅ تم الحفظ. الإجمالي: {len(data['items'])}")
-        return
+        return True, new_last_known_id
 
     print(f"\n📄 تحميل واستخراج نص PDF: {item['pdf_url']}")
     pdf_result = extract_pdf_text(item["pdf_url"])
@@ -397,26 +378,79 @@ def main():
         print("⚠️ فشل استخراج نص PDF. سيُحفظ الإفصاح بدون تلخيص مالي.")
         item["pdf_extraction_status"] = pdf_result["status"]
         data["items"].insert(0, item)
-        save_json(data, args.output)
-        print(f"✅ تم الحفظ (بدون ملخص). الإجمالي: {len(data['items'])}")
-        return
+        return True, new_last_known_id
 
     summary = summarize_with_gemini(item["title"], pdf_result["text"])
 
     if not summary:
-        print("⚠️ فشل التلخيص عبر Gemini. سيُحفظ الإفصاح بدون تلخيص مالي (سيُعاد لاحقاً يدوياً إن لزم).")
+        print("⚠️ فشل التلخيص عبر Gemini. سيُحفظ الإفصاح بدون تلخيص مالي.")
         item["pdf_extraction_status"] = "success_but_gemini_failed"
         data["items"].insert(0, item)
-        save_json(data, args.output)
-        print(f"✅ تم الحفظ (بدون ملخص). الإجمالي: {len(data['items'])}")
-        return
+        return True, new_last_known_id
 
     item.update(summary)
     item["pdf_extraction_status"] = pdf_result["status"]
     data["items"].insert(0, item)
+    print(f"🎉 نجاح كامل! تم تلخيص الإفصاح: {item['title'][:60]}")
+    return True, new_last_known_id
+
+
+def main():
+    parser = argparse.ArgumentParser(description="جلب وتلخيص إفصاحات/أخبار جديدة عبر Gemini")
+    parser.add_argument("--existing", default="isx_disclosures.json")
+    parser.add_argument("--output", default="isx_disclosures.json")
+    parser.add_argument("--start-id", type=int, default=None)
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        default=1,
+        help=(
+            "عدد العناصر الناجحة المطلوب معالجتها بهذه التشغيلة (افتراضياً 1، "
+            "وهو السلوك المعتاد للتحديث اليومي التلقائي). استخدم قيمة أعلى "
+            "فقط بتشغيل يدوي مؤقت (مثل تعبئة أرشيف تاريخي)، ولا تُدخلها "
+            "بملف الـ workflow المجدول تلقائياً."
+        ),
+    )
+    args = parser.parse_args()
+
+    data = load_existing(args.existing)
+    last_known_id = data.get("last_known_story_id")
+
+    if last_known_id is None and args.start_id is None:
+        print("❌ خطأ: لا يوجد last_known_story_id بالملف، ولم تحدد --start-id.")
+        return
+
+    processed_count = 0
+    current_last_known = last_known_id
+    current_start = args.start_id
+
+    for i in range(args.batch_size):
+        print(f"\n{'=' * 20} معالجة عنصر {i + 1}/{args.batch_size} {'=' * 20}")
+        success, new_last_known = process_one_item(data, current_last_known, current_start)
+
+        if not success:
+            # لم يوجد عنصر جديد بهذه المحاولة: نتوقف عن الحلقة، لكن نحفظ
+            # ما تم إنجازه من عناصر سابقة بهذه التشغيلة (إن وُجد)
+            break
+
+        processed_count += 1
+        # نتقدّم للعنصر التالي بنفس التشغيلة إن كان batch_size > 1
+        current_last_known = new_last_known
+        current_start = None  # لا حاجة لها بعد أول عنصر ناجح
+
+    if processed_count == 0:
+        print("\n✅ لم تتم إضافة أي عنصر جديد. لم يتم تحديث last_known_story_id.")
+        return
+
+    # نحدّث last_known_story_id لآخر رقم ناجح وصلنا له فقط
+    data["last_known_story_id"] = current_last_known
     save_json(data, args.output)
 
-    print(f"\n🎉 نجاح كامل! تم تلخيص وحفظ الإفصاح. الإجمالي: {len(data['items'])}")
+    print(
+        f"\n🎉 انتهت التشغيلة. تمت معالجة {processed_count} عنصر جديد بنجاح. "
+        f"last_known_story_id الآن: {current_last_known}. "
+        f"الإجمالي بالملف: {len(data['items'])}"
+    )
 
 
 if __name__ == "__main__":
