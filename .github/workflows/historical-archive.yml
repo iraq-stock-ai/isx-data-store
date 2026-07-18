@@ -1,0 +1,76 @@
+name: تعبئة الأرشيف التاريخي (يدوي فقط)
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_id:
+        description: 'رقم storyId الذي نبدأ منه (سيبدأ من start_id + 1) - يُستخدم فقط بأول تشغيلة'
+        required: true
+        default: '16234'
+      batch_size:
+        description: 'عدد العناصر المطلوب معالجتها بهذه التشغيلة'
+        required: true
+        default: '12'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-historical:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: تثبيت مكتبات النظام (Tesseract OCR بدعم العربية)
+        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
+
+      - name: تثبيت المكتبات
+        run: pip install requests beautifulsoup4 lxml pdfplumber pytesseract pdf2image
+
+      - name: جلب دفعة من الأرشيف التاريخي
+        env:
+          GEMINI_DISCLOSURES_API_KEY: ${{ secrets.GEMINI_DISCLOSURES_API_KEY }}
+        run: |
+          python news-pipeline/fetch_and_summarize_isx.py \
+            --existing isx_disclosures_historical.json \
+            --output isx_disclosures_historical.json \
+            --start-id ${{ github.event.inputs.start_id }} \
+            --batch-size ${{ github.event.inputs.batch_size }}
+
+      - name: فحص وجود تغييرات فعلية
+        id: check_changes
+        if: always()
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit ورفع الأرشيف التاريخي
+        if: always() && steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "isx-data-bot"
+          git config user.email "actions@github.com"
+          git add isx_disclosures_historical.json
+          git commit -m "تعبئة أرشيف تاريخي - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for attempt in 1 2 3; do
+            if git pull --rebase && git push; then
+              echo "✅ تم الرفع بنجاح"
+              break
+            else
+              echo "⚠️ فشل الرفع، محاولة $attempt من 3..."
+              git rebase --abort 2>/dev/null || true
+              sleep 5
+            fi
+          done
+
+      - name: تنبيه عند الفشل
+        if: failure()
+        run: |
+          echo "❌ حدث خطأ أثناء تعبئة الأرشيف التاريخي. راجع السجل أعلاه."
