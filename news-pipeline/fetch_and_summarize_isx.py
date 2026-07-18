@@ -111,15 +111,23 @@ def fetch_story(story_id: str) -> dict:
 
 
 def find_next_new_item(last_known_id: int, start_id: int = None) -> tuple:
-    """يبحث عن أول عنصر جديد بعد آخر رقم معروف. يرجع (item, highest_id_tried)."""
+    """
+    يبحث عن أول عنصر جديد بعد آخر رقم معروف. يرجع (item, highest_successful_id).
+
+    مهم: لا نتقدّم أبداً بـ last_known_story_id إلى رقم لم ينجح فعلياً، حتى لو
+    جربناه وفشل (كان فارغاً وقت التجربة). السبب: الموقع قد ينشر إفصاحاً بهذا
+    الرقم لاحقاً (بعد ساعات أو أيام)، فلو اعتبرنا الرقم "منتهياً" بمجرد فشل
+    تجربة واحدة، سنفوّت هذا الإفصاح للأبد عند نشره لاحقاً. لذلك:
+    - إن وجدنا عنصراً ناجحاً: نرجّع رقمه كـ last_known الجديد (نتقدّم).
+    - إن لم نجد شيئاً بعد كل المحاولات: نرجّع None، ليبقى last_known القديم
+      كما هو بدون تغيير، فتُعاد تجربة نفس الفجوة بالكامل بالتشغيلة القادمة.
+    """
     current_id = (int(last_known_id) + 1) if last_known_id is not None else start_id
     consecutive_failures = 0
-    highest_tried = current_id - 1
 
     while consecutive_failures < MAX_GAP_ATTEMPTS:
         print(f"  تجربة storyId={current_id}...")
         detail = fetch_story(str(current_id))
-        highest_tried = current_id
 
         if detail is None:
             consecutive_failures += 1
@@ -129,9 +137,13 @@ def find_next_new_item(last_known_id: int, start_id: int = None) -> tuple:
             continue
 
         print(f"    ✅ [{detail['type']}] {detail['title'][:60]}")
-        return detail, highest_tried
+        return detail, current_id
 
-    return None, highest_tried
+    print(
+        f"    ⚠️ لم يُعثر على عنصر جديد بعد {MAX_GAP_ATTEMPTS} محاولة. "
+        f"سيُعاد فحص نفس النطاق بالكامل بالتشغيلة القادمة (قد تُنشر الإفصاحات لاحقاً)."
+    )
+    return None, None
 
 
 def extract_pdf_text_via_ocr(pdf_path: str) -> str:
@@ -346,16 +358,17 @@ def main():
         print("❌ خطأ: لا يوجد last_known_story_id بالملف، ولم تحدد --start-id.")
         return
 
-    item, highest_tried = find_next_new_item(last_known_id, args.start_id)
+    item, new_last_known_id = find_next_new_item(last_known_id, args.start_id)
 
-    # نحدّث last_known_story_id دائماً لأعلى رقم جربناه (حتى لو فشل)، لتفادي
-    # إعادة تجربة نفس الفجوات بكل تشغيلة قادمة
-    data["last_known_story_id"] = highest_tried
-
-    if not item:
-        print("\n✅ لا يوجد عنصر جديد حالياً.")
-        save_json(data, args.output)
+    if item is None:
+        # لم نجد شيئاً جديداً: لا نحدّث last_known_story_id إطلاقاً، حتى
+        # يُعاد فحص نفس نطاق الأرقام بالكامل بالتشغيلة القادمة (قد تُنشر
+        # الإفصاحات لاحقاً على الموقع بعد ساعات أو أيام)
+        print("\n✅ لا يوجد عنصر جديد حالياً. لم يتم تحديث last_known_story_id.")
         return
+
+    # وجدنا عنصراً بنجاح: نتقدّم بـ last_known_story_id لرقمه فقط
+    data["last_known_story_id"] = new_last_known_id
 
     # فقط الإفصاحات (type=1) تحتاج تلخيص مالي مفصّل عبر PDF. أخبار السوق
     # (type=2) نكتفي بحفظ العنوان والتفاصيل الأساسية بدون استدعاء Gemini،
