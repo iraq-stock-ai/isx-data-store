@@ -1,6 +1,348 @@
 {
   "items": [
     {
+      "id": "16341",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت الشركة العراقية للاعمال الهندسية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "03/07/2025",
+      "related_symbols": [
+        "IIEW"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_8_16_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16341&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية للأعمال الهندسية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت الشركة العراقية للأعمال الهندسية بياناتها المالية الخاصة بالفصل الثاني لعام 2025. يتضمن الإفصاح المرفقات المالية التي تشمل الميزانية العامة، كشف العمليات الجارية، وكشف التدفق النقدي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16340",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق بغداد البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "03/07/2025",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_8_11_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16340&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فندق بغداد",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت شركة فندق بغداد (المساهمة المختلطة) عن تقديم بياناتها المالية الفصلية الخاصة بالفصل الثاني من عام 2025 إلى سوق العراق للأوراق المالية. تم توقيع الإفصاح من قبل المدير المفوض للشركة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16339",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت الشركة العراقية للسجاد والمفروشات البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "03/07/2025",
+      "related_symbols": [
+        "IITC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_8_5_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16339&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية للسجاد والمفروشات",
+      "raas_al_mal": "500000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "الفترة المالية للميزانية",
+          "value": "من 2025/4/1 لغاية 2025/6/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدمت الشركة العراقية للسجاد والمفروشات إفصاحاً رسمياً يتضمن بياناتها المالية الفصلية للفصل الثاني من العام 2025. تغطي هذه البيانات الفترة الممتدة من 1 أبريل 2025 ولغاية 30 يونيو 2025، وذلك استجابةً لمتطلبات هيأة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16338",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فنادق عشتار المنعقد بتاريخ 2025/4/16",
+      "date": "03/07/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_7_59_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16338&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "فنادق عشتار",
+      "raas_al_mal": "7,000,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": "2,821,873,366 دينار عراقي",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "نسبة حضور المساهمين",
+          "value": "70.22%"
+        },
+        {
+          "label": "مبلغ العجز المتراكم كما في 2022/12/31",
+          "value": "2,821,873,366 دينار عراقي"
+        },
+        {
+          "label": "خسائر الشركة لعام 2022",
+          "value": "426,762,171 دينار عراقي"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقدت شركة فنادق عشتار اجتماع الهيئة العامة بتاريخ 2025/4/16 بنصاب قانوني بلغ 70.22%. ناقش الاجتماع الحسابات الختامية للسنوات المنتهية في 2021/12/31 و2022/12/31. أظهرت البيانات المالية عجزاً متراكماً بلغ 2,821,873,366 دينار عراقي، مع تسجيل خسائر سنوية بقيمة 426,762,171 دينار لعام 2022. تم خلال الاجتماع المصادقة على التقرير السنوي ومناقشة وضع الشركة المالي والقانوني.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16337",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الخاتم للاتصالات البيانات المالية السنوية لعام 2024",
+      "date": "03/07/2025",
+      "related_symbols": [
+        "TZNI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_7_55_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16337&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الخاتم للاتصالات",
+      "raas_al_mal": "500,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استنتاج قيمة رأس المال من الترويسة الواردة في النص '500,000,000,000 دينار' رغم تداخل النص في المستند الممسوح ضوئياً.",
+      "summary": "أفصحت شركة الخاتم للاتصالات عن تقديم بياناتها المالية الموحدة والمدققة للسنة المالية المنتهية في 31 ديسمبر 2024 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. يأتي هذا الإجراء التزاماً بمتطلبات الإفصاح المالي للشركات المساهمة المدرجة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16336",
+      "type": "إفصاح",
+      "title": "اللائحة التنظيمية رقم (17)الحافظ الامين المعدلة لسنة 2025",
+      "date": "03/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_6_50_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16336&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم اللائحة التنظيمية",
+          "value": "17"
+        },
+        {
+          "label": "السنة التنظيمية",
+          "value": "2025"
+        }
+      ],
+      "confidence_note": "النص المستخرج يعاني من تداخل في الأحرف والرموز (OCR noise) مما يجعل استخراج البيانات المالية الدقيقة للشركات غير ممكن، المستند يتعلق باللائحة التنظيمية رقم (17) الخاصة بالحافظ الأمين.",
+      "summary": "يتضمن الإفصاح إصدار اللائحة التنظيمية رقم (17) الخاصة بمهام ومسؤوليات الحافظ الأمين المعدلة لسنة 2025. تحدد اللائحة الإطار القانوني والتنظيمي لعمل الحافظ الأمين داخل سوق العراق للأوراق المالية. تشمل اللائحة الضوابط الخاصة بفتح الحسابات، عمليات التسوية والتقاص، وإدارة الأصول المودعة. كما توضح الواجبات الرقابية والالتزامات المهنية للحافظ الأمين تجاه العملاء والجهات الرقابية لضمان حماية الاستثمارات.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16335",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الزيادة لشركة الكرمل للتوسط في بيع وشراء الاوراق المالية إعتباراً من جلسة الخميس الموافق 2025/7/3",
+      "date": "02/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_9_14_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16335&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "شركة الكرمل للتوسط في بيع وشراء الاوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "210000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/7/3"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر إطلاق التداول على أسهم الزيادة لشركة الكرمل للتوسط في بيع وشراء الاوراق المالية، وذلك بواقع 210,000,000 سهم. سيتم تداول هذه الأسهم اعتباراً من جلسة يوم الخميس الموافق 2025/7/3.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16334",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة الامين للتامين في جلسة الخميس الموافق 2025/7/3",
+      "date": "02/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_9_0_15.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16334&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الامين للتامين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/7/3"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن المباشرة بإطلاق التداول على أسهم شركة الأمين للتأمين في جلسة التداول ليوم الخميس الموافق 2025/7/3، وذلك استناداً إلى قرارات الهيئة العامة للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16333",
+      "type": "إفصاح",
+      "title": "لن ينظم سوق العراق للاوراق المالية جلسة التداول ليوم الاحد 2025/7/6 لمناسبة العاشر من محرم الحرام",
+      "date": "02/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_8_42_6.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16333&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ العطلة",
+          "value": "2025/7/6"
+        },
+        {
+          "label": "تاريخ استئناف التداول",
+          "value": "2025/7/7"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن تعطيل جلسة التداول ليوم الأحد الموافق 2025/7/6 وذلك بمناسبة ذكرى العاشر من محرم الحرام. كما أكد السوق استئناف نشاطه وجلسات التداول الاعتيادية ابتداءً من يوم الاثنين الموافق 2025/7/7.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16332",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المعمورة للاستثمارات العقارية في يوم الاثنين الموافق 2025/7/21",
+      "date": "02/07/2025",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_8_23_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16332&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة المعمورة للاستثمارات العقارية يوم الاثنين الموافق 2025/7/21. يهدف الاجتماع إلى مناقشة البنود المدرجة ضمن جدول الأعمال الخاص بالشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16331",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الحمراء للتامين البيانات المالية السنوية لعام 2024",
+      "date": "02/07/2025",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_7_29_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16331&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": "25,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم الإجازة",
+          "value": "2001/3/27"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدمت شركة الحمراء للتأمين الحسابات الختامية الخاصة بها عن السنة المالية المنتهية في 2024 إلى سوق العراق للأوراق المالية. الإفصاح تضمن نسخة من البيانات المالية المجازة من قبل وزارة المالية وديوان التأمين، مع تأكيد الشركة على أن رأس مالها يبلغ 25 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16330",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة سما بغداد للصرافة في يوم الاربعاء الموافق 2025/8/13",
+      "date": "02/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_7_19_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16330&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة سما بغداد للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2025/8/13"
+        },
+        {
+          "label": "تاريخ الموعد البديل للاجتماع في حال عدم اكتمال النصاب",
+          "value": "2025/8/14"
+        },
+        {
+          "label": "تاريخ انتهاء قبول وكالات المساهمين",
+          "value": "2025/8/12"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت شركة سما بغداد للصرافة عن دعوتها لعقد اجتماع الهيئة العامة في يوم الأربعاء الموافق 2025/8/13. وفي حال عدم اكتمال النصاب القانوني للاجتماع، سيتم عقد اجتماع ثانٍ في يوم الخميس الموافق 2025/8/14. كما حددت الشركة يوم الثلاثاء الموافق 2025/8/12 كآخر موعد لقبول وكالات المساهمين للمشاركة في الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16329",
       "type": "إفصاح",
       "title": "سيتم إطلاق التداول على أسهم شركة بغداد للمشروبات الغازية في جلسة الاربعاء الموافق 2025/7/2",
@@ -2637,5 +2979,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16329
+  "last_known_story_id": 16341
 }
