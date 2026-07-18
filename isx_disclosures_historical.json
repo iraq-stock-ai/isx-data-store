@@ -1,6 +1,332 @@
 {
   "items": [
     {
+      "id": "16293",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المنصور للصناعات الدوائية المنعقد بتاريخ 2024/12/2",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_6_28_30.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16293&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المنصور للصناعات الدوائية",
+      "raas_al_mal": "16000000000",
+      "net_profit": null,
+      "total_debts": "10955000808",
+      "traded_shares_quantity": null,
+      "dividend_per_share": "0.16",
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة العجز المتراكم",
+          "value": "10,955,000,808 دينار"
+        },
+        {
+          "label": "مبلغ توزيع الأرباح المقترح",
+          "value": "2,560,000,000 دينار"
+        },
+        {
+          "label": "رأس المال بعد الزيادة",
+          "value": "18,560,000,000 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقدت شركة المنصور للصناعات الدوائية اجتماع الهيئة العامة بتاريخ 2024/12/2، حيث تمت مناقشة البيانات المالية لعام 2023. أقر الاجتماع توزيع أرباح نقدية على المساهمين بمبلغ إجمالي قدره 2,560,000,000 دينار عراقي. كما تقرر زيادة رأس مال الشركة من 16 مليار دينار إلى 18.56 مليار دينار عن طريق رسملة جزء من الأرباح المحتجزة. أشار المحضر أيضاً إلى وجود عجز متراكم في حسابات الشركة بلغت قيمته 10,955,000,808 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16292",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف اسيا العراق الاسلامي البيانات المالية السنوية لعام 2024",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "BAIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_5_48_41.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16292&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف اسيا العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف آسيا العراق الإسلامي عن تقديمه للحسابات الختامية والتقرير السنوي للسنة المالية المنتهية في 2024/12/31 إلى سوق العراق للأوراق المالية. تم تقديم هذه البيانات مصدقة من قبل مجلس مهنة مراقبة وتدقيق الحسابات.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16291",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الوليد للصرافة في يوم الاحد الموافق 2025/7/20",
+      "date": "19/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_5_45_17.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16291&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الوليد للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة الوليد للصرافة في يوم الأحد الموافق 2025/7/20 لمناقشة البنود المدرجة على جدول الأعمال. لم يتضمن نص الإفصاح المرفق أي تفاصيل مالية أو نسب توزيع أرباح تخص الشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16290",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف بغداد المنعقد بتاريخ 2025/5/3",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "BBOB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_5_34_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16290&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف بغداد",
+      "raas_al_mal": "400,000,000,000",
+      "net_profit": "85,568,000,000",
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "مبلغ تخصيصات القروض المتعثرة لعام 2023",
+          "value": "306,000,000"
+        },
+        {
+          "label": "مجموع موجودات المصرف لعام 2023",
+          "value": "3,500,000,000,000"
+        },
+        {
+          "label": "مجموع المطلوبات لعام 2023",
+          "value": "2,580,000,000,000"
+        },
+        {
+          "label": "إيرادات الفوائد لعام 2023",
+          "value": "473,000,000,000"
+        },
+        {
+          "label": "مصروفات الفوائد لعام 2023",
+          "value": "199,000,000,000"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد مصرف بغداد اجتماع الهيئة العامة في تاريخ 2025/5/3 للمصادقة على الحسابات الختامية للسنة المالية المنتهية في 2023. ناقش الاجتماع التقارير المالية للمصرف، حيث بلغ صافي الربح 85.568 مليار دينار عراقي. كما استعرض الاجتماع مؤشرات الأداء المالي بما في ذلك إجمالي الموجودات والمطلوبات وتخصيصات الديون المتعثرة لعام 2023. تضمن المحضر أيضاً مناقشة الالتزام بالمعايير الدولية للتقارير المالية (IFRS) والنتائج التشغيلية للمصرف خلال الفترة المذكورة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16289",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المصرف الدولي الاسلامي البيانات المالية السنوية لعام 2024",
+      "date": "18/06/2025",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_3_7_35_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16289&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الدولي الإسلامي",
+      "raas_al_mal": "260846000000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم المصرف الدولي الإسلامي إفصاحاً رسمياً يتضمن إرسال الحسابات الختامية الخاصة بالمصرف للسنة المالية المنتهية في 2024/12/31 إلى سوق العراق للأوراق المالية. تم ذكر رأس مال المصرف في الإفصاح بقيمة مائتان وستون مليار وثمانمائة وستة واربعون مليون دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16288",
+      "type": "إفصاح",
+      "title": "الغاء اجازة وترخيص شركة الباتك للوساطة بالاوراق المالية",
+      "date": "18/06/2025",
+      "related_symbols": [
+        "BBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_3_7_20_54.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16288&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة الباتك للوساطة بالأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم الإفصاح",
+          "value": "173"
+        },
+        {
+          "label": "تاريخ القرار",
+          "value": "2025/06/15"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت هيئة الأوراق المالية العراقية عن صدور قرار يقضي بإلغاء إجازة وترخيص شركة الباتك للوساطة بالأوراق المالية. جاء هذا القرار استناداً إلى الصلاحيات الممنوحة للهيئة في تنظيم ومراقبة شركات الوساطة العاملة في السوق. يترتب على هذا الإجراء إيقاف كافة الأنشطة المالية والتعاقدية للشركة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16287",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف السنام الاسلامي البيانات المالية السنوية لعام 2024",
+      "date": "17/06/2025",
+      "related_symbols": [
+        "BSAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_8_22_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16287&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف السنام الإسلامي",
+      "raas_al_mal": "300000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف السنام الإسلامي عن تقديمه للحسابات الختامية المصادق عليها للسنة المالية المنتهية في 2024 إلى سوق العراق للأوراق المالية. يأتي هذا الإجراء التزاماً من المصرف بمتطلبات الإفصاح المالي السنوي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16286",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف العربية الاسلامي البيانات المالية السنوية لعام 2024",
+      "date": "17/06/2025",
+      "related_symbols": [
+        "BAAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_8_14_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16286&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف العربية الاسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "الفترة المالية",
+          "value": "من 2024/01/01 ولغاية 2024/12/31"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدم مصرف العربية الاسلامي تقريره السنوي متضمناً الميزانية العامة والحسابات الختامية للفترة المالية المنتهية في 31 ديسمبر 2024. يأتي هذا الإفصاح في إطار متطلبات سوق العراق للأوراق المالية وهيئة الأوراق المالية للاطلاع على البيانات المالية السنوية للمصرف.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16285",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة طريق الخازر لانتاج المواد الانشائية البيانات المالية السنوية لعام 2024",
+      "date": "16/06/2025",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_10_39_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16285&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية والاستثمارات العقارية والمقاولات العامة",
+      "raas_al_mal": "1,000,000,000 دينار",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية والاستثمارات العقارية والمقاولات العامة عن إرسال حساباتها الختامية للسنة المالية المنتهية في 31/12/2024 إلى سوق العراق للأوراق المالية. تم إرفاق الحسابات المصادق عليها من قبل ديوان الرقابة المالية الاتحادي (دائرة تدقيق المنطقة الأولى - موصل) وفقاً للكتاب المرقم 140015 المؤرخ في 5/5/2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16284",
+      "type": "إفصاح",
+      "title": "محضر اجتماع الهيئة العامة للشركات المساهمة في سوق العراق للاوراق المالية السبت -14 حزيران 2025",
+      "date": "16/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_1_7_27_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16284&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الشركات المساهمة الحاضرة في الاجتماع",
+          "value": "54 شركة"
+        },
+        {
+          "label": "عدد الشركات المساهمة المدرجة الكلي",
+          "value": "104 شركة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد سوق العراق للأوراق المالية اجتماع الهيئة العامة للشركات المساهمة المدرجة في 14 حزيران 2025 بحضور 54 شركة من أصل 104 شركات. تمحور الاجتماع حول انتخاب ممثل عن الشركات المساهمة في عضوية مجلس المحافظين للدورة 2025-2026. عقب انسحاب أحد المرشحين، أجريت عملية التصويت السري التي أسفرت عن انتخاب السيد عمر محمد عبد القادر لعضوية المجلس. تم اعتماد النتائج تحت إشراف هيئة الأوراق المالية وبحضور مراقبين ومقررين للجلسة وفقاً للنظام الداخلي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16283",
+      "type": "إفصاح",
+      "title": "عقدت الهيئة العامة للشركات المساهمة المدرجة في سوق العراق للاوراق المالية يوم السبت 2025/6/14",
+      "date": "16/06/2025",
+      "related_symbols": [],
+      "pdf_url": null,
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16283&type=1"
+    },
+    {
+      "id": "16282",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة دار السلام للتامين في يوم الثلاثاء الموافق 2025/6/24",
+      "date": "12/06/2025",
+      "related_symbols": [
+        "NDSA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_10_58_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16282&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة دار السلام للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة دار السلام للتأمين يوم الثلاثاء الموافق 2025/6/24. سيتم خلال الاجتماع مناقشة جدول الأعمال المخصص وفقاً للوائح والتعليمات المتبعة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16281",
       "type": "إفصاح",
       "title": "إطلاق أسهم شركة الاهلية للتامين - أسهم الزيادة - إعتباراً من جلسة الاثنين 2025/6/16",
@@ -1299,5 +1625,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16281
+  "last_known_story_id": 16293
 }
