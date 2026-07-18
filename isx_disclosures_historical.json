@@ -1,6 +1,310 @@
 {
   "items": [
     {
+      "id": "16305",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الراجح الاسلامي في جلسة الاثنين الموافق 2025/6/23",
+      "date": "22/06/2025",
+      "related_symbols": [
+        "BRAJ"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_10_23_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16305&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الراجح الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/6/23"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر إطلاق التداول على أسهم مصرف الراجح الاسلامي في سوق العراق للأوراق المالية اعتباراً من جلسة يوم الاثنين الموافق 2025/6/23.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16304",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فنادق عشتار البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "22/06/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_6_11_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16304&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فنادق عشتار السياحية",
+      "raas_al_mal": "7,000,000,000 دينار",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة فنادق عشتار السياحية (مساهمة مختلطة) إفصاحاً إلى سوق العراق للأوراق المالية يتضمن تزويد السوق بالبيانات المالية للفصل الأول من السنة المالية 2025 للفترة الممتدة من 1/1/2025 ولغاية 31/3/2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16303",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة اهل الخير للصرافة في يوم الثلاثاء الموافق 2025/7/29",
+      "date": "22/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_57_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16303&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة أهل الخير للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير مقروء ومشوّه تقنياً (Garbled text)، لذا تعذر استخراج أي معلومات مالية أو تفاصيل إضافية باستثناء تاريخ الاجتماع واسم الشركة الوارد في نص السؤال.",
+      "summary": "أعلنت شركة أهل الخير للصرافة عن عقد اجتماع هيئتها العامة في يوم الثلاثاء الموافق 2025/7/29. نظراً لعدم وضوح النص المرفق، لم تتوفر أي تفاصيل إضافية حول بنود جدول أعمال الاجتماع أو القرارات المتخذة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16302",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الامين للصرافة في يوم الجمعة الموافق 2025/7/11",
+      "date": "22/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_54_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16302&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الامين للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف الـ PDF غير مقروء بشكل واضح (مشوه)، ولكن تم استخراج المعلومة الأساسية وهي تاريخ وموضوع الاجتماع من نص الإفصاح المرفق في طلب المستخدم.",
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة الأمين للصرافة يوم الجمعة الموافق 11 يوليو 2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16301",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الطف للصرافة في يوم الثلاثاء الموافق 2025/7/29",
+      "date": "22/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_45_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16301&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الطف للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "دعت شركة الطف للصرافة مساهميها لحضور اجتماع الهيئة العامة المقرر عقده يوم الثلاثاء الموافق 2025/7/29 لمناقشة الحسابات الختامية للسنة المالية 2024. يتضمن جدول الأعمال مناقشة تقارير مجلس الإدارة ومراقب الحسابات، بالإضافة إلى مناقشة العجز المتراكم وتوزيع الأرباح وإبراء ذمة أعضاء مجلس الإدارة. كما سيتم اتخاذ القرار المناسب بشأن تعيين مراقب حسابات جديد للسنة المالية 2025. في حال عدم اكتمال النصاب القانوني للاجتماع، تقرر تأجيله إلى يوم الثلاثاء الموافق 2025/8/5.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16300",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الحدود للصرافة في يوم الاحد الموافق 2025/8/17",
+      "date": "22/06/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_0_5_40_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16300&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الحدود للصرافة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة الحدود للصرافة في يوم الأحد الموافق 2025/8/17 لمناقشة بنود الاجتماع المدرجة في جدول الأعمال.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16299",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة المدينة السياحية في سد الموصل في جلسة الاحد الموافق 2025/6/22",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "HTVM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_10_12_54.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16299&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "المدينة السياحية في سد الموصل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/6/22"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قررت هيئة الأوراق المالية إطلاق التداول على أسهم شركة المدينة السياحية في سد الموصل في جلسة يوم الأحد الموافق 2025/6/22.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16298",
+      "type": "إفصاح",
+      "title": "ايقاف تداول اسهم شركة الباتك للاستثمار المالي اعتبارا من جلسة الاحد2025/6/22",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "VBAT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_10_8_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16298&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة الباتك للاستثمار المالي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إيقاف التداول",
+          "value": "2025/6/22"
+        },
+        {
+          "label": "تاريخ صدور الإفصاح",
+          "value": "2025/6/17"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قررت هيئة الأوراق المالية إيقاف تداول أسهم شركة الباتك للاستثمار المالي في سوق العراق للأوراق المالية اعتباراً من جلسة يوم الأحد الموافق 22/6/2025. جاء هذا الإجراء بناءً على كتاب الهيئة المؤرخ في 17/6/2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16297",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف اربيل للاستثمار والتمويل في يوم الجمعة الموافق 2025/7/4",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "BERI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_9_55_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16297&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف اربيل للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة مصرف اربيل للاستثمار والتمويل في يوم الجمعة الموافق 2025/7/4، وذلك لمناقشة البنود المدرجة ضمن جدول أعمال الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16296",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة الوطنية للاستثمارات السياحية في يوم الاحد الموافق 2025/7/27",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "HNTI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_2_11_0_15.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16296&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة الوطنية للاستثمارات السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تعلن الشركة الوطنية للاستثمارات السياحية عن عقد اجتماع الهيئة العامة للشركة في يوم الأحد الموافق 2025/7/27، وذلك وفقاً للإجراءات المتبعة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16295",
+      "type": "إفصاح",
+      "title": "مصرف سومر التجاري استبدال البيانات المالية للسنة المالية المنتهية في 31/12/2023",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "BSUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_7_28_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16295&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف سومر التجاري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة العجز المتراكم كما ورد في الميزانية",
+          "value": "250,000,000 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "يعلن مصرف سومر التجاري عن استبدال البيانات المالية للسنة المنتهية في 31/12/2023. يتضمن الإفصاح توضيحاً بخصوص العجز المتراكم الذي بلغ مقداره 250,000,000 دينار عراقي. تم تقديم هذه البيانات بعد التدقيق من قبل مكتب عبد الحسين عبد العظيم الياسري وشركاؤه.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16294",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة المنصور للصناعات الدوائية",
+      "date": "19/06/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_6_4_6_29_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16294&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المنصور للصناعات الدوائية",
+      "raas_al_mal": "18,560,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "عقدت شركة المنصور للصناعات الدوائية اجتماع الهيئة العامة لمناقشة وإقرار الحسابات الختامية للسنة المالية المنتهية في 31/12/2019. تضمن الاجتماع استعراض تقرير مجلس الإدارة وتقرير مراقب الحسابات حول أداء الشركة المالي. تم خلال الاجتماع إبراء ذمة أعضاء مجلس الإدارة بعد مناقشة البنود المدرجة في جدول الأعمال والمصادقة عليها وفقاً للقوانين والأنظمة النافذة. انتهت إجراءات الشركة بتوثيق محضر الاجتماع والمصادقة على القرارات المتخذة من قبل الهيئة العامة.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16293",
       "type": "إفصاح",
       "title": "محضر إجتماع الهيئة العامة المصدق لشركة المنصور للصناعات الدوائية المنعقد بتاريخ 2024/12/2",
@@ -1625,5 +1929,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16293
+  "last_known_story_id": 16305
 }
