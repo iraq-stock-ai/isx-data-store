@@ -1,6 +1,386 @@
 {
   "items": [
     {
+      "id": "16357",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المعمورة للاستثمارات العقارية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_6_37_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16357&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": "22,780,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة المعمورة للاستثمارات العقارية البيانات المالية الفصلية للفصل الثاني لعام 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. يتضمن الإفصاح إرسال نسخة من ميزانية الفصل الثاني للشركة لأغراض الاطلاع والتوثيق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16356",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة بغداد للمشروبات الغازية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_6_32_41.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16356&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت شركة بغداد للمشروبات الغازية عن تقديم بياناتها المالية الخاصة بالفصل الثاني لعام 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16355",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق بابل البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "HBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_5_25_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16355&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فندق بابل المساهمة المختلطة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة فندق بابل المساهمة المختلطة إلى سوق العراق للأوراق المالية بياناتها المالية الفصلية الخاصة بالفصل الثاني لعام 2025. تم توجيه الإفصاح من قبل المدير المفوض للشركة شاكر جاسم مرفاك.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16354",
+      "type": "إفصاح",
+      "title": "شركة دار السلام للتامين تغيير موقع الشركة",
+      "date": "09/07/2025",
+      "related_symbols": [
+        "NDSA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_3_5_14_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16354&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة دار السلام للتأمين",
+      "raas_al_mal": "7000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلنت شركة دار السلام للتأمين عن تغيير مقرها الرئيسي من موقعها السابق مجاور فندق الديوان إلى موقعها الجديد في حي الوحدة، ساحة الواثق، شارع 52، مقابل مركز شرطة العلوية، مجمع القادر التجاري.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16353",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المنصور للصناعات الدوائية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "08/07/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_7_21_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16353&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المنصور للصناعات الدوائية والمستلزمات الطبية ومواد التجميل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ الميزانية",
+          "value": "2025/06/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قدمت شركة المنصور للصناعات الدوائية البيانات المالية الخاصة بالفصل الثاني لعام 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. يتضمن الإفصاح الميزانية العامة وكشف العمليات الجارية وكشف التدفق النقدي للشركة كما في 30 حزيران 2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16352",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة بغداد لصناعة مواد التغليف البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "08/07/2025",
+      "related_symbols": [
+        "IBPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_2_7_16_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16352&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة بغداد لصناعة مواد التغليف",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة بغداد لصناعة مواد التغليف البيانات المالية الفصلية الخاصة بالفصل الثاني لعام 2025 إلى سوق العراق للأوراق المالية. يأتي هذا الإفصاح استجابةً لمتطلبات الإفصاح المالي المعتمدة في السوق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16351",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المنصور للصناعات الدوائية في يوم الخميس الموافق 2025/7/24",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_11_23_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16351&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المنصور للصناعات الدوائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة المنصور للصناعات الدوائية يوم الخميس الموافق 2025/7/24. يهدف الاجتماع إلى مناقشة وإقرار البنود المدرجة ضمن جدول الأعمال الخاص بالشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16350",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الجنوب الاسلامي في جلسة الثلاثاء الموافق 2025/7/8",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "BJAB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_11_20_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16350&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الجنوب الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف الجنوب الإسلامي في جلسة يوم الثلاثاء الموافق 2025/7/8.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16349",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة جيهان للتامين في يوم السبت الموافق 2025/7/19",
+      "date": "07/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_11_1_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16349&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة جيهان للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير واضح ومشوش (مكتوب بنصوص غير مفهومة ورموز غريبة)، ولم يتم العثور على أي معلومات مالية أو تفاصيل جوهرية تتعلق بالشركة أو اجتماعها سوى التاريخ المذكور في مقدمة السؤال.",
+      "summary": "يحتوي المستند على إعلان رسمي بشأن عقد اجتماع الهيئة العامة لشركة جيهان للتأمين في يوم السبت الموافق 19 يوليو 2025. نظراً لرداءة جودة النص المستخرج من المستند المرفق، لم تتوفر معلومات إضافية حول بنود الاجتماع أو النتائج المالية للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16348",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة الفلوجة لانتاج المواد الانشائية البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "IFCM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_10_58_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16348&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الفلوجة لإنتاج المواد الإنشائية والاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة الفلوجة لإنتاج المواد الإنشائية والاستثمارات العقارية إفصاحاً رسمياً يتضمن بياناتها المالية للفصل الثاني من عام 2025. شملت المرفقات الميزانية العامة، وحسابات الإنتاج والمتاجرة والأرباح والخسائر، وحساب العمليات الجارية، إضافة إلى كشف التدفق النقدي للفترة المنتهية في 30/6/2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16347",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة النخبة للمقاولات العامة البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "SNUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_10_54_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16347&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة النخبة للمقاولات العامة والاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة النخبة للمقاولات العامة والاستثمارات العقارية البيانات المالية الفصلية الخاصة بالفصل الثاني لعام 2025 إلى سوق العراق للأوراق المالية وهيئة الأوراق المالية. يمثل هذا الإفصاح استيفاءً للمتطلبات التنظيمية الدورية للإفصاح المالي للشركة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16346",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة المصرف الوطني الاسلامي البيانات المالية الفصلية للفصل الاول لعام 2025",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_10_50_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16346&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الوطني الاسلامي",
+      "raas_al_mal": "351000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم المصرف الوطني الاسلامي البيانات المالية للفصل الأول لعام 2025. يتضمن الإفصاح الميزانية العامة وكشف الأرباح والخسائر وكشف التدفق النقدي الخاص بالمصرف كما في شهر آذار 2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16345",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 29 حزيران -3 تموز2025",
+      "date": "07/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_8_36_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16345&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "26466000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الشركات المتداولة",
+          "value": "104"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "3830"
+        },
+        {
+          "label": "قيمة الأسهم المتداولة",
+          "value": "6 مليار دينار"
+        },
+        {
+          "label": "إغلاق مؤشر ISX 60",
+          "value": "970.04 نقطة"
+        },
+        {
+          "label": "إغلاق مؤشر ISX 15",
+          "value": "1098.59 نقطة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "يستعرض التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 29 حزيران إلى 3 تموز 2025 حركة التداول في السوق النظامي ومنصة ISX-OTC. شهد السوق تداول 26,466,000 سهم بقيمة إجمالية بلغت 6 مليار دينار عراقي من خلال 3,830 صفقة منفذة. سجلت مؤشرات السوق (ISX 60 وISX 15) انخفاضاً طفيفاً مقارنة بالأسبوع السابق، كما تضمن التقرير تفاصيل تداولات غير العراقيين وحركة الأسهم في منصة التداول غير المدرج.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "16344",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت الشركة الوطنية لصناعات الاثاث المنزلي البيانات المالية الفصلية للفصل الثاني لعام 2025",
+      "date": "07/07/2025",
+      "related_symbols": [
+        "IHFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_1_8_21_53.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16344&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الوطنية لصناعات الاثاث المنزلي والاستثمارات",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "لم يتم العثور على أرقام مالية محددة أو قيمة رأس المال رغم ذكرها في الترويسة كـ 750,000,000، حيث أن النص الأصلي غير واضح تماماً (مُشفر جزئياً)، لذا تم وضع null لضمان الدقة.",
+      "summary": "قدمت الشركة الوطنية لصناعات الأثاث المنزلي والاستثمارات إفصاحاً إلى سوق العراق للأوراق المالية يتضمن تقديم البيانات المالية الفصلية للشركة عن الفصل الثاني لعام 2025. تضمن الإفصاح الموجه للسوق إرسال نسخ من هذه البيانات للاطلاع عليها وفقاً للمتطلبات التنظيمية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "16343",
+      "type": "إفصاح",
+      "title": "امر-اداري تشكيل مجلس المحافظين - الدورة العشرون 2025-2026",
+      "date": "03/07/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_7_4_10_50_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=16343&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "يحتوي الإفصاح على أمر إداري صادر عن سوق العراق للأوراق المالية يتعلق بتشكيل مجلس المحافظين للدورة العشرين للفترة من 2025 إلى 2026. يتضمن النص أسماء الأعضاء المنتخبين لعضوية المجلس عن شركات الوساطة والشركات المساهمة. لا يتضمن المستند أية بيانات مالية أو أرقام متعلقة بأرباح أو رؤوس أموال.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "16341",
       "type": "إفصاح",
       "title": "افصاح- قدمت الشركة العراقية للاعمال الهندسية البيانات المالية الفصلية للفصل الثاني لعام 2025",
@@ -2979,5 +3359,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 16341
+  "last_known_story_id": 16357
 }
