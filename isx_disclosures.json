@@ -1,6 +1,39 @@
 {
-  "last_known_story_id": 17767,
+  "last_known_story_id": 17768,
   "items": [
+    {
+      "id": "17768",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فنادق المنصور المنعقد بتاريخ 2026/6/30",
+      "date": "19/07/2026",
+      "related_symbols": [
+        "HMAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_9_28_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17768&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "فندق المنصور",
+      "raas_al_mal": "3,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "صافي حقوق المساهمين",
+          "value": "2,436,792,018 دينار"
+        },
+        {
+          "label": "نسبة نصاب حضور الاجتماع",
+          "value": "81.23%"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقدت الهيئة العامة لشركة فندق المنصور اجتماعها بتاريخ 30/6/2026 بحضور ممثلين عن هيئة الأوراق المالية وبنسبة نصاب قانوني بلغت 81.23%. ناقش الاجتماع الحسابات الختامية للشركة للسنوات المالية السابقة وأوضاع الشركة المالية. كما تضمن المحضر استعراضاً لصافي حقوق المساهمين البالغة 2,436,792,018 دينار مقابل رأس مال قدره 3 مليار دينار. تم التطرق أيضاً إلى الإجراءات القانونية والموقف من عقود الشركة المتعلقة بالنشاط التشغيلي للفندق.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17767",
       "type": "إفصاح",
