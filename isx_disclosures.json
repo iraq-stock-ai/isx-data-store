@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17768,
+  "last_known_story_id": 17769,
   "items": [
+    {
+      "id": "17769",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف المستشار الإسلامي البيانات المالية السنوية لعام 2025",
+      "date": "19/07/2026",
+      "related_symbols": [
+        "BMUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_9_32_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17769&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف المستشار الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصح مصرف المستشار الإسلامي عن تقديم حساباته الختامية للسنة المالية المنتهية في 2025/12/31 إلى سوق العراق للأوراق المالية. أكد المصرف أن البيانات المالية قد جرى تصديقها من قبل مجلس مهنة مراقبة وتدقيق الحسابات، مع تذييلها بالرمز الخاص بنظام المشروع الوطني لإلغاء صحة الصدور.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17768",
       "type": "إفصاح",
