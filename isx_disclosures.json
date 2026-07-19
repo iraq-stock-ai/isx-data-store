@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17766,
+  "last_known_story_id": 17767,
   "items": [
+    {
+      "id": "17767",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة فنادق عشتار البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "19/07/2026",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_9_26_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17767&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فنادق عشتار السياحية",
+      "raas_al_mal": "7,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "غرامة تأخير",
+          "value": "50,000 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصحت شركة فنادق عشتار السياحية عن تقديم بياناتها المالية للفصل الأول من عام 2026 والمنتهي في 31/3/2026، وذلك التزاماً بمتطلبات الإفصاح المالي. تضمن الإفصاح الإشارة إلى تحمل الشركة غرامة تأخيرية بقيمة خمسين ألف دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17766",
       "type": "إفصاح",
