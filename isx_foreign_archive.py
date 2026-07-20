@@ -35,10 +35,48 @@ FOREIGN_SECTION_MARKERS = [
 ]
 BUY_MARKERS = ["المشتراة", "مشتراة"]
 SELL_MARKERS = ["المباعة", "مباعة"]
-MARKET_MARKERS = {
-    "النظامي": ["السوق النظامي", "المنصة النظامية"],
-    "الثاني": ["السوق الثاني", "المنصة الثانية"],
+
+# --------------------------------------------------------------------------
+# ⬅️ الإصلاح: استخراج اسم السوق ديناميكياً من نص العنوان، بدل قائمة ثابتة
+# محدودة (MARKET_MARKERS القديمة) كانت تُسقِط أي قسم لا يطابقها نصياً
+# بصمت على قيمة افتراضية خاطئة "النظامي" — وهذا ما حدث فعلياً بالبيانات
+# المنشورة: 100% من السجلات ظهرت "النظامي" رغم وجود سجلات فعلية من
+# "السوق الثاني" و"منصة الشركات غير المفصحة" بالتقارير المصدرية
+# (تأكَّد هذا من فحص مباشر لعينات PDF/صور حقيقية من الموقع الرسمي).
+#
+# الفكرة: بدل مطابقة القسم لقائمة أسماء متوقَّعة، يُستخرَج الاسم مباشرة
+# من النص نفسه (كل ما يأتي بعد كلمة "في")، ثم يُطبَّع فقط لتوحيد شكل
+# الأسماء الشائعة. أي اسم سوق/منصة غير متوقَّع (حتى لو لم نعرفه اليوم)
+# يُحفَظ بنصه الخام بدل أن يضيع أو يُنسب خطأً لسوق آخر.
+# --------------------------------------------------------------------------
+MARKET_NAME_NORMALIZATION = {
+    "السوق النظامي": "النظامي",
+    "المنصة النظامية": "النظامي",
+    "السوق الثاني": "الثاني",
+    "المنصة الثانية": "الثاني",
+    "منصة الشركات غير المفصحة": "الشركات غير المفصحة",
 }
+MARKET_EXTRACTION_PATTERN = re.compile(r"في\s+(.+?)(?:\s+لجلسة|\s*$)")
+
+
+def extract_market_label(section_title_text: str) -> str:
+    """
+    يستخرج اسم السوق/المنصة من نص عنوان القسم الكامل. لا قيمة
+    افتراضية صامتة: لو تعذّر الاستخراج، تُرجَع "غير محدد" صراحة
+    بدل تخمين قيمة قد تكون خاطئة.
+    """
+    match = MARKET_EXTRACTION_PATTERN.search(section_title_text)
+    if not match:
+        return "غير محدد"
+    raw_market_name = clean_text(match.group(1))
+    if not raw_market_name:
+        return "غير محدد"
+    for pattern, normalized in MARKET_NAME_NORMALIZATION.items():
+        if pattern in raw_market_name or raw_market_name in pattern:
+            return normalized
+    # اسم غير معروف مسبقاً — يُحفَظ كما ورد بدل إسقاطه على قيمة أخرى
+    return raw_market_name
+
 
 # ================== دوال مساعدة ==================
 def clean_text(txt) -> str:
@@ -210,13 +248,12 @@ def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
         if direction is None:
             continue
 
-        market_label = "النظامي"
-        for label, markers in MARKET_MARKERS.items():
-            if any(m in row_text for m in markers):
-                market_label = label
-                break
+        # ⬅️ الإصلاح مطبَّق هنا: استخراج ديناميكي بدل القائمة الثابتة القديمة
+        market_label = extract_market_label(row_text)
+        if market_label == "غير محدد":
+            print(f"      [⚠] تعذّر استخراج اسم السوق من: '{row_text}' — سيُحفَظ 'غير محدد' صراحة.")
 
-        print(f"      [DEBUG] عُثر على قسم {direction} في السوق {market_label}")
+        print(f"      [DEBUG] عُثر على قسم {direction} في السوق '{market_label}'")
 
         section_records = parse_foreign_section(sheet, row_idx, market_label, direction)
         all_records.extend(section_records)
