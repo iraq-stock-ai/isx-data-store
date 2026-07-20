@@ -1,11 +1,7 @@
 name: أرشفة تاريخية - تداول غير العراقيين
 
-# ⚠️ هذا الملف مؤقت. بعد اكتمال الأرشفة (وصولاً لليوم الحالي)،
-# احذف هذا الملف + isx_foreign_archive.py من المستودع.
-
 on:
   schedule:
-    # كل 15 دقيقة لتسريع الأرشفة دون تجاوز حدود GitHub
     - cron: '*/15 * * * *'
   workflow_dispatch: {}
 
@@ -19,7 +15,7 @@ concurrency:
 jobs:
   archive-foreign-trading:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30          # ⬅️ زدنا المهلة إلى 30 دقيقة
     steps:
       - uses: actions/checkout@v4
 
@@ -44,13 +40,12 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      # ✅ التعديل الجوهري: أضفنا فقط isx_foreign_trading.json
       - name: Commit ورفع التحديثات
         if: always() && steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
-          git add isx_foreign_trading.json
+          git add isx_foreign_trading.json archive_progress.json   # ⬅️ نضيف ملف التقدم
           git commit -m "تحديث أرشيف التداول الأجنبي - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase
           git push
