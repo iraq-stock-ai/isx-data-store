@@ -64,6 +64,15 @@
       "trades": 1,
       "shares": 750000,
       "value": 877500
+    },
+    {
+      "date": "31/10/2024",
+      "sessionNumber": "201",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 14,
+      "shares": 7800000,
+      "value": 8970000
     }
   ],
   "BROI": [
@@ -230,6 +239,15 @@
       "trades": 2,
       "shares": 300000,
       "value": 525000
+    },
+    {
+      "date": "29/10/2024",
+      "sessionNumber": "199",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 24,
+      "shares": 13300000,
+      "value": 19268507
     }
   ],
   "NHAM": [
@@ -268,6 +286,15 @@
       "trades": 1,
       "shares": 50000,
       "value": 111500
+    },
+    {
+      "date": "28/10/2024",
+      "sessionNumber": "198",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000,
+      "value": 760
     }
   ],
   "HPAL": [
@@ -326,6 +353,24 @@
       "trades": 1,
       "shares": 100,
       "value": 89
+    },
+    {
+      "date": "12/11/2024",
+      "sessionNumber": "209",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 700000,
+      "value": 406000
+    },
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 299000,
+      "value": 140530
     }
   ],
   "BRTB": [
@@ -424,6 +469,78 @@
       "trades": 40,
       "shares": 72152752,
       "value": 147663141
+    },
+    {
+      "date": "17/11/2024",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 24,
+      "shares": 20000000,
+      "value": 38862500
+    },
+    {
+      "date": "12/11/2024",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 31,
+      "shares": 60000000,
+      "value": 115350000
+    },
+    {
+      "date": "11/11/2024",
+      "sessionNumber": "208",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 50000000,
+      "value": 95910000
+    },
+    {
+      "date": "29/10/2024",
+      "sessionNumber": "199",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 35,
+      "shares": 72000000,
+      "value": 137220000
+    },
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 26,
+      "shares": 66541477,
+      "value": 127679635
+    },
+    {
+      "date": "24/10/2024",
+      "sessionNumber": "196",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 7000000,
+      "value": 13230000
+    },
+    {
+      "date": "22/10/2024",
+      "sessionNumber": "194",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 21,
+      "shares": 57000000,
+      "value": 110276927
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 32,
+      "shares": 85000000,
+      "value": 159800000
     }
   ],
   "IBSD": [
@@ -435,6 +552,69 @@
       "trades": 1,
       "shares": 10000,
       "value": 50500
+    },
+    {
+      "date": "17/11/2024",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 4500000,
+      "value": 18650100
+    },
+    {
+      "date": "12/11/2024",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 4000000,
+      "value": 16800000
+    },
+    {
+      "date": "11/11/2024",
+      "sessionNumber": "208",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 4000000,
+      "value": 16600000
+    },
+    {
+      "date": "29/10/2024",
+      "sessionNumber": "199",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 4000000,
+      "value": 16600000
+    },
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 4000000,
+      "value": 16520000
+    },
+    {
+      "date": "24/10/2024",
+      "sessionNumber": "196",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 4000000,
+      "value": 16540000
+    },
+    {
+      "date": "22/10/2024",
+      "sessionNumber": "194",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 4000000,
+      "value": 16427746
     }
   ],
   "BIME": [
@@ -521,6 +701,15 @@
       "trades": 2,
       "shares": 4378,
       "value": 9938
+    },
+    {
+      "date": "24/10/2024",
+      "sessionNumber": "196",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 700000,
+      "value": 1211000
     }
   ],
   "IFCM": [
@@ -671,6 +860,15 @@
       "trades": 1,
       "shares": 32000,
       "value": 33600
+    },
+    {
+      "date": "22/10/2024",
+      "sessionNumber": "194",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 2500000,
+      "value": 2250000
     }
   ],
   "VWIF": [
@@ -693,6 +891,180 @@
       "trades": 1,
       "shares": 500000,
       "value": 1160000
+    }
+  ],
+  "BBOB": [
+    {
+      "date": "17/11/2024",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 5000000,
+      "value": 21320000
+    },
+    {
+      "date": "12/11/2024",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 5000000,
+      "value": 21920181
+    },
+    {
+      "date": "11/11/2024",
+      "sessionNumber": "208",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 3000000,
+      "value": 13180000
+    },
+    {
+      "date": "29/10/2024",
+      "sessionNumber": "199",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 14,
+      "shares": 6750000,
+      "value": 24545000
+    },
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 6750000,
+      "value": 23222500
+    },
+    {
+      "date": "24/10/2024",
+      "sessionNumber": "196",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 6989097,
+      "value": 23602820
+    },
+    {
+      "date": "22/10/2024",
+      "sessionNumber": "194",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 5010903,
+      "value": 17151506
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 7000000,
+      "value": 22030000
+    }
+  ],
+  "TZNI": [
+    {
+      "date": "17/11/2024",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 174334,
+      "value": 418401
+    },
+    {
+      "date": "11/11/2024",
+      "sessionNumber": "208",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 61811,
+      "value": 148346
+    }
+  ],
+  "IICM": [
+    {
+      "date": "11/11/2024",
+      "sessionNumber": "208",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 71000,
+      "value": 168420
+    }
+  ],
+  "BUND": [
+    {
+      "date": "03/11/2024",
+      "sessionNumber": "202",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 3500000,
+      "value": 280000
+    }
+  ],
+  "BNOI": [
+    {
+      "date": "29/10/2024",
+      "sessionNumber": "199",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 2750000,
+      "value": 8222500
+    },
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 2500000,
+      "value": 7195000
+    },
+    {
+      "date": "24/10/2024",
+      "sessionNumber": "196",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1500000,
+      "value": 4245000
+    },
+    {
+      "date": "22/10/2024",
+      "sessionNumber": "194",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1000000,
+      "value": 2870000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2345998,
+      "value": 6831854
+    }
+  ],
+  "BJAB": [
+    {
+      "date": "27/10/2024",
+      "sessionNumber": "197",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1500000,
+      "value": 1410000
     }
   ]
 }
