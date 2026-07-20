@@ -1,6 +1,308 @@
 {
   "items": [
     {
+      "id": "17120",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المنصور للصناعات الدوائية البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "18/01/2026",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_5_45_8.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17120&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة المنصور للصناعات الدوائية والمستلزمات الطبية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2025/12/31"
+      ],
+      "confidence_note": "النص المستخرج يحتوي على تشوهات نصية ناتجة عن معالجة ملف PDF، تم استخلاص البيانات المتاحة بناءً على السياق العام للإفصاح.",
+      "summary": "أفصحت شركة المنصور للصناعات الدوائية والمستلزمات الطبية عن تقديم ميزانيتها العامة للفصل الرابع المنتهي في 2025/12/31 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، متضمنة كشف العمليات الجارية وكشف التدفق النقدي للفترة ذاتها.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17119",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المعمورة للاستثمارات العقارية البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "18/01/2026",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_5_44_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17119&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": "22780000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يحتوي على تداخل في الأحرف والرموز بسبب تقنية التعرف الضوئي على الحروف، ولكن البيانات الأساسية كاسم الشركة ورأس المال واضحة.",
+      "summary": "قدمت شركة المعمورة للاستثمارات العقارية (مساهمة خاصة) البيانات المالية للفصل الرابع لسنة 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، حيث يبلغ رأس مال الشركة 22,780,000,000 دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17118",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف جيهان الاسلامي البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "18/01/2026",
+      "related_symbols": [
+        "BCIH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_5_44_23.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17118&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف جيهان للاستثمار والتمويل الاسلامي",
+      "raas_al_mal": "400000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "البيانات المالية المرفقة لم تتوفر قيمها ضمن نص الإفصاح المستخرج، واقتصر الإفصاح على تقديم القوائم للربع الرابع من عام 2025.",
+      "summary": "قام مصرف جيهان للاستثمار والتمويل الإسلامي بالإفصاح عن بياناته المالية الخاصة بالفصل الرابع من عام 2025، وذلك استجابة لمتطلبات سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17117",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية إلى شركة فندق فلسطين بشأن الافصاح عن الاحداث الجوهرية",
+      "date": "14/01/2026",
+      "related_symbols": [
+        "HPAL"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_11_7_6.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17117&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "فندق فلسطين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير واضح ومشوه تقنياً بسبب رداءة جودة ملف المصدر، مما تعذر معه استخلاص أرقام مالية دقيقة.",
+      "summary": "خطاب صادر عن سوق العراق للأوراق المالية موجه إلى شركة فندق فلسطين بشأن الإفصاح عن الأحداث الجوهرية. نظراً لعدم وضوح النص المستخرج من ملف الـ PDF، لا يمكن تحديد فحوى الحدث الجوهري أو وجود قرارات مالية محددة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17116",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق بغداد البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "14/01/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_9_25_41.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17116&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فندق بغداد",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "البيانات المالية المرفقة مع الإفصاح غير متوفرة في النص المستخرج، الإفصاح يقتصر على إخطار السوق بتقديم القوائم للفصل الرابع لعام 2025.",
+      "summary": "قدمت شركة فندق بغداد (المساهمة المختلطة) إفصاحاً رسمياً لسوق العراق للأوراق المالية يتضمن إرسال البيانات المالية الخاصة بالفصل الرابع للفترة المنتهية في 31 ديسمبر 2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17115",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية الى الشركات المساهمة - دعوة لحضور اجتماع",
+      "date": "14/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_9_8_4.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17115&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2025/02/17"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب رداءة جودة المصدر الرقمي (OCR)، مما يجعل استخراج البيانات المالية التفصيلية غير ممكن.",
+      "summary": "إفصاح صادر عن سوق العراق للأوراق المالية يتضمن دعوة الشركات المساهمة لحضور اجتماع، وتحديد موعد الاجتماع بتاريخ 2025/02/17. نظراً لعدم وضوح النص، يتعذر تحديد أسماء الشركات المعنية أو أي تفاصيل مالية دقيقة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17114",
+      "type": "إفصاح",
+      "title": "اطلاق التداول على اسهم الشركة الاهلية للتأمين في جلسة الاحد 2026/1/18",
+      "date": "14/01/2026",
+      "related_symbols": [
+        "NAHF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_9_0_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17114&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة الأهلية للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/1/18"
+      ],
+      "confidence_note": "النص المستخرج من ملف PDF غير واضح ومعقد بسبب عيوب في المسح الضوئي (OCR)، لكن العنوان الصريح يؤكد إطلاق التداول.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم الشركة الأهلية للتأمين في جلسة يوم الأحد الموافق 18 كانون الثاني 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17113",
+      "type": "إفصاح",
+      "title": "إطلاق التداول على أسهم شركة المنصور للصناعات الدوائية إعتباراً من جلسة الاربعاء الموافق 2026/1/14",
+      "date": "13/01/2026",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_2_10_39_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17113&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "المنصور للصناعات الدوائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/1/14"
+      ],
+      "confidence_note": "تم استخراج المعلومات بناءً على نص الإفصاح المتعلق ببدء التداول، ولا توجد بيانات مالية في النص.",
+      "summary": "أعلنت هيئة الأوراق المالية العراقية عن استئناف التداول على أسهم شركة المنصور للصناعات الدوائية في سوق العراق للأوراق المالية، وذلك اعتباراً من جلسة يوم الأربعاء الموافق 14 يناير 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17112",
+      "type": "إفصاح",
+      "title": "تغيير الكود العربي للشركة الأهلية للإنتاج الزراعي من (أسماك) إلى (مواشي)",
+      "date": "13/01/2026",
+      "related_symbols": [
+        "AAHP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_2_8_8_37.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17112&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "الشركة الأهلية للإنتاج الزراعي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح رسمي صادر من سوق العراق للأوراق المالية بخصوص تغيير الرمز العربي للشركة.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن تغيير الرمز العربي للشركة الأهلية للإنتاج الزراعي من (أسماك) إلى (مواشي)، وذلك استناداً إلى طلب الشركة الرسمي الموجه إلى السوق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17111",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 4-8 كانون الثاني 2026",
+      "date": "13/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_2_7_59_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17111&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "5,786,513,164",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "5,713,389,900 دينار عراقي قيمة الأسهم المتداولة",
+        "3006 عدد الصفقات المنفذة",
+        "984.54 مؤشر ISX 60",
+        "1211.96 مؤشر ISX 15"
+      ],
+      "confidence_note": "البيانات مستخلصة من التقرير الأسبوعي العام لسوق العراق للأوراق المالية للفترة من 4 إلى 8 كانون الثاني 2026، ولا يخص الإفصاح شركة واحدة بعينها في بياناته المالية الرئيسية.",
+      "summary": "شهد سوق العراق للأوراق المالية خلال الفترة من 4-8 كانون الثاني 2026 تداول أكثر من 5.7 مليار سهم بقيمة إجمالية بلغت 5.7 مليار دينار عراقي عبر 3006 صفقة. ارتفعت مؤشرات السوق الرئيسية (ISX 15 و ISX 60) مقارنة بالأسبوع السابق، كما تضمن التقرير قرارات إدارية تتعلق بنقل تداول بعض الشركات بين المنصات، وإيقاف تداول شركات أخرى بسبب انعقاد هيئاتها العامة أو قرارات تتعلق بزيادة رأس المال، بالإضافة إلى تحديثات على منصة ISX-OTC.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17110",
+      "type": "إفصاح",
+      "title": "أمر إداري - إستبعاد سعر سهم شركة بابل للانتاج الحيواني والنباتي في جلسة الاثنين 2026/1/12",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "ABAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_54_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17110&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة بابل للانتاج الحيواني والنباتي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "51376436",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "سعر الإغلاق السابق 9.300",
+        "عدد الأسهم المتداولة 51376436 سهم"
+      ],
+      "confidence_note": "نص الإفصاح يحتوي على تشوهات بصرية في النصوص الممسوحة ضوئياً، تم استخراج البيانات استناداً إلى السياق العام وتحديداً موضوع استبعاد سعر السهم في جلسة 2026/1/12",
+      "summary": "قررت هيئة سوق العراق للأوراق المالية استبعاد سعر سهم شركة بابل للانتاج الحيواني والنباتي من جلسة التداول ليوم الاثنين الموافق 12 كانون الثاني 2026، وذلك بسبب وجود خطأ في البيانات المسجلة، حيث تم تداول 51,376,436 سهم بسعر 9.200 دينار وهو ما لا يتوافق مع الإغلاقات السابقة المحددة في النظام.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17109",
+      "type": "إفصاح",
+      "title": "إطلاق التداول على أسهم شركة المصرف الوطني الاسلامي في جلسة الثلاثاء الموافق 2026/1/13",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_50_10.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17109&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المصرف الوطني الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/1/13"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب رداءة جودة المصدر، تم استنتاج نوع الإفصاح والتاريخ من سياق عنوان الإفصاح المذكور في الطلب.",
+      "summary": "إعلان صادر عن سوق العراق للأوراق المالية بخصوص إطلاق التداول على أسهم شركة المصرف الوطني الإسلامي في جلسة التداول ليوم الثلاثاء الموافق 13 كانون الثاني 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17108",
       "type": "إفصاح",
       "title": "مديرية تنفيذ الكرادة - تحديد موعد مزايدة علنية جديد",
@@ -23746,5 +24048,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17108
+  "last_known_story_id": 17120
 }
