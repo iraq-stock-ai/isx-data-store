@@ -1,6 +1,39 @@
 {
   "items": [
     {
+      "id": "17079",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف آشور الدولي في يوم الاثنين الموافق 2026/1/19",
+      "date": "04/01/2026",
+      "related_symbols": [
+        "BASH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_9_53_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17079&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف آشور الدولي للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2026/1/19"
+        },
+        {
+          "label": "تاريخ آخر جلسة تداول للأسهم",
+          "value": "2026/1/13"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "سيعقد مصرف آشور الدولي للاستثمار اجتماع الهيئة العامة في يوم الاثنين الموافق 2026/1/19. وبناءً على ذلك، تقرر أن تكون جلسة يوم الثلاثاء الموافق 2026/1/13 هي آخر جلسة تداول على أسهم الشركة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17078",
       "type": "إفصاح",
       "title": "إفصاح الشركة العراقية لصناعة وتجارة الكارتون على الاحداث الجوهرية",
@@ -23043,5 +23076,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17078
+  "last_known_story_id": 17079
 }
