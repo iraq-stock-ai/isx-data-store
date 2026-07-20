@@ -1,21 +1,39 @@
-name: أرشفة تاريخية - تداول غير العراقيين
+name: تحديث يومي - تداول غير العراقيين
+
+# محوَّل من نمط "أرشفة تاريخية سريعة" (كل 15 دقيقة) إلى "تحديث يومي مستمر"،
+# بنفس فلسفة workflow الأسعار الأساسي بالضبط: عدة محاولات متباعدة بنفس اليوم
+# (احتياطاً لتأخر نشر التقرير الرسمي)، لا تكرار لأي سجل موجود مسبقاً.
+#
+# الفرق الجوهري عن نسخة الأرشفة: هذا الملف لا يعتمد على "متابعة رقم صفحة
+# بالأرشيف" (last_page)، بل يطلب دائماً "الصفحة الأولى" من نفس رابط البحث
+# (أحدث تقرير منشور)، تماماً كما يفعل سكربت الأسعار get_today_daily_report.
+# هذا ضروري لأن منطق last_page لا يميّز "لم يُنشَر تقرير اليوم بعد" عن
+# "وصلنا نهاية الأرشيف نهائياً" — فلو استُخدم هنا، ستتوقف كل المحاولات
+# التالية بنفس اليوم فور فشل أول محاولة، حتى لو نُشر التقرير لاحقاً بنفس اليوم.
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    # 4 محاولات، الأحد-الخميس فقط (أيام تداول ISX)، بنفس منطق جدولة
+    # الأسعار الأساسية: تبدأ بعد الظهر (وقت النشر المعتاد للتقرير)
+    # وتتكرر على فترات متباعدة كاحتياط لتأخر النشر.
+    - cron: '0 11 * * 0-4'   # 2:00 عصراً بغداد (UTC+3)
+    - cron: '0 13 * * 0-4'   # 4:00 عصراً بغداد — احتياط أول
+    - cron: '0 15 * * 0-4'   # 6:00 مساءً بغداد — احتياط ثانٍ
+    - cron: '0 17 * * 0-4'   # 8:00 مساءً بغداد — احتياط ثالث
+
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: foreign-trading-archive
+  group: foreign-trading-daily
   cancel-in-progress: false
 
 jobs:
-  archive-foreign-trading:
+  update-foreign-trading-daily:
     runs-on: ubuntu-latest
-    timeout-minutes: 30          # ⬅️ زدنا المهلة إلى 30 دقيقة
+    timeout-minutes: 10   # محاولة يوم واحد فقط (لا أرشفة)، وقت أقصر بكثير كافٍ
     steps:
       - uses: actions/checkout@v4
 
@@ -26,10 +44,10 @@ jobs:
       - name: تثبيت المكتبات
         run: pip install requests beautifulsoup4 openpyxl lxml
 
-      - name: تشغيل سكريبت الأرشفة
-        run: python isx_foreign_archive.py
+      - name: تشغيل سكريبت التحديث اليومي (يوم واحد فقط، بدون متابعة صفحات)
+        run: python isx_foreign_daily_update.py
 
-      - name: فحص وجود تغييرات
+      - name: فحص وجود تغييرات فعلية
         id: check_changes
         if: always()
         run: |
@@ -40,17 +58,19 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit ورفع التحديثات
+      - name: Commit ورفع تحديثات اليوم (فقط إن وُجدت سجلات جديدة فعلاً)
         if: always() && steps.check_changes.outputs.changed == 'true'
         run: |
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
-          git add isx_foreign_trading.json archive_progress.json   # ⬅️ نضيف ملف التقدم
-          git commit -m "تحديث أرشيف التداول الأجنبي - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git add isx_foreign_trading.json
+          git commit -m "تحديث يومي (تداول غير العراقيين) - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase
           git push
 
-      - name: تنبيه عند الفشل
+      - name: تنبيه عند عدم نشر التقرير بعد (طبيعي، ليس خطأً — ستُعاد المحاولة)
         if: failure()
         run: |
-          echo "❌ فشلت التشغيلة، لكن السكربتات الأخرى مستقلة ولن تتأثر."
+          echo "⚠️ لم يُعثر على تقرير جديد بهذه المحاولة — على الأغلب لم يُنشر بعد."
+          echo "   هذا متوقَّع وطبيعي؛ سيُعاد المحاولة تلقائياً بالموعد التالي بنفس اليوم."
+          echo "   سكربت الأسعار الأساسي وباقي السكربتات مستقلة تماماً ولن تتأثر."
