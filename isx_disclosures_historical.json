@@ -1,6 +1,315 @@
 {
   "items": [
     {
+      "id": "17108",
+      "type": "إفصاح",
+      "title": "مديرية تنفيذ الكرادة - تحديد موعد مزايدة علنية جديد",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "BUND"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_2_7_1_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17108&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج رديء جداً وغير مفهوم (عبارة عن حروف ورموز غير مترابطة) ولا يمكن استخراج أي معلومات مالية أو اسم شركة منه، يبدو أن الملف عبارة عن صورة ذات جودة منخفضة لم يتم تحويلها بشكل صحيح.",
+      "summary": "يتعذر تقديم ملخص للمستند نظراً لكون النص المستخرج غير مقروء ومكون من رموز عشوائية لا تحمل دلالات واضحة حول إفصاح مالي أو قانوني محدد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17107",
+      "type": "إفصاح",
+      "title": "منح رخصة ممارسة نشاط الوساطة بالاوراق المالية إلى شركة سمو النبلاء للتوسط ببيع وشراء الاوراق المالية",
+      "date": "12/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_31_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17107&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة سمو النبلاء للتوسط ببيع وشراء الاوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلنت هيئة الأوراق المالية عن منح رخصة ممارسة نشاط الوساطة في الأوراق المالية لشركة سمو النبلاء للتوسط ببيع وشراء الأوراق المالية، وذلك وفقاً للأنظمة والتعليمات المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17106",
+      "type": "إفصاح",
+      "title": "إنتهاء إجراءات وتعديل عقد تأسيس شركة فندق فلسطين",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "HPAL"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_25_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17106&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة فندق فلسطين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج مشوش جداً وغير قابل للقراءة بشكل كامل بسبب جودة التصوير، لذا لم يتم تحديد أرقام مالية معينة.",
+      "summary": "يعلن الإفصاح عن انتهاء الإجراءات القانونية والإدارية المتعلقة بتعديل عقد تأسيس شركة فندق فلسطين. تم إتمام المتطلبات الرسمية المطلوبة لهذا الإجراء وفقاً للضوابط المعمول بها.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17105",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف القرطاس الاسلامي في يوم السبت الموافق 2026/1/17",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "BQUR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_22_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17105&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف القرطاس الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "يعلن مصرف القرطاس الإسلامي عن عقد اجتماع الهيئة العامة للمصرف في يوم السبت الموافق 17/1/2026. سيتم خلال الاجتماع مناقشة بنود جدول الأعمال المدرجة في الإفصاح المرفق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17104",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فندق فلسطين المنعقد بتاريخ 2025/11/25",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "HPAL"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_6_56_54.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17104&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "فندق فلسطين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2025/11/25"
+        }
+      ],
+      "confidence_note": "النص غير واضح تقنياً بسبب رداءة جودة المسح الضوئي (OCR error)، مما منع استخراج البيانات المالية الدقيقة كأرقام رأس المال أو الأرباح.",
+      "summary": "عقدت الهيئة العامة لشركة فندق فلسطين اجتماعها بتاريخ 2025/11/25 لمناقشة جدول أعمال الشركة. تضمن المحضر الإشارة إلى القرارات المتخذة خلال الجلسة وتوثيق مجريات الاجتماع وفقاً للضوابط المعمول بها. نظراً لرداءة النص المستخرج، تعذر استخلاص تفاصيل مالية محددة مثل الأرباح أو نسب التوزيع. يركز الإفصاح بشكل أساسي على انعقاد الاجتماع وصدور المحضر المصدق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17103",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف الدولي الإسلامي البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_6_53_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17103&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الدولي الإسلامي",
+      "raas_al_mal": "260846000000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم المصرف الدولي الإسلامي بياناته المالية المرحلية للفصل الرابع المنتهي في 31/12/2025 إلى سوق العراق للأوراق المالية. تم إرسال الوثائق من قبل المدير المفوض للمصرف بغرض الاطلاع وتأشير البيانات لدى السوق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17102",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة بغداد للمشروبات الغازية البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "12/01/2026",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_6_52_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17102&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت شركة بغداد للمشروبات الغازية عن تقديم بياناتها المالية الخاصة بالفصل الرابع لعام 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية. تم توجيه الإفصاح عبر كتاب رسمي من المدير المفوض للشركة لغرض التوثيق والاستلام.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17100",
+      "type": "إفصاح",
+      "title": "لن ينظم سوق العراق للاوراق المالية جلسة التداول ليوم الخميس الموافق 2026/1/15 لمصادفتها عطلة رسمية",
+      "date": "11/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_11_6_23.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17100&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ العطلة الرسمية",
+          "value": "2026/1/15"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن تعليق جلسة التداول ليوم الخميس الموافق 2026/1/15، وذلك لمصادفة هذا التاريخ عطلة رسمية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17099",
+      "type": "إفصاح",
+      "title": "إطلاق أسهم شركة الكندي لانتاج اللقاحات والادوية البيطرية - أسهم الزيادة - إعتباراً من جلسة الاثنين 2026/1/12",
+      "date": "11/01/2026",
+      "related_symbols": [
+        "IKLV"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_11_3_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17099&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "شركة الكندي لانتاج اللقاحات والادوية البيطرية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "390000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ المباشرة بتداول أسهم الزيادة",
+          "value": "2026/1/12"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت هيئة الأوراق المالية العراقية عن إطلاق أسهم الزيادة الخاصة بشركة الكندي لإنتاج اللقاحات والأدوية البيطرية. تقرر أن يتم المباشرة بتداول هذه الأسهم والبالغ عددها 390,000,000 سهم اعتباراً من جلسة يوم الاثنين الموافق 2026/1/12.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17098",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة السجاد والمفروشات البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "11/01/2026",
+      "related_symbols": [
+        "IITC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_9_11_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17098&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية للسجاد والمفروشات",
+      "raas_al_mal": "680000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت الشركة العراقية للسجاد والمفروشات إفصاحاً رسمياً يتضمن إرسال البيانات المالية الفصلية الخاصة بالفصل الرابع للفترة من 1 يناير 2025 ولغاية 31 ديسمبر 2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17097",
+      "type": "إفصاح",
+      "title": "تقييم نشاط التداول لشركات الوساطة لشهر كانون الاول 2025",
+      "date": "11/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_7_14_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17097&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "حجم تداول المركز الأول",
+          "value": "80,003,351,895 سهم"
+        },
+        {
+          "label": "إجمالي عدد الشركات في التقرير",
+          "value": "37 شركة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "يستعرض التقرير تقييم نشاط التداول لشركات الوساطة في سوق العراق للأوراق المالية لشهر كانون الأول 2025. يتضمن المستند جدولاً تفصيلياً يوضح حصص التداول ونسب المساهمة لكل شركة وساطة عاملة في السوق. تصدرت إحدى شركات الوساطة الترتيب بحجم تداول تجاوز 80 مليار سهم، بينما تفاوتت مستويات النشاط لباقي الشركات المدرجة في القائمة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17096",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية - اعلان بيع مواد تالفة",
+      "date": "11/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_6_42_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17096&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة التأمينات المطلوبة",
+          "value": "250,000 دينار عراقي"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن إجراء مزايدة علنية لبيع مواد تالفة ومستهلكة عائدة للسوق. تتضمن المواد المعروضة للبيع مجموعة متنوعة من الأجهزة الإلكترونية والمعدات المكتبية والأثاث. تم تحديد مبلغ 250,000 دينار عراقي كتأمينات أولية للمشاركة في المزايدة. يجب على الراغبين في المشاركة الاطلاع على قائمة المواد التالفة والمراجعة وفق الشروط المحددة من قبل إدارة السوق.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17095",
       "type": "إفصاح",
       "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الطيف الاسلامي في جلسة الخميس الموافق 2026/1/8",
@@ -23437,5 +23746,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17095
+  "last_known_story_id": 17108
 }
