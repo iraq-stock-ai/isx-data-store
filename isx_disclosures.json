@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17775,
+  "last_known_story_id": 17777,
   "items": [
+    {
+      "id": "17777",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة العراقية لضمان الودائع في يوم الثلاثاء الموافق 2026/8/18",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "FIDI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_31_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17777&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة العراقية لضمان الودائع",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تعلن الشركة العراقية لضمان الودائع عن عقد اجتماع هيئتها العامة في يوم الثلاثاء الموافق 18 آب 2026.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17775",
       "type": "إفصاح",
