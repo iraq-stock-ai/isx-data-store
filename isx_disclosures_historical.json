@@ -1,6 +1,286 @@
 {
   "items": [
     {
+      "id": "17092",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مدينة العاب الكرخ السياحية البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "08/01/2026",
+      "related_symbols": [
+        "SKTA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_4_6_40_30.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17092&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة مدينة ألعاب الكرخ السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص غير واضح تقنياً بسبب وجود الكثير من الرموز والكلمات المكررة وغير المفهومة (مثل 'اها لها')، مما يمنع استخراج أي أرقام مالية دقيقة من التقرير المرفق.",
+      "summary": "قدمت شركة مدينة ألعاب الكرخ السياحية إفصاحاً يتضمن البيانات المالية الفصلية للفصل الرابع من عام 2025. تم توجيه التقرير إلى سوق العراق للأوراق المالية وفقاً للمتطلبات التنظيمية المتبعة. لم يتضمن النص المستخرج أي أرقام مالية محددة أو نتائج أعمال واضحة نظراً لعدم وضوح ملف الإفصاح.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17091",
+      "type": "إفصاح",
+      "title": "إفصاح شركة بابل للانتاج الحيواني والنباتي على الاحداث الجوهرية",
+      "date": "08/01/2026",
+      "related_symbols": [
+        "ABAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_4_6_39_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17091&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة بابل للانتاج الحيواني والنباتي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أوضحت شركة بابل للإنتاج الحيواني والنباتي أن وضعها المالي في أفضل حالاته، مؤكدة أن انخفاض سعر سهمها في السوق لا يعود لأسباب جوهرية تخص أداءها. كما بينت الشركة أن إدارتها تسعى لاستثمار مواقعها ومعامل الأعلاف التابعة لها من خلال التنسيق مع القطاع الخاص.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17090",
+      "type": "إفصاح",
+      "title": "إلى شركات الوساطة بالأوراق المالية - الدورة التدريبية على نظام التداول عبر الانترنت",
+      "date": "07/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_10_57_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17090&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بداية الدورة التدريبية",
+          "value": "2025/1/7"
+        },
+        {
+          "label": "تاريخ نهاية الدورة التدريبية",
+          "value": "2025/1/8"
+        },
+        {
+          "label": "ساعات التدريب",
+          "value": "من الساعة 9:00 صباحاً ولغاية الساعة 12:00 ظهراً"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "يعلن سوق العراق للأوراق المالية عن تنظيم دورة تدريبية لشركات الوساطة حول نظام التداول عبر الإنترنت. تبدأ الدورة التدريبية في تاريخ 7 يناير 2025 وتستمر لغاية 8 يناير 2025. تقام فعاليات الدورة في مقر السوق خلال الفترة الصباحية من الساعة التاسعة وحتى الثانية عشرة ظهراً.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17089",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية للاعمال الهندسية البيانات المالية الفصلية للفصل الرابع لعام 2025",
+      "date": "07/01/2026",
+      "related_symbols": [
+        "IIEW"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_10_50_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17089&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية للأعمال الهندسية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت الشركة العراقية للأعمال الهندسية عن تقديم بياناتها المالية الفصلية للفصل الرابع من عام 2025 إلى سوق العراق للأوراق المالية. تضمنت المرفقات كلاً من الميزانية العامة، كشف العمليات الجارية، وكشف التدفق النقدي للفترة المذكورة مقارنة بعام 2024.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17088",
+      "type": "إفصاح",
+      "title": "نقل تداول شركة المصرف المتحد للاستثمار من منصة الشركات غير المفصحة إلى المنصة النظامية إعتباراً من جلسة الخميس الموافق 2026/1/8",
+      "date": "07/01/2026",
+      "related_symbols": [
+        "BUND"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_6_20_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17088&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المصرف المتحد للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ نقل التداول للمنصة النظامية",
+          "value": "2026/1/8"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قررت هيئة الأوراق المالية العراقية نقل تداول أسهم المصرف المتحد للاستثمار من منصة الشركات غير المفصحة إلى المنصة النظامية. يأتي هذا الإجراء اعتباراً من جلسة التداول ليوم الخميس الموافق 8 يناير 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17087",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المصرف الاهلي العراقي المنعقد بتاريخ 2025/12/12",
+      "date": "07/01/2026",
+      "related_symbols": [
+        "BNOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_3_6_11_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17087&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف الاهلي العراقي",
+      "raas_al_mal": "520,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رأس المال السابق للشركة",
+          "value": "476,177,525,770 دينار"
+        },
+        {
+          "label": "نسبة مساهمة الطرف الاجنبي",
+          "value": "51%"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقد المصرف الاهلي العراقي اجتماع الهيئة العامة بتاريخ 2025/12/12، حيث تم اتخاذ قرارات تتعلق بزيادة رأس المال من 476,177,525,770 دينار إلى 520,000,000,000 دينار. كما ناقش الاجتماع التوجهات الاستراتيجية للمصرف وسبل تعزيز التواجد في السوق، مع الإشارة إلى نسبة مساهمة الشريك الأجنبي البالغة 51%. تضمن المحضر أيضاً استعراضاً للتقارير المالية والادارية للمصرف لضمان الامتثال لمتطلبات هيئة الأوراق المالية والبنك المركزي العراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17086",
+      "type": "إفصاح",
+      "title": "لن ينظم سوق العراق للاوراق المالية جلسة التداول ليوم الثلاثاء الموافق 2026/1/6",
+      "date": "05/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_11_16_50.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17086&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ العطلة الرسمية",
+          "value": "2026/1/6"
+        },
+        {
+          "label": "تاريخ استئناف التداول",
+          "value": "2026/1/7"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن سوق العراق للأوراق المالية عن عدم تنظيم جلسة تداول ليوم الثلاثاء الموافق 2026/1/6. كما أشار السوق إلى أن التداول سيستأنف نشاطه الاعتيادي في اليوم التالي، الأربعاء الموافق 2026/1/7.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17084",
+      "type": "إفصاح",
+      "title": "إفصاح شركة بابل للانتاج الحيواني والنباتي على الاحداث الجوهرية",
+      "date": "05/01/2026",
+      "related_symbols": [
+        "ABAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_10_53_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17084&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة بابل للانتاج الحيواني والنباتي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير واضح ومضطرب جداً (تحريف نصي شديد)، مما يجعل استخراج الأرقام بدقة أمراً مستحيلاً. لا يوجد أي رقم مالي ملموس في النص المستخرج.",
+      "summary": "نص الإفصاح المرفق يعاني من تلف شديد في عملية استخراج البيانات (OCR)، مما يجعله غير قابل للقراءة أو التحليل. لا يمكن تحديد أي أحداث جوهرية أو بيانات مالية متعلقة بشركة بابل للإنتاج الحيواني والنباتي من خلال النص المتوفر.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17083",
+      "type": "إفصاح",
+      "title": "التقرير الشهري لسوق العراق للاوراق المالية لشهر كانون الاول 2025",
+      "date": "05/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_7_36_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17083&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17082",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 28-31 كانون الاول 2025",
+      "date": "05/01/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_7_22_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17082&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17081",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة الغير مصدق لشركة بين النهرين للاستثمارات المالية المنعقد بتاريخ 2025/12/3",
+      "date": "05/01/2026",
+      "related_symbols": [
+        "VMES"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_5_56_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17081&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17080",
+      "type": "إفصاح",
+      "title": "دائرة عقارات الدولة - بيع أسهم الشركة العراقية لانتاج وتسويق المنتجات الزراعية",
+      "date": "05/01/2026",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_1_5_49_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17080&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "الشركة العراقية لانتاج وتسويق المنتجات الزراعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "90075000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "وجه سوق العراق للأوراق المالية خطاباً إلى دائرة عقارات الدولة بشأن بيع حصة قدرها 90,075,000 سهم من أسهم الشركة العراقية لإنتاج وتسويق المنتجات الزراعية. يتضمن التوجيه ضرورة استكمال إجراءات اختيار شركة وساطة مالية مجازة لتنفيذ عملية البيع. كما تم الطلب من الشركة إشعار السوق بالموعد الجديد لإتمام عملية البيع بعد الانتهاء من اختيار الوسيط المالي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17079",
       "type": "إفصاح",
       "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف آشور الدولي في يوم الاثنين الموافق 2026/1/19",
@@ -23076,5 +23356,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17079
+  "last_known_story_id": 17092
 }
