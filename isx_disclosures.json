@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17772,
+  "last_known_story_id": 17774,
   "items": [
+    {
+      "id": "17774",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة العراقية لانتاج وتسويق اللحوم في يوم الثلاثاء الموافق 2026/8/11",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "AIPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_19_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17774&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة العراقية لإنتاج وتسويق اللحوم",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة للشركة العراقية لإنتاج وتسويق اللحوم يوم الثلاثاء الموافق 11/8/2026. سيتم خلال الاجتماع مناقشة جدول الأعمال وفقاً للسياقات القانونية المعتمدة لشركات المساهمة المدرجة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17772",
       "type": "إفصاح",
