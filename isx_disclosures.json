@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17769,
+  "last_known_story_id": 17770,
   "items": [
+    {
+      "id": "17770",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف إيلاف الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "BELF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_8_20_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17770&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف إيلاف الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ البيانات المالية",
+          "value": "2026/6/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أفصح مصرف إيلاف الإسلامي عن تقديم بياناته المالية الفصلية غير المدققة للفصل الثاني المنتهي في 30/6/2026. تضمن الإفصاح الميزانية العامة الفصلية وحساب الأرباح والخسائر، مع إجراء مقارنة مع البيانات المالية للفترة المنتهية في 31/12/2025.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17769",
       "type": "إفصاح",
