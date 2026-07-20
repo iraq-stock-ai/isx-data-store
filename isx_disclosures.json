@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17778,
+  "last_known_story_id": 17779,
   "items": [
+    {
+      "id": "17779",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الانصاري الاسلامي في جلسة الاثنين الموافق 2026/7/20",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_37_26.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17779&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الانصاري الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج مشوش جداً ويحتوي على رموز غير مفهومة (OCR noise)، مما يجعل من المستحيل استخراج أي أرقام مالية دقيقة أو تفاصيل الصفقة بشكل مؤكد.",
+      "summary": "يتضمن الإفصاح إعلاناً صادراً عن شركة براعم الخير للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الأنصاري الإسلامي في جلسة التداول ليوم الاثنين الموافق 20/7/2026. نظراً لعدم وضوح النص المستخرج بسبب جودة المسح الضوئي، لم يتمكن النظام من استخراج بيانات كمية إضافية مثل عدد الأسهم أو سعر التنفيذ.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17778",
       "type": "إفصاح",
