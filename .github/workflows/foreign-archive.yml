@@ -1,0 +1,88 @@
+name: أرشفة تاريخية - تداول غير العراقيين (مؤقت)
+
+# ⚠️ هذا الملف مؤقت بطبيعته. بعد أن يطبع سكربت isx_foreign_archive.py
+# رسالة "🎉 اكتملت الأرشفة!" (يعني وصل لتاريخ اليوم الحالي)، احذف هذا
+# الملف بالكامل + احذف isx_foreign_archive.py + احذف foreign_archive_progress.json
+# من نفس المستودع. لا تترك هذا الـ workflow يعمل بعد اكتمال الأرشفة —
+# لا فائدة إضافية منه وسيستهلك دقائق GitHub Actions بلا داعٍ.
+#
+# لا علاقة لهذا الملف بـ workflow الأسعار الأساسي (الملف الآخر بنفس
+# المجلد) — كلاهما مستقل تماماً، لا تعديل مشترك ولا اعتماد أحدهما
+# على الآخر بأي شكل.
+
+on:
+  schedule:
+    # يشتغل كل 15 دقيقة، على مدار اليوم بالكامل (وليس محصوراً بساعات
+    # تداول السوق العراقي، لأن هذا استرجاع تاريخي لا علاقة له بتوقيت
+    # الجلسات الحالية). فاصل 15 دقيقة (وليس أقل) يتماشى مع توصية GitHub
+    # نفسها بعدم الاعتماد على جدولة أسرع من ذلك لضمان التنفيذ الفعلي،
+    # وأيضاً يعطي هامشاً كافياً حتى لا تتراكم تشغيلات متزامنة فوق بعضها.
+    - cron: '*/15 * * * *'
+
+  # يسمح بتشغيل يدوي فوري من تبويب Actions بواجهة GitHub، مفيد لبدء
+  # الأرشفة فوراً دون انتظار أول موعد جدولة، أو لإعادة محاولة سريعة
+  # بعد إصلاح أي مشكلة.
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+# concurrency تمنع تشغيلتين من العمل بنفس الوقت على نفس الملفات —
+# ضروري هنا لأن فاصل 15 دقيقة بين المواعيد المجدولة لا يضمن انتهاء
+# التشغيلة السابقة قبل بدء التالية إن تأخرت الأولى لأي سبب (مثلاً
+# مشكلة شبكة مؤقتة أطالت وقت التنفيذ). بدون هذا، احتمال حدوث تضارب
+# عند الكتابة على نفس ملفي isx_foreign_trading.json و
+# foreign_archive_progress.json في نفس اللحظة تقريباً.
+concurrency:
+  group: foreign-trading-archive
+  cancel-in-progress: false
+
+jobs:
+  archive-foreign-trading:
+    runs-on: ubuntu-latest
+    # حد زمني للتشغيلة الواحدة أقل بكثير من حد GitHub الافتراضي (6 ساعات)،
+    # لأن السكربت نفسه مصمم للتوقف الذاتي بعد RUNTIME_BUDGET_SECONDS
+    # (5 دقائق). هذا الحد هنا (10 دقائق) هو فقط شبكة أمان إضافية تحسباً
+    # لتعليق غير متوقع (مثلاً طلب شبكة عالق دون timeout واضح).
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: تثبيت المكتبات
+        run: pip install requests beautifulsoup4 openpyxl lxml
+
+      - name: تشغيل سكريبت الأرشفة (دفعة واحدة، يتوقف ذاتياً بأمان)
+        run: python isx_foreign_archive.py
+
+      - name: فحص وجود تغييرات فعلية
+        id: check_changes
+        if: always()
+        run: |
+          git status --porcelain
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit ورفع تحديثات الأرشفة (البيانات + ملف التقدم معاً)
+        if: always() && steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "isx-data-bot"
+          git config user.email "actions@github.com"
+          git add isx_foreign_trading.json foreign_archive_progress.json
+          git commit -m "أرشفة تدريجية (تداول غير العراقيين) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git pull --rebase
+          git push
+
+      - name: تنبيه عند فشل الأرشفة (لا يوقف باقي سكربتات المستودع)
+        if: failure()
+        run: |
+          echo "❌ فشلت تشغيلة الأرشفة هذه المرة. آمن تماماً — سكربت الأسعار الأساسي"
+          echo "   وسكربتات الإفصاحات/الأخبار مستقلة بالكامل ولن تتأثر."
+          echo "   بفضل ملف foreign_archive_progress.json، لن يُفقَد أي تقدم سابق —"
+          echo "   التشغيلة القادمة (خلال 15 دقيقة) ستكمل من نفس النقطة التي توقفنا عندها."
