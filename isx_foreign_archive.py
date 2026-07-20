@@ -1,35 +1,34 @@
 import io
 import os
 import re
-import sys
 import json
 import time
-from datetime import datetime, timezone
+from datetime import datetime
+from urllib.parse import urlparse, parse_qs
 
 import requests
 from bs4 import BeautifulSoup
 import openpyxl
 
-# ------------------- الروابط المحددة -------------------
-SPECIFIC_ARCHIVE_URLS = [
-    "http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p=140&reporttype=40&toDate=19%2F07%2F2026&date=19%2F07%2F2024"
-    # أضف روابط إضافية هنا إن وجدت
-]
+# ================== الرابط المرجعي للبحث ==================
+# السكربت سيأخذ المعاملات من هذا الرابط (reporttype, toDate, date)
+# ويبدأ التصفح من الصفحة رقم 1 فصاعداً.
+SEARCH_URL = "http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p=140&reporttype=40&toDate=19%2F07%2F2026&date=19%2F07%2F2024"
 
-# ------------------- الثوابت العامة -------------------
+# ================== الثوابت العامة ==================
 BASE_URL = "http://www.isx-iq.net"
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
-    )
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
 }
 
 ARCHIVE_OUTPUT_FILE = "isx_foreign_trading.json"
 DELAY_SECONDS = 4               # فاصل بين تحميل الملفات
+MAX_PAGES = 500                 # حد أمان لعدد الصفحات
 
+# ================ منطق استخراج "غير العراقيين" (نفس السكربت الأصلي) ================
 SYMBOL_PATTERN = re.compile(r"^[A-Z]{3,6}$")
+
+# الكلمات المفتاحية للبحث عن قسم الأجانب/غير العراقيين (نفس القائمة الأصلية)
 FOREIGN_SECTION_MARKERS = [
     "غير العراقيين",
     "غيرالعراقيين",
@@ -44,7 +43,7 @@ MARKET_MARKERS = {
     "الثاني": ["السوق الثاني", "المنصة الثانية"],
 }
 
-# ------------------- دوال مساعدة -------------------
+# ================== دوال مساعدة ==================
 def clean_text(txt) -> str:
     if txt is None:
         return ""
@@ -52,26 +51,35 @@ def clean_text(txt) -> str:
     txt = re.sub(r"\s+", " ", txt).strip()
     return txt
 
-def parse_date_ddmmyyyy(date_str: str):
-    try:
-        return datetime.strptime(date_str.strip(), "%d/%m/%Y").date()
-    except (ValueError, AttributeError):
-        return None
+def extract_search_params(url: str) -> dict:
+    """استخراج معاملات البحث من الرابط: reporttype, toDate, date"""
+    parsed = urlparse(url)
+    params = parse_qs(parsed.query)
+    return {
+        "reporttype": params.get("reporttype", ["40"])[0],
+        "toDate": params.get("toDate", [""])[0],
+        "date": params.get("date", [""])[0],
+    }
 
-# ------------------- استخراج روابط التقارير من صفحة معينة -------------------
+def build_page_url(params: dict, page: int) -> str:
+    """بناء رابط صفحة معينة بناءً على المعاملات ورقم الصفحة"""
+    return f"http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p={page}&reporttype={params['reporttype']}&toDate={params['toDate']}&date={params['date']}"
+
+# ================== استخراج روابط التقارير من صفحة معينة ==================
 def fetch_reports_from_page(page_url: str) -> list:
-    """
-    تحميل صفحة أرشيف واستخراج روابط ملفات Excel مع تواريخها.
-    تُرجع قائمة من { 'date': 'DD/MM/YYYY', 'url': '...' }
-    """
-    print(f"[أرشيف] جاري فحص الصفحة: {page_url}")
-    resp = requests.get(page_url, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.content, "html.parser")
+    """تحميل صفحة أرشيف واستخراج روابط ملفات Excel مع تواريخها"""
+    print(f"  [أرشيف] جاري فحص الصفحة: {page_url}")
+    try:
+        resp = requests.get(page_url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"    [خطأ] فشل تحميل الصفحة: {e}")
+        return []
 
+    soup = BeautifulSoup(resp.content, "html.parser")
     table = soup.find("table")
     if table is None:
-        print("  [⚠] لم يُعثر على جدول في الصفحة.")
+        print("    [⚠] لم يُعثر على جدول في الصفحة.")
         return []
 
     reports = []
@@ -97,7 +105,7 @@ def fetch_reports_from_page(page_url: str) -> list:
 
     return reports
 
-# ------------------- تحميل واستخراج بيانات Excel -------------------
+# ================== تحميل واستخراج بيانات Excel (نفس السكربت الأصلي) ==================
 def download_excel(url: str) -> bytes:
     resp = requests.get(url, headers=HEADERS, timeout=30)
     resp.raise_for_status()
@@ -114,6 +122,7 @@ def extract_session_number(sheet) -> str:
     return None
 
 def find_foreign_trading_blocks(wb) -> list:
+    """البحث عن أقسام غير العراقيين (نفس منطق السكربت الأصلي)"""
     blocks = []
     for sheet_name in wb.sheetnames:
         sheet = wb[sheet_name]
@@ -126,6 +135,7 @@ def find_foreign_trading_blocks(wb) -> list:
     return blocks
 
 def parse_foreign_section(sheet, start_row_idx: int, market_label: str, direction: str) -> list:
+    """استخراج تفاصيل الصفقات من قسم غير العراقيين (نفس السكربت الأصلي)"""
     records = []
     bracket_pattern = re.compile(r"\(([A-Z]{3,6})\)")
     MAX_ROWS = 40
@@ -188,6 +198,7 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
     return records
 
 def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
+    """تحليل ملف Excel واستخراج كل سجلات غير العراقيين (نفس السكربت الأصلي)"""
     wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
 
     session_number = None
@@ -219,25 +230,17 @@ def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
 
     return {"session_number": session_number, "records": all_records}
 
-# ------------------- إدارة التخزين (مع معالجة الأخطاء) -------------------
+# ================== إدارة التخزين ==================
 def load_existing_data() -> dict:
-    """
-    تحميل البيانات الموجودة من ملف JSON.
-    إذا كان الملف غير موجود أو تالفاً، يتم إنشاء قاموس فارغ وإرجاعه.
-    """
     if not os.path.exists(ARCHIVE_OUTPUT_FILE):
         return {}
-
     try:
         with open(ARCHIVE_OUTPUT_FILE, "r", encoding="utf-8") as f:
             content = f.read().strip()
-            if not content:          # ملف فارغ
-                print(f"⚠️ الملف {ARCHIVE_OUTPUT_FILE} فارغ، سيتم إنشاؤه من جديد.")
+            if not content:
                 return {}
             return json.loads(content)
-    except (json.JSONDecodeError, IOError) as e:
-        print(f"⚠️ خطأ في قراءة الملف {ARCHIVE_OUTPUT_FILE}: {e}")
-        print("   سيتم إنشاء ملف جديد.")
+    except (json.JSONDecodeError, IOError):
         return {}
 
 def save_data(data: dict):
@@ -247,6 +250,7 @@ def save_data(data: dict):
     os.replace(tmp_path, ARCHIVE_OUTPUT_FILE)
 
 def merge_records(existing: dict, session_date: str, session_number: str, records: list) -> int:
+    """دمج السجلات مع منع التكرار (نفس السكربت الأصلي)"""
     added = 0
     for rec in records:
         symbol = rec["symbol"]
@@ -274,43 +278,48 @@ def merge_records(existing: dict, session_date: str, session_number: str, record
         added += 1
     return added
 
-# ------------------- الحلقة الرئيسية -------------------
+# ================== الحلقة الرئيسية (التصفح عبر الصفحات) ==================
 def main():
-    print("بدء معالجة الروابط المحددة...")
+    print("بدء أرشفة تداول غير العراقيين من البحث المحدد...")
+    print(f"الرابط المرجعي: {SEARCH_URL}")
+
+    # استخراج معاملات البحث
+    params = extract_search_params(SEARCH_URL)
+    print(f"المعاملات: reporttype={params['reporttype']}, toDate={params['toDate']}, date={params['date']}")
+
+    # تحميل البيانات الموجودة
     data = load_existing_data()
     total_processed = 0
     total_added = 0
 
-    for page_url in SPECIFIC_ARCHIVE_URLS:
-        print(f"\n--- معالجة الصفحة: {page_url} ---")
-        try:
-            reports = fetch_reports_from_page(page_url)
-        except Exception as e:
-            print(f"  [خطأ] فشل تحميل الصفحة: {e}")
-            continue
+    page = 1
+    while page <= MAX_PAGES:
+        page_url = build_page_url(params, page)
+        reports = fetch_reports_from_page(page_url)
 
         if not reports:
-            print("  [⚠] لم يُعثر على أي تقرير في هذه الصفحة.")
-            continue
+            print(f"  [توقف] الصفحة {page} فارغة أو لا تحتوي على تقارير، نعتقد أنها نهاية الأرشيف.")
+            break
 
-        print(f"  [✓] تم العثور على {len(reports)} تقرير(ات).")
-
+        print(f"  [✓] الصفحة {page} تحتوي على {len(reports)} تقرير(ات).")
         for report in reports:
-            time.sleep(DELAY_SECONDS)  # فاصل بين التحميلات
+            time.sleep(DELAY_SECONDS)
             try:
-                print(f"  - تحميل {report['date']} ...")
+                print(f"    - تحميل {report['date']} ...")
                 excel_bytes = download_excel(report["url"])
                 parsed = parse_daily_foreign_excel(excel_bytes)
                 added = merge_records(data, report["date"], parsed.get("session_number"), parsed["records"])
                 total_added += added
                 total_processed += 1
-                print(f"    ✅ {report['date']}: {len(parsed['records'])} سجل، {added} جديد.")
+                print(f"      ✅ {report['date']}: {len(parsed['records'])} سجل (غير عراقيين)، {added} جديد.")
             except Exception as e:
-                print(f"    ❌ فشل معالجة {report['date']}: {e}")
+                print(f"      ❌ فشل معالجة {report['date']}: {e}")
 
         # حفظ بعد كل صفحة
         save_data(data)
-        print(f"  [حفظ] تم تحديث الملف {ARCHIVE_OUTPUT_FILE}.")
+        print(f"  [حفظ] تم تحديث الملف {ARCHIVE_OUTPUT_FILE} (بعد الصفحة {page}).")
+
+        page += 1
 
     print(f"\n🎉 انتهت المعالجة. تم تحميل {total_processed} تقرير، وأُضيف {total_added} سجل جديد.")
     print(f"الملف النهائي: {ARCHIVE_OUTPUT_FILE}")
