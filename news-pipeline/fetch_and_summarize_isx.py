@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 
 try:
     import pdfplumber
+
     PDF_SUPPORT = True
 except ImportError:
     PDF_SUPPORT = False
@@ -17,6 +18,7 @@ except ImportError:
 try:
     import pytesseract
     from pdf2image import convert_from_path
+
     OCR_SUPPORT = True
 except ImportError:
     OCR_SUPPORT = False
@@ -90,7 +92,9 @@ def fetch_story_by_type(story_id: str, story_type: int) -> dict:
     pdf_tag = soup.find("a", href=re.compile(r"\.pdf$", re.IGNORECASE))
     if pdf_tag:
         pdf_href = pdf_tag.get("href", "")
-        pdf_link = pdf_href if pdf_href.startswith("http") else f"http://www.isx-iq.net{pdf_href}"
+        pdf_link = (
+            pdf_href if pdf_href.startswith("http") else f"http://www.isx-iq.net{pdf_href}"
+        )
 
     return {
         "id": story_id,
@@ -111,17 +115,6 @@ def fetch_story(story_id: str) -> dict:
 
 
 def find_next_new_item(last_known_id: int, start_id: int = None) -> tuple:
-    """
-    يبحث عن أول عنصر جديد بعد آخر رقم معروف. يرجع (item, highest_successful_id).
-
-    مهم: لا نتقدّم أبداً بـ last_known_story_id إلى رقم لم ينجح فعلياً، حتى لو
-    جربناه وفشل (كان فارغاً وقت التجربة). السبب: الموقع قد ينشر إفصاحاً بهذا
-    الرقم لاحقاً (بعد ساعات أو أيام)، فلو اعتبرنا الرقم "منتهياً" بمجرد فشل
-    تجربة واحدة، سنفوّت هذا الإفصاح للأبد عند نشره لاحقاً. لذلك:
-    - إن وجدنا عنصراً ناجحاً: نرجّع رقمه كـ last_known الجديد (نتقدّم).
-    - إن لم نجد شيئاً بعد كل المحاولات: نرجّع None، ليبقى last_known القديم
-      كما هو بدون تغيير، فتُعاد تجربة نفس الفجوة بالكامل بالتشغيلة القادمة.
-    """
     current_id = (int(last_known_id) + 1) if last_known_id is not None else start_id
     consecutive_failures = 0
 
@@ -147,29 +140,18 @@ def find_next_new_item(last_known_id: int, start_id: int = None) -> tuple:
 
 
 def extract_pdf_text_via_ocr(pdf_path: str) -> str:
-    """
-    خطة بديلة: يحوّل صفحات PDF لصور، ثم يقرأ النص منها بصرياً عبر Tesseract
-    (بدعم اللغة العربية). أبطأ بكثير من pdfplumber لكنه يعمل حتى مع
-    الصفحات الممسوحة ضوئياً (scanned) أو ذات الترميز غير القياسي.
-    """
     if not OCR_SUPPORT:
         return ""
 
     try:
-        # دقة أعلى (300 بدل 200) لتحسين قراءة الأرقام الدقيقة بالجداول
-        # المالية، والتي غالباً ما تُفقد أو تتشوه بدقة أقل رغم نجاح قراءة
-        # النص العام للصفحة
         images = convert_from_path(pdf_path, dpi=300)
     except Exception as e:
         print(f"      تحذير: فشل تحويل PDF لصور: {e}")
         return ""
 
     extracted_pages = []
-    # حد أقصى 5 صفحات لتفادي إبطاء التشغيلة كثيراً (أغلب الإفصاحات قصيرة)
     for i, image in enumerate(images[:5]):
         try:
-            # psm=6 (بلوك نص موحد) عادة يعطي نتائج أفضل مع صفحات القوائم
-            # المالية والجداول مقارنة بالإعداد الافتراضي
             page_text = pytesseract.image_to_string(image, lang="ara", config="--psm 6")
             if page_text:
                 extracted_pages.append(page_text)
@@ -180,7 +162,6 @@ def extract_pdf_text_via_ocr(pdf_path: str) -> str:
 
 
 def extract_pdf_text(pdf_url: str) -> dict:
-    """يحمّل PDF ويستخرج نصه. يرجع dict فيه النص وحالة الاستخراج."""
     if not PDF_SUPPORT:
         return {"text": "", "status": "pdfplumber_not_installed"}
 
@@ -207,8 +188,6 @@ def extract_pdf_text(pdf_url: str) -> dict:
         if full_text and len(full_text) >= 10:
             return {"text": full_text, "status": "success"}
 
-        # pdfplumber لم يستخرج نصاً كافياً (على الأغلب صفحة ممسوحة ضوئياً أو
-        # ترميز خط غير قياسي) - نجرب OCR كخطة بديلة قبل الاستسلام
         print("      ⚠️ pdfplumber لم يستخرج نصاً كافياً، تجربة OCR كخطة بديلة...")
         ocr_text = extract_pdf_text_via_ocr(tmp_path)
 
@@ -224,8 +203,7 @@ def extract_pdf_text(pdf_url: str) -> dict:
             os.remove(tmp_path)
 
 
-def summarize_with_gemini(title: str, raw_text: str, max_retries: int = 3) -> dict:
-    """يرسل النص لـ Gemini بطلب بسيط مباشر (بدون أدوات بحث) لاستخراج ملخص منظم."""
+def summarize_with_gemini(title: str, raw_text: str, max_retries: int = 3):
     if not API_KEY:
         print("❌ خطأ: لم يتم العثور على متغير البيئة GEMINI_DISCLOSURES_API_KEY.")
         return None
@@ -238,55 +216,25 @@ def summarize_with_gemini(title: str, raw_text: str, max_retries: int = 3) -> di
         "أنت محلل مالي متخصص بسوق العراق للأوراق المالية. فيما يلي نص إفصاح "
         f"رسمي بعنوان: \"{title}\".\n\n"
         f"النص المستخرج من ملف PDF المرفق:\n{raw_text[:6000]}\n\n"
-        "⚠️ تحذيرات مهمة جداً قبل الاستخراج:\n\n"
-        "1. بعض هذه الإفصاحات صادرة من شركات وساطة مالية، وتحتوي ترويسة "
-        "الخطاب أحياناً على معلومات مالية تخص شركة الوساطة نفسها لا علاقة "
-        "لها بالشركة موضوع الإفصاح. ميّز بدقة بين الشركة موضوع الإفصاح "
-        "الفعلي وأي طرف ثالث مذكور فقط كناقل أو منفّذ للإجراء.\n\n"
-        "2. المستندات الطويلة (مثل محاضر اجتماعات الهيئة العامة) قد تحتوي "
-        "عدة نسب مئوية بمعانٍ مختلفة تماماً - مثل نسبة حضور المساهمين "
-        "بالاجتماع (نصاب الحضور)، أو نسبة عجز متراكم من رأس المال، أو نسبة "
-        "ملكية بالتصويت. لا تفترض أن أي نسبة مئوية بالنص هي بالضرورة نسبة "
-        "توزيع أرباح. اكتب قيمة لحقل dividend_percentage فقط إذا وجدت عبارة "
-        "صريحة تربط النسبة تحديداً بكلمة 'توزيع' أو 'أرباح موزعة' أو مشابه "
-        "بنفس الجملة أو الجملة المجاورة مباشرة. إن لم تجد هذا الربط الصريح، "
-        "اترك الحقل null حتى لو رأيت نسبة مئوية أخرى بالنص.\n\n"
-        "3. المستندات الطويلة متعددة المواضيع (محاضر اجتماعات فيها عدة "
-        "بنود: حسابات ختامية، عجز متراكم، قضايا قانونية، انتخاب مجلس "
-        "إدارة...) يصعب تلخيصها بجملتين. في هذه الحالة، اجعل الملخص أكثر "
-        "شمولاً (حتى 5 جمل) يغطي أهم البنود المالية الفعلية المذكورة فعلاً "
-        "بالنص (كالعجز المتراكم، أي قضايا قانونية بمبالغ محددة)، بدل التركيز "
-        "على بند واحد فقط.\n\n"
-        "استخرج المعلومات التالية إن وُجدت صراحة بالنص، والتزم بعدم اختلاق "
-        "أي رقم أو معلومة غير مذكورة صراحة (اترك الحقل null إن لم تجده، ولا "
-        "تخمّن أو تستنتج رقماً من سياق غير مؤكد).\n\n"
-        "مثال توضيحي لحقل other_important_figures (لا تنسخه، هذا للتوضيح "
-        "فقط): إذا ذكر النص 'بلغت مبالغ قضايا قانونية 1,045,321,167 دينار' "
-        "و'نسبة العجز المتراكم 72.08% من رأس المال'، يكون الحقل:\n"
-        '[{"label": "مبلغ قضايا قانونية", "value": "1,045,321,167 دينار"}, '
-        '{"label": "نسبة العجز المتراكم من رأس المال", "value": "72.08%"}]\n\n'
         "أجب حصراً بصيغة JSON نقية 100% وبدون أي علامات markdown، بالهيكل التالي:\n"
         "{\n"
         '  "disclosure_type": "توزيع_ارباح | زيادة_راس_المال | قوائم_مالية | '
         'اجتماع_هيئة_عامة | قرار_رفض_او_عدم_موافقة | حركة_تداول_خاصة | اخرى",\n'
-        '  "company_name": "اسم الشركة موضوع الإفصاح فقط (وليس شركة الوساطة إن وُجدت) أو null",\n'
-        '  "raas_al_mal": "رقم رأس المال الخاص بالشركة موضوع الإفصاح تحديداً بالدينار العراقي، أو null إن لم يُذكر صراحة لهذه الشركة بالذات",\n'
+        '  "company_name": "اسم الشركة موضوع الإفصاح فقط أو null",\n'
+        '  "raas_al_mal": "رقم رأس المال بالدينار العراقي، أو null",\n'
         '  "net_profit": "صافي الربح بالدينار العراقي أو null",\n'
-        '  "total_debts": "إجمالي الديون/المطلوبات أو العجز المتراكم بالدينار العراقي أو null",\n'
-        '  "traded_shares_quantity": "عدد الأسهم المتداولة/المباعة/المشتراة بالصفقة إن وُجد (رقم فقط) أو null",\n'
-        '  "dividend_per_share": "قيمة التوزيع للسهم الواحد بالدينار أو null",\n'
-        '  "dividend_percentage": "نسبة توزيع الأرباح فقط (وليس أي نسبة أخرى مثل نسبة الحضور) أو null",\n'
-        '  "dividend_date": "تاريخ توزيع/استحقاق الأرباح إن ذُكر أو null",\n'
-        '  "other_important_figures": [ /* مصفوفة، كل عنصر بالشكل: '
-        '{"label": "وصف قصير للرقم", "value": "الرقم أو النسبة كما ورد"} '
-        '- أو مصفوفة فارغة [] إن لم توجد أرقام إضافية جوهرية */ ],\n'
-        '  "confidence_note": "إن كان أي رقم أعلاه مستنتجاً من سياق غير قاطع الوضوح، اذكر هنا أيهما وسبب عدم اليقين. إن كانت كل الأرقام واضحة وصريحة بالنص، اكتب null",\n'
-        '  "summary": "ملخص شامل بالعربية الفصحى الرصينة، بطول جملتين للمستندات البسيطة أو حتى 5 جمل للمستندات الطويلة متعددة البنود"\n'
+        '  "total_debts": "إجمالي الديون/المطلوبات أو العجز المتراكم أو null",\n'
+        '  "traded_shares_quantity": "عدد الأسهم المتداولة أو null",\n'
+        '  "dividend_per_share": "قيمة التوزيع للسهم الواحد أو null",\n'
+        '  "dividend_percentage": "نسبة توزيع الأرباح فقط أو null",\n'
+        '  "dividend_date": "تاريخ توزيع/استحقاق الأرباح أو null",\n'
+        '  "other_important_figures": [],\n'
+        '  "confidence_note": "ملاحظات أو null",\n'
+        '  "summary": "ملخص شامل بالعربية الفصحى الرصينة"\n'
         "}"
     )
 
     headers = {"Content-Type": "application/json"}
-    # طلب بسيط ومباشر: بدون أي أدوات بحث مدمجة، بدون تعقيد إضافي
     payload = {
         "contents": [{"parts": [{"text": prompt_text}]}],
         "generationConfig": {"responseMimeType": "application/json"},
@@ -302,19 +250,30 @@ def summarize_with_gemini(title: str, raw_text: str, max_retries: int = 3) -> di
 
             if response.status_code == 200:
                 res_json = response.json()
-                ai_text = res_json["candidates"][0]["content"]["parts"][0]["text"]
-                ai_text = ai_text.strip().removeprefix("```json").removesuffix("```").strip()
-                return json.loads(ai_text)
+                ai_text = res_json["candidates"][0]["content"]["parts"][0]["text"].strip()
+
+                if ai_text.startswith("```json"):
+                    ai_text = ai_text[7:]
+                if ai_text.startswith("```"):
+                    ai_text = ai_text[3:]
+                if ai_text.endswith("```"):
+                    ai_text = ai_text[:-3]
+                ai_text = ai_text.strip()
+
+                try:
+                    parsed_data = json.loads(ai_text)
+                    return parsed_data
+                except Exception as json_err:
+                    print(f"    ⚠️ فشل تحويل نص Gemini إلى JSON: {json_err}")
+                    return {"summary": ai_text}
 
             elif response.status_code == 429:
                 print(f"    ⏳ (429) تهدئة {delay} ثوانٍ...")
-                print(f"       تفاصيل الرد: {response.text[:300]}")
                 time.sleep(delay)
                 delay *= 2
                 continue
             else:
                 print(f"    ❌ فشل سيرفر Gemini: كود {response.status_code}")
-                print(f"       تفاصيل: {response.text[:300]}")
                 return None
         except Exception as e:
             print(f"    ❌ خطأ اتصال/تحليل: {e}")
@@ -345,19 +304,12 @@ def save_json(data: dict, path: str):
 
 
 def process_one_item(data: dict, last_known_id, start_id) -> tuple:
-    """
-    يعالج عنصراً واحداً (إفصاح أو خبر سوق): يكتشفه، يستخرج PDF إن وجد،
-    يلخصه عبر Gemini إن لزم، ويضيفه لـ data['items'] مباشرة.
-    يرجع (success: bool, new_last_known_id أو None).
-    """
     item, new_last_known_id = find_next_new_item(last_known_id, start_id)
 
     if item is None:
         print("\n✅ لا يوجد عنصر جديد حالياً بهذا النطاق.")
         return False, None
 
-    # فقط الإفصاحات (type=1) تحتاج تلخيص مالي مفصّل عبر PDF. أخبار السوق
-    # (type=2) نكتفي بحفظ العنوان والتفاصيل الأساسية بدون استدعاء Gemini.
     if item["type"] == "خبر_سوق":
         print("\nℹ️ هذا خبر سوق عام (type=2)، سيُحفظ بدون تلخيص Gemini.")
         item["disclosure_type"] = None
@@ -388,7 +340,14 @@ def process_one_item(data: dict, last_known_id, start_id) -> tuple:
         data["items"].insert(0, item)
         return True, new_last_known_id
 
-    item.update(summary)
+    # معالجة آمنة يضمن عدم الانهيار بغض النظر عن نوع الكائن المرجع
+    if isinstance(summary, dict):
+        item.update(summary)
+    elif isinstance(summary, list):
+        item["summary"] = json.dumps(summary, ensure_ascii=False)
+    elif isinstance(summary, str):
+        item["summary"] = summary
+
     item["pdf_extraction_status"] = pdf_result["status"]
     data["items"].insert(0, item)
     print(f"🎉 نجاح كامل! تم تلخيص الإفصاح: {item['title'][:60]}")
@@ -396,21 +355,13 @@ def process_one_item(data: dict, last_known_id, start_id) -> tuple:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="جلب وتلخيص إفصاحات/أخبار جديدة عبر Gemini")
+    parser = argparse.ArgumentParser(
+        description="جلب وتلخيص إفصاحات/أخبار جديدة عبر Gemini"
+    )
     parser.add_argument("--existing", default="isx_disclosures.json")
     parser.add_argument("--output", default="isx_disclosures.json")
     parser.add_argument("--start-id", type=int, default=None)
-    parser.add_argument(
-        "--batch-size",
-        type=int,
-        default=1,
-        help=(
-            "عدد العناصر الناجحة المطلوب معالجتها بهذه التشغيلة (افتراضياً 1، "
-            "وهو السلوك المعتاد للتحديث اليومي التلقائي). استخدم قيمة أعلى "
-            "فقط بتشغيل يدوي مؤقت (مثل تعبئة أرشيف تاريخي)، ولا تُدخلها "
-            "بملف الـ workflow المجدول تلقائياً."
-        ),
-    )
+    parser.add_argument("--batch-size", type=int, default=1)
     args = parser.parse_args()
 
     data = load_existing(args.existing)
@@ -426,23 +377,21 @@ def main():
 
     for i in range(args.batch_size):
         print(f"\n{'=' * 20} معالجة عنصر {i + 1}/{args.batch_size} {'=' * 20}")
-        success, new_last_known = process_one_item(data, current_last_known, current_start)
+        success, new_last_known = process_one_item(
+            data, current_last_known, current_start
+        )
 
         if not success:
-            # لم يوجد عنصر جديد بهذه المحاولة: نتوقف عن الحلقة، لكن نحفظ
-            # ما تم إنجازه من عناصر سابقة بهذه التشغيلة (إن وُجد)
             break
 
         processed_count += 1
-        # نتقدّم للعنصر التالي بنفس التشغيلة إن كان batch_size > 1
         current_last_known = new_last_known
-        current_start = None  # لا حاجة لها بعد أول عنصر ناجح
+        current_start = None
 
     if processed_count == 0:
         print("\n✅ لم تتم إضافة أي عنصر جديد. لم يتم تحديث last_known_story_id.")
         return
 
-    # نحدّث last_known_story_id لآخر رقم ناجح وصلنا له فقط
     data["last_known_story_id"] = current_last_known
     save_json(data, args.output)
 
