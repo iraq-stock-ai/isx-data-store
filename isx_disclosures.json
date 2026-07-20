@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17771,
+  "last_known_story_id": 17772,
   "items": [
+    {
+      "id": "17772",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المعمورة للاستثمارات العقارية في يوم الاثنين الموافق 2026/8/17",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_16_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17772&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تعلن شركة المعمورة للاستثمارات العقارية عن عقد اجتماع الهيئة العامة للشركة يوم الاثنين الموافق 2026/8/17، وذلك لمناقشة البنود المدرجة على جدول الأعمال وفقاً للأنظمة والتعليمات المعمول بها.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17771",
       "type": "إفصاح",
