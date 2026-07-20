@@ -28,7 +28,6 @@ HEADERS = {
 
 ARCHIVE_OUTPUT_FILE = "isx_foreign_trading.json"
 DELAY_SECONDS = 4               # فاصل بين تحميل الملفات
-MAX_REPORTS_PER_PAGE = 50       # حد أمان
 
 SYMBOL_PATTERN = re.compile(r"^[A-Z]{3,6}$")
 FOREIGN_SECTION_MARKERS = [
@@ -220,12 +219,26 @@ def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
 
     return {"session_number": session_number, "records": all_records}
 
-# ------------------- إدارة التخزين -------------------
+# ------------------- إدارة التخزين (مع معالجة الأخطاء) -------------------
 def load_existing_data() -> dict:
+    """
+    تحميل البيانات الموجودة من ملف JSON.
+    إذا كان الملف غير موجود أو تالفاً، يتم إنشاء قاموس فارغ وإرجاعه.
+    """
     if not os.path.exists(ARCHIVE_OUTPUT_FILE):
         return {}
-    with open(ARCHIVE_OUTPUT_FILE, "r", encoding="utf-8") as f:
-        return json.load(f)
+
+    try:
+        with open(ARCHIVE_OUTPUT_FILE, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+            if not content:          # ملف فارغ
+                print(f"⚠️ الملف {ARCHIVE_OUTPUT_FILE} فارغ، سيتم إنشاؤه من جديد.")
+                return {}
+            return json.loads(content)
+    except (json.JSONDecodeError, IOError) as e:
+        print(f"⚠️ خطأ في قراءة الملف {ARCHIVE_OUTPUT_FILE}: {e}")
+        print("   سيتم إنشاء ملف جديد.")
+        return {}
 
 def save_data(data: dict):
     tmp_path = ARCHIVE_OUTPUT_FILE + ".tmp"
