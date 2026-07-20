@@ -1,236 +1,155 @@
-import io
 import os
 import re
 import json
-import time
-from datetime import datetime
-from urllib.parse import urlparse, parse_qs
-
-import requests
-from bs4 import BeautifulSoup
 import openpyxl
 
-# ================== الرابط المرجعي للبحث ==================
-SEARCH_URL = "http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p=140&reporttype=40&toDate=19%2F07%2F2026&date=19%2F07%2F2024"
-
-# ================== الثوابت العامة ==================
-BASE_URL = "http://www.isx-iq.net"
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-}
-
-ARCHIVE_OUTPUT_FILE = "isx_foreign_trading.json"
-PROGRESS_FILE = "archive_progress.json"
-DELAY_SECONDS = 3
-MAX_PAGES = 500
-
-# ================ منطق استخراج "غير العراقيين" ================
-SYMBOL_PATTERN = re.compile(r"^[A-Z]{3,6}$")
-FOREIGN_SECTION_MARKERS = [
-    "غير العراقيين",
-    "غيرالعراقيين",
-    "الأجانب",
-    "اجانب",
-    "أجانب",
-]
+# ==============================================================================
+# 1. إعدادات الثوابت والأنماط
+# ==============================================================================
+FOREIGN_SECTION_MARKERS = ["غير العراقيين", "غيرالعراقيين", "الأجانب", "اجانب", "أجانب"]
 BUY_MARKERS = ["المشتراة", "مشتراة"]
 SELL_MARKERS = ["المباعة", "مباعة"]
 
-# ================ توسيع مرادفات أسماء الأسواق ================
-MARKET_NAME_NORMALIZATION = {
-    "السوق النظامي": "النظامي",
-    "المنصة النظامية": "النظامي",
-    "السوق الثاني": "الثاني",
-    "السوق الثانوي": "الثاني",          # مرادف إضافي
-    "المنصة الثانية": "الثاني",
-    "منصة الشركات غير المفصحة": "الشركات غير المفصحة",
-    "منصة الشركات غير المخصصة": "الشركات غير المفصحة",  # مرادف إضافي
-}
-MARKET_EXTRACTION_PATTERN = re.compile(r"في\s+(.+?)(?:\s+لجلسة|\s*$)")
+# كلمات يتم استبعادها عند البحث عن رمز الشركة
+IGNORE_WORDS = {"ISX", "OTC", "TOTAL", "DATE", "TYPE", "BUY", "SELL", "المجموع", "مجموع"}
 
-# ================== دوال مساعدة ==================
+# ==============================================================================
+# 2. دوال تنظيف النص واستخراج اسم السوق
+# ==============================================================================
 def clean_text(txt) -> str:
+    """تنظيف النص من المسافات المخفية ورموز الاتجاه والأسطر الجديدة."""
     if txt is None:
         return ""
-    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
+    txt = str(txt)
+    # إزالة المسافات الخفية \xa0 ورموز الاتجاه العربي \u200f / \u200e
+    txt = txt.replace("\xa0", " ").replace("\u200f", "").replace("\u200e", "").replace("\ufeff", "")
+    txt = txt.replace("\r", " ").replace("\n", " ").replace("\t", " ")
     txt = re.sub(r"\s+", " ", txt).strip()
     return txt
 
 def extract_market_label(section_title_text: str) -> str:
-    """
-    يستخرج اسم السوق/المنصة من نص عنوان القسم الكامل.
-    """
-    match = MARKET_EXTRACTION_PATTERN.search(section_title_text)
-    if not match:
-        return "غير محدد"
-    raw_market_name = clean_text(match.group(1))
-    if not raw_market_name:
-        return "غير محدد"
-    for pattern, normalized in MARKET_NAME_NORMALIZATION.items():
-        if pattern in raw_market_name or raw_market_name in pattern:
-            return normalized
-    return raw_market_name
+    """استخراج اسم السوق بدقة عالية بناءً على الكلمات المفتاحية."""
+    txt = clean_text(section_title_text)
 
-def extract_search_params(url: str) -> dict:
-    parsed = urlparse(url)
-    params = parse_qs(parsed.query)
-    return {
-        "reporttype": params.get("reporttype", ["40"])[0],
-        "toDate": params.get("toDate", [""])[0],
-        "date": params.get("date", [""])[0],
-    }
+    # 1. المطابقة بالمباشر للكلمات المفتاحية (الأعلى دقة)
+    if any(k in txt for k in ["غير المفصحة", "غير مفصحة", "الثالث", "otc"]):
+        return "الشركات غير المفصحة"
+    if any(k in txt for k in ["الثاني", "الثانية"]):
+        return "الثاني"
+    if any(k in txt for k in ["النظامي", "النظامية"]):
+        return "النظامي"
 
-def build_page_url(params: dict, page: int) -> str:
-    return f"http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p={page}&reporttype={params['reporttype']}&toDate={params['toDate']}&date={params['date']}"
+    # 2. محاولة استخراج عبر Regex في حال وجود صياغة غير معيارية
+    match = re.search(r"(?:في|منصة|سوق)\s+(.+?)(?:\s+لجلسة|\s*$)", txt)
+    if match:
+        raw_market = clean_text(match.group(1))
+        if "ثاني" in raw_market:
+            return "الثاني"
+        if "مفصح" in raw_market or "ثالث" in raw_market:
+            return "الشركات غير المفصحة"
+        if "نظام" in raw_market:
+            return "النظامي"
+        if raw_market:
+            return raw_market
 
-# ================== استخراج روابط التقارير ==================
-def fetch_reports_from_page(page_url: str) -> list:
-    print(f"  [أرشيف] جاري فحص الصفحة: {page_url}")
-    try:
-        resp = requests.get(page_url, headers=HEADERS, timeout=20)
-        resp.raise_for_status()
-    except Exception as e:
-        print(f"    [خطأ] فشل تحميل الصفحة: {e}")
-        return []
+    # الافتراضي في سوق العراق للأوراق المالية
+    return "النظامي"
 
-    soup = BeautifulSoup(resp.content, "html.parser")
-    table = soup.find("table")
-    if table is None:
-        print("    [⚠] لم يُعثر على جدول في الصفحة.")
-        return []
-
-    reports = []
-    for row in table.find_all("tr"):
-        row_text = clean_text(row.get_text())
-        if "يومي" not in row_text or "التقرير اليومي" not in row_text:
-            continue
-
-        link_tag = row.find("a", href=True)
-        if not link_tag:
-            continue
-        href = link_tag["href"]
-        if ".xlsx" not in href.lower() and ".xls" not in href.lower():
-            continue
-
-        date_match = re.search(r"(\d{2}/\d{2}/\d{4})", row_text)
-        if not date_match:
-            continue
-        session_date = date_match.group(1)
-
-        full_url = href if href.startswith("http") else BASE_URL + href
-        reports.append({"date": session_date, "url": full_url})
-
-    return reports
-
-# ================== تحميل واستخراج بيانات Excel ==================
-def download_excel(url: str) -> bytes:
-    resp = requests.get(url, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
-    return resp.content
-
-def extract_session_number(sheet) -> str:
-    pattern = re.compile(r"الجلسة\s*[\(\)]?\s*(\d+)")
-    for row in sheet.iter_rows(max_row=10, values_only=True):
-        for cell in row:
-            if cell:
-                match = pattern.search(clean_text(cell))
-                if match:
-                    return match.group(1)
-    return None
-
+# ==============================================================================
+# 3. دالة اكتشاف كتل تداول غير العراقيين في شيتات العمل
+# ==============================================================================
 def find_foreign_trading_blocks(wb) -> list:
+    """البحث عن كتل التداول مع دمج سياق الأسطر المجاورة لمنع ضياع العنوان المقسم."""
     blocks = []
+    
     for sheet_name in wb.sheetnames:
         sheet = wb[sheet_name]
-        for row_idx, row in enumerate(sheet.iter_rows(values_only=True)):
-            row_text = clean_text(" ".join(str(c) for c in row if c is not None))
-            has_foreign = any(m in row_text for m in FOREIGN_SECTION_MARKERS)
-            has_direction = any(m in row_text for m in BUY_MARKERS + SELL_MARKERS)
+        rows = list(sheet.iter_rows(values_only=True))
+        num_rows = len(rows)
+
+        for row_idx in range(num_rows):
+            curr_text = clean_text(" ".join(str(c) for c in rows[row_idx] if c is not None))
+
+            has_foreign = any(m in curr_text for m in FOREIGN_SECTION_MARKERS)
+            has_direction = any(m in curr_text for m in BUY_MARKERS + SELL_MARKERS)
+
             if has_foreign and has_direction:
-                blocks.append((sheet_name, row_idx, row_text))
+                # تجميع السطر الحالي والسطرين التاليين للوصول لاسم السوق كاملاً
+                header_lines = []
+                for w_idx in range(row_idx, min(row_idx + 3, num_rows)):
+                    w_text = clean_text(" ".join(str(c) for c in rows[w_idx] if c is not None))
+                    # إيقاف التجميع إذا وصلنا لرؤوس أعمدة الجدول
+                    if any(col in w_text for col in ["رمز الشركة", "اسم الشركة", "الصفقات"]):
+                        break
+                    header_lines.append(w_text)
+
+                full_header = " ".join(header_lines)
+                blocks.append((sheet_name, row_idx, full_header))
+
     return blocks
 
-# ================================================================
-# ⬅️ الدالة المعدلة بالكامل لقراءة البيانات من أعمدة محددة
-# ================================================================
+# ==============================================================================
+# 4. دالة تحليل واستخراج صفوف الجدول للكتلة المحددة
+# ==============================================================================
 def parse_foreign_section(sheet, start_row_idx: int, market_label: str, direction: str) -> list:
-    rows = list(sheet.iter_rows(values_only=True))
-
-    # 1. البحث عن صف العناوين (في نطاق 5 صفوف قبل بداية القسم)
-    header_row = None
-    for offset in range(-5, 0):
-        idx = start_row_idx + offset
-        if idx < 0:
-            continue
-        row = rows[idx]
-        if not row:
-            continue
-        row_text = " ".join(str(c) for c in row if c)
-        if "رمز" in row_text or "الشركة" in row_text:
-            header_row = row
-            break
-
-    if not header_row:
-        print(f"    [⚠] تعذّر العثور على صف العناوين، تخطي هذا القسم.")
-        return []
-
-    # 2. تحديد مؤشرات الأعمدة بناءً على عناوينها
-    symbol_idx = trades_idx = shares_idx = value_idx = None
-    for i, cell in enumerate(header_row):
-        if cell is None:
-            continue
-        cell_str = str(cell).strip()
-        if "رمز" in cell_str:
-            symbol_idx = i
-        elif "الصفقات" in cell_str or "صفقات" in cell_str:
-            trades_idx = i
-        elif "الأسهم" in cell_str or "اسهم" in cell_str:
-            shares_idx = i
-        elif "القيمة" in cell_str:
-            value_idx = i
-
-    # التأكد من وجود عمود الرمز، وإلا لا يمكن المتابعة
-    if symbol_idx is None:
-        print(f"    [⚠] لم يُعثر على عمود 'رمز الشركة'، تخطي.")
-        return []
-
+    """قراءة أسهم الشركات والصفقات والكميات والقيم داخل القسم المحدد."""
     records = []
-    # 3. قراءة الصفوف التالية (بدءاً من الصف التالي لصف العنوان)
-    for offset in range(1, 40):
+    symbol_pattern = re.compile(r"\b([A-Z]{3,6})\b")
+    rows = list(sheet.iter_rows(values_only=True))
+    MAX_ROWS = 60
+
+    for offset in range(1, MAX_ROWS):
         idx = start_row_idx + offset
         if idx >= len(rows):
             break
+
         row = rows[idx]
-        if not row or not any(c is not None for c in row):
+        row_cells = [clean_text(c) for c in row]
+        row_text = " ".join(c for c in row_cells if c)
+
+        if not row_text:
             continue
 
-        row_text = " ".join(str(c) for c in row if c)
-        # التوقف عند صف المجموع الكلي
-        if "المجموع الكلي" in row_text:
+        # إيقاف القراءة عند الوصول للمجموع الكلي أو عنوان نشرة جديدة
+        if any(term in row_text for term in ["المجموع الكلي", "مجموع الكلي", "مجموع السوق"]):
             break
-        # تخطي صفوف "مجموع قطاع" لأنها لا تحمل رمز شركة
-        if "مجموع" in row_text and "قطاع" in row_text:
+        if any(m in row_text for m in FOREIGN_SECTION_MARKERS) and any(m in row_text for m in BUY_MARKERS + SELL_MARKERS):
+            break
+
+        # التجاوز عن أسطر القطاعات والمجاميع الفرعية للقطاع
+        if "مجموع" in row_text or "قطاع" in row_text:
             continue
 
-        # استخراج الرمز من العمود المخصص له
-        symbol = clean_text(row[symbol_idx]) if symbol_idx < len(row) else ""
-        if not symbol or not SYMBOL_PATTERN.match(symbol):
+        # 1. استخراج رمز الشركة
+        symbol = None
+        for cell in row_cells:
+            cell_clean = cell.strip().upper()
+            m = symbol_pattern.search(cell_clean)
+            if m:
+                cand = m.group(1)
+                if cand not in IGNORE_WORDS:
+                    symbol = cand
+                    break
+
+        if not symbol:
             continue
 
-        # استخراج الأرقام من الأعمدة المحددة
+        # 2. استخراج الأرقام (الصفقات، الأسهم المتداولة، القيمة المتداولة)
+        numbers = []
+        for cell in row_cells:
+            cell_num = cell.replace(",", "").strip()
+            if re.match(r"^-?\d+(\.\d+)?$", cell_num):
+                numbers.append(cell_num)
+
+        if len(numbers) < 3:
+            continue
+
+        trades_raw, shares_raw, value_raw = numbers[-3], numbers[-2], numbers[-1]
         try:
-            trades_str = clean_text(row[trades_idx]).replace(",", "") if trades_idx is not None and trades_idx < len(row) else "0"
-            shares_str = clean_text(row[shares_idx]).replace(",", "") if shares_idx is not None and shares_idx < len(row) else "0"
-            value_str = clean_text(row[value_idx]).replace(",", "") if value_idx is not None and value_idx < len(row) else "0"
-
-            trades = int(float(trades_str)) if trades_str and trades_str != "0" else 0
-            shares = int(float(shares_str)) if shares_str and shares_str != "0" else 0
-            value = int(float(value_str)) if value_str and value_str != "0" else 0
-        except (ValueError, TypeError):
-            continue
-
-        # تجاهل الصفوف التي تكون قيمتها صفر (قد تكون فارغة)
-        if value == 0 and shares == 0:
+            trades = int(float(trades_raw))
+            shares = int(float(shares_raw))
+            value = int(float(value_raw))
+        except ValueError:
             continue
 
         records.append({
@@ -239,170 +158,85 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
             "direction": direction,
             "trades": trades,
             "shares": shares,
-            "value": value,
+            "value": value
         })
 
     return records
 
-def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
-    wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
-
-    session_number = None
-    if wb.sheetnames:
-        session_number = extract_session_number(wb[wb.sheetnames[0]])
-
-    blocks = find_foreign_trading_blocks(wb)
-    if not blocks:
+# ==============================================================================
+# 5. قراءة ملف Excel اليومي كاملاً
+# ==============================================================================
+def parse_daily_foreign_excel(file_path: str, session_date: str, session_number: str) -> dict:
+    """فتح ملف Excel واستخراج جميع معاملات غير العراقيين لجميع الأسواق."""
+    try:
+        wb = openpyxl.load_workbook(file_path, data_only=True)
+    except Exception as e:
+        print(f"❌ خطأ في فتح الملف {file_path}: {e}")
         return {"session_number": session_number, "records": []}
 
+    blocks = find_foreign_trading_blocks(wb)
     all_records = []
+
     for sheet_name, row_idx, row_text in blocks:
         sheet = wb[sheet_name]
-
+        
+        # تحديد الاتجاه (شراء / بيع)
         direction = "buy" if any(m in row_text for m in BUY_MARKERS) else (
             "sell" if any(m in row_text for m in SELL_MARKERS) else None
         )
-        if direction is None:
+        if not direction:
             continue
 
+        # استخراج اسم السوق
         market_label = extract_market_label(row_text)
-        if market_label == "غير محدد":
-            print(f"      [⚠] تعذّر استخراج اسم السوق من: '{row_text}' — سيُحفَظ 'غير محدد' صراحة.")
 
-        print(f"      [DEBUG] عُثر على قسم {direction} في السوق '{market_label}'")
+        # استخراج السجلات
+        recs = parse_foreign_section(sheet, row_idx, market_label, direction)
+        all_records.extend(recs)
 
-        section_records = parse_foreign_section(sheet, row_idx, market_label, direction)
-        all_records.extend(section_records)
+    return {
+        "session_number": session_number,
+        "records": all_records
+    }
 
-    return {"session_number": session_number, "records": all_records}
-
-# ================== إدارة التخزين والتقدم ==================
-def load_existing_data() -> dict:
-    if not os.path.exists(ARCHIVE_OUTPUT_FILE):
-        return {}
-    try:
-        with open(ARCHIVE_OUTPUT_FILE, "r", encoding="utf-8") as f:
-            content = f.read().strip()
-            if not content:
-                return {}
-            return json.loads(content)
-    except (json.JSONDecodeError, IOError):
-        return {}
-
-def save_data(data: dict):
-    tmp_path = ARCHIVE_OUTPUT_FILE + ".tmp"
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    os.replace(tmp_path, ARCHIVE_OUTPUT_FILE)
-
-def merge_records(existing: dict, session_date: str, session_number: str, records: list) -> int:
+# ==============================================================================
+# 6. دالة دمج وتحديث البيانات في ملف JSON
+# ==============================================================================
+def merge_records_smart(existing_db: dict, session_date: str, session_number: str, records: list) -> tuple:
+    """دمج السجلات وتحديث البيانات القديمة الخاطئة تلقائياً."""
     added = 0
+    updated = 0
+
     for rec in records:
         symbol = rec["symbol"]
-        if symbol not in existing:
-            existing[symbol] = []
+        if symbol not in existing_db:
+            existing_db[symbol] = []
 
-        duplicate = any(
-            r.get("date") == session_date
-            and r.get("market") == rec["market"]
-            and r.get("direction") == rec["direction"]
-            for r in existing[symbol]
-        )
-        if duplicate:
-            continue
+        # البحث عن سجل سابق بنفس التاريخ والاتجاه
+        matched_idx = -1
+        for idx, r in enumerate(existing_db[symbol]):
+            if r.get("date") == session_date and r.get("direction") == rec["direction"]:
+                matched_idx = idx
+                break
 
-        existing[symbol].append({
+        new_entry = {
             "date": session_date,
             "sessionNumber": session_number,
             "market": rec["market"],
             "direction": rec["direction"],
             "trades": rec["trades"],
             "shares": rec["shares"],
-            "value": rec["value"],
-        })
-        added += 1
-    return added
+            "value": rec["value"]
+        }
 
-def load_progress() -> dict:
-    if os.path.exists(PROGRESS_FILE):
-        try:
-            with open(PROGRESS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"  [⚠] خطأ في قراءة ملف التقدم: {e}")
-            return {}
-    return {}
+        if matched_idx != -1:
+            existing_rec = existing_db[symbol][matched_idx]
+            # تحديث السجل إذا تغير اسم السوق إلى اسم أدق أو اختلفت القيم
+            if existing_rec.get("market") != rec["market"] or existing_rec.get("value") != rec["value"]:
+                existing_db[symbol][matched_idx] = new_entry
+                updated += 1
+        else:
+            existing_db[symbol].append(new_entry)
+            added += 1
 
-def save_progress(progress: dict):
-    tmp = PROGRESS_FILE + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(progress, f, ensure_ascii=False, indent=2)
-    os.replace(tmp, PROGRESS_FILE)
-
-# ================== الحلقة الرئيسية ==================
-def main():
-    print("=" * 60)
-    print("أرشفة تداول غير العراقيين (مع استئناف تلقائي)")
-    print("=" * 60)
-
-    params = extract_search_params(SEARCH_URL)
-    print(f"المعاملات: reporttype={params['reporttype']}, toDate={params['toDate']}, date={params['date']}")
-
-    data = load_existing_data()
-    print(f"البيانات الحالية: {sum(len(v) for v in data.values())} سجل.")
-
-    if not os.path.exists(ARCHIVE_OUTPUT_FILE):
-        save_data(data)
-        print(f"  [تهيئة] {ARCHIVE_OUTPUT_FILE} غير موجود — أُنشئ الآن فارغاً ({{}}) لضمان وجوده.")
-
-    progress = load_progress()
-    last_page = progress.get("last_page", 0)
-    start_page = last_page + 1
-    print(f"آخر صفحة مكتملة: {last_page} → سنبدأ من الصفحة {start_page}")
-
-    total_processed = 0
-    total_added = 0
-    page = start_page
-
-    while page <= MAX_PAGES:
-        page_url = build_page_url(params, page)
-        reports = fetch_reports_from_page(page_url)
-
-        if not reports:
-            print(f"  [توقف] الصفحة {page} فارغة أو لا تحتوي على تقارير، نعتقد أنها نهاية الأرشيف.")
-            progress["last_page"] = page
-            save_progress(progress)
-            break
-
-        print(f"  [✓] الصفحة {page} تحتوي على {len(reports)} تقرير(ات).")
-
-        for report in reports:
-            time.sleep(DELAY_SECONDS)
-            try:
-                print(f"    - تحميل {report['date']} ...")
-                excel_bytes = download_excel(report["url"])
-                parsed = parse_daily_foreign_excel(excel_bytes)
-                added = merge_records(data, report["date"], parsed.get("session_number"), parsed["records"])
-                total_added += added
-                total_processed += 1
-                print(f"      ✅ {report['date']}: {len(parsed['records'])} سجل، {added} جديد.")
-            except Exception as e:
-                print(f"      ❌ فشل معالجة {report['date']}: {e}")
-
-        save_data(data)
-        progress["last_page"] = page
-        save_progress(progress)
-        print(f"  [حفظ] تم تحديث الملفات (البيانات والتقدم) بعد الصفحة {page}.")
-
-        page += 1
-
-    print("\n" + "=" * 60)
-    print(f"🎉 انتهت المعالجة.")
-    print(f"   - تم تحميل {total_processed} تقرير")
-    print(f"   - أُضيف {total_added} سجل جديد")
-    print(f"   - آخر صفحة مكتملة: {page - 1}")
-    print(f"   - ملف البيانات: {ARCHIVE_OUTPUT_FILE}")
-    print("=" * 60)
-
-if __name__ == "__main__":
-    main()
+    return added, updated
