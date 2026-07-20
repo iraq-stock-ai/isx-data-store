@@ -1,6 +1,18 @@
 {
   "items": [
     {
+      "id": "17078",
+      "type": "إفصاح",
+      "title": "إفصاح الشركة العراقية لصناعة وتجارة الكارتون على الاحداث الجوهرية",
+      "date": "04/01/2026",
+      "related_symbols": [
+        "IICM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_7_31_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17078&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
       "id": "17077",
       "type": "إفصاح",
       "title": "إفصاح شركة المصرف الدولي الاسلامي على الاحداث الجوهرية",
@@ -23031,5 +23043,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17077
+  "last_known_story_id": 17078
 }
