@@ -1,6 +1,35 @@
 {
-  "last_known_story_id": 17770,
+  "last_known_story_id": 17771,
   "items": [
+    {
+      "id": "17771",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة فنادق عشتار السياحية إعتباراً من جلسة الثلاثاء الموافق 2026/7/21",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_8_29_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17771&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "فنادق عشتار السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء التداول",
+          "value": "2026/7/21"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة فنادق عشتار السياحية اعتباراً من جلسة يوم الثلاثاء الموافق 21 يوليو 2026. يأتي هذا الإجراء ضمن العمليات التنظيمية للسوق المدرجة في إفصاحات الهيئة.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17770",
       "type": "إفصاح",
