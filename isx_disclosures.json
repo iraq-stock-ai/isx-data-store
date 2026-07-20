@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17780,
+  "last_known_story_id": 17781,
   "items": [
+    {
+      "id": "17781",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة بوابة آسيا للتأمين في يوم الاربعاء الموافق 2026/7/22",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "NGAT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_44_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17781&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة بوابة آسيا للتأمين",
+      "raas_al_mal": "15,000,000,000 دينار عراقي",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أعلنت شركة بوابة آسيا للتأمين عن عقد اجتماع الهيئة العامة للشركة، حيث تمت الإشارة إلى رأس مال الشركة البالغ 15 مليار دينار عراقي ضمن جدول أعمال الاجتماع. يتضمن جدول الأعمال مناقشة التقارير المالية والبيانات ذات الصلة بمسيرة الشركة للفترات المالية المحددة في الإفصاح.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17780",
       "type": "إفصاح",
