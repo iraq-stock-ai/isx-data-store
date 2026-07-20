@@ -1,37 +1,49 @@
+import io
 import os
 import re
 import json
+import time
+from datetime import datetime
+from urllib.parse import urlparse, parse_qs
+
+import requests
+from bs4 import BeautifulSoup
 import openpyxl
 
-# ==============================================================================
-# 1. إعدادات الثوابت والأنماط
-# ==============================================================================
+# ================== الرابط المرجعي للبحث ==================
+SEARCH_URL = "http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p=1&reporttype=40&toDate=19%2F07%2F2026&date=19%2F07%2F2024"
+
+# ================== الثوابت العامة ==================
+BASE_URL = "http://www.isx-iq.net"
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+}
+
+ARCHIVE_OUTPUT_FILE = "isx_foreign_trading.json"
+PROGRESS_FILE = "archive_progress.json"
+DELAY_SECONDS = 2
+MAX_PAGES = 500
+
 FOREIGN_SECTION_MARKERS = ["غير العراقيين", "غيرالعراقيين", "الأجانب", "اجانب", "أجانب"]
 BUY_MARKERS = ["المشتراة", "مشتراة"]
 SELL_MARKERS = ["المباعة", "مباعة"]
-
-# كلمات يتم استبعادها عند البحث عن رمز الشركة
 IGNORE_WORDS = {"ISX", "OTC", "TOTAL", "DATE", "TYPE", "BUY", "SELL", "المجموع", "مجموع"}
 
-# ==============================================================================
-# 2. دوال تنظيف النص واستخراج اسم السوق
-# ==============================================================================
+# ================== دوال تنظيف واستخراج البيانات ==================
 def clean_text(txt) -> str:
-    """تنظيف النص من المسافات المخفية ورموز الاتجاه والأسطر الجديدة."""
+    """تنظيف النص وإزالة رموز UTF-8 الخفية والمسافات غير المرئية."""
     if txt is None:
         return ""
     txt = str(txt)
-    # إزالة المسافات الخفية \xa0 ورموز الاتجاه العربي \u200f / \u200e
     txt = txt.replace("\xa0", " ").replace("\u200f", "").replace("\u200e", "").replace("\ufeff", "")
     txt = txt.replace("\r", " ").replace("\n", " ").replace("\t", " ")
     txt = re.sub(r"\s+", " ", txt).strip()
     return txt
 
 def extract_market_label(section_title_text: str) -> str:
-    """استخراج اسم السوق بدقة عالية بناءً على الكلمات المفتاحية."""
+    """تعيين نوع السوق بدقة عالية عبر الكلمات المفتاحية."""
     txt = clean_text(section_title_text)
 
-    # 1. المطابقة بالمباشر للكلمات المفتاحية (الأعلى دقة)
     if any(k in txt for k in ["غير المفصحة", "غير مفصحة", "الثالث", "otc"]):
         return "الشركات غير المفصحة"
     if any(k in txt for k in ["الثاني", "الثانية"]):
@@ -39,7 +51,6 @@ def extract_market_label(section_title_text: str) -> str:
     if any(k in txt for k in ["النظامي", "النظامية"]):
         return "النظامي"
 
-    # 2. محاولة استخراج عبر Regex في حال وجود صياغة غير معيارية
     match = re.search(r"(?:في|منصة|سوق)\s+(.+?)(?:\s+لجلسة|\s*$)", txt)
     if match:
         raw_market = clean_text(match.group(1))
@@ -52,16 +63,77 @@ def extract_market_label(section_title_text: str) -> str:
         if raw_market:
             return raw_market
 
-    # الافتراضي في سوق العراق للأوراق المالية
     return "النظامي"
 
-# ==============================================================================
-# 3. دالة اكتشاف كتل تداول غير العراقيين في شيتات العمل
-# ==============================================================================
+def extract_search_params(url: str) -> dict:
+    parsed = urlparse(url)
+    params = parse_qs(parsed.query)
+    return {
+        "reporttype": params.get("reporttype", ["40"])[0],
+        "toDate": params.get("toDate", [""])[0],
+        "date": params.get("date", [""])[0],
+    }
+
+def build_page_url(params: dict, page: int) -> str:
+    return f"http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p={page}&reporttype={params['reporttype']}&toDate={params['toDate']}&date={params['date']}"
+
+# ================== استخراج روابط التقارير ==================
+def fetch_reports_from_page(page_url: str) -> list:
+    print(f"  [أرشيف] جاري فحص الصفحة: {page_url}")
+    try:
+        resp = requests.get(page_url, headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"    [خطأ] فشل تحميل الصفحة: {e}")
+        return []
+
+    soup = BeautifulSoup(resp.content, "html.parser")
+    table = soup.find("table")
+    if table is None:
+        print("    [⚠] لم يُعثر على جدول في الصفحة.")
+        return []
+
+    reports = []
+    for row in table.find_all("tr"):
+        row_text = clean_text(row.get_text())
+        if "يومي" not in row_text and "التقرير اليومي" not in row_text:
+            continue
+
+        link_tag = row.find("a", href=True)
+        if not link_tag:
+            continue
+        href = link_tag["href"]
+        if ".xlsx" not in href.lower() and ".xls" not in href.lower():
+            continue
+
+        date_match = re.search(r"(\d{2}/\d{2}/\d{4})", row_text)
+        if not date_match:
+            continue
+        session_date = date_match.group(1)
+
+        full_url = href if href.startswith("http") else BASE_URL + href
+        reports.append({"date": session_date, "url": full_url})
+
+    return reports
+
+def download_excel(url: str) -> bytes:
+    resp = requests.get(url, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    return resp.content
+
+def extract_session_number(sheet) -> str:
+    pattern = re.compile(r"الجلسة\s*[\(\)]?\s*(\d+)")
+    for row in sheet.iter_rows(max_row=10, values_only=True):
+        for cell in row:
+            if cell:
+                match = pattern.search(clean_text(cell))
+                if match:
+                    return match.group(1)
+    return "0"
+
 def find_foreign_trading_blocks(wb) -> list:
-    """البحث عن كتل التداول مع دمج سياق الأسطر المجاورة لمنع ضياع العنوان المقسم."""
+    """كشف كتل الأجانب ودعم العناوين الممتدة عبر أكثر من سطر."""
     blocks = []
-    
     for sheet_name in wb.sheetnames:
         sheet = wb[sheet_name]
         rows = list(sheet.iter_rows(values_only=True))
@@ -74,11 +146,9 @@ def find_foreign_trading_blocks(wb) -> list:
             has_direction = any(m in curr_text for m in BUY_MARKERS + SELL_MARKERS)
 
             if has_foreign and has_direction:
-                # تجميع السطر الحالي والسطرين التاليين للوصول لاسم السوق كاملاً
                 header_lines = []
                 for w_idx in range(row_idx, min(row_idx + 3, num_rows)):
                     w_text = clean_text(" ".join(str(c) for c in rows[w_idx] if c is not None))
-                    # إيقاف التجميع إذا وصلنا لرؤوس أعمدة الجدول
                     if any(col in w_text for col in ["رمز الشركة", "اسم الشركة", "الصفقات"]):
                         break
                     header_lines.append(w_text)
@@ -88,11 +158,7 @@ def find_foreign_trading_blocks(wb) -> list:
 
     return blocks
 
-# ==============================================================================
-# 4. دالة تحليل واستخراج صفوف الجدول للكتلة المحددة
-# ==============================================================================
 def parse_foreign_section(sheet, start_row_idx: int, market_label: str, direction: str) -> list:
-    """قراءة أسهم الشركات والصفقات والكميات والقيم داخل القسم المحدد."""
     records = []
     symbol_pattern = re.compile(r"\b([A-Z]{3,6})\b")
     rows = list(sheet.iter_rows(values_only=True))
@@ -110,17 +176,14 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
         if not row_text:
             continue
 
-        # إيقاف القراءة عند الوصول للمجموع الكلي أو عنوان نشرة جديدة
         if any(term in row_text for term in ["المجموع الكلي", "مجموع الكلي", "مجموع السوق"]):
             break
         if any(m in row_text for m in FOREIGN_SECTION_MARKERS) and any(m in row_text for m in BUY_MARKERS + SELL_MARKERS):
             break
 
-        # التجاوز عن أسطر القطاعات والمجاميع الفرعية للقطاع
         if "مجموع" in row_text or "قطاع" in row_text:
             continue
 
-        # 1. استخراج رمز الشركة
         symbol = None
         for cell in row_cells:
             cell_clean = cell.strip().upper()
@@ -134,7 +197,6 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
         if not symbol:
             continue
 
-        # 2. استخراج الأرقام (الصفقات، الأسهم المتداولة، القيمة المتداولة)
         numbers = []
         for cell in row_cells:
             cell_num = cell.replace(",", "").strip()
@@ -158,63 +220,66 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
             "direction": direction,
             "trades": trades,
             "shares": shares,
-            "value": value
+            "value": value,
         })
 
     return records
 
-# ==============================================================================
-# 5. قراءة ملف Excel اليومي كاملاً
-# ==============================================================================
-def parse_daily_foreign_excel(file_path: str, session_date: str, session_number: str) -> dict:
-    """فتح ملف Excel واستخراج جميع معاملات غير العراقيين لجميع الأسواق."""
-    try:
-        wb = openpyxl.load_workbook(file_path, data_only=True)
-    except Exception as e:
-        print(f"❌ خطأ في فتح الملف {file_path}: {e}")
-        return {"session_number": session_number, "records": []}
+def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
+    wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
+
+    session_number = None
+    if wb.sheetnames:
+        session_number = extract_session_number(wb[wb.sheetnames[0]])
 
     blocks = find_foreign_trading_blocks(wb)
-    all_records = []
+    if not blocks:
+        return {"session_number": session_number, "records": []}
 
+    all_records = []
     for sheet_name, row_idx, row_text in blocks:
         sheet = wb[sheet_name]
-        
-        # تحديد الاتجاه (شراء / بيع)
+
         direction = "buy" if any(m in row_text for m in BUY_MARKERS) else (
             "sell" if any(m in row_text for m in SELL_MARKERS) else None
         )
-        if not direction:
+        if direction is None:
             continue
 
-        # استخراج اسم السوق
         market_label = extract_market_label(row_text)
+        section_records = parse_foreign_section(sheet, row_idx, market_label, direction)
+        all_records.extend(section_records)
 
-        # استخراج السجلات
-        recs = parse_foreign_section(sheet, row_idx, market_label, direction)
-        all_records.extend(recs)
+    return {"session_number": session_number, "records": all_records}
 
-    return {
-        "session_number": session_number,
-        "records": all_records
-    }
+# ================== التخزين وإدارة الملفات ==================
+def load_existing_data() -> dict:
+    if not os.path.exists(ARCHIVE_OUTPUT_FILE):
+        return {}
+    try:
+        with open(ARCHIVE_OUTPUT_FILE, "r", encoding="utf-8") as f:
+            content = f.read().strip()
+            if not content:
+                return {}
+            return json.loads(content)
+    except (json.JSONDecodeError, IOError):
+        return {}
 
-# ==============================================================================
-# 6. دالة دمج وتحديث البيانات في ملف JSON
-# ==============================================================================
-def merge_records_smart(existing_db: dict, session_date: str, session_number: str, records: list) -> tuple:
-    """دمج السجلات وتحديث البيانات القديمة الخاطئة تلقائياً."""
+def save_data(data: dict):
+    tmp_path = ARCHIVE_OUTPUT_FILE + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, ARCHIVE_OUTPUT_FILE)
+
+def merge_records(existing: dict, session_date: str, session_number: str, records: list) -> int:
     added = 0
-    updated = 0
-
     for rec in records:
         symbol = rec["symbol"]
-        if symbol not in existing_db:
-            existing_db[symbol] = []
+        if symbol not in existing:
+            existing[symbol] = []
 
-        # البحث عن سجل سابق بنفس التاريخ والاتجاه
         matched_idx = -1
-        for idx, r in enumerate(existing_db[symbol]):
+        for idx, r in enumerate(existing[symbol]):
             if r.get("date") == session_date and r.get("direction") == rec["direction"]:
                 matched_idx = idx
                 break
@@ -226,17 +291,97 @@ def merge_records_smart(existing_db: dict, session_date: str, session_number: st
             "direction": rec["direction"],
             "trades": rec["trades"],
             "shares": rec["shares"],
-            "value": rec["value"]
+            "value": rec["value"],
         }
 
         if matched_idx != -1:
-            existing_rec = existing_db[symbol][matched_idx]
-            # تحديث السجل إذا تغير اسم السوق إلى اسم أدق أو اختلفت القيم
-            if existing_rec.get("market") != rec["market"] or existing_rec.get("value") != rec["value"]:
-                existing_db[symbol][matched_idx] = new_entry
-                updated += 1
+            # تحديث اسم السوق تلقائياً إذا كان مسجلاً سابقاً خطأً كـ "النظامي"
+            if existing[symbol][matched_idx].get("market") != rec["market"]:
+                existing[symbol][matched_idx] = new_entry
+                added += 1
         else:
-            existing_db[symbol].append(new_entry)
+            existing[symbol].append(new_entry)
             added += 1
 
-    return added, updated
+    return added
+
+def load_progress() -> dict:
+    if os.path.exists(PROGRESS_FILE):
+        try:
+            with open(PROGRESS_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return {}
+    return {}
+
+def save_progress(progress: dict):
+    tmp = PROGRESS_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(progress, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, PROGRESS_FILE)
+
+# ================== التشغيل الرئيسي ==================
+def main():
+    print("=" * 60)
+    print("أرشفة تداول غير العراقيين (شاملة لكافة الأسواق والمنصات)")
+    print("=" * 60)
+
+    params = extract_search_params(SEARCH_URL)
+    data = load_existing_data()
+
+    if not os.path.exists(ARCHIVE_OUTPUT_FILE):
+        save_data(data)
+
+    progress = load_progress()
+    last_page = progress.get("last_page", 0)
+
+    # 🛠️ إصلاح الـ 0 ثانية: إذا كانت الصفحات مسجلة سابقاً كمنتهية، نعيد الضبط للبدء من الصفحة 1
+    if last_page >= MAX_PAGES:
+        print(f"  [إعادة ضبط] ملف التقدم مغلق عند الصفحة {last_page} — سيتم التصفير والبدء من الصفحة 1.")
+        last_page = 0
+
+    start_page = last_page + 1
+    print(f"بدء الفحص من الصفحة: {start_page}")
+
+    total_processed = 0
+    total_added = 0
+    page = start_page
+
+    while page <= MAX_PAGES:
+        page_url = build_page_url(params, page)
+        reports = fetch_reports_from_page(page_url)
+
+        if not reports:
+            print(f"  [توقف] الصفحة {page} فارغة أو تم جلب الأرشيف بالكامل.")
+            progress["last_page"] = page
+            save_progress(progress)
+            break
+
+        print(f"  [✓] الصفحة {page} تحتوي على {len(reports)} تقرير(ات).")
+
+        for report in reports:
+            time.sleep(DELAY_SECONDS)
+            try:
+                excel_bytes = download_excel(report["url"])
+                parsed = parse_daily_foreign_excel(excel_bytes)
+                added = merge_records(data, report["date"], parsed.get("session_number"), parsed["records"])
+                total_added += added
+                total_processed += 1
+                print(f"      ✅ {report['date']}: {len(parsed['records'])} سجل، {added} مضاف/محدث.")
+            except Exception as e:
+                print(f"      ❌ فشل معالجة {report['date']}: {e}")
+
+        save_data(data)
+        progress["last_page"] = page
+        save_progress(progress)
+
+        page += 1
+
+    print("\n" + "=" * 60)
+    print(f"🎉 انتهت العملية بنجاح!")
+    print(f"   - التقارير المكتملة: {total_processed}")
+    print(f"   - السجلات المضافة/المحدثة: {total_added}")
+    print("=" * 60)
+
+if __name__ == "__main__":
+    main()
