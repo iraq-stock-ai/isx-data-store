@@ -336,6 +336,16 @@ def main():
     data = load_existing_data()
     print(f"البيانات الحالية: {sum(len(v) for v in data.values())} سجل.")
 
+    # ⬅️ إصلاح: يضمن وجود isx_foreign_trading.json بمجلد العمل من أول
+    # لحظة، حتى لو حُذف يدوياً من المستودع (كما حدث فعلياً) وحتى لو لم
+    # تحتوِ هذه التشغيلة تحديداً أي سجل جديد (يوم بلا حركة أجانب، مثلاً).
+    # بدون هذا، يفشل لاحقاً أمر "git add isx_foreign_trading.json" بخطأ
+    # "did not match any files" لأن الملف غير موجود فعلياً بمجلد العمل،
+    # حتى لو الأمر البرمجي save_data() سليم بذاته.
+    if not os.path.exists(ARCHIVE_OUTPUT_FILE):
+        save_data(data)
+        print(f"  [تهيئة] {ARCHIVE_OUTPUT_FILE} غير موجود — أُنشئ الآن فارغاً ({{}}) لضمان وجوده لخطوة git add لاحقاً.")
+
     progress = load_progress()
     last_page = progress.get("last_page", 0)
     start_page = last_page + 1
