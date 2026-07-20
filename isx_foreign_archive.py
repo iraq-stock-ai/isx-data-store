@@ -36,34 +36,29 @@ FOREIGN_SECTION_MARKERS = [
 BUY_MARKERS = ["المشتراة", "مشتراة"]
 SELL_MARKERS = ["المباعة", "مباعة"]
 
-# --------------------------------------------------------------------------
-# ⬅️ الإصلاح: استخراج اسم السوق ديناميكياً من نص العنوان، بدل قائمة ثابتة
-# محدودة (MARKET_MARKERS القديمة) كانت تُسقِط أي قسم لا يطابقها نصياً
-# بصمت على قيمة افتراضية خاطئة "النظامي" — وهذا ما حدث فعلياً بالبيانات
-# المنشورة: 100% من السجلات ظهرت "النظامي" رغم وجود سجلات فعلية من
-# "السوق الثاني" و"منصة الشركات غير المفصحة" بالتقارير المصدرية
-# (تأكَّد هذا من فحص مباشر لعينات PDF/صور حقيقية من الموقع الرسمي).
-#
-# الفكرة: بدل مطابقة القسم لقائمة أسماء متوقَّعة، يُستخرَج الاسم مباشرة
-# من النص نفسه (كل ما يأتي بعد كلمة "في")، ثم يُطبَّع فقط لتوحيد شكل
-# الأسماء الشائعة. أي اسم سوق/منصة غير متوقَّع (حتى لو لم نعرفه اليوم)
-# يُحفَظ بنصه الخام بدل أن يضيع أو يُنسب خطأً لسوق آخر.
-# --------------------------------------------------------------------------
+# ================ توسيع مرادفات أسماء الأسواق ================
 MARKET_NAME_NORMALIZATION = {
     "السوق النظامي": "النظامي",
     "المنصة النظامية": "النظامي",
     "السوق الثاني": "الثاني",
+    "السوق الثانوي": "الثاني",          # مرادف إضافي
     "المنصة الثانية": "الثاني",
     "منصة الشركات غير المفصحة": "الشركات غير المفصحة",
+    "منصة الشركات غير المخصصة": "الشركات غير المفصحة",  # مرادف إضافي
 }
 MARKET_EXTRACTION_PATTERN = re.compile(r"في\s+(.+?)(?:\s+لجلسة|\s*$)")
 
+# ================== دوال مساعدة ==================
+def clean_text(txt) -> str:
+    if txt is None:
+        return ""
+    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
+    txt = re.sub(r"\s+", " ", txt).strip()
+    return txt
 
 def extract_market_label(section_title_text: str) -> str:
     """
-    يستخرج اسم السوق/المنصة من نص عنوان القسم الكامل. لا قيمة
-    افتراضية صامتة: لو تعذّر الاستخراج، تُرجَع "غير محدد" صراحة
-    بدل تخمين قيمة قد تكون خاطئة.
+    يستخرج اسم السوق/المنصة من نص عنوان القسم الكامل.
     """
     match = MARKET_EXTRACTION_PATTERN.search(section_title_text)
     if not match:
@@ -74,17 +69,7 @@ def extract_market_label(section_title_text: str) -> str:
     for pattern, normalized in MARKET_NAME_NORMALIZATION.items():
         if pattern in raw_market_name or raw_market_name in pattern:
             return normalized
-    # اسم غير معروف مسبقاً — يُحفَظ كما ورد بدل إسقاطه على قيمة أخرى
     return raw_market_name
-
-
-# ================== دوال مساعدة ==================
-def clean_text(txt) -> str:
-    if txt is None:
-        return ""
-    txt = str(txt).replace("\r", " ").replace("\n", " ").replace("\t", " ")
-    txt = re.sub(r"\s+", " ", txt).strip()
-    return txt
 
 def extract_search_params(url: str) -> dict:
     parsed = urlparse(url)
@@ -165,55 +150,87 @@ def find_foreign_trading_blocks(wb) -> list:
                 blocks.append((sheet_name, row_idx, row_text))
     return blocks
 
+# ================================================================
+# ⬅️ الدالة المعدلة بالكامل لقراءة البيانات من أعمدة محددة
+# ================================================================
 def parse_foreign_section(sheet, start_row_idx: int, market_label: str, direction: str) -> list:
-    records = []
-    bracket_pattern = re.compile(r"\(([A-Z]{3,6})\)")
-    MAX_ROWS = 40
-
     rows = list(sheet.iter_rows(values_only=True))
-    for offset in range(1, MAX_ROWS):
+
+    # 1. البحث عن صف العناوين (في نطاق 5 صفوف قبل بداية القسم)
+    header_row = None
+    for offset in range(-5, 0):
+        idx = start_row_idx + offset
+        if idx < 0:
+            continue
+        row = rows[idx]
+        if not row:
+            continue
+        row_text = " ".join(str(c) for c in row if c)
+        if "رمز" in row_text or "الشركة" in row_text:
+            header_row = row
+            break
+
+    if not header_row:
+        print(f"    [⚠] تعذّر العثور على صف العناوين، تخطي هذا القسم.")
+        return []
+
+    # 2. تحديد مؤشرات الأعمدة بناءً على عناوينها
+    symbol_idx = trades_idx = shares_idx = value_idx = None
+    for i, cell in enumerate(header_row):
+        if cell is None:
+            continue
+        cell_str = str(cell).strip()
+        if "رمز" in cell_str:
+            symbol_idx = i
+        elif "الصفقات" in cell_str or "صفقات" in cell_str:
+            trades_idx = i
+        elif "الأسهم" in cell_str or "اسهم" in cell_str:
+            shares_idx = i
+        elif "القيمة" in cell_str:
+            value_idx = i
+
+    # التأكد من وجود عمود الرمز، وإلا لا يمكن المتابعة
+    if symbol_idx is None:
+        print(f"    [⚠] لم يُعثر على عمود 'رمز الشركة'، تخطي.")
+        return []
+
+    records = []
+    # 3. قراءة الصفوف التالية (بدءاً من الصف التالي لصف العنوان)
+    for offset in range(1, 40):
         idx = start_row_idx + offset
         if idx >= len(rows):
             break
         row = rows[idx]
-        row_cells = [clean_text(c) for c in row]
-        row_text = " ".join(c for c in row_cells if c)
-
-        if not row_text:
+        if not row or not any(c is not None for c in row):
             continue
+
+        row_text = " ".join(str(c) for c in row if c)
+        # التوقف عند صف المجموع الكلي
         if "المجموع الكلي" in row_text:
             break
-        if "مجموع" in row_text:
+        # تخطي صفوف "مجموع قطاع" لأنها لا تحمل رمز شركة
+        if "مجموع" in row_text and "قطاع" in row_text:
             continue
 
-        symbol = None
-        for cell in row_cells:
-            if SYMBOL_PATTERN.match(cell) and cell not in ("ISX", "OTC"):
-                symbol = cell
-                break
-            m = bracket_pattern.search(cell)
-            if m:
-                symbol = m.group(1)
-                break
-
-        if not symbol:
+        # استخراج الرمز من العمود المخصص له
+        symbol = clean_text(row[symbol_idx]) if symbol_idx < len(row) else ""
+        if not symbol or not SYMBOL_PATTERN.match(symbol):
             continue
 
-        numbers = []
-        for cell in row_cells:
-            cell_num = cell.replace(",", "")
-            if re.match(r"^-?\d+(\.\d+)?$", cell_num):
-                numbers.append(cell_num)
-
-        if len(numbers) < 3:
-            continue
-
-        trades_raw, shares_raw, value_raw = numbers[-3], numbers[-2], numbers[-1]
+        # استخراج الأرقام من الأعمدة المحددة
         try:
-            trades = int(float(trades_raw))
-            shares = int(float(shares_raw))
-            value = int(float(value_raw))
-        except ValueError:
+            trades_str = clean_text(row[trades_idx]).replace(",", "") if trades_idx is not None and trades_idx < len(row) else "0"
+            shares_str = clean_text(row[shares_idx]).replace(",", "") if shares_idx is not None and shares_idx < len(row) else "0"
+            value_str = clean_text(row[value_idx]).replace(",", "") if value_idx is not None and value_idx < len(row) else "0"
+
+            trades = int(float(trades_str)) if trades_str and trades_str != "0" else 0
+            shares = int(float(shares_str)) if shares_str and shares_str != "0" else 0
+            value = int(float(value_str)) if value_str and value_str != "0" else 0
+        except (ValueError, TypeError):
+            continue
+
+        # تجاهل الصفوف التي تكون قيمتها صفر (قد تكون فارغة)
+        if value == 0 and shares == 0:
             continue
 
         records.append({
@@ -248,7 +265,6 @@ def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
         if direction is None:
             continue
 
-        # ⬅️ الإصلاح مطبَّق هنا: استخراج ديناميكي بدل القائمة الثابتة القديمة
         market_label = extract_market_label(row_text)
         if market_label == "غير محدد":
             print(f"      [⚠] تعذّر استخراج اسم السوق من: '{row_text}' — سيُحفَظ 'غير محدد' صراحة.")
@@ -307,7 +323,6 @@ def merge_records(existing: dict, session_date: str, session_number: str, record
         added += 1
     return added
 
-# ================== إدارة التقدم ==================
 def load_progress() -> dict:
     if os.path.exists(PROGRESS_FILE):
         try:
@@ -336,15 +351,9 @@ def main():
     data = load_existing_data()
     print(f"البيانات الحالية: {sum(len(v) for v in data.values())} سجل.")
 
-    # ⬅️ إصلاح: يضمن وجود isx_foreign_trading.json بمجلد العمل من أول
-    # لحظة، حتى لو حُذف يدوياً من المستودع (كما حدث فعلياً) وحتى لو لم
-    # تحتوِ هذه التشغيلة تحديداً أي سجل جديد (يوم بلا حركة أجانب، مثلاً).
-    # بدون هذا، يفشل لاحقاً أمر "git add isx_foreign_trading.json" بخطأ
-    # "did not match any files" لأن الملف غير موجود فعلياً بمجلد العمل،
-    # حتى لو الأمر البرمجي save_data() سليم بذاته.
     if not os.path.exists(ARCHIVE_OUTPUT_FILE):
         save_data(data)
-        print(f"  [تهيئة] {ARCHIVE_OUTPUT_FILE} غير موجود — أُنشئ الآن فارغاً ({{}}) لضمان وجوده لخطوة git add لاحقاً.")
+        print(f"  [تهيئة] {ARCHIVE_OUTPUT_FILE} غير موجود — أُنشئ الآن فارغاً ({{}}) لضمان وجوده.")
 
     progress = load_progress()
     last_page = progress.get("last_page", 0)
