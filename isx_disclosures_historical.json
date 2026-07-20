@@ -1,6 +1,87 @@
 {
   "items": [
     {
+      "id": "17095",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الطيف الاسلامي في جلسة الخميس الموافق 2026/1/8",
+      "date": "08/01/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_4_10_13_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17095&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الطيف الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "4000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "أفصحت شركة إيلاف للوساطة المالية عن تنفيذ أمر تداول متقابل مقصود على أسهم مصرف الطيف الإسلامي في جلسة يوم الخميس الموافق 8 يناير 2026. تضمن الإجراء تنفيذ صفقة بعدد إجمالي بلغ 4,000,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17094",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف الطيف الاسلامي المنعقد بتاريخ 2025/11/20",
+      "date": "08/01/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_4_6_44_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17094&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف الطيف الاسلامي للاستثمار والتمويل",
+      "raas_al_mal": "255,093,450,000",
+      "net_profit": null,
+      "total_debts": "161,476,075,841",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة العجز المتراكم",
+          "value": "161,476,075,841 دينار"
+        },
+        {
+          "label": "رأس المال المدفوع",
+          "value": "255,093,450,000 دينار"
+        }
+      ],
+      "confidence_note": "الأرقام المالية مستخرجة من محضر الاجتماع، ورقم العجز المتراكم يظهر ضمن سياق القوائم المالية للسنة المنتهية في 2024/12/31.",
+      "summary": "عقد مصرف الطيف الإسلامي اجتماع الهيئة العامة في تاريخ 20/11/2025 لمناقشة القوائم المالية للشركة للسنة المنتهية في 31/12/2024. تضمن الاجتماع استعراض تقرير الحسابات الختامية والمصادقة على البيانات المالية. كما أشار المحضر إلى بلوغ رأس مال المصرف 255,093,450,000 دينار عراقي، مع تسجيل عجز متراكم بلغت قيمته 161,476,075,841 دينار عراقي للفترة المالية المذكورة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17093",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف المتحد للاستثمار البيانات المالية السنوية لعام 2024",
+      "date": "08/01/2026",
+      "related_symbols": [
+        "BUND"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_4_6_41_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17093&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف المتحد للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدم المصرف المتحد للاستثمار حساباته الختامية للفترة المالية المنتهية في 31 ديسمبر 2024. وأكد المصرف أن هذه الحسابات مصدقة ومصادق عليها من قبل مجلس مهنة مراقبة وتدقيق الحسابات، وقد تم توجيهها إلى سوق العراق للأوراق المالية وفق الأصول.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17092",
       "type": "إفصاح",
       "title": "إفصاح - قدمت شركة مدينة العاب الكرخ السياحية البيانات المالية الفصلية للفصل الرابع لعام 2025",
@@ -23356,5 +23437,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17092
+  "last_known_story_id": 17095
 }
