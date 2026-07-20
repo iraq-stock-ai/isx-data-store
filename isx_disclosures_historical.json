@@ -1,6 +1,733 @@
 {
   "items": [
     {
+      "id": "17052",
+      "type": "إفصاح",
+      "title": "امر-اداري استبعاد سعر على اسهم شركة فنادق عشتار",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_6_10_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17052&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "فنادق عشتار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": 536418,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "السعر المستبعد",
+          "value": "9.200 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أصدر سوق العراق للأوراق المالية أمراً إدارياً يقضي باستبعاد سعر سهم شركة فنادق عشتار البالغ 9.200 دينار. جاء هذا الإجراء نتيجة لتنفيذ صفقة تداول لعدد 536,418 سهماً ضمن جلسة التداول، حيث تقرر استبعاد هذا السعر من سجل التداولات.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17051",
+      "type": "إفصاح",
+      "title": "امر-اداري استبعاد سعر على اسهم شركة طريق الخازر لانتاج المواد الانشائية",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_8_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17051&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة طريق الخازر لانتاج المواد الانشائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "10000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر السهم المستبعد",
+          "value": "1.330 دينار"
+        },
+        {
+          "label": "الأسعار المشمولة بقرار الاستبعاد",
+          "value": "1.330, 1.320, 1.300, 1.270"
+        },
+        {
+          "label": "سعر الإغلاق المعتمد",
+          "value": "1.350 دينار"
+        },
+        {
+          "label": "رقم الصفقة",
+          "value": "51368479"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قررت هيئة سوق العراق للأوراق المالية استبعاد صفقة تداول خاصة بأسهم شركة طريق الخازر لإنتاج المواد الإنشائية بعدد 10,000 سهم. شمل قرار الاستبعاد أسعار 1.330، 1.320، 1.300، و1.270 دينار، مع اعتماد سعر الإغلاق البالغ 1.350 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17050",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الاهلي العراقي في جلسة الثلاثاء الموافق 2025/12/23",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "BNOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_7_8.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17050&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الاهلي العراقي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": 600000000,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الأسهم في أمر الوسيط",
+          "value": "810,000,000"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تم تنفيذ أمر متقابل مقصود على أسهم مصرف الأهلي العراقي في جلسة التداول ليوم الثلاثاء الموافق 23/12/2025. شملت العملية تداول 600,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17049",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف اسيا العراق في جلسة الثلاثاء الموافق 2025/12/23",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "BAIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_6_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17049&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف اسيا العراق",
+      "raas_al_mal": "100,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2082000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تم تنفيذ أمر متقابل مقصود على أسهم شركة مصرف اسيا العراق في جلسة التداول ليوم الثلاثاء الموافق 2025/12/23. تضمنت الصفقة تداول ما مجموعه 2,082,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17048",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المنصور للصناعات الداوئية و المستلزمات الطبية في يوم الاحد الموافق 2026/1/11",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "IMAP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_10_8_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17048&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المنصور للصناعات الدوائية والمستلزمات الطبية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ اجتماع الهيئة العامة",
+          "value": "2026/1/11"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تعلن شركة المنصور للصناعات الدوائية والمستلزمات الطبية عن عقد اجتماع الهيئة العامة يوم الأحد الموافق 2026/1/11 لمناقشة بنود جدول الأعمال المقررة للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17047",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف أمين العراق للاستثمار و التمويل الاسلامي في جلسة الاربعاء الموافق 2025/12/24",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "BAME"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_9_41_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17047&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف أمين العراق للاستثمار والتمويل الاسلامي",
+      "raas_al_mal": "250,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "القيمة الاسمية للسهم",
+          "value": "1.000 دينار"
+        },
+        {
+          "label": "نسبة تغطية الاكتتاب",
+          "value": "50%"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر إطلاق التداول على أسهم مصرف أمين العراق للاستثمار والتمويل الاسلامي في سوق العراق للأوراق المالية ابتداءً من جلسة يوم الأربعاء الموافق 24/12/2025. يبلغ رأس مال المصرف 250 مليار دينار عراقي، وبقيمة اسمية قدرها 1 دينار للسهم الواحد، مع نسبة تغطية اكتتاب بلغت 50%.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17046",
+      "type": "إفصاح",
+      "title": "افصاح النسب المؤثرة لشركة الكرمل في بيع وشراء الاوراق المالية لشركة فنادق عشتار",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_8_49_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17046&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "فنادق عشتار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2625892404",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "النسبة السابقة لمساهمة شركة سماء بابل للطيران",
+          "value": "98.941%"
+        },
+        {
+          "label": "النسبة الحالية لمساهمة شركة سماء بابل للطيران",
+          "value": "70.0%"
+        }
+      ],
+      "confidence_note": "عدد الأسهم قبل البيع في النص الأصلي غير واضح تماماً بسبب التداخل في المسح الضوئي (2625,892,404)، وتم استخراجه بناءً على السياق المتاح. كما أن رقم رأس المال المذكور في النص (810,000,000) يخص شركة الكرمل للوساطة وليس شركة فنادق عشتار.",
+      "summary": "أفصحت شركة الكرمل للوساطة المالية عن تغير في نسب المساهمة في شركة فنادق عشتار. نتج عن عملية البيع انخفاض حصة المساهم (شركة سماء بابل للطيران) من 98.941% إلى 70%، وذلك بعد التداول بـ 2,625,892,404 سهماً.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17045",
+      "type": "إفصاح",
+      "title": "كتاب شركة العراقية لانتاج وتسويق اللحوم-اعلان توقف الارباح",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "AIPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_8_46_30.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17045&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "الشركة العراقية لإنتاج وتسويق اللحوم",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج مشوش جداً وغير قابل للقراءة (Corrupted Text)، مما يجعل استخراج البيانات المالية الدقيقة أمراً مستحيلاً.",
+      "summary": "تعذر استخراج تفاصيل محددة من الإفصاح نظراً لرداءة النص المستخرج وعدم وضوح البيانات الواردة فيه. يرجى تزويد نسخة أوضح من المستند ليتم تحليلها بدقة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17044",
+      "type": "إفصاح",
+      "title": "كتاب شركة بغداد العراق للنقل العام -توزيع ارباح",
+      "date": "23/12/2025",
+      "related_symbols": [
+        "SBPT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_8_41_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17044&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة بغداد العراق للنقل العام والاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": "130985552 دينار",
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "15%",
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "إجمالي الأرباح القابلة للتوزيع",
+          "value": "130985552 دينار"
+        },
+        {
+          "label": "نسبة الأرباح الموزعة من رأس المال",
+          "value": "15%"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "عقدت شركة بغداد العراق للنقل العام والاستثمارات العقارية اجتماع هيئتها العامة للمصادقة على الحسابات الختامية للسنة المالية المنتهية في 31/12/2023. قررت الهيئة العامة الموافقة على توزيع أرباح نقدية على المساهمين بنسبة 15% من رأس المال. تم اعتماد صافي الربح البالغ 130,985,552 دينار عراقي وتوزيع حصص الأرباح وفقاً للضوابط المعمول بها.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17043",
+      "type": "إفصاح",
+      "title": "امر-اداري استبعاد سعر على اسهم شركة العراقية لانتاج وتسويق التمور",
+      "date": "22/12/2025",
+      "related_symbols": [
+        "IIDP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_11_36_2.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17043&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "الشركة العراقية لانتاج وتسويق التمور",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": 51367382,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر السهم المستبعد",
+          "value": "2.700 دينار"
+        }
+      ],
+      "confidence_note": "النص غير واضح ومشتت، تم استخراج رقم الأسهم (513,673,82) وسعر السهم المستبعد (2.700) بناءً على التنسيق المعتاد لإفصاحات سوق العراق للأوراق المالية المرتبطة باستبعاد الأسعار.",
+      "summary": "أصدر سوق العراق للأوراق المالية أمراً إدارياً يقضي باستبعاد سعر سهم الشركة العراقية لإنتاج وتسويق التمور. الإجراء يتعلق بصفقة تداول لعدد 51,367,382 سهم بسعر 2.700 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17042",
+      "type": "إفصاح",
+      "title": "كتاب شركة مصرف الموصل للتنمية والاستثمار - تعديل توقيت دعوة الهيئة العامة",
+      "date": "22/12/2025",
+      "related_symbols": [
+        "BMFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_6_31_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17042&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف الموصل للتنمية والاستثمار",
+      "raas_al_mal": "252.500 مليار دينار",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "موعد اجتماع الهيئة العامة الجديد",
+          "value": "يوم الأربعاء الموافق 2024/12/15 الساعة الثانية عشر ظهراً"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلن مصرف الموصل للتنمية والاستثمار عن تعديل توقيت انعقاد اجتماع الهيئة العامة الخاص به. تم تغيير موعد الاجتماع ليصبح في تمام الساعة الثانية عشر ظهراً من يوم الأربعاء الموافق 2024/12/15 بدلاً من الساعة العاشرة صباحاً.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17041",
+      "type": "إفصاح",
+      "title": "امر-اداري استبعاد سعر على اسهم شركة بغداد للمشروبات الغازية",
+      "date": "21/12/2025",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_11_33_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17041&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "أسعار الأسهم المستبعدة",
+          "value": "5.400, 5.390, 5.380, 5.350, 5.370, 5.460, 5.440, 5.430, 5.410, 5.420, 5.500, 5.490, 5.480, 5.470, 5.450, 5.650, 5.620, 5.600, 5.590, 5.580, 5.560, 5.550, 5.540, 5.530"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أصدر سوق العراق للأوراق المالية أمراً إدارياً يقضي باستبعاد مجموعة من أسعار التداول الخاصة بأسهم شركة بغداد للمشروبات الغازية. تم اتخاذ هذا القرار نظراً لمخالفة هذه الأسعار لضوابط التداول المعمول بها في السوق. شمل الإجراء استبعاد عدد من الأسعار المحددة التي تم تسجيلها في جلسة التداول المعنية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17040",
+      "type": "إفصاح",
+      "title": "امر-اداري استبعاد سعر على اسهم شركة العراقية لصناعة الكارتون",
+      "date": "21/12/2025",
+      "related_symbols": [
+        "IICM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_11_33_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17040&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "العراقية لصناعة الكارتون",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "225000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر السهم المستبعد",
+          "value": "3.160 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قررت هيئة الأوراق المالية استبعاد صفقة تداول لأسهم شركة العراقية لصناعة الكارتون لعدم مطابقتها لضوابط التداول. شمل الإجراء استبعاد كمية أسهم بلغت 225,000 سهم بسعر 3.160 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17039",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة فندق عشتار في جلسة الاحد الموافق 2025/12/21",
+      "date": "21/12/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_10_53_56.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17039&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "فندق عشتار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "8000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الأسهم المتداولة في الصفقة المتقابلة",
+          "value": "8,000,000 سهم"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تضمن الإفصاح تنفيذ أمر متقابل مقصود على أسهم شركة فندق عشتار في جلسة يوم الأحد الموافق 21 كانون الأول 2025. بلغت كمية الأسهم المتداولة في هذه العملية 8,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17038",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الاقليم الاسلامي في جلسة الاحد الموافق 2025/12/21",
+      "date": "21/12/2025",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_10_52_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17038&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الاقليم الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات بصرية شديدة (OCR artifacts) مما جعل استخراج الأرقام الدقيقة المتعلقة بعدد الأسهم أو القيم المالية غير ممكن ومستحيلاً بشكل موثوق.",
+      "summary": "يتضمن الإفصاح إعلاناً عن تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الإقليم الإسلامي في جلسة التداول ليوم الأحد الموافق 2025/12/21. نظراً لرداءة جودة النص المستخرج من المستند، لم يتسنَّ استخلاص تفاصيل كمية حول عدد الأسهم أو القيم المالية للصفقة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17037",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة فندق عشتار البيانات المالية الفصلية للفصل الثالث لعام 2025",
+      "date": "21/12/2025",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_9_9_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17037&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فنادق عشتار السياحية",
+      "raas_al_mal": "7000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت شركة فنادق عشتار السياحية البيانات المالية الخاصة بالفصل الثالث من السنة المالية 2025 للفترة الممتدة من 1 يوليو 2025 وحتى 30 سبتمبر 2025. تم توجيه الإفصاح إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية لغرض الاطلاع وتأييد الاستلام.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17036",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للأوراق المالية للفترة من 14-18 كانون الاول 2025",
+      "date": "21/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_8_52_23.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17036&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "4057070124",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "عدد الأسهم المتداولة للفترة",
+          "value": "4,057,070,124 سهم"
+        },
+        {
+          "label": "قيمة الأسهم المتداولة للفترة",
+          "value": "4,299,145,613 دينار"
+        },
+        {
+          "label": "عدد الصفقات المنفذة",
+          "value": "4529 صفقة"
+        },
+        {
+          "label": "إغلاق مؤشر ISX 60",
+          "value": "969.53 نقطة"
+        },
+        {
+          "label": "إغلاق مؤشر ISX 15",
+          "value": "1,187.97 نقطة"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "استعرض التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 14 إلى 18 كانون الأول 2025 أداء التداول، حيث بلغ عدد الأسهم المتداولة 4.057 مليار سهم بقيمة إجمالية قدرها 4.299 مليار دينار. شهدت المؤشرات تبايناً في الأداء، حيث ارتفع مؤشر ISX 60 بنسبة 1.30% ليغلق عند 969.53 نقطة، بينما انخفض مؤشر ISX 15 بنسبة 0.03% ليغلق عند 1,187.97 نقطة. كما أشار التقرير إلى تداولات المستثمرين غير العراقيين وعدد الشركات المدرجة في السوق ومنصة ISX-OTC.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17035",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف الراجح الاسلامي في يوم الاربعاء الموافق 2025/12/31",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "BRAJ"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_48_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17035&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف الراجح الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة مصرف الراجح الإسلامي في يوم الأربعاء الموافق 31 ديسمبر 2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17034",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المصرف الوطني الاسلامي في يوم الاثنين الموافق 2026/1/5",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_46_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17034&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف الوطني الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ انعقاد اجتماع الهيئة العامة",
+          "value": "2026/1/5"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة المصرف الوطني الإسلامي في يوم الاثنين الموافق 2026/1/5، وذلك لمناقشة البنود المدرجة على جدول أعمالها وفقاً للضوابط والتعليمات الصادرة بهذا الشأن.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17033",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الشركة الوطنية للصناعات الكيمياوية والبلاستيكية في جلسة الاحد الموافق 2025/12/21",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "INCP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_45_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17033&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة الوطنية للصناعات الكيمياوية والبلاستيكية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ إطلاق التداول",
+          "value": "2025/12/21"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر إطلاق التداول على أسهم الشركة الوطنية للصناعات الكيمياوية والبلاستيكية في سوق العراق للأوراق المالية اعتباراً من جلسة يوم الأحد الموافق 21 ديسمبر 2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17032",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة الاهلية للتأمين في يوم الاربعاء الموافق 2025/12/31",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "NAHF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_40_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17032&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة الاهلية للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة للشركة الاهلية للتأمين في يوم الاربعاء الموافق 2025/12/31 لمناقشة البنود المدرجة على جدول الأعمال.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17031",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة شط العرب للتأمين في يوم الثلاثاء الموافق 2025/12/30",
+      "date": "18/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_38_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17031&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة شط العرب للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ انعقاد اجتماع الهيئة العامة",
+          "value": "2025/12/30"
+        },
+        {
+          "label": "تاريخ إيقاف التداول",
+          "value": "2025/12/29"
+        },
+        {
+          "label": "تاريخ الموعد الثاني في حال عدم اكتمال النصاب",
+          "value": "2026/01/14"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت شركة شط العرب للتأمين عن عقد اجتماع الهيئة العامة في يوم الثلاثاء الموافق 2025/12/30. تقرر إيقاف التداول على أسهم الشركة في سوق العراق للأوراق المالية ابتداءً من يوم الاثنين الموافق 2025/12/29. كما حددت الشركة تاريخ 2026/01/14 كموعد ثانٍ لانعقاد الاجتماع في حال عدم اكتمال النصاب القانوني في الموعد الأول.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17030",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف الموصل للتنمية والاستثمار في يوم الاربعاء الموافق 2025/12/31",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "BMFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_35_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17030&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف الموصل للتنمية والاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تقرر عقد اجتماع الهيئة العامة لشركة مصرف الموصل للتنمية والاستثمار في يوم الأربعاء الموافق 31-12-2025. يهدف الاجتماع إلى مناقشة البنود المدرجة في جدول الأعمال وفقاً للسياقات القانونية المعتمدة للشركات المساهمة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17029",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الاتحاد العراقي للتأمين في يوم الاربعاء الموافق 2026/1/7",
+      "date": "18/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_14_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17029&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الاتحاد العراقي للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "تعلن شركة الاتحاد العراقي للتأمين عن عقد اجتماع الهيئة العامة في يوم الأربعاء الموافق 7 يناير 2026. يتضمن جدول أعمال الاجتماع مناقشة الحسابات الختامية للسنة المالية المنتهية في 31 ديسمبر 2024، بالإضافة إلى البنود المدرجة ضمن محضر الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17028",
+      "type": "إفصاح",
+      "title": "تأجيل إجتماع الهيئة العامة لشركة مصرف المشرق العربي الاسلامي إلى يوم الثلاثاء 2025/12/23",
+      "date": "18/12/2025",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_4_9_11_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17028&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": "80,000,000,000",
+      "net_profit": null,
+      "total_debts": "1,803,170,909",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "قيمة العجز المتراكم",
+          "value": "1,803,170,909 دينار"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تقرر تأجيل اجتماع الهيئة العامة لشركة مصرف المشرق العربي الاسلامي إلى يوم الثلاثاء الموافق 2025/12/23. تضمن الإفصاح الإشارة إلى رأس مال المصرف البالغ 80 مليار دينار عراقي، بالإضافة إلى إيضاح العجز المتراكم للشركة الذي بلغ 1,803,170,909 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17027",
       "type": "إفصاح",
       "title": "نتائج إعادة إختبار مخولي التداول الالكتروني لشركات الوساطة",
@@ -21822,5 +22549,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17027
+  "last_known_story_id": 17052
 }
