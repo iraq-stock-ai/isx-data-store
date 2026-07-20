@@ -1,6 +1,277 @@
 {
   "items": [
     {
+      "id": "17077",
+      "type": "إفصاح",
+      "title": "إفصاح شركة المصرف الدولي الاسلامي على الاحداث الجوهرية",
+      "date": "04/01/2026",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_1_0_7_30_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17077&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17076",
+      "type": "إفصاح",
+      "title": "مؤشرات تداول الاسهم في سوق العراق للاوراق المالية لعام 2025",
+      "date": "30/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_45_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17076&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17075",
+      "type": "إفصاح",
+      "title": "لن تنظم جلسة التداول ليوم الاربعاء الموافق 2025/12/31 - أطيب الامنيات بعام موفق وسعيد",
+      "date": "30/12/2025",
+      "related_symbols": [],
+      "pdf_url": null,
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17075&type=1"
+    },
+    {
+      "id": "17074",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية إلى شركة المصرف الدولي الاسلامي بشأن الافصاح عن الاحداث الجوهرية",
+      "date": "30/12/2025",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_11_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17074&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17073",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية إلى شركة صناعات الكارتون بشأن الافصاح عن الاحداث الجوهرية",
+      "date": "30/12/2025",
+      "related_symbols": [
+        "IICM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_11_11_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17073&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة صناعات الكارتون",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير مقروء ومضطرب بسبب سوء جودة المسح الضوئي (OCR failure)، مما يجعله غير قابل للاستخراج الدقيق للبيانات المالية.",
+      "summary": "خطاب صادر عن سوق العراق للأوراق المالية موجه إلى شركة صناعات الكارتون بشأن الإفصاح عن الأحداث الجوهرية. نظراً لعدم وضوح النص المستخرج (OCR) وتعرضه لتشوهات كبيرة، لا يمكن تحديد فحوى الطلب أو الإجراءات المطلوبة من الشركة بدقة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17072",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف المشرق العربي الاسلامي في جلسة الثلاثاء الموافق 2025/12/30",
+      "date": "30/12/2025",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_10_51_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17072&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "1000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "رقم جلسة التداول",
+          "value": "198"
+        },
+        {
+          "label": "تاريخ تنفيذ الصفقة",
+          "value": "2025/12/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "تم تنفيذ أمر متقابل مقصود على أسهم شركة مصرف المشرق العربي الإسلامي في جلسة التداول رقم 198، وذلك بتاريخ 30 ديسمبر 2025. بلغت كمية الأسهم المتداولة في هذه الصفقة مليار سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17071",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية للاعمال الهندسية البيانات المالية السنوية لعام 2024",
+      "date": "30/12/2025",
+      "related_symbols": [
+        "IIEW"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_9_24_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17071&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية للأعمال الهندسية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": null,
+      "summary": "قدمت الشركة العراقية للأعمال الهندسية بياناتها المالية السنوية الخاصة بعام 2024 إلى سوق العراق للأوراق المالية. وأوضحت الشركة أن البيانات المالية المرفقة مصدقة ومدققة من قبل ديوان الرقابة المالية الاتحادي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17070",
+      "type": "إفصاح",
+      "title": "إفصاح شركة مصرف الانصاري الاسلامي على الاحداث الجوهرية",
+      "date": "30/12/2025",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_2_7_8_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17070&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الانصاري الاسلامي للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج عبارة عن ترويسة وعنوان إفصاح فقط ولا يحتوي على متن أو تفاصيل مالية أو قرارات إدارية داخل محتوى المستند.",
+      "summary": "يحتوي المستند على ترويسة إفصاح صادرة عن مصرف الانصاري الاسلامي للاستثمار والتمويل، تتضمن تفاصيل الاتصال والعنوان الرسمي للمصرف. لا يتضمن النص أي معلومات مالية أو قرارات جوهرية أو بيانات أرباح أو تفاصيل تشغيلية تستوجب التحليل المالي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17069",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الطيف الاسلامي في جلسة الثلاثاء الموافق 2025/12/30",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_11_7_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17069&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الطيف الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء التداول",
+          "value": "2025/12/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة مصرف الطيف الإسلامي في جلسة التداول المحددة ليوم الثلاثاء الموافق 30 كانون الأول 2025.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17068",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف المستشار الاسلامي في جلسة الثلاثاء الموافق 2025/12/30",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "BMUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_11_2_19.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17068&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف المستشار الاسلامي",
+      "raas_al_mal": "250,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ بدء التداول",
+          "value": "2025/12/30"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف المستشار الإسلامي في جلسة يوم الثلاثاء الموافق 30/12/2025. يبلغ رأس مال المصرف المدرج 250 مليار دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17067",
+      "type": "إفصاح",
+      "title": "أمر إداري - إستبعاد سعر سهم شركة الخياطة الحديثة في جلسة الاثنين الموافق 2025/12/29",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "IMOS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_10_54_2.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17067&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة الخياطة الحديثة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": 5680,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "سعر السهم المستبعد",
+          "value": "5.700 دينار"
+        },
+        {
+          "label": "رقم الصفقة",
+          "value": "51371412"
+        },
+        {
+          "label": "وقت الصفقة",
+          "value": "12:57"
+        },
+        {
+          "label": "عدد الأسهم المشتراة",
+          "value": "700"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قرر سوق العراق للأوراق المالية استبعاد صفقة أسهم شركة الخياطة الحديثة التي جرت في جلسة يوم الاثنين الموافق 2025/12/29. جاء هذا الإجراء نتيجة لوجود خطأ في تنفيذ الصفقة التي تمت بسعر 5.700 دينار للسهم، حيث تم تعديلها وفقاً للأنظمة والتعليمات المعمول بها في السوق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17066",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية إلى شركة مصرف الانصاري الاسلامي بشأن الافصاح عن الاحداث الجوهرية",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_10_43_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17066&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الانصاري الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج مشوش للغاية وغير مقروء (Low quality/garbled OCR) ولا يمكن استخلاص أي بيانات مالية منه بدقة.",
+      "summary": "خطاب صادر عن سوق العراق للأوراق المالية موجه إلى مصرف الأنصاري الإسلامي بشأن الإفصاح عن الأحداث الجوهرية. نظراً لعدم وضوح النص المستخرج من المستند المرفق، يتعذر تحديد طبيعة الحدث الجوهري أو تفاصيله المالية بدقة.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17065",
       "type": "إفصاح",
       "title": "إطلاق أسهم شركة مصرف الائتمان العراقي - أسهم الزيادة - إعتباراً من جلسة الثلاثاء 2025/12/30",
@@ -22760,5 +23031,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17065
+  "last_known_story_id": 17077
 }
