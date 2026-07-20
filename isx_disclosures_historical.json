@@ -1,6 +1,217 @@
 {
   "items": [
     {
+      "id": "17065",
+      "type": "إفصاح",
+      "title": "إطلاق أسهم شركة مصرف الائتمان العراقي - أسهم الزيادة - إعتباراً من جلسة الثلاثاء 2025/12/30",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "BROI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_10_42_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17065&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17064",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة فندق بابل في جلسة الثلاثاء الموافق 2025/12/30",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "HBAY"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_10_19_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17064&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17063",
+      "type": "إفصاح",
+      "title": "تحديد موعد بيع الاسهم المصادرة - الشركة العراقية لانتاج وتسويق المنتجات الزراعية",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_7_54_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17063&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17061",
+      "type": "إفصاح",
+      "title": "مزايدة علنية - تحديد موعد بيع أسهم المدين (المصرف المتحد للاستثمار)",
+      "date": "29/12/2025",
+      "related_symbols": [
+        "BUND"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_5_47_16.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17061&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17060",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 21-24 كانون الاول 2025",
+      "date": "28/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_1_11_23_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17060&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17059",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف آسيا العراق الاسلامي في جلسة الاحد الموافق 2025/12/28",
+      "date": "28/12/2025",
+      "related_symbols": [
+        "BAIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_10_37_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17059&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17058",
+      "type": "إفصاح",
+      "title": "إجراءات بيع أسهم المدين - عبد الكريم صبحت قاسم في مصرف الشرق الاوسط العراقي",
+      "date": "28/12/2025",
+      "related_symbols": [
+        "BIME"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_0_8_48_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17058&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17057",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف المشرق العربي الاسلامي في جلسة الاحد الموافق 2025/12/28",
+      "date": "24/12/2025",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_9_58_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17057&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17056",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الاستثمار في جلسة الاحد الموافق 2025/12/28",
+      "date": "24/12/2025",
+      "related_symbols": [
+        "BIBI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_9_49_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17056&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الاستثمار",
+      "raas_al_mal": "288,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "50%",
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ جلسة التداول",
+          "value": "2025/12/28"
+        },
+        {
+          "label": "نسبة زيادة رأس المال",
+          "value": "50%"
+        }
+      ],
+      "confidence_note": "النص يشير إلى إطلاق التداول بعد زيادة رأس المال، ونسبة الـ 50% مذكورة كنسبة لزيادة رأس المال وليس توزيع أرباح نقدية.",
+      "summary": "تقرر إطلاق التداول على أسهم مصرف الاستثمار في جلسة يوم الأحد الموافق 2025/12/28، وذلك بعد إتمام إجراءات زيادة رأس مال المصرف. بلغت قيمة رأس مال الشركة المذكورة 288 مليار دينار عراقي، حيث تمت زيادة رأس المال بنسبة 50%.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17055",
+      "type": "إفصاح",
+      "title": "لن تنظم جلسة التداول ليوم الخميس الموافق 2025/12/25 لمناسبة ميلاد المسيح",
+      "date": "24/12/2025",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_9_43_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17055&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "سوق العراق للأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "تاريخ العطلة",
+          "value": "2025/12/25"
+        },
+        {
+          "label": "تاريخ استئناف التداول",
+          "value": "2025/12/28"
+        }
+      ],
+      "confidence_note": null,
+      "summary": "قرر سوق العراق للأوراق المالية تعطيل جلسة التداول ليوم الخميس الموافق 2025/12/25 بمناسبة عيد ميلاد المسيح. ومن المقرر استئناف جلسات التداول الاعتيادية في السوق يوم الأحد الموافق 2025/12/28.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17054",
+      "type": "إفصاح",
+      "title": "الشركة العراقية لانتاج و تسويق المنتجات الزراعية - ايقاف توزيع الأرباح",
+      "date": "24/12/2025",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_9_32_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17054&type=1",
+      "disclosure_type": "قرار_رفض_او_عدم_موافقة",
+      "company_name": "الشركة العراقية لإنتاج وتسويق المنتجات الزراعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من رداءة شديدة في جودة المسح الضوئي (OCR)، مما جعل محتوى الإفصاح غير مقروء بشكل دقيق سوى في العنوان المذكور في السؤال.",
+      "summary": "قررت الشركة العراقية لإنتاج وتسويق المنتجات الزراعية إيقاف توزيع الأرباح، وذلك بناءً على المعطيات الواردة في نص الإفصاح الرسمي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17053",
+      "type": "إفصاح",
+      "title": "الشركة العراقية للسجاد والمفروشات - أيقاف توزيع ارباح",
+      "date": "24/12/2025",
+      "related_symbols": [
+        "IITC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_125_12_3_8_1_55.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17053&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "الشركة العراقية للسجاد والمفروشات",
+      "raas_al_mal": "680000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "label": "فترة إيقاف صرف الأرباح",
+          "value": "من 2025/12/14 ولغاية 2026/1/4"
+        }
+      ],
+      "confidence_note": "تم استنتاج قيمة رأس المال (680,000,000) بناءً على الرقم الوارد في النص (680000:0000) مع مراعاة التنسيق المالي المعتاد، وتاريخ السنة المالية المذكور يبدو متداخلاً في النص الأصلي (2025/12/31).",
+      "summary": "أعلنت الشركة العراقية للسجاد والمفروشات عن إيقاف صرف أرباح المساهمين مؤقتاً. يأتي هذا القرار بغرض إجراء المطابقة والجرد السنوي تزامناً مع قرب انتهاء السنة المالية. يستمر الإيقاف اعتباراً من نهاية دوام يوم 2025/12/14 ولغاية يوم 2026/1/4.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
       "id": "17052",
       "type": "إفصاح",
       "title": "امر-اداري استبعاد سعر على اسهم شركة فنادق عشتار",
@@ -22549,5 +22760,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17052
+  "last_known_story_id": 17065
 }
