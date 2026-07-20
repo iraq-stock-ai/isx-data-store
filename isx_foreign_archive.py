@@ -20,8 +20,8 @@ HEADERS = {
 }
 
 ARCHIVE_OUTPUT_FILE = "isx_foreign_trading.json"
-PROGRESS_FILE = "archive_progress.json"          # ملف التقدم
-DELAY_SECONDS = 4
+PROGRESS_FILE = "archive_progress.json"
+DELAY_SECONDS = 3
 MAX_PAGES = 500
 
 # ================ منطق استخراج "غير العراقيين" ================
@@ -60,7 +60,7 @@ def extract_search_params(url: str) -> dict:
 def build_page_url(params: dict, page: int) -> str:
     return f"http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html?d-447146-p={page}&reporttype={params['reporttype']}&toDate={params['toDate']}&date={params['date']}"
 
-# ================== استخراج روابط التقارير من صفحة ==================
+# ================== استخراج روابط التقارير ==================
 def fetch_reports_from_page(page_url: str) -> list:
     print(f"  [أرشيف] جاري فحص الصفحة: {page_url}")
     try:
@@ -216,12 +216,14 @@ def parse_daily_foreign_excel(excel_bytes: bytes) -> dict:
                 market_label = label
                 break
 
+        print(f"      [DEBUG] عُثر على قسم {direction} في السوق {market_label}")
+
         section_records = parse_foreign_section(sheet, row_idx, market_label, direction)
         all_records.extend(section_records)
 
     return {"session_number": session_number, "records": all_records}
 
-# ================== إدارة التخزين ==================
+# ================== إدارة التخزين والتقدم ==================
 def load_existing_data() -> dict:
     if not os.path.exists(ARCHIVE_OUTPUT_FILE):
         return {}
@@ -268,13 +270,14 @@ def merge_records(existing: dict, session_date: str, session_number: str, record
         added += 1
     return added
 
-# ================== إدارة التقدم (Checkpoint) ==================
+# ================== إدارة التقدم ==================
 def load_progress() -> dict:
     if os.path.exists(PROGRESS_FILE):
         try:
             with open(PROGRESS_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
-        except (json.JSONDecodeError, IOError):
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"  [⚠] خطأ في قراءة ملف التقدم: {e}")
             return {}
     return {}
 
@@ -284,41 +287,39 @@ def save_progress(progress: dict):
         json.dump(progress, f, ensure_ascii=False, indent=2)
     os.replace(tmp, PROGRESS_FILE)
 
-# ================== الحلقة الرئيسية (مع استئناف تلقائي) ==================
+# ================== الحلقة الرئيسية ==================
 def main():
-    print("بدء أرشفة تداول غير العراقيين (مع استئناف تلقائي)...")
-    print(f"الرابط المرجعي: {SEARCH_URL}")
+    print("=" * 60)
+    print("أرشفة تداول غير العراقيين (مع استئناف تلقائي)")
+    print("=" * 60)
 
     params = extract_search_params(SEARCH_URL)
     print(f"المعاملات: reporttype={params['reporttype']}, toDate={params['toDate']}, date={params['date']}")
 
-    # تحميل البيانات والتقدم
     data = load_existing_data()
-    progress = load_progress()
+    print(f"البيانات الحالية: {sum(len(v) for v in data.values())} سجل.")
 
-    # تحديد صفحة البداية: آخر صفحة تمت معالجتها + 1، أو 1 إذا لم يوجد تقدم
+    progress = load_progress()
     last_page = progress.get("last_page", 0)
     start_page = last_page + 1
     print(f"آخر صفحة مكتملة: {last_page} → سنبدأ من الصفحة {start_page}")
 
     total_processed = 0
     total_added = 0
-
     page = start_page
+
     while page <= MAX_PAGES:
         page_url = build_page_url(params, page)
         reports = fetch_reports_from_page(page_url)
 
         if not reports:
             print(f"  [توقف] الصفحة {page} فارغة أو لا تحتوي على تقارير، نعتقد أنها نهاية الأرشيف.")
-            # نحدّث التقدم بهذه الصفحة لئلا نعيد فحصها
             progress["last_page"] = page
             save_progress(progress)
             break
 
         print(f"  [✓] الصفحة {page} تحتوي على {len(reports)} تقرير(ات).")
 
-        # معالجة التقارير في هذه الصفحة
         for report in reports:
             time.sleep(DELAY_SECONDS)
             try:
@@ -328,12 +329,10 @@ def main():
                 added = merge_records(data, report["date"], parsed.get("session_number"), parsed["records"])
                 total_added += added
                 total_processed += 1
-                print(f"      ✅ {report['date']}: {len(parsed['records'])} سجل (غير عراقيين)، {added} جديد.")
+                print(f"      ✅ {report['date']}: {len(parsed['records'])} سجل، {added} جديد.")
             except Exception as e:
                 print(f"      ❌ فشل معالجة {report['date']}: {e}")
-                # إذا فشل ملف معين، نستمر في بقية الملفات، ولكن لا نحدّث التقدم حتى لا نخسر البيانات
 
-        # حفظ البيانات والتقدم بعد الصفحة (بافتراض أنها اكتملت بنجاح)
         save_data(data)
         progress["last_page"] = page
         save_progress(progress)
@@ -341,9 +340,13 @@ def main():
 
         page += 1
 
-    print(f"\n🎉 انتهت المعالجة. تم تحميل {total_processed} تقرير، وأُضيف {total_added} سجل جديد.")
-    print(f"الملف النهائي: {ARCHIVE_OUTPUT_FILE}")
-    print(f"آخر صفحة مكتملة: {page - 1}")
+    print("\n" + "=" * 60)
+    print(f"🎉 انتهت المعالجة.")
+    print(f"   - تم تحميل {total_processed} تقرير")
+    print(f"   - أُضيف {total_added} سجل جديد")
+    print(f"   - آخر صفحة مكتملة: {page - 1}")
+    print(f"   - ملف البيانات: {ARCHIVE_OUTPUT_FILE}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
