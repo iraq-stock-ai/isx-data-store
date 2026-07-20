@@ -2168,6 +2168,762 @@
       "trades": 9,
       "shares": 5010903,
       "value": 17151506
+    },
+    {
+      "date": "20/10/2024",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 6000000,
+      "value": 20420000
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 10785800,
+      "value": 36911010
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000000,
+      "value": 17150000
+    },
+    {
+      "date": "16/10/2024",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 735000,
+      "value": 2484300
+    },
+    {
+      "date": "16/10/2024",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 5000000,
+      "value": 16750000
+    },
+    {
+      "date": "15/10/2024",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 8000,
+      "value": 25920
+    },
+    {
+      "date": "15/10/2024",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5000000,
+      "value": 16050000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 7000000,
+      "value": 22030000
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 7000000,
+      "value": 21575000
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1100000,
+      "value": 3396000
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 6000011,
+      "value": 18365033
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2000000,
+      "value": 6120000
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000000,
+      "value": 15251300
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 5500000,
+      "value": 16775000
+    },
+    {
+      "date": "07/10/2024",
+      "sessionNumber": "183",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 7013591,
+      "value": 21327983
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 5000000,
+      "value": 15284269
+    },
+    {
+      "date": "02/10/2024",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 20,
+      "shares": 22000000,
+      "value": 67788675
+    },
+    {
+      "date": "02/10/2024",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5000000,
+      "value": 15250000
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 13,
+      "shares": 19000000,
+      "value": 57891150
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 5000000,
+      "value": 15150000
+    },
+    {
+      "date": "30/09/2024",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 61,
+      "shares": 173750000,
+      "value": 531136679
+    },
+    {
+      "date": "30/09/2024",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 5333333,
+      "value": 16301693
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 44,
+      "shares": 83750000,
+      "value": 257154773
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 5000000,
+      "value": 15182000
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 39,
+      "shares": 85000000,
+      "value": 255983469
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000334,
+      "value": 14850988
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 17,
+      "shares": 30000000,
+      "value": 89089504
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5000000,
+      "value": 14750000
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 33,
+      "shares": 74000000,
+      "value": 216424311
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 5000000,
+      "value": 14301753
+    },
+    {
+      "date": "23/09/2024",
+      "sessionNumber": "174",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5000000,
+      "value": 14400000
+    },
+    {
+      "date": "22/09/2024",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 23,
+      "shares": 505000000,
+      "value": 1459375000
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2000000,
+      "value": 5800000
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 7500000,
+      "value": 21780988
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 5000000,
+      "value": 14625000
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 5000000,
+      "value": 14631375
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 2950000
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 5000000,
+      "value": 14644824
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 2500000,
+      "value": 7575000
+    },
+    {
+      "date": "11/09/2024",
+      "sessionNumber": "167",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 6000000,
+      "value": 17965000
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000000,
+      "value": 14900000
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1270000,
+      "value": 3797300
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000000,
+      "value": 14925000
+    },
+    {
+      "date": "08/09/2024",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 5500000,
+      "value": 16500000
+    },
+    {
+      "date": "05/09/2024",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5500000,
+      "value": 16450000
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 18,
+      "shares": 20417104,
+      "value": 60510549
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 5000000,
+      "value": 14752950
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 18,
+      "shares": 19000000,
+      "value": 56231311
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 5000000,
+      "value": 14750000
+    },
+    {
+      "date": "01/09/2024",
+      "sessionNumber": "159",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 18,
+      "shares": 11000000,
+      "value": 31940000
+    },
+    {
+      "date": "29/08/2024",
+      "sessionNumber": "158",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 28,
+      "shares": 51000000,
+      "value": 146488342
+    },
+    {
+      "date": "29/08/2024",
+      "sessionNumber": "158",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 7300000,
+      "value": 20831000
+    },
+    {
+      "date": "28/08/2024",
+      "sessionNumber": "157",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 6000000,
+      "value": 17170000
+    },
+    {
+      "date": "27/08/2024",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 19,
+      "shares": 13000000,
+      "value": 37203493
+    },
+    {
+      "date": "27/08/2024",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 6700000,
+      "value": 19144000
+    },
+    {
+      "date": "26/08/2024",
+      "sessionNumber": "155",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 7000000,
+      "value": 19980000
+    },
+    {
+      "date": "22/08/2024",
+      "sessionNumber": "154",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 6500000,
+      "value": 18706502
+    },
+    {
+      "date": "22/08/2024",
+      "sessionNumber": "154",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1478000,
+      "value": 4212300
+    },
+    {
+      "date": "21/08/2024",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 29,
+      "shares": 30000000,
+      "value": 84273900
+    },
+    {
+      "date": "21/08/2024",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 522000,
+      "value": 1487700
+    },
+    {
+      "date": "20/08/2024",
+      "sessionNumber": "152",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 3000000,
+      "value": 8490000
+    },
+    {
+      "date": "14/08/2024",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 3000000,
+      "value": 8730000
+    },
+    {
+      "date": "13/08/2024",
+      "sessionNumber": "147",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1000000,
+      "value": 2900042
+    },
+    {
+      "date": "11/08/2024",
+      "sessionNumber": "145",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 2000000,
+      "value": 6060000
+    },
+    {
+      "date": "08/08/2024",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 13,
+      "shares": 20000000,
+      "value": 60434100
+    },
+    {
+      "date": "08/08/2024",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 22,
+      "shares": 44704826,
+      "value": 133754478
+    },
+    {
+      "date": "07/08/2024",
+      "sessionNumber": "143",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 50000000,
+      "value": 142450000
+    },
+    {
+      "date": "06/08/2024",
+      "sessionNumber": "142",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 61,
+      "shares": 48852328,
+      "value": 139694687
+    },
+    {
+      "date": "05/08/2024",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 30963374,
+      "value": 90049348
+    },
+    {
+      "date": "04/08/2024",
+      "sessionNumber": "140",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 27,
+      "shares": 18448822,
+      "value": 53403649
+    },
+    {
+      "date": "01/08/2024",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 19551057,
+      "value": 56889086
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 38,
+      "shares": 40048758,
+      "value": 117738515
+    },
+    {
+      "date": "30/07/2024",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 33000,
+      "value": 98670
+    },
+    {
+      "date": "30/07/2024",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 7000000,
+      "value": 20950000
+    },
+    {
+      "date": "28/07/2024",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 30000,
+      "value": 90000
+    },
+    {
+      "date": "28/07/2024",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 276772,
+      "value": 830316
+    },
+    {
+      "date": "25/07/2024",
+      "sessionNumber": "134",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 5000000,
+      "value": 15000000
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 938979,
+      "value": 2816937
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 7000000,
+      "value": 21020000
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 460000,
+      "value": 1387700
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 7000000,
+      "value": 21070000
+    },
+    {
+      "date": "22/07/2024",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 249000,
+      "value": 754470
+    },
+    {
+      "date": "22/07/2024",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 5000000,
+      "value": 15100000
+    },
+    {
+      "date": "21/07/2024",
+      "sessionNumber": "130",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2000000,
+      "value": 6120000
     }
   ],
   "BMNS": [
@@ -4825,6 +5581,618 @@
       "trades": 21,
       "shares": 57000000,
       "value": 110276927
+    },
+    {
+      "date": "20/10/2024",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 25,
+      "shares": 65200000,
+      "value": 128613529
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 43,
+      "shares": 63000000,
+      "value": 123284856
+    },
+    {
+      "date": "16/10/2024",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 12,
+      "shares": 53120017,
+      "value": 105176633
+    },
+    {
+      "date": "16/10/2024",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 16,
+      "shares": 70000000,
+      "value": 138200000
+    },
+    {
+      "date": "15/10/2024",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 32,
+      "shares": 166879983,
+      "value": 320999225
+    },
+    {
+      "date": "15/10/2024",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 100000000,
+      "value": 191735000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 53,
+      "shares": 334502444,
+      "value": 630901647
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 32,
+      "shares": 85000000,
+      "value": 159800000
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 30000000,
+      "value": 55800000
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 31,
+      "shares": 70000000,
+      "value": 130610000
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 30,
+      "shares": 150000000,
+      "value": 278362979
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 35,
+      "shares": 100000000,
+      "value": 185341112
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 61000,
+      "value": 112240
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 15,
+      "shares": 5000000,
+      "value": 9200000
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 29,
+      "shares": 30000000,
+      "value": 55207490
+    },
+    {
+      "date": "07/10/2024",
+      "sessionNumber": "183",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 781586,
+      "value": 1430302
+    },
+    {
+      "date": "07/10/2024",
+      "sessionNumber": "183",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 25000000,
+      "value": 45800000
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 64,
+      "shares": 349000000,
+      "value": 645205183
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 75000000,
+      "value": 137300000
+    },
+    {
+      "date": "02/10/2024",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 30000000,
+      "value": 56400000
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 57,
+      "shares": 210000000,
+      "value": 379571614
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 120000000,
+      "value": 217800000
+    },
+    {
+      "date": "30/09/2024",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 40,
+      "shares": 661137693,
+      "value": 1120546390
+    },
+    {
+      "date": "30/09/2024",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 43,
+      "shares": 120000000,
+      "value": 203360000
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 27,
+      "shares": 75000000,
+      "value": 127720000
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 43,
+      "shares": 325000000,
+      "value": 540250000
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 58,
+      "shares": 165000000,
+      "value": 272220000
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 77,
+      "shares": 500000000,
+      "value": 809058143
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 34,
+      "shares": 150000000,
+      "value": 241850000
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 25,
+      "shares": 190000000,
+      "value": 306819625
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 40000000,
+      "value": 64534000
+    },
+    {
+      "date": "23/09/2024",
+      "sessionNumber": "174",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 47,
+      "shares": 280000000,
+      "value": 455404900
+    },
+    {
+      "date": "23/09/2024",
+      "sessionNumber": "174",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 46,
+      "shares": 175000000,
+      "value": 283741227
+    },
+    {
+      "date": "22/09/2024",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 24,
+      "shares": 122000000,
+      "value": 201295926
+    },
+    {
+      "date": "22/09/2024",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 30000000,
+      "value": 49200000
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 51,
+      "shares": 314039663,
+      "value": 517517943
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 16,
+      "shares": 45000000,
+      "value": 73550000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 35000000,
+      "value": 57600000
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 113,
+      "shares": 457550000,
+      "value": 750242000
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 44,
+      "shares": 190000000,
+      "value": 309300000
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 24,
+      "shares": 85239036,
+      "value": 136772697
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 12,
+      "shares": 40000000,
+      "value": 63996562
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 35000000,
+      "value": 56135030
+    },
+    {
+      "date": "11/09/2024",
+      "sessionNumber": "167",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 27,
+      "shares": 115000000,
+      "value": 186953060
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 70,
+      "shares": 337000000,
+      "value": 534561060
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 37,
+      "shares": 105850000,
+      "value": 165518500
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 42,
+      "shares": 52300000,
+      "value": 80522754
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 27,
+      "shares": 79500000,
+      "value": 123405000
+    },
+    {
+      "date": "08/09/2024",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 4000000,
+      "value": 6120000
+    },
+    {
+      "date": "08/09/2024",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 12,
+      "shares": 16500000,
+      "value": 25450000
+    },
+    {
+      "date": "05/09/2024",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 125,
+      "shares": 603179875,
+      "value": 903649812
+    },
+    {
+      "date": "05/09/2024",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 22,
+      "shares": 62000000,
+      "value": 92250000
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 72,
+      "shares": 250000000,
+      "value": 360429000
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 29,
+      "shares": 74700000,
+      "value": 106875000
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 300000,
+      "value": 414000
+    },
+    {
+      "date": "01/09/2024",
+      "sessionNumber": "159",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 10000000,
+      "value": 13650000
+    },
+    {
+      "date": "26/08/2024",
+      "sessionNumber": "155",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 67994,
+      "value": 91111
+    },
+    {
+      "date": "21/08/2024",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 5000000,
+      "value": 6800000
+    },
+    {
+      "date": "20/08/2024",
+      "sessionNumber": "152",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 10000000,
+      "value": 13550000
+    },
+    {
+      "date": "19/08/2024",
+      "sessionNumber": "151",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 20000000,
+      "value": 27000000
+    },
+    {
+      "date": "18/08/2024",
+      "sessionNumber": "150",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 110000,
+      "value": 150700
+    },
+    {
+      "date": "18/08/2024",
+      "sessionNumber": "150",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 20000000,
+      "value": 27212735
+    },
+    {
+      "date": "01/08/2024",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 6779000,
+      "value": 9355020
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 154700,
+      "value": 215033
+    },
+    {
+      "date": "30/07/2024",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 39000000,
+      "value": 54600000
+    },
+    {
+      "date": "28/07/2024",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 15000000,
+      "value": 21000000
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 4156875260,
+      "value": 5778056611
+    },
+    {
+      "date": "21/07/2024",
+      "sessionNumber": "130",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 28,
+      "shares": 63000000,
+      "value": 88400000
     }
   ],
   "BEFI": [
@@ -6377,6 +7745,357 @@
       "trades": 136,
       "shares": 117005000,
       "value": 1225230202
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 47,
+      "shares": 25641592,
+      "value": 289752771
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 45,
+      "shares": 43385000,
+      "value": 488682950
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 90,
+      "shares": 43000000,
+      "value": 485900000
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 118,
+      "shares": 51500000,
+      "value": 582442952
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 72,
+      "shares": 66876762,
+      "value": 755707410
+    },
+    {
+      "date": "07/10/2024",
+      "sessionNumber": "183",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 23,
+      "shares": 10750000,
+      "value": 121477500
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 53,
+      "shares": 15147440,
+      "value": 170855459
+    },
+    {
+      "date": "02/10/2024",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 15,
+      "shares": 6000000,
+      "value": 67500000
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 52,
+      "shares": 20474002,
+      "value": 226811648
+    },
+    {
+      "date": "30/09/2024",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 88,
+      "shares": 25000000,
+      "value": 276163372
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 42,
+      "shares": 37096449,
+      "value": 409915721
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 111,
+      "shares": 53113099,
+      "value": 583608993
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 70,
+      "shares": 32500000,
+      "value": 348786420
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 11,
+      "shares": 2450000,
+      "value": 26043500
+    },
+    {
+      "date": "22/09/2024",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 33,
+      "shares": 13000000,
+      "value": 137739500
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 250000,
+      "value": 2610000
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 13,
+      "shares": 5100000,
+      "value": 52004400
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 17,
+      "shares": 1900000,
+      "value": 19371740
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 94873,
+      "value": 967704
+    },
+    {
+      "date": "11/09/2024",
+      "sessionNumber": "167",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 35,
+      "shares": 10062428,
+      "value": 103640258
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 28,
+      "shares": 8599103,
+      "value": 88677377
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 25,
+      "shares": 14000000,
+      "value": 141283095
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 4425000,
+      "value": 44575750
+    },
+    {
+      "date": "08/09/2024",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 13,
+      "shares": 4500000,
+      "value": 45000000
+    },
+    {
+      "date": "05/09/2024",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 27,
+      "shares": 12628942,
+      "value": 126218420
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 119,
+      "shares": 75900000,
+      "value": 758832887
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 19,
+      "shares": 5888788,
+      "value": 57657506
+    },
+    {
+      "date": "28/08/2024",
+      "sessionNumber": "157",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 500000,
+      "value": 4680000
+    },
+    {
+      "date": "15/08/2024",
+      "sessionNumber": "149",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 12,
+      "shares": 800000,
+      "value": 7456500
+    },
+    {
+      "date": "14/08/2024",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 1500000,
+      "value": 13970079
+    },
+    {
+      "date": "08/08/2024",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 1000000,
+      "value": 9340000
+    },
+    {
+      "date": "07/08/2024",
+      "sessionNumber": "143",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 17,
+      "shares": 2700000,
+      "value": 25162500
+    },
+    {
+      "date": "06/08/2024",
+      "sessionNumber": "142",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 2586148,
+      "value": 24212418
+    },
+    {
+      "date": "05/08/2024",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 15,
+      "shares": 4173852,
+      "value": 39315685
+    },
+    {
+      "date": "01/08/2024",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 2226116,
+      "value": 21027335
+    },
+    {
+      "date": "30/07/2024",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 23884,
+      "value": 227614
+    },
+    {
+      "date": "25/07/2024",
+      "sessionNumber": "134",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 500000,
+      "value": 4700000
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 349873,
+      "value": 3288806
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 572750,
+      "value": 5383850
     }
   ],
   "BIBI": [
@@ -6505,6 +8224,24 @@
       "trades": 5,
       "shares": 10000000,
       "value": 3910000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 7112,
+      "value": 2204
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 3112889,
+      "value": 1027253
     }
   ],
   "BMFI": [
@@ -7022,6 +8759,60 @@
       "trades": 1,
       "shares": 5000,
       "value": 4450
+    },
+    {
+      "date": "23/09/2024",
+      "sessionNumber": "174",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 500000,
+      "value": 440000
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 910000
+    },
+    {
+      "date": "28/08/2024",
+      "sessionNumber": "157",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 9000,
+      "value": 7470
+    },
+    {
+      "date": "06/08/2024",
+      "sessionNumber": "142",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2400000,
+      "value": 2016000
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1500000,
+      "value": 1320000
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 840000
     }
   ],
   "BMAL": [
@@ -8664,6 +10455,393 @@
       "trades": 2,
       "shares": 1000000,
       "value": 2870000
+    },
+    {
+      "date": "20/10/2024",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 975998,
+      "value": 2810874
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1514002,
+      "value": 4395745
+    },
+    {
+      "date": "16/10/2024",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2010000,
+      "value": 5844300
+    },
+    {
+      "date": "15/10/2024",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 3000000,
+      "value": 8780000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2345998,
+      "value": 6831854
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 3000000,
+      "value": 8700000
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1728222,
+      "value": 4959997
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 2030000,
+      "value": 5830800
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 599100,
+      "value": 1701444
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 20,
+      "shares": 16006400,
+      "value": 44726676
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 951552,
+      "value": 2641849
+    },
+    {
+      "date": "07/10/2024",
+      "sessionNumber": "183",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 49348,
+      "value": 139162
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 6246400,
+      "value": 17201256
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 1398466,
+      "value": 3907736
+    },
+    {
+      "date": "02/10/2024",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 7,
+      "shares": 10000000,
+      "value": 27400000
+    },
+    {
+      "date": "01/10/2024",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 2292000,
+      "value": 6119640
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 1500000,
+      "value": 4005000
+    },
+    {
+      "date": "26/09/2024",
+      "sessionNumber": "177",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1500000,
+      "value": 3920000
+    },
+    {
+      "date": "23/09/2024",
+      "sessionNumber": "174",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1225000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1000000,
+      "value": 2510000
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 800000,
+      "value": 2024000
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1315000
+    },
+    {
+      "date": "11/09/2024",
+      "sessionNumber": "167",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2000000,
+      "value": 5145000
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 500000,
+      "value": 1265000
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1265000
+    },
+    {
+      "date": "08/09/2024",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1000000,
+      "value": 2540000
+    },
+    {
+      "date": "05/09/2024",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1270000
+    },
+    {
+      "date": "04/09/2024",
+      "sessionNumber": "162",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1265000
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2000000,
+      "value": 4975000
+    },
+    {
+      "date": "01/09/2024",
+      "sessionNumber": "159",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 10000000,
+      "value": 23500000
+    },
+    {
+      "date": "26/08/2024",
+      "sessionNumber": "155",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 10666666,
+      "value": 24533331
+    },
+    {
+      "date": "22/08/2024",
+      "sessionNumber": "154",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 2340000
+    },
+    {
+      "date": "08/08/2024",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 2000000,
+      "value": 5020000
+    },
+    {
+      "date": "06/08/2024",
+      "sessionNumber": "142",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 2500000
+    },
+    {
+      "date": "05/08/2024",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 11576967,
+      "value": 29277035
+    },
+    {
+      "date": "04/08/2024",
+      "sessionNumber": "140",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 777,
+      "value": 1965
+    },
+    {
+      "date": "01/08/2024",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 15,
+      "shares": 9422256,
+      "value": 23623847
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1210000,
+      "value": 3037200
+    },
+    {
+      "date": "28/07/2024",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 2000000,
+      "value": 5200000
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 7337379,
+      "value": 19227306
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 6486848,
+      "value": 16970015
+    },
+    {
+      "date": "22/07/2024",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 75773,
+      "value": 203071
+    },
+    {
+      "date": "21/07/2024",
+      "sessionNumber": "130",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 100000,
+      "value": 268053
     }
   ],
   "IMAP": [
@@ -8882,6 +11060,15 @@
       "trades": 2,
       "shares": 330000,
       "value": 808500
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 75000,
+      "value": 151500
     }
   ],
   "IBSD": [
@@ -9451,6 +11638,96 @@
       "trades": 6,
       "shares": 4000000,
       "value": 16427746
+    },
+    {
+      "date": "20/10/2024",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 17,
+      "shares": 4000000,
+      "value": 16686863
+    },
+    {
+      "date": "28/08/2024",
+      "sessionNumber": "157",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 100000000,
+      "value": 400000000
+    },
+    {
+      "date": "27/08/2024",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 51,
+      "shares": 468272952,
+      "value": 1873110426
+    },
+    {
+      "date": "26/08/2024",
+      "sessionNumber": "155",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 89,
+      "shares": 1075042425,
+      "value": 4300203645
+    },
+    {
+      "date": "21/08/2024",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 374,
+      "shares": 1153064850,
+      "value": 4620968335
+    },
+    {
+      "date": "15/08/2024",
+      "sessionNumber": "149",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1997500,
+      "value": 8789000
+    },
+    {
+      "date": "11/08/2024",
+      "sessionNumber": "145",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 3002500,
+      "value": 13211050
+    },
+    {
+      "date": "08/08/2024",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 39,
+      "shares": 20000000,
+      "value": 87400034
+    },
+    {
+      "date": "07/08/2024",
+      "sessionNumber": "143",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 10000000,
+      "value": 44140000
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 212800,
+      "value": 957600
     }
   ],
   "INCP": [
@@ -10217,6 +12494,42 @@
       "trades": 3,
       "shares": 3500000,
       "value": 3115000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5000,
+      "value": 5050
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5000,
+      "value": 5150
+    },
+    {
+      "date": "28/08/2024",
+      "sessionNumber": "157",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 8000,
+      "value": 6560
+    },
+    {
+      "date": "31/07/2024",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1825861,
+      "value": 1515464
     }
   ],
   "BGUC": [
@@ -10714,6 +13027,33 @@
       "trades": 41,
       "shares": 220000000,
       "value": 88350645
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 420,
+      "value": 142
+    },
+    {
+      "date": "04/08/2024",
+      "sessionNumber": "140",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2600,
+      "value": 858
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1499100,
+      "value": 494703
     }
   ],
   "BASH": [
@@ -10842,6 +13182,15 @@
       "trades": 14,
       "shares": 59197530,
       "value": 17167283
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 30000
     }
   ],
   "TZNI": [
@@ -11024,6 +13373,96 @@
       "trades": 2,
       "shares": 61811,
       "value": 148346
+    },
+    {
+      "date": "22/09/2024",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 42256,
+      "value": 102259
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5350000,
+      "value": 12947000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 3184639,
+      "value": 7706826
+    },
+    {
+      "date": "17/09/2024",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 21947,
+      "value": 53111
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1862790,
+      "value": 4507951
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 15000,
+      "value": 36000
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 15000,
+      "value": 34500
+    },
+    {
+      "date": "09/09/2024",
+      "sessionNumber": "165",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 3252337,
+      "value": 7935702
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 28000,
+      "value": 68320
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 12000,
+      "value": 30480
     }
   ],
   "BIIB": [
@@ -11242,6 +13681,24 @@
       "trades": 2,
       "shares": 660000,
       "value": 990000
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 1460000
+    },
+    {
+      "date": "24/09/2024",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 1360000
     }
   ],
   "AISP": [
@@ -11325,6 +13782,15 @@
       "trades": 1,
       "shares": 5000,
       "value": 46200
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 50000,
+      "value": 435000
     }
   ],
   "HMAN": [
@@ -11457,6 +13923,15 @@
     {
       "date": "31/10/2024",
       "sessionNumber": "201",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 10000,
+      "value": 410000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
       "market": "النظامي",
       "direction": "buy",
       "trades": 1,
@@ -12812,6 +15287,42 @@
       "trades": 3,
       "shares": 2500000,
       "value": 2250000
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 3024615,
+      "value": 2722153
+    },
+    {
+      "date": "09/10/2024",
+      "sessionNumber": "185",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 475000
+    },
+    {
+      "date": "04/08/2024",
+      "sessionNumber": "140",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 10000,
+      "value": 12600
+    },
+    {
+      "date": "24/07/2024",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 2666667,
+      "value": 2933333
     }
   ],
   "HKAR": [
@@ -13452,6 +15963,15 @@
       "trades": 1,
       "shares": 1000,
       "value": 760
+    },
+    {
+      "date": "08/10/2024",
+      "sessionNumber": "184",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 15000,
+      "value": 11400
     }
   ],
   "FIDI": [
@@ -13559,6 +16079,15 @@
       "trades": 1,
       "shares": 1900,
       "value": 209000
+    },
+    {
+      "date": "19/09/2024",
+      "sessionNumber": "172",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 16,
+      "shares": 2328119,
+      "value": 244452495
     }
   ],
   "IHLI": [
@@ -13743,6 +16272,15 @@
       "trades": 4,
       "shares": 1500000,
       "value": 12750000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 200000,
+      "value": 1785000
     }
   ],
   "NDSA": [
@@ -13792,6 +16330,15 @@
       "trades": 1,
       "shares": 5000,
       "value": 37500
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 45000,
+      "value": 369000
     }
   ],
   "BAIB": [
@@ -13926,6 +16473,24 @@
       "trades": 2,
       "shares": 10000,
       "value": 25000
+    },
+    {
+      "date": "29/09/2024",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 10856,
+      "value": 24968
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 19144,
+      "value": 40202
     }
   ],
   "IIEW": [
@@ -13937,6 +16502,42 @@
       "trades": 7,
       "shares": 600000,
       "value": 2520000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 300000,
+      "value": 2769000
+    },
+    {
+      "date": "16/09/2024",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100000,
+      "value": 699000
+    },
+    {
+      "date": "12/09/2024",
+      "sessionNumber": "168",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100000,
+      "value": 600000
+    },
+    {
+      "date": "10/09/2024",
+      "sessionNumber": "166",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 200000,
+      "value": 900000
     }
   ],
   "IKLV": [
@@ -13993,6 +16594,15 @@
       "trades": 3,
       "shares": 17000000,
       "value": 42500000
+    },
+    {
+      "date": "18/09/2024",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 2000000,
+      "value": 4500000
     }
   ],
   "SMRI": [
@@ -14004,6 +16614,15 @@
       "trades": 10,
       "shares": 1243825,
       "value": 4888844
+    },
+    {
+      "date": "20/10/2024",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 217731,
+      "value": 1088655
     }
   ],
   "IRMC": [
@@ -14064,6 +16683,15 @@
       "trades": 1,
       "shares": 500000,
       "value": 1160000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 1000000,
+      "value": 2835000
     }
   ],
   "BUOI": [
@@ -14265,6 +16893,33 @@
       "trades": 1,
       "shares": 20000,
       "value": 184000
+    },
+    {
+      "date": "14/10/2024",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2000,
+      "value": 19100
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 3998000,
+      "value": 37981000
+    },
+    {
+      "date": "25/09/2024",
+      "sessionNumber": "176",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 15,
+      "shares": 3500000,
+      "value": 33541420
     }
   ],
   "SBAG": [
@@ -14426,6 +17081,33 @@
       "trades": 3,
       "shares": 300000,
       "value": 1204000
+    },
+    {
+      "date": "17/10/2024",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 200000,
+      "value": 1045000
+    },
+    {
+      "date": "06/10/2024",
+      "sessionNumber": "182",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 12250000,
+      "value": 36750000
+    },
+    {
+      "date": "03/09/2024",
+      "sessionNumber": "161",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 1250000,
+      "value": 3750000
     }
   ],
   "VAMF": [
@@ -14457,6 +17139,42 @@
       "trades": 3,
       "shares": 3500000,
       "value": 280000
+    },
+    {
+      "date": "13/10/2024",
+      "sessionNumber": "187",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 91368000,
+      "value": 6395760
+    },
+    {
+      "date": "10/10/2024",
+      "sessionNumber": "186",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 400000,
+      "value": 28000
+    },
+    {
+      "date": "06/08/2024",
+      "sessionNumber": "142",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 25000000,
+      "value": 1750000
+    },
+    {
+      "date": "23/07/2024",
+      "sessionNumber": "132",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 80000
     }
   ],
   "BELF": [
