@@ -548,6 +548,15 @@
       "trades": 1,
       "shares": 900000,
       "value": 2880000
+    },
+    {
+      "date": "18/01/2026",
+      "sessionNumber": "9",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 929850,
+      "value": 3103622
     }
   ],
   "BMNS": [
@@ -1189,6 +1198,60 @@
       "trades": 33,
       "shares": 44424005,
       "value": 87559529
+    },
+    {
+      "date": "09/07/2026",
+      "sessionNumber": "118",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 2607739,
+      "value": 4977693
+    },
+    {
+      "date": "17/02/2026",
+      "sessionNumber": "31",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 17,
+      "shares": 101573266,
+      "value": 206225195
+    },
+    {
+      "date": "03/02/2026",
+      "sessionNumber": "21",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 59,
+      "shares": 59575995,
+      "value": 119856230
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 2361809,
+      "value": 4652763
+    },
+    {
+      "date": "21/01/2026",
+      "sessionNumber": "12",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 5000000,
+      "value": 9850000
+    },
+    {
+      "date": "18/01/2026",
+      "sessionNumber": "9",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 51238,
+      "value": 99401
     }
   ],
   "BEFI": [
@@ -1688,6 +1751,15 @@
       "trades": 1,
       "shares": 17600,
       "value": 249920
+    },
+    {
+      "date": "09/07/2026",
+      "sessionNumber": "118",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 91,
+      "shares": 4888716,
+      "value": 78467164
     }
   ],
   "BIBI": [
@@ -1764,6 +1836,15 @@
       "trades": 1,
       "shares": 239300,
       "value": 31109
+    },
+    {
+      "date": "03/02/2026",
+      "sessionNumber": "21",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1726917,
+      "value": 224499
     }
   ],
   "BROI": [
@@ -2607,6 +2688,24 @@
       "trades": 6,
       "shares": 1000000,
       "value": 4611241
+    },
+    {
+      "date": "17/02/2026",
+      "sessionNumber": "31",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 730000,
+      "value": 3504000
+    },
+    {
+      "date": "18/01/2026",
+      "sessionNumber": "9",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 10333,
+      "value": 49598
     }
   ],
   "IMAP": [
@@ -2672,6 +2771,24 @@
       "trades": 11,
       "shares": 1800000,
       "value": 3784500
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 4000000,
+      "value": 8600000
+    },
+    {
+      "date": "21/01/2026",
+      "sessionNumber": "12",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 68346,
+      "value": 148994
     }
   ],
   "IBSD": [
@@ -3053,6 +3170,15 @@
       "trades": 10,
       "shares": 8613451,
       "value": 5771012
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 342120,
+      "value": 225799
     }
   ],
   "BGUC": [
@@ -3217,6 +3343,33 @@
       "trades": 22,
       "shares": 55000000,
       "value": 15950000
+    },
+    {
+      "date": "09/07/2026",
+      "sessionNumber": "118",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 15,
+      "shares": 46000000,
+      "value": 15180000
+    },
+    {
+      "date": "25/01/2026",
+      "sessionNumber": "14",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 108696878,
+      "value": 30435125
+    },
+    {
+      "date": "14/01/2026",
+      "sessionNumber": "8",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 50000000,
+      "value": 14000000
     }
   ],
   "BASH": [
@@ -3385,6 +3538,15 @@
       "trades": 5,
       "shares": 5000000,
       "value": 5100000
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 750000,
+      "value": 772500
     }
   ],
   "AISP": [
@@ -3564,6 +3726,15 @@
       "trades": 2,
       "shares": 1000000,
       "value": 60000
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 17000000,
+      "value": 1020000
     }
   ],
   "BKUI": [
@@ -3716,6 +3887,15 @@
       "trades": 1,
       "shares": 6000,
       "value": 18000
+    },
+    {
+      "date": "25/01/2026",
+      "sessionNumber": "14",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 50000,
+      "value": 111500
     }
   ],
   "HPAL": [
@@ -3946,6 +4126,15 @@
       "trades": 12,
       "shares": 1998712,
       "value": 1299162
+    },
+    {
+      "date": "03/02/2026",
+      "sessionNumber": "21",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 850000,
+      "value": 595000
     }
   ],
   "HKAR": [
@@ -4130,6 +4319,42 @@
       "trades": 5,
       "shares": 60000000,
       "value": 4900000
+    },
+    {
+      "date": "17/02/2026",
+      "sessionNumber": "31",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 9500000,
+      "value": 950000
+    },
+    {
+      "date": "21/01/2026",
+      "sessionNumber": "12",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 48125000,
+      "value": 3850000
+    },
+    {
+      "date": "14/01/2026",
+      "sessionNumber": "8",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1875000,
+      "value": 150000
+    },
+    {
+      "date": "14/01/2026",
+      "sessionNumber": "8",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 1875000,
+      "value": 150000
     }
   ],
   "SKTA": [
@@ -4141,6 +4366,33 @@
       "trades": 1,
       "shares": 50000,
       "value": 206000
+    },
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 35124,
+      "value": 140496
+    },
+    {
+      "date": "21/01/2026",
+      "sessionNumber": "12",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 400000
+    },
+    {
+      "date": "20/01/2026",
+      "sessionNumber": "11",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 64876,
+      "value": 259504
     }
   ],
   "NAHF": [
@@ -4234,6 +4486,15 @@
       "trades": 1,
       "shares": 5000,
       "value": 8450
+    },
+    {
+      "date": "14/01/2026",
+      "sessionNumber": "8",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100000,
+      "value": 177000
     }
   ],
   "IMOS": [
@@ -4256,6 +4517,17 @@
       "trades": 2,
       "shares": 60078,
       "value": 54670
+    }
+  ],
+  "NDSA": [
+    {
+      "date": "22/01/2026",
+      "sessionNumber": "13",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 2233001,
+      "value": 1808730
     }
   ]
 }
