@@ -1,0 +1,698 @@
+{
+  "INCP": [
+    {
+      "date": "16/07/2026",
+      "sessionNumber": "123",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 4500000,
+      "value": 8279000
+    },
+    {
+      "date": "12/07/2026",
+      "sessionNumber": "119",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 925000
+    },
+    {
+      "date": "05/05/2025",
+      "sessionNumber": "77",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 50,
+      "shares": 10000000,
+      "value": 24200000
+    },
+    {
+      "date": "29/01/2025",
+      "sessionNumber": "16",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 90000,
+      "value": 189000
+    }
+  ],
+  "ITLI": [
+    {
+      "date": "16/07/2026",
+      "sessionNumber": "123",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1000000,
+      "value": 1280000
+    },
+    {
+      "date": "12/07/2026",
+      "sessionNumber": "119",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 2737000,
+      "value": 3525860
+    },
+    {
+      "date": "17/12/2024",
+      "sessionNumber": "231",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 750000,
+      "value": 877500
+    }
+  ],
+  "BROI": [
+    {
+      "date": "15/07/2026",
+      "sessionNumber": "122",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 10,
+      "shares": 3487460,
+      "value": 1923174
+    },
+    {
+      "date": "12/07/2026",
+      "sessionNumber": "119",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 101450,
+      "value": 55797
+    },
+    {
+      "date": "01/07/2026",
+      "sessionNumber": "113",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 400000,
+      "value": 224000
+    },
+    {
+      "date": "17/05/2026",
+      "sessionNumber": "86",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 5000000,
+      "value": 2850000
+    },
+    {
+      "date": "17/05/2026",
+      "sessionNumber": "86",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 150000,
+      "value": 85500
+    },
+    {
+      "date": "14/05/2026",
+      "sessionNumber": "85",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 5000000,
+      "value": 2850000
+    },
+    {
+      "date": "09/03/2026",
+      "sessionNumber": "45",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1092494,
+      "value": 666421
+    },
+    {
+      "date": "29/12/2025",
+      "sessionNumber": "233",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 306615,
+      "value": 183969
+    },
+    {
+      "date": "18/11/2025",
+      "sessionNumber": "206",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1126000,
+      "value": 765680
+    },
+    {
+      "date": "18/08/2025",
+      "sessionNumber": "143",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 142005,
+      "value": 99403
+    },
+    {
+      "date": "12/03/2025",
+      "sessionNumber": "46",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 250000,
+      "value": 205000
+    },
+    {
+      "date": "16/02/2025",
+      "sessionNumber": "28",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 150000,
+      "value": 126000
+    },
+    {
+      "date": "09/01/2025",
+      "sessionNumber": "3",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 7,
+      "shares": 16950000,
+      "value": 14572000
+    },
+    {
+      "date": "15/12/2024",
+      "sessionNumber": "229",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 850000
+    }
+  ],
+  "IELI": [
+    {
+      "date": "15/07/2026",
+      "sessionNumber": "122",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 145000
+    },
+    {
+      "date": "24/05/2026",
+      "sessionNumber": "91",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 15833930,
+      "value": 21534144
+    },
+    {
+      "date": "18/05/2026",
+      "sessionNumber": "87",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 15833530,
+      "value": 22166942
+    },
+    {
+      "date": "30/12/2024",
+      "sessionNumber": "239",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 300000,
+      "value": 525000
+    }
+  ],
+  "NHAM": [
+    {
+      "date": "24/05/2026",
+      "sessionNumber": "91",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5840,
+      "value": 29200
+    },
+    {
+      "date": "01/03/2026",
+      "sessionNumber": "39",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 74088,
+      "value": 241206
+    },
+    {
+      "date": "24/02/2026",
+      "sessionNumber": "36",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 200000,
+      "value": 560000
+    },
+    {
+      "date": "25/01/2026",
+      "sessionNumber": "14",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 50000,
+      "value": 111500
+    }
+  ],
+  "HPAL": [
+    {
+      "date": "24/05/2026",
+      "sessionNumber": "91",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 3178792,
+      "value": 58934803
+    },
+    {
+      "date": "17/05/2026",
+      "sessionNumber": "86",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 3178791,
+      "value": 58171875
+    },
+    {
+      "date": "05/05/2026",
+      "sessionNumber": "78",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 800000,
+      "value": 14792000
+    },
+    {
+      "date": "12/10/2025",
+      "sessionNumber": "181",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2000,
+      "value": 54880
+    }
+  ],
+  "IMCM": [
+    {
+      "date": "11/05/2026",
+      "sessionNumber": "82",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 300000,
+      "value": 375000
+    },
+    {
+      "date": "29/12/2025",
+      "sessionNumber": "233",
+      "market": "منصة الشركات غير المفصحه",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100,
+      "value": 89
+    }
+  ],
+  "BRTB": [
+    {
+      "date": "03/05/2026",
+      "sessionNumber": "76",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 200000,
+      "value": 202000
+    },
+    {
+      "date": "29/04/2026",
+      "sessionNumber": "74",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 2200000,
+      "value": 2222000
+    }
+  ],
+  "BIDB": [
+    {
+      "date": "02/03/2026",
+      "sessionNumber": "40",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 4000,
+      "value": 4200
+    },
+    {
+      "date": "16/06/2025",
+      "sessionNumber": "101",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 2000,
+      "value": 2000
+    }
+  ],
+  "BINT": [
+    {
+      "date": "08/01/2026",
+      "sessionNumber": "4",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 884920,
+      "value": 176984
+    },
+    {
+      "date": "25/11/2025",
+      "sessionNumber": "211",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 750000,
+      "value": 127500
+    },
+    {
+      "date": "18/11/2025",
+      "sessionNumber": "206",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 4543,
+      "value": 772
+    }
+  ],
+  "BMNS": [
+    {
+      "date": "17/11/2025",
+      "sessionNumber": "205",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 42,
+      "shares": 24066725,
+      "value": 48615451
+    },
+    {
+      "date": "26/10/2025",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 6000000,
+      "value": 12120000
+    },
+    {
+      "date": "28/08/2025",
+      "sessionNumber": "151",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 40,
+      "shares": 72152752,
+      "value": 147663141
+    }
+  ],
+  "IBSD": [
+    {
+      "date": "17/11/2025",
+      "sessionNumber": "205",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 10000,
+      "value": 50500
+    }
+  ],
+  "BIME": [
+    {
+      "date": "03/11/2025",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100,
+      "value": 6
+    }
+  ],
+  "BIBI": [
+    {
+      "date": "03/11/2025",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 918219,
+      "value": 192825
+    }
+  ],
+  "BGUC": [
+    {
+      "date": "03/11/2025",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 360016,
+      "value": 97204
+    }
+  ],
+  "BEFI": [
+    {
+      "date": "03/11/2025",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 679927,
+      "value": 156383
+    }
+  ],
+  "IRMC": [
+    {
+      "date": "03/11/2025",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 2511,
+      "value": 5649
+    }
+  ],
+  "BCOI": [
+    {
+      "date": "26/10/2025",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 11500000,
+      "value": 7860000
+    }
+  ],
+  "IHLI": [
+    {
+      "date": "16/10/2025",
+      "sessionNumber": "185",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 1500000,
+      "value": 2925000
+    },
+    {
+      "date": "10/09/2025",
+      "sessionNumber": "159",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 4378,
+      "value": 9938
+    }
+  ],
+  "IFCM": [
+    {
+      "date": "01/10/2025",
+      "sessionNumber": "174",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 4000000,
+      "value": 12803500
+    },
+    {
+      "date": "30/09/2025",
+      "sessionNumber": "173",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 5000000,
+      "value": 15850000
+    },
+    {
+      "date": "28/09/2025",
+      "sessionNumber": "171",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 36,
+      "shares": 4600000,
+      "value": 14582000
+    },
+    {
+      "date": "21/09/2025",
+      "sessionNumber": "166",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 5429573,
+      "value": 16505901
+    },
+    {
+      "date": "07/09/2025",
+      "sessionNumber": "156",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 5000000,
+      "value": 15018000
+    },
+    {
+      "date": "31/08/2025",
+      "sessionNumber": "152",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 10000000,
+      "value": 35600000
+    },
+    {
+      "date": "18/08/2025",
+      "sessionNumber": "143",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 2475000,
+      "value": 5722500
+    },
+    {
+      "date": "03/08/2025",
+      "sessionNumber": "133",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 7,
+      "shares": 9400000,
+      "value": 18330000
+    },
+    {
+      "date": "31/07/2025",
+      "sessionNumber": "132",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 10298210,
+      "value": 20635920
+    },
+    {
+      "date": "29/07/2025",
+      "sessionNumber": "130",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 13,
+      "shares": 5000000,
+      "value": 11500000
+    },
+    {
+      "date": "30/06/2025",
+      "sessionNumber": "110",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1500000,
+      "value": 4050000
+    },
+    {
+      "date": "29/05/2025",
+      "sessionNumber": "93",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 1000000,
+      "value": 2900000
+    },
+    {
+      "date": "25/05/2025",
+      "sessionNumber": "89",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 1000000,
+      "value": 2900000
+    },
+    {
+      "date": "11/03/2025",
+      "sessionNumber": "45",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 750000,
+      "value": 2325017
+    }
+  ],
+  "IHFI": [
+    {
+      "date": "30/09/2025",
+      "sessionNumber": "173",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 5000,
+      "value": 6600
+    }
+  ],
+  "BKUI": [
+    {
+      "date": "28/08/2025",
+      "sessionNumber": "151",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 32000,
+      "value": 33600
+    }
+  ],
+  "VWIF": [
+    {
+      "date": "25/05/2025",
+      "sessionNumber": "89",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 208000,
+      "value": 64400
+    }
+  ],
+  "SAEI": [
+    {
+      "date": "10/02/2025",
+      "sessionNumber": "24",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 500000,
+      "value": 1160000
+    }
+  ]
+}
