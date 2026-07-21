@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 328500,
+      "value": 1038355
+    },
+    {
       "date": "19/07/2026",
       "sessionNumber": "124",
       "market": "النظامي",
@@ -5902,6 +5911,15 @@
   ],
   "TASC": [
     {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 250000,
+      "value": 4000000
+    },
+    {
       "date": "20/07/2026",
       "sessionNumber": "125",
       "market": "النظامي",
@@ -8449,6 +8467,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 22,
+      "shares": 16950000,
+      "value": 69664500
+    },
     {
       "date": "20/07/2026",
       "sessionNumber": "125",
@@ -14035,6 +14062,15 @@
   ],
   "BKUI": [
     {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 14629000000,
+      "value": 20480600000
+    },
+    {
       "date": "24/05/2026",
       "sessionNumber": "91",
       "market": "النظامي",
@@ -14368,6 +14404,15 @@
     }
   ],
   "BUND": [
+    {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 512400,
+      "value": 25620
+    },
     {
       "date": "20/07/2026",
       "sessionNumber": "125",
@@ -15224,6 +15269,15 @@
     }
   ],
   "SNUC": [
+    {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 50000,
+      "value": 30004
+    },
     {
       "date": "07/05/2026",
       "sessionNumber": "80",
@@ -16659,6 +16713,15 @@
   ],
   "BUOI": [
     {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 240000,
+      "value": 36000
+    },
+    {
       "date": "27/10/2025",
       "sessionNumber": "192",
       "market": "النظامي",
@@ -17108,6 +17171,15 @@
   ],
   "FRSE": [
     {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 997000
+    },
+    {
       "date": "20/07/2026",
       "sessionNumber": "125",
       "market": "النظامي",
@@ -17115,6 +17187,17 @@
       "trades": 1,
       "shares": 1000000,
       "value": 9500000
+    }
+  ],
+  "BAMS": [
+    {
+      "date": "21/07/2026",
+      "sessionNumber": "126",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5000,
+      "value": 4250
     }
   ]
 }
