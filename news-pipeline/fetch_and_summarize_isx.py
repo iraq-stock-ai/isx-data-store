@@ -36,7 +36,15 @@ HEADERS = {
     "Referer": STORY_DETAILS_URL,
 }
 
-MAX_GAP_ATTEMPTS = 15
+# ⬅️ التعديل الوحيد المطلوب هنا: رُفع من 15 إلى 200.
+# هذا الرقم هو "عدد محاولات storyId الفارغة المتتالية المسموحة قبل
+# الاستسلام الكامل بالحلقة الخارجية بـ main()"، وليس عدد العناصر نفسه.
+# بالقيمة القديمة (15)، لو صادف السكربت فجوة واحدة كبيرة بمنتصف الطريق
+# (15+ رقم storyId فارغ متتالي) قبل ما يجمع كل الـ12 عنصر المطلوبين،
+# كانت تتوقف الحلقة الخارجية بالكامل وتكتفي بأقل من 12. رفع الرقم لـ 200
+# يضمن أن السكربت يستمر بالبحث عبر فجوات أكبر بكثير، حتى يصل فعلياً
+# لـ12 عنصر حقيقي بمعظم الحالات الواقعية.
+MAX_GAP_ATTEMPTS = 200
 
 MODEL_NAME = "gemini-3.1-flash-lite"
 GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
@@ -361,7 +369,10 @@ def main():
     parser.add_argument("--existing", default="isx_disclosures.json")
     parser.add_argument("--output", default="isx_disclosures.json")
     parser.add_argument("--start-id", type=int, default=None)
-    parser.add_argument("--batch-size", type=int, default=1)
+    # ⬅️ التعديل الثاني: القيمة الافتراضية رُفعت من 1 إلى 12، بحيث
+    # حتى لو اشتغل السكربت بلا أي معامل --batch-size ممرَّر صراحة
+    # (من أي مصدر تشغيل، يدوي أو آلي)، يجيب 12 عنصر تلقائياً بدل واحد.
+    parser.add_argument("--batch-size", type=int, default=12)
     args = parser.parse_args()
 
     data = load_existing(args.existing)
