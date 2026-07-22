@@ -1,6 +1,159 @@
 {
-  "last_known_story_id": 17792,
+  "last_known_story_id": 17798,
   "items": [
+    {
+      "id": "17798",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الانصاري الاسلامي في جلسة الاربعاء الموافق 2026/7/22",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_11_4_59.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17798&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الانصاري الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير واضح ومشوه تقنياً، مما يعيق استخراج الأرقام الدقيقة لحجم التداول، تم تصنيف الإفصاح بناءً على عنوان الطلب.",
+      "summary": "إفصاح صادر عن شركة براعم الخير للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود على أسهم مصرف الأنصاري الإسلامي في جلسة التداول ليوم الأربعاء الموافق 22 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17797",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف اربيل في جلسة الخميس الموافق 2026/7/23",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "BERI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_11_2_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17797&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف أربيل",
+      "raas_al_mal": "265000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "50%",
+      "dividend_date": null,
+      "other_important_figures": [
+        "0.210 دينار عراقي سعر السهم"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح سوق العراق للأوراق المالية بخصوص إعادة التداول، مع ملاحظة أن النص الأصلي تالف جزئياً.",
+      "summary": "يعلن سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف أربيل اعتباراً من جلسة يوم الخميس الموافق 2026/7/23، وذلك برأسمال مصرح به يبلغ 265 مليار دينار عراقي، بعد اتخاذ القرارات التنظيمية ذات الصلة وتحديد سعر مرجعي للسهم عند 0.210 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17796",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة فندق بغداد في يوم الاحد الموافق 2026/8/9",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_52_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17796&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "فندق بغداد",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية واضحة في الرموز، لكن تم استخلاص البيانات الجوهرية المتعلقة بموعد انعقاد اجتماع الهيئة العامة.",
+      "summary": "تعلن شركة فندق بغداد عن تحديد يوم الأحد الموافق 2026/8/9 موعداً لعقد اجتماع الهيئة العامة للشركة، وذلك وفقاً للبيانات المقتضبة الواردة في نص الإفصاح المرفق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17795",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الشركة العراقية لانتاج البذور في جلسة الخميس الموافق 2026/7/23",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "AISP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_50_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17795&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة العراقية لانتاج البذور",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "6050",
+      "dividend_per_share": null,
+      "dividend_percentage": "50%",
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ التداول: 2026/7/23"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق ببدء تداول أسهم الشركة وتوزيعات الأرباح المعلنة بنسبة 50%.",
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن إطلاق التداول على أسهم الشركة العراقية لإنتاج البذور اعتباراً من جلسة يوم الخميس الموافق 2026/7/23، حيث سيتم تداول 6050 سهماً، مع الإشارة إلى توزيع أرباح نقدية بنسبة 50% من رأس المال المدفوع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17794",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة إبداع الشرق الاوسط للمقاولات العامة البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "SIBD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_9_44_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17794&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة ابداع الشرق الاوسط للمقاولات العامة والاستثمارات العقارية",
+      "raas_al_mal": "20000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ الإفصاح 2026/07/12",
+        "الفترة المالية: الفصل الثاني لعام 2026"
+      ],
+      "confidence_note": "البيانات المالية المرفقة لم يتم تفصيل أرقامها في نص الإفصاح، وتم استخراج رأس المال بناءً على النص المذكور (20 مليار دينار).",
+      "summary": "أفصحت شركة إبداع الشرق الأوسط للمقاولات العامة والاستثمارات العقارية عن بياناتها المالية للفصل الثاني من عام 2026، حيث أرفقت الميزانية الفصلية كما في 2026/06/30 إلى سوق العراق للأوراق المالية، مع الإشارة إلى أن رأس المال المدفوع للشركة يبلغ 20 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17793",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف المنصور للاستثمار البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "22/07/2026",
+      "related_symbols": [
+        "BMNS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_9_42_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17793&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف المنصور للاستثمار",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "البيانات المالية تم تقديمها للفترة المنتهية في 30 يونيو 2026، ولكن نص الإفصاح المرفق لم يتضمن الأرقام المالية التفصيلية للقوائم، حيث أرفقت في قرص مدمج.",
+      "summary": "قدم مصرف المنصور للاستثمار البيانات المالية المرحلية المختصرة للربع الثاني من عام 2026، وذلك التزاماً بمتطلبات الإفصاح في سوق العراق للأوراق المالية، حيث تشير الوثيقة إلى أن رأس مال المصرف يبلغ 250 مليار دينار عراقي مدفوع بالكامل، وقد تمت مراجعة البيانات للفترة المنتهية في 30/06/2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17792",
       "type": "إفصاح",
