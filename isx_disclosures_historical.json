@@ -1,6 +1,413 @@
 {
   "items": [
     {
+      "id": "17792",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف كوردستان الدولي الاسلامي في جلسة الثلاثاء الموافق 2026/7/21",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BKUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_33_53.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17792&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف كوردستان الدولي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج غير واضح ومشوش بشكل كبير مما يمنع استخراج بيانات دقيقة للأرقام المالية أو كميات الأسهم.",
+      "summary": "إفصاح رسمي صادر عن شركة بغداد للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود على أسهم مصرف كوردستان الدولي الإسلامي في جلسة التداول ليوم الثلاثاء الموافق 21 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17791",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر خاص على أسهم شركة مصرف نور العراق الاسلامي في جلسة الثلاثاء الموافق 2026/7/21",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_32_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17791&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "5,000,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/21"
+      ],
+      "confidence_note": "البيانات مستخلصة من إفصاح خاص بتنفيذ أمر تداول على أسهم مصرف نور العراق الإسلامي",
+      "summary": "تم تنفيذ أمر تداول خاص في سوق العراق للأوراق المالية على أسهم شركة مصرف نور العراق الإسلامي يوم الثلاثاء الموافق 21 يوليو 2026، حيث بلغ حجم التداول 5,000,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17790",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف نور العراق الاسلامي في جلسة الثلاثاء الموافق 2026/7/21",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_31_25.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17790&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "10,000,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح تنفيذ أمر متقابل مقصود، مع ملاحظة تداخل وتشوش في جودة النص المصدر.",
+      "summary": "أفصح مصرف نور العراق الإسلامي عن تنفيذ أمر متقابل مقصود على أسهم المصرف في جلسة يوم الثلاثاء الموافق 21 تموز 2026، حيث بلغت كمية الأسهم المتداولة في هذه الصفقة 10 مليار سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17789",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الحمراء للتأمين البيانات المالية السنوية لعام 2025",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_29_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17789&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": "25000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "البيانات المالية مرفقة ضمن الإفصاح ولكن لم يتم استخراج أرقام الأرباح أو الديون من النص المتاح، الإفصاح مخصص لتقديم الحسابات الختامية لسنة 2025.",
+      "summary": "قدمت شركة الحمراء للتأمين الحسابات الختامية للسنة المالية المنتهية في 31 ديسمبر 2025 إلى سوق العراق للأوراق المالية، مع الإشارة إلى أن رأس مال الشركة يبلغ 25 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17788",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الكندي لانتاج اللقاحات البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "IKLV"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_27_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17788&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الكندي لإنتاج اللقاحات والأدوية البيطرية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم الإفصاح عن إرسال البيانات المالية للفصل الثاني من العام 2026، ولا يحتوي نص الإفصاح على أرقام مالية محددة مثل الأرباح أو رأس المال.",
+      "summary": "أفصحت شركة الكندي لإنتاج اللقاحات والأدوية البيطرية عن تقديم بياناتها المالية للفصل الثاني من السنة المالية 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، وتتضمن التقارير الميزانية العامة وحساب الإنتاج والمتاجرة وكشف العمليات الجارية وكشف التدفق النقدي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17787",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الائتمان العراقي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BROI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_26_8.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17787&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الائتمان العراقي",
+      "raas_al_mal": "346,870,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ البيانات المالية: 2026/06/30"
+      ],
+      "confidence_note": "البيانات المالية مرفقة بتقرير مراقب الحسابات، ولم يتم استخراج الأرقام المالية التفصيلية (كصافي الربح) من نص الإفصاح المقتضب.",
+      "summary": "قدم مصرف الائتمان العراقي البيانات المالية المرحلية للفصل الثاني المنتهي في 2026/06/30، مؤكداً التزام المصرف بالمعايير الدولية لإعداد التقارير المالية ومرفقاً تقرير مراقب الحسابات والإيضاحات ذات الصلة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17786",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الاقليم التجاري البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BRTB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_25_13.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17786&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الإقليم التجاري للاستثمار والتمويل",
+      "raas_al_mal": "400000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ البيانات المالية: 2026/06/30"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح المصرف عن بياناته المالية للفصل الثاني من عام 2026، ولم تتضمن الوثيقة الأرقام المالية النهائية للأرباح أو المطلوبات.",
+      "summary": "قدم مصرف الإقليم التجاري للاستثمار والتمويل إفصاحاً إلى سوق العراق للأوراق المالية يتضمن قوائمه المالية الفصلية للربع الثاني المنتهي في 30 يونيو 2026، والتي تشمل كشف الموجودات والمطلوبات وحساب الأرباح والخسائر وكشف التدفق النقدي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17785",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الخليج التجاري البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BGUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_24_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17785&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الخليج التجاري",
+      "raas_al_mal": "100000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح مصرف الخليج التجاري بخصوص تقديم البيانات المالية للفصل الثاني من عام 2026، ولم تتضمن الوثيقة المرفقة أرقاماً تفصيلية للأرباح أو الديون في نص الإفصاح نفسه.",
+      "summary": "قدم مصرف الخليج التجاري إفصاحاً رسمياً يتضمن بياناته المالية الفصلية للفترة المنتهية في 30 يونيو 2026، وذلك التزاماً بمتطلبات الإفصاح لهيئة الأوراق المالية وسوق العراق للأوراق المالية، حيث شملت المرفقات الميزانية العامة، كشوفات الأرباح والخسائر، وبيانات التدفق النقدي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17784",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف العراقي الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_23_23.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17784&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف العراقي الإسلامي للاستثمار والتنمية",
+      "raas_al_mal": "800000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "صافي التدفق النقدي المستخدم في الانشطة التشغيلية -57535848419",
+        "صافي التدفق النقدي المستخدم في الانشطة الاستثمارية -11933758547",
+        "صافي التدفق النقدي المستخدم في الانشطة التمويلية -51555353075"
+      ],
+      "confidence_note": "النص المستخرج يحتوي على بعض التشوهات الناتجة عن المسح الضوئي (OCR)، مما أثر على دقة الأرقام المالية التفصيلية في بيان التدفقات النقدية.",
+      "summary": "أفصح المصرف العراقي الإسلامي للاستثمار والتنمية عن بياناته المالية المرحلية للربع الثاني من عام 2026 والمنتهية في 30 يونيو 2026. يتضمن الإفصاح تفاصيل التدفقات النقدية التشغيلية والاستثمارية والتمويلية للمصرف.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17783",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة الاهلية للانتاج الزراعي البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "21/07/2026",
+      "related_symbols": [
+        "AAHP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_22_22.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17783&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الاهلية للانتاج الزراعي",
+      "raas_al_mal": "575000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يحتوي على تشوهات بصرية ناتجة عن معالجة ملف الـ PDF، مما أدى لعدم وضوح الأرقام المالية التفصيلية باستثناء رأس المال.",
+      "summary": "أفصحت الشركة الأهلية للإنتاج الزراعي عن التقرير الفصلي الأول لعام 2026، متضمناً الميزانية العامة والحسابات الختامية، حيث يبلغ رأس مال الشركة 575 مليون دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17782",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 12-16 تموز 2026",
+      "date": "21/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_6_56_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17782&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "26,365,026,614",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "عدد الشركات المدرجة 103",
+        "قيمة الأسهم المتداولة 14,106,640,848 دينار",
+        "مؤشر ISX15 بلغ 1,270.88",
+        "مؤشر ISX60 بلغ 1,023.35"
+      ],
+      "confidence_note": "التقرير يغطي ملخصاً أسبوعياً للسوق وليس إفصاحاً لشركة محددة، لذا تم وضع البيانات العامة للسوق.",
+      "summary": "شهد سوق العراق للأوراق المالية خلال الفترة من 12 إلى 16 يوليو 2026 تداول 26.36 مليار سهم بقيمة إجمالية بلغت 14.11 مليار دينار عبر 5,819 صفقة. أظهرت مؤشرات السوق أداءً متبايناً، حيث ارتفع مؤشر ISX60 بنسبة 0.70% ليغلق عند 1,023.35 نقطة، بينما انخفض مؤشر ISX15 بنسبة 0.35% ليغلق عند 1,270.88 نقطة. كما شهدت منصة ISX-OTC تداولات بقيمة 15.03 مليار دينار. تضمن التقرير قرارات بإيقاف تداول بعض الشركات لعدم تقديم الإفصاحات المالية، وقرارات أخرى بإعادة التداول لشركات أوفدت متطلبات الهيئة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17781",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة بوابة آسيا للتأمين في يوم الاربعاء الموافق 2026/7/22",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "NGAT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_44_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17781&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة بوابة آسيا للتأمين",
+      "raas_al_mal": "15000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/22"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المقدم وتاريخ الاجتماع، مع ملاحظة أن المستند الأصلي يحتوي على رموز غير واضحة للبيانات المالية التفصيلية.",
+      "summary": "إعلان شركة بوابة آسيا للتأمين عن عقد اجتماع للهيئة العامة بتاريخ 22 تموز 2026، حيث يبلغ رأس مال الشركة 15 مليار دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17780",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر خاص على أسهم شركة مصرف نور العراق الاسلامي في جلسة الاثنين الموافق 2026/7/20",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_38_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17780&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2,500,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/20"
+      ],
+      "confidence_note": "تم استخراج البيانات من إفصاح شركة الاثمار للوساطة المالية المتعلق بتنفيذ صفقة تداول خاصة على أسهم مصرف نور العراق الإسلامي.",
+      "summary": "تضمن الإفصاح تنفيذ أمر خاص (صفقة تداول خاصة) على أسهم مصرف نور العراق الإسلامي في جلسة يوم الاثنين الموافق 20 تموز 2026، حيث بلغ عدد الأسهم المتداولة في هذه الصفقة 2,500,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17779",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الانصاري الاسلامي في جلسة الاثنين الموافق 2026/7/20",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_37_26.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17779&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الانصاري الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "929000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "1062",
+        "43",
+        "332"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق حول تنفيذ أمر متقابل مقصود لعدد 929 مليون سهم.",
+      "summary": "إفصاح صادر عن شركة برايم الخير للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود على أسهم شركة مصرف الأنصاري الإسلامي في جلسة الاثنين الموافق 20/7/2026، حيث بلغت الكمية المتداولة 929 مليون سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17778",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف نور العراق الاسلامي في جلسة الاثنين الموافق 2026/7/20",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_36_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17778&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "10,000,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق بعملية تداول خاصة (أمر متقابل مقصود) لأسهم المصرف، التاريخ المذكور في النص هو 2026/7/20.",
+      "summary": "يعلن مصرف نور العراق الإسلامي عن تنفيذ عملية تداول خاصة (أمر متقابل مقصود) على أسهم المصرف في جلسة يوم الاثنين الموافق 20 يوليو 2026، حيث بلغت كمية الأسهم المتداولة في هذه الصفقة 10 مليار سهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17777",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة العراقية لضمان الودائع في يوم الثلاثاء الموافق 2026/8/18",
+      "date": "20/07/2026",
+      "related_symbols": [
+        "FIDI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_31_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17777&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة العراقية لضمان الودائع",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة تجعل استخراج البيانات المالية الدقيقة مستحيلاً، وتم الاعتماد فقط على المعلومة الواردة في نص السؤال لتحديد نوع الإفصاح واسم الشركة.",
+      "summary": "إعلان صادر عن سوق العراق للأوراق المالية يفيد بعقد اجتماع الهيئة العامة للشركة العراقية لضمان الودائع في يوم الثلاثاء الموافق 18 آب 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
       "id": "17775",
       "type": "إفصاح",
       "title": "سيتم إطلاق التداول على أسهم شركة مصرف آشور الدولي إعتباراً جلسة الثلاثاء الموافق 2026/7/21",
@@ -40149,5 +40556,5 @@
       "pdf_extraction_status": "success_via_ocr"
     }
   ],
-  "last_known_story_id": 17775
+  "last_known_story_id": 17792
 }
