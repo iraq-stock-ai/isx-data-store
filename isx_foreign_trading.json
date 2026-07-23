@@ -2694,6 +2694,15 @@
   ],
   "BMNS": [
     {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 3400000,
+      "value": 7072000
+    },
+    {
       "date": "20/07/2026",
       "sessionNumber": "125",
       "market": "النظامي",
@@ -5919,6 +5928,24 @@
     }
   ],
   "TASC": [
+    {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 250000,
+      "value": 4006447
+    },
+    {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 3000000,
+      "value": 48115000
+    },
     {
       "date": "21/07/2026",
       "sessionNumber": "126",
@@ -10548,6 +10575,15 @@
     }
   ],
   "IMAP": [
+    {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 31,
+      "shares": 7119294,
+      "value": 16018411
+    },
     {
       "date": "16/07/2026",
       "sessionNumber": "123",
@@ -16778,6 +16814,15 @@
   ],
   "SBPT": [
     {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 14,
+      "shares": 1800000,
+      "value": 39600000
+    },
+    {
       "date": "06/10/2025",
       "sessionNumber": "177",
       "market": "النظامي",
@@ -17197,6 +17242,15 @@
     }
   ],
   "FRSE": [
+    {
+      "date": "23/07/2026",
+      "sessionNumber": "128",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 250000,
+      "value": 2745000
+    },
     {
       "date": "22/07/2026",
       "sessionNumber": "127",
