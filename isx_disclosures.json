@@ -1,6 +1,86 @@
 {
-  "last_known_story_id": 17810,
+  "last_known_story_id": 17813,
   "items": [
+    {
+      "id": "17813",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة الخليج للتأمين في جلسة الاحد الموافق 2026/7/26",
+      "date": "23/07/2026",
+      "related_symbols": [
+        "NGIR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_11_9_8.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17813&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الخليج للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/26"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق ببدء التداول، ومعلومات الشركة المالية غير متوفرة في هذا النص.",
+      "summary": "قررت إدارة سوق العراق للأوراق المالية إطلاق التداول على أسهم شركة الخليج للتأمين في جلسة يوم الأحد الموافق 26 يوليو 2026، وذلك بناءً على كتاب هيئة الأوراق المالية المرقم 1378/10 بتاريخ 23 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17812",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف القرطاس الاسلامي في جلسة الخميس الموافق 2026/7/23",
+      "date": "23/07/2026",
+      "related_symbols": [
+        "BQUR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_11_6_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17812&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف القرطاس الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "12900000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "5000000000 سهم للمشتري الأول",
+        "4000000000 سهم للمشتري الثاني",
+        "3900000000 سهم للمشتري الثالث"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح شركة إيلاف للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود لأسهم مصرف القرطاس الإسلامي في جلسة 2026/7/23.",
+      "summary": "أفصحت شركة إيلاف للوساطة المالية عن تنفيذ عملية تداول خاصة (أمر متقابل مقصود) على أسهم مصرف القرطاس الإسلامي في سوق العراق للأوراق المالية بتاريخ 23 يوليو 2026، حيث بلغ إجمالي عدد الأسهم المتداولة 12 مليار و900 مليون سهم، موزعة على ثلاثة مشترين بحصص 5 مليار، 4 مليار، و3.9 مليار سهم على التوالي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17811",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف نور العراق الاسلامي في جلسة الخميس الموافق 2026/7/23",
+      "date": "23/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_11_5_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17811&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "10,000,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/23"
+      ],
+      "confidence_note": "تم استخراج البيانات من إفصاح يتعلق بعملية تداول خاصة (أمر متقابل مقصود) وليس تقريراً مالياً دورياً.",
+      "summary": "أعلن مصرف نور العراق الإسلامي عن تنفيذ عملية تداول خاصة (أمر متقابل مقصود) على أسهم المصرف في جلسة يوم الخميس الموافق 2026/7/23، حيث بلغ عدد الأسهم المتداولة في هذه العملية 10,000,000,000 سهم.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17810",
       "type": "إفصاح",
