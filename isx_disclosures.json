@@ -1,6 +1,112 @@
 {
-  "last_known_story_id": 17813,
+  "last_known_story_id": 17817,
   "items": [
+    {
+      "id": "17817",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف العالم الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "26/07/2026",
+      "related_symbols": [
+        "BWOR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_10_29_37.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17817&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف العالم الإسلامي للإستثمار والتمويل",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "رأس المال المدفوع مستخرج من النص بـ 250 مليار دينار، بينما البيانات المالية التفصيلية لم ترد في نص الإفصاح المقتضب.",
+      "summary": "أفصح مصرف العالم الإسلامي للإستثمار والتمويل عن تقديمه للبيانات المالية الفصلية للربع الثاني المنتهي في 30/06/2026 إلى سوق العراق للأوراق المالية، متضمنة الميزانية العامة وحساب الأرباح والخسائر والتدفق النقدي، وذلك برأس مال مدفوع قدره 250 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17816",
+      "type": "إفصاح",
+      "title": "تعديل موعد آخر جلسة تداول قبل إجتماع الهيئة العامة لشركة مصرف العطاء الاسلامي الذي سيعقد يوم الاثنين 2026/8/10",
+      "date": "26/07/2026",
+      "related_symbols": [
+        "BLAD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_10_23_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17816&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف العطاء الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/08/10"
+      ],
+      "confidence_note": "تم تحديد موعد اجتماع الهيئة العامة في 2026/08/10 وتعديل موعد آخر جلسة تداول لتكون 2026/08/03.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن تعديل موعد آخر جلسة تداول لأسهم مصرف العطاء الإسلامي قبل انعقاد اجتماع الهيئة العامة للشركة، حيث تقرر أن يكون يوم الاثنين الموافق 2026/08/10 هو موعد اجتماع الهيئة العامة، وبناءً عليه تم تحديد يوم الاثنين الموافق 2026/08/03 كآخر جلسة تداول للأسهم قبل الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17815",
+      "type": "إفصاح",
+      "title": "تعديل موعد آخر جلسة تداول قبل إجتماع الهيئة العامة لشركة فندق بغداد الذي سيعقد يوم الاحد 2026/8/9",
+      "date": "26/07/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_10_22_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17815&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "فندق بغداد",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": "2026-08-09",
+      "other_important_figures": [
+        "2026-08-09"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق بتعديل موعد آخر جلسة تداول قبل اجتماع الهيئة العامة.",
+      "summary": "أعلنت شركة فندق بغداد عن تعديل موعد آخر جلسة تداول للأسهم قبل اجتماع الهيئة العامة المقرر عقده بتاريخ 9 أغسطس 2026، وذلك ليتماشى مع الترتيبات التنظيمية الخاصة بسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17814",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للاوراق المالية للفترة من 19-23 تموز 2026",
+      "date": "26/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_0_10_19_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17814&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "47,992,093,666",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "قيمة التداول: 93,978,287,920 دينار عراقي",
+        "عدد الصفقات المنفذة: 5,782",
+        "مؤشر ISX15: 1,269.83",
+        "مؤشر ISX60: 1,044.25",
+        "عدد الشركات المدرجة: 103"
+      ],
+      "confidence_note": "البيانات مستخرجة من التقرير الأسبوعي العام لسوق العراق للأوراق المالية للفترة 19-23 تموز 2026",
+      "summary": "استعرض التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 19 إلى 23 تموز 2026 أداء السوق، حيث بلغ عدد الأسهم المتداولة 47.99 مليار سهم بقيمة إجمالية تجاوزت 93.97 مليار دينار عراقي عبر 5,782 صفقة. شهدت مؤشرات السوق حركة متباينة، حيث سجل مؤشر ISX60 ارتفاعاً بنسبة 2.04%، بينما انخفض مؤشر ISX15 بنسبة 0.08%. كما تضمن التقرير إحصائيات تداول المستثمرين غير العراقيين وأداء منصة التداول الإلكتروني (ISX-OTC)، بالإضافة إلى قرارات إيقاف وإطلاق التداول لعدد من الشركات المدرجة بناءً على متطلبات الإفصاح المالي أو قرارات هيئة الأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17813",
       "type": "إفصاح",
