@@ -1,6 +1,284 @@
 {
-  "last_known_story_id": 17817,
+  "last_known_story_id": 17828,
   "items": [
+    {
+      "id": "17828",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة الحمراء للتأمين إعتباراً من جلسة الثلاثاء الموافق 2026/7/28",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_30_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17828&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/28"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية بسبب ضعف جودة الـ OCR، ولكن تاريخ بدء التداول واضح.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة الحمراء للتأمين اعتباراً من جلسة التداول ليوم الثلاثاء الموافق 28 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17827",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الحمراء للتأمين البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_26_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17827&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": "25000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/03/31"
+      ],
+      "confidence_note": "البيانات المالية الفصلية للفصل الأول لعام 2026 مرفقة ضمن الإفصاح دون تفاصيل الأرقام المالية في نص الكتاب.",
+      "summary": "أفصحت شركة الحمراء للتأمين عن تقديم بياناتها المالية للفصل الأول المنتهي في 31 مارس 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، وذلك امتثالاً لمتطلبات الإفصاح المالي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17826",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف كوردستان الدولي الإسلامي البيانات المالية السنوية لعام 2025",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "BKUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_11_11_25.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17826&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف كوردستان الدولي الإسلامي للاستثمار والتنمية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح المصرف بشأن الميزانية الموحدة كما في 31/12/2025، ولا توجد مؤشرات مالية رقمية في نص الإفصاح المرفق.",
+      "summary": "أفصح مصرف كوردستان الدولي الإسلامي للاستثمار والتنمية عن تسليم الميزانية العمومية الموحدة (التقرير السنوي) الخاصة به كما في تاريخ 31/12/2025 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17825",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف جيهان الاسلامي إعتباراً من جلسة الثلاثاء الموافق 2026/7/28",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "BCIH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_55_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17825&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف جيهان الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2.140 دينار"
+      ],
+      "confidence_note": "البيانات مستخرجة من إعلان إطلاق التداول. السعر المشار إليه هو 2.140 دينار للسهم.",
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف جيهان الإسلامي اعتباراً من جلسة يوم الثلاثاء الموافق 2026/7/28، وذلك بسعر مرجعي يبلغ 2.140 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17824",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية لانتاج وتسويق اللحوم البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "AIPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_44_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17824&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية لإنتاج وتسويق اللحوم والمحاصيل الزراعية والاستثمارات العقارية",
+      "raas_al_mal": "1000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية: من 2026/04/01 لغاية 2026/06/30"
+      ],
+      "confidence_note": "تم الاعتماد على بيانات النص المستخرج، ويلاحظ وجود تضارب في التواريخ المذكورة بالنص (2026 في العنوان مقابل 2025/2027 في المتن) مما يشير إلى أخطاء طباعية في مستند الإفصاح الأصلي.",
+      "summary": "أفصحت الشركة العراقية لإنتاج وتسويق اللحوم والمحاصيل الزراعية والاستثمارات العقارية عن بياناتها المالية الفصلية للربع الثاني لعام 2026، حيث تم إعداد القوائم وفقاً للنظام المحاسبي الموحد ومعايير التقارير المالية الدولية، وشمل الإفصاح الميزانية العامة وكشف العمليات الجارية وكشف التدفق النقدي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17823",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة بغداد للمشروبات الغازية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_40_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17823&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية: 2026/01/01 ولغاية 2026/06/30"
+      ],
+      "confidence_note": "تم الإفصاح عن البيانات المالية للفصل الثاني لعام 2026، مع الإشارة إلى عدم إدراج أرقام المقارنة للفترة السابقة بسبب تغيير النظام المحاسبي المتبع.",
+      "summary": "أفصحت شركة بغداد للمشروبات الغازية عن بياناتها المالية للفصل الثاني من العام 2026، والتي تغطي الفترة من 1 يناير إلى 30 يونيو 2026. وأوضحت الشركة التزامها بتطبيق النظام المحاسبي الموحد وفقاً لمعايير المحاسبة والتقارير المالية الدولية، كما نوهت بعدم إدراج أرقام مقارنة للفترة ذاتها من العام السابق نظراً لكونها أعدت وفقاً للنظام الموحد الملغي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17822",
+      "type": "إفصاح",
+      "title": "إطلاق أسهم شركة مصرف المشرق العربي الاسلامي - أسهم الزيادة - في جلسة الاثنين 2026/7/27",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_10_24_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17822&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "6500000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/7/27"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية، ولكن تم استخلاص البيانات المتعلقة بإطلاق أسهم الزيادة بدقة بناءً على السياق.",
+      "summary": "أعلنت هيئة الأوراق المالية عن إطلاق أسهم الزيادة الخاصة بمصرف المشرق العربي الإسلامي، والبالغ عددها 6,500,000,000 سهم، وذلك في جلسة التداول ليوم الاثنين الموافق 27 يوليو 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17821",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مدينة العاب الكرخ السياحية البيانات المالية السنوية لعام 2025",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "SKTA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_6_42_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17821&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة مدينة العاب الكرخ السياحية",
+      "raas_al_mal": "1600000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يحتوي على تشويش تقني كبير، تم استخلاص البيانات الأساسية بصعوبة.",
+      "summary": "أفصحت شركة مدينة العاب الكرخ السياحية عن تقديم حساباتها الختامية السنوية المنتهية في 31 ديسمبر 2025 إلى سوق العراق للأوراق المالية، حيث يبلغ رأس مال الشركة 1,600,000,000 دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17820",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مدينة العاب الكرخ السياحية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "SKTA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_6_41_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17820&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة مدينة العاب الكرخ السياحية",
+      "raas_al_mal": "1600000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "البيانات المالية مرفقة ضمن التقرير ولكن الأرقام المالية التفصيلية لم ترد في نص الإفصاح المكتبي المرفق.",
+      "summary": "قدمت شركة مدينة ألعاب الكرخ السياحية متطلبات الإفصاح المالي للفصل الثاني من عام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، متضمنةً الميزانية العامة وكشف التدفق النقدي وكشف الأرباح والخسائر للفترة المنتهية في 30/06/2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17819",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة الوطنية للاستثمارات السياحية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "HNTI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_6_40_16.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17819&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الوطنية للاستثمارات السياحية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب ضعف جودة الـ OCR، مما تعذر معه استخراج الأرقام المالية الخاصة بالأرباح أو الديون.",
+      "summary": "أفصحت الشركة الوطنية للاستثمارات السياحية عن تقديم بياناتها المالية للفصل الثاني من عام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، مرفقة بالكشوفات التحليلية المطلوبة وفقاً للإجراءات التنظيمية المتبعة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17818",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة الاهلية للتأمين البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "27/07/2026",
+      "related_symbols": [
+        "NAHF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_1_6_28_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17818&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الاهلية للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "الإفصاح شكلي يتضمن إرسال البيانات المالية للربع الثاني من عام 2026 دون ذكر أرقام محددة داخل نص الإفصاح.",
+      "summary": "قدمت الشركة الأهلية للتأمين البيانات المالية الخاصة بالربع الثاني من السنة المالية 2026 إلى سوق العراق للأوراق المالية بغرض الاطلاع، دون الإفصاح عن مؤشرات الأداء المالي في نص الكتاب المرفق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17817",
       "type": "إفصاح",
