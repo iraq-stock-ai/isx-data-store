@@ -2703,6 +2703,15 @@
   ],
   "BMNS": [
     {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1104,
+      "value": 2395
+    },
+    {
       "date": "23/07/2026",
       "sessionNumber": "128",
       "market": "النظامي",
@@ -5938,6 +5947,24 @@
   ],
   "TASC": [
     {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 15,
+      "shares": 6000000,
+      "value": 96300965
+    },
+    {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 11371,
+      "value": 182390
+    },
+    {
       "date": "26/07/2026",
       "sessionNumber": "129",
       "market": "النظامي",
@@ -7985,6 +8012,15 @@
   ],
   "BMFI": [
     {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 40000,
+      "value": 6800
+    },
+    {
       "date": "19/07/2026",
       "sessionNumber": "124",
       "market": "النظامي",
@@ -8539,6 +8575,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 151897,
+      "value": 621258
+    },
     {
       "date": "26/07/2026",
       "sessionNumber": "129",
@@ -10629,6 +10674,15 @@
     }
   ],
   "IMAP": [
+    {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 17,
+      "shares": 6014392,
+      "value": 13837270
+    },
     {
       "date": "26/07/2026",
       "sessionNumber": "129",
@@ -14567,6 +14621,15 @@
   ],
   "BUND": [
     {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 50000,
+      "value": 3000
+    },
+    {
       "date": "21/07/2026",
       "sessionNumber": "126",
       "market": "النظامي",
@@ -17073,6 +17136,15 @@
     }
   ],
   "HISH": [
+    {
+      "date": "28/07/2026",
+      "sessionNumber": "131",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 16000,
+      "value": 144800
+    },
     {
       "date": "26/08/2025",
       "sessionNumber": "149",
