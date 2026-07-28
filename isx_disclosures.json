@@ -1,6 +1,163 @@
 {
-  "last_known_story_id": 17828,
+  "last_known_story_id": 17834,
   "items": [
+    {
+      "id": "17834",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة المصرف التجاري العراقي الاسلامي في جلسة الاربعاء الموافق 2026/7/29",
+      "date": "28/07/2026",
+      "related_symbols": [
+        "BCOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_17_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17834&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "المصرف التجاري العراقي الاسلامي",
+      "raas_al_mal": "350,532,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "327,600,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "0.600 دينار سعر السهم",
+        "50% نسبة الزيادة في رأس المال"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح سوق العراق للأوراق المالية بخصوص زيادة رأس مال المصرف من 327.6 مليار إلى 350.532 مليار دينار عراقي.",
+      "summary": "يعلن سوق العراق للأوراق المالية عن المباشرة بتداول أسهم المصرف التجاري العراقي الإسلامي اعتباراً من جلسة الأربعاء الموافق 2026/07/29، وذلك بعد إتمام إجراءات زيادة رأس مال المصرف من 327,600,000,000 دينار إلى 350,532,000,000 دينار عراقي، بنسبة زيادة بلغت 50% عبر رسملة الأرباح المحتجزة، مع تحديد سعر السهم عند 0.600 دينار.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17833",
+      "type": "إفصاح",
+      "title": "لن تنظم جلسة التداول ليومي الاثنين الموافق 2026/8/3 و الثلاثاء الموافق 2026/8/4",
+      "date": "28/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_4_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17833&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/08/03",
+        "2026/08/04"
+      ],
+      "confidence_note": "الإفصاح صادر عن سوق العراق للأوراق المالية بخصوص تعليق جلسات التداول.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن عدم تنظيم جلسات التداول ليومي الاثنين 2026/08/03 والثلاثاء 2026/08/04.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17832",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة إنتاج الالبسة الجاهزة والتجارة العامة في يوم الاربعاء الموافق 2026/8/12",
+      "date": "28/07/2026",
+      "related_symbols": [
+        "IRMC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_11_3_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17832&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة إنتاج الألبسة الجاهزة والتجارة العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/12"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، علماً بأن جودة النص الأصلي غير واضحة في بعض الأجزاء مما قد يؤثر على استخراج أرقام مالية تفصيلية.",
+      "summary": "أعلنت شركة إنتاج الألبسة الجاهزة والتجارة العامة عن عقد اجتماع الهيئة العامة للشركة في يوم الأربعاء الموافق 12 أغسطس 2026، وذلك لمناقشة البنود المدرجة على جدول أعمال الاجتماع وفقاً للضوابط القانونية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17831",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف القرطاس الاسلامي في جلسة الثلاثاء الموافق 2026/7/28",
+      "date": "28/07/2026",
+      "related_symbols": [
+        "BQUR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_10_53_16.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17831&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف القرطاس الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "7800000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "3900000000 سهم للطرف الأول",
+        "3900000000 سهم للطرف الثاني"
+      ],
+      "confidence_note": "البيانات مستخرجة من إفصاح شركة إيلاف للوساطة المالية بشأن تنفيذ أمر متقابل مقصود",
+      "summary": "أفصحت شركة إيلاف للوساطة المالية عن تنفيذ عملية تداول خاصة (أمر متقابل مقصود) على أسهم مصرف القرطاس الإسلامي في سوق العراق للأوراق المالية بتاريخ 28 يوليو 2026، حيث بلغ إجمالي عدد الأسهم المتداولة 7,800,000,000 سهم، مقسمة بالتساوي بين الطرفين المشتري والبائع بواقع 3,900,000,000 سهم لكل منهما.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17830",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة العراقية لصناعة وتجارة الكارتون البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "28/07/2026",
+      "related_symbols": [
+        "IICM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_9_33_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17830&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية لصناعة وتجارة الكارتون",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات رقمية وتقنية تعيق استخراج الأرقام المالية الدقيقة؛ الإفصاح يقتصر على تقديم البيانات المالية الفصلية للربع الثاني لعام 2026.",
+      "summary": "قدمت الشركة العراقية لصناعة وتجارة الكارتون الميزانية الفصلية الخاصة بها للربع الثاني من عام 2026 إلى هيأة الأوراق المالية وسوق العراق للأوراق المالية، مع تفويض المدير المفوض بمتابعة الإجراءات.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17829",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة طريق الخازر لانتاج وتجارة المواد الانشائية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "28/07/2026",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_2_9_31_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17829&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية والاستثمارات العقارية والمقاولات العامة",
+      "raas_al_mal": "1000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية: الفصل الثاني لسنة 2026",
+        "تاريخ بداية الفترة: 2026/04/01",
+        "تاريخ نهاية الفترة: 2026/06/30"
+      ],
+      "confidence_note": "تم استخراج البيانات من نص الإفصاح المرفق، ولا تتوفر تفاصيل مالية محددة مثل صافي الربح في النص المعالج، حيث تم إرفاق البيانات المالية كملحق.",
+      "summary": "أفصحت شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية والاستثمارات العقارية والمقاولات العامة (مساهمة مختلطة) إلى سوق العراق للأوراق المالية عن تقديم بياناتها المالية للفصل الثاني من السنة المالية 2026، والتي تغطي الفترة من 1 أبريل 2026 ولغاية 30 يونيو 2026، مع مقارنتها بالفترة المماثلة من السنة السابقة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17828",
       "type": "إفصاح",
