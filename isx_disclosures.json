@@ -1,6 +1,169 @@
 {
-  "last_known_story_id": 17834,
+  "last_known_story_id": 17840,
   "items": [
+    {
+      "id": "17840",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر خاص على أسهم شركة مصرف نور العراق الاسلامي في جلسة الاربعاء الموافق 2026/7/29",
+      "date": "29/07/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_31_11.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17840&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "18,500,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "سعر تنفيذ السهم: 1.00 دينار عراقي",
+        "قيمة الصفقة الإجمالية: 18,500,000,000 دينار عراقي"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح شركة الأثمار للوساطة المالية بشأن تنفيذ أمر خاص على أسهم مصرف نور العراق الإسلامي.",
+      "summary": "تم تنفيذ أمر تداول خاص على أسهم مصرف نور العراق الإسلامي في جلسة يوم الأربعاء الموافق 2026/7/29، حيث بلغت كمية الأسهم المتداولة 18,500,000,000 سهم، بسعر تنفيذ قدره 1.00 دينار للسهم الواحد، لتبلغ القيمة الإجمالية للصفقة 18,500,000,000 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17839",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة اليم الازرق للتجارة العامة إعتباراً من جلسة الخميس الموافق 2026/7/30",
+      "date": "29/07/2026",
+      "related_symbols": [
+        "SYAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_10_29_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17839&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة اليم الازرق للتجارة العامة",
+      "raas_al_mal": "6,010,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "6,010,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "رمز الشركة: SYAM",
+        "رقم ISIN: IQ000A42CD30",
+        "سوق التداول: OTC"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، وتم تحديد رأس المال وعدد الأسهم من البيانات الفنية المذكورة في الوثيقة.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن إدراج وبدء التداول على أسهم شركة اليم الازرق للتجارة العامة في منصة التداول غير المدرجة (OTC) اعتباراً من جلسة الخميس الموافق 30 يوليو 2026، وذلك برأس مال قدره 6,010,000,000 دينار عراقي موزعة على عدد مماثل من الأسهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17838",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة شط العرب للتأمين البيانات المالية السنوية لعام 2025",
+      "date": "29/07/2026",
+      "related_symbols": [
+        "NSHA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_9_35_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17838&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة شط العرب للتأمين",
+      "raas_al_mal": "20000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "fiscal_year": "2025"
+        },
+        {
+          "disclosure_date": "2026/03/09"
+        }
+      ],
+      "confidence_note": "البيانات المالية المرفقة تشير إلى السنة المالية المنتهية في 2025، ولا يحتوي نص الإفصاح على أرقام صافي الربح أو المطلوبات.",
+      "summary": "أفصحت شركة شط العرب للتأمين عن تقديم حساباتها الختامية للسنة المالية المنتهية في 31 ديسمبر 2025 إلى سوق العراق للأوراق المالية، حيث يبلغ رأسمال الشركة المدفوع عشرين مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17837",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المصرف العراقي الاسلامي في يوم السبت الموافق 2026/8/15",
+      "date": "29/07/2026",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_8_24_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17837&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف العراقي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/15"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق وتاريخ الاجتماع المعلن",
+      "summary": "أعلن المصرف العراقي الإسلامي عن موعد انعقاد اجتماع الهيئة العامة للشركة، والمقرر عقده يوم السبت الموافق 15 آب 2026، لمناقشة البنود المدرجة في جدول الأعمال وفقاً للأنظمة والتعليمات المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17836",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الوركاء البيانات المالية السنوية لعام 2025",
+      "date": "29/07/2026",
+      "related_symbols": [
+        "BWAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_8_20_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17836&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الوركاء للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2025/12/31"
+      ],
+      "confidence_note": "تم استخراج البيانات من إفصاح ميزانية عمومية، النص الأصلي يعاني من رداءة في المسح الضوئي (OCR) مما أدى إلى عدم القدرة على استخلاص الأرقام المالية التفصيلية.",
+      "summary": "أفصح مصرف الوركاء للاستثمار والتمويل عن تقديمه للبيانات المالية السنوية والميزانية العمومية المنتهية في 31/12/2025 إلى البنك المركزي العراقي والجهات الرقابية ذات العلاقة، مرفقة بتقرير مراقب الحسابات، وذلك التزاماً بمتطلبات الإفصاح في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17835",
+      "type": "إفصاح",
+      "title": "لن تنظم جلسة التداول ليومي الاثنين الموافق 2026/8/3 و الثلاثاء الموافق 2026/8/4",
+      "date": "29/07/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_3_7_5_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17835&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/3",
+        "2026/8/4"
+      ],
+      "confidence_note": "الإفصاح صادر عن سوق العراق للأوراق المالية وليس عن شركة مدرجة، ويتعلق بتعليق جلسات التداول.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن عدم تنظيم جلسات التداول ليومي الاثنين الموافق 2026/8/3 والثلاثاء الموافق 2026/8/4.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17834",
       "type": "إفصاح",
