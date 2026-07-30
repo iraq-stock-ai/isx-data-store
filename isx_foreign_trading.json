@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 372413,
+      "value": 1187997
+    },
+    {
       "date": "26/07/2026",
       "sessionNumber": "129",
       "market": "النظامي",
@@ -2702,6 +2711,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 964000,
+      "value": 2053320
+    },
     {
       "date": "28/07/2026",
       "sessionNumber": "131",
@@ -8576,6 +8594,15 @@
   ],
   "BNOI": [
     {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 46,
+      "shares": 4500000,
+      "value": 18160500
+    },
+    {
       "date": "29/07/2026",
       "sessionNumber": "132",
       "market": "النظامي",
@@ -12046,6 +12073,24 @@
   ],
   "BCOI": [
     {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 3500000,
+      "value": 2100000
+    },
+    {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 10000000,
+      "value": 6065000
+    },
+    {
       "date": "29/07/2026",
       "sessionNumber": "132",
       "market": "النظامي",
@@ -13987,6 +14032,15 @@
     }
   ],
   "BIME": [
+    {
+      "date": "30/07/2026",
+      "sessionNumber": "133",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 30000000,
+      "value": 2700000
+    },
     {
       "date": "26/07/2026",
       "sessionNumber": "129",
