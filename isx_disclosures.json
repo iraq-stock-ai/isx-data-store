@@ -1,6 +1,134 @@
 {
-  "last_known_story_id": 17840,
+  "last_known_story_id": 17845,
   "items": [
+    {
+      "id": "17845",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الثقة الدولي الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "30/07/2026",
+      "related_symbols": [
+        "BTRU"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_46_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17845&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الثقة الدولي الإسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "البيانات المالية المرحلية للأشهر الستة المنتهية في 30 حزيران 2026"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح المصرف عن بياناته المالية المرحلية، ولم تتضمن الوثيقة المرفقة أرقام الأرباح أو الديون بشكل صريح.",
+      "summary": "أفصح مصرف الثقة الدولي الإسلامي عن تقديم البيانات المالية المرحلية الموجزة للفصل الثاني من عام 2026، والتي تغطي فترة الستة أشهر المنتهية في 30 حزيران 2026، مع الإشارة إلى أن رأس مال المصرف يبلغ مئتان وخمسون مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17844",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف سومر التجاري البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "30/07/2026",
+      "related_symbols": [
+        "BSUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_45_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17844&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف سومر التجاري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "البيانات المالية الفصلية للفصل الثاني لعام 2026 مرفقة ضمن الإفصاح ولم يتم إدراج قيم مالية محددة في نص الإفصاح نفسه.",
+      "summary": "أفصح مصرف سومر التجاري عن تقديمه البيانات المالية الفصلية للفصل الثاني المنتهي في 30 يونيو 2026، متضمنةً كشف الأرباح والخسائر وكشف التدفقات النقدية إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17843",
+      "type": "إفصاح",
+      "title": "إنتهاء إجراءات وتعديل عقد تأسيس شركة مصرف المستشار الاسلامي",
+      "date": "30/07/2026",
+      "related_symbols": [
+        "BMUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_7_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17843&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف المستشار الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات كبيرة في المعالجة الضوئية (OCR) مما يجعل استخلاص الأرقام المالية الدقيقة مستحيلاً، يقتصر المحتوى على الإشارة إلى إتمام إجراءات تعديل عقد التأسيس.",
+      "summary": "إفصاح صادر عن دائرة تسجيل الشركات في وزارة التجارة العراقية، يؤكد انتهاء الإجراءات القانونية المتعلقة بتعديل عقد تأسيس شركة مصرف المستشار الإسلامي، وفقاً للقوانين والضوابط المتبعة لدى دائرة تسجيل الشركات.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17842",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف المشرق العربي الاسلامي في جلسة الاحد الموافق 2026/8/2",
+      "date": "30/07/2026",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_6_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17842&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/2"
+      ],
+      "confidence_note": "تم استخراج المعلومة الأساسية المتعلقة بموعد بدء التداول من نص الإفصاح المرفق.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن تحديد يوم الأحد الموافق 2026/8/2 موعداً لإطلاق التداول على أسهم مصرف المشرق العربي الإسلامي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17841",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة رحاب كربلاء للاستثمار والمقاولات العامة في يوم الخميس الموافق 2026/9/3",
+      "date": "30/07/2026",
+      "related_symbols": [
+        "HKAR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_7_4_10_4_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17841&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة رحاب كربلاء للاستثمار والمقاولات العامة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/09/03"
+      ],
+      "confidence_note": "النص المستخرج من ملف الـ PDF يعاني من تشوهات نصية كبيرة ناتجة عن التحويل مما أثر على دقة استخراج بعض البيانات المالية، ولكن تم تحديد نوع الإفصاح وتاريخ الاجتماع بدقة.",
+      "summary": "أعلنت شركة رحاب كربلاء للاستثمار والمقاولات العامة عن عقد اجتماع للهيئة العامة يوم الخميس الموافق 3 أيلول 2026، وذلك لمناقشة البنود المدرجة على جدول الأعمال وفقاً للأنظمة والتعليمات المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17840",
       "type": "إفصاح",
