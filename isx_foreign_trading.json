@@ -7857,6 +7857,15 @@
   ],
   "BIBI": [
     {
+      "date": "02/08/2026",
+      "sessionNumber": "134",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 400000,
+      "value": 144000
+    },
+    {
       "date": "26/07/2026",
       "sessionNumber": "129",
       "market": "النظامي",
@@ -8593,6 +8602,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "02/08/2026",
+      "sessionNumber": "134",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 350000,
+      "value": 1421000
+    },
     {
       "date": "30/07/2026",
       "sessionNumber": "133",
