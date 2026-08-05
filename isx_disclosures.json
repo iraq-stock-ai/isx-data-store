@@ -1,6 +1,82 @@
 {
-  "last_known_story_id": 17853,
+  "last_known_story_id": 17856,
   "items": [
+    {
+      "id": "17856",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر خاص على أسهم شركة مصرف نور العراق في جلسة الاربعاء الموافق 2026/8/5",
+      "date": "05/08/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_11_7_41.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17856&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف نور العراق",
+      "raas_al_mal": "250,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "11,250,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق لشركة الاستثمار للوساطة المالية، حيث يظهر تنفيذ أمر خاص على أسهم مصرف نور العراق.",
+      "summary": "يتضمن الإفصاح تنفيذ صفقة تداول خاصة على أسهم مصرف نور العراق في جلسة يوم الأربعاء الموافق 5 أغسطس 2026، حيث بلغ عدد الأسهم المتداولة في هذه الصفقة 11,250,000,000 سهم، وذلك وفقاً للبيانات الواردة من شركة الاستثمار للوساطة المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17855",
+      "type": "إفصاح",
+      "title": "انتهاء اجراءات شركة المصرف الاقتصاد للاستثمار والتمويل",
+      "date": "05/08/2026",
+      "related_symbols": [
+        "BEFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_11_3_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17855&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "مصرف الاقتصاد للاستثمار والتمويل",
+      "raas_al_mal": "300000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "رأس المال السابق: 291000000000 دينار عراقي"
+      ],
+      "confidence_note": "تم التأكد من صحة أرقام زيادة رأس المال بناءً على نص إفصاح دائرة تسجيل الشركات.",
+      "summary": "أعلنت دائرة تسجيل الشركات عن استكمال كافة الإجراءات القانونية اللازمة لتعديل المادة (خامساً) من عقد تأسيس مصرف الاقتصاد للاستثمار والتمويل، والمتعلقة بزيادة رأس مال الشركة من 291 مليار دينار عراقي إلى 300 مليار دينار عراقي، وذلك استناداً لأحكام قانون الشركات رقم 21 لسنة 1997 المعدل.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17854",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة العراقية لانتاج و تسويق المنتجات الزراعية في جلسة الخميس الموافق 2026/8/6",
+      "date": "05/08/2026",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_9_43_10.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17854&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "العراقية لإنتاج وتسويق المنتجات الزراعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ بدء التداول: 2026/8/6"
+      ],
+      "confidence_note": "النص المستخرج يعاني من رداءة عالية في الجودة (OCR)، تم تحديد نوع الإفصاح بناءً على عنوان الطلب ومحتوى النص الذي يشير إلى إطلاق التداول.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم الشركة العراقية لإنتاج وتسويق المنتجات الزراعية ابتداءً من جلسة يوم الخميس الموافق 6 أغسطس 2026، وذلك بناءً على القرارات التنظيمية المتبعة في السوق.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17853",
       "type": "إفصاح",
