@@ -2712,6 +2712,15 @@
   ],
   "BMNS": [
     {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5000,
+      "value": 10900
+    },
+    {
       "date": "30/07/2026",
       "sessionNumber": "133",
       "market": "النظامي",
@@ -5965,6 +5974,24 @@
   ],
   "TASC": [
     {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 25,
+      "shares": 7344991,
+      "value": 117839331
+    },
+    {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 9301,
+      "value": 149095
+    },
+    {
       "date": "28/07/2026",
       "sessionNumber": "131",
       "market": "النظامي",
@@ -8602,6 +8629,24 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 44,
+      "shares": 14696244,
+      "value": 59243272
+    },
+    {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 37090,
+      "value": 149101
+    },
     {
       "date": "02/08/2026",
       "sessionNumber": "134",
@@ -13783,6 +13828,15 @@
     }
   ],
   "AISP": [
+    {
+      "date": "05/08/2026",
+      "sessionNumber": "135",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 585000
+    },
     {
       "date": "26/07/2026",
       "sessionNumber": "129",
