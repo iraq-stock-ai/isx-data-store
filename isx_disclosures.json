@@ -1,6 +1,166 @@
 {
-  "last_known_story_id": 17861,
+  "last_known_story_id": 17867,
   "items": [
+    {
+      "id": "17867",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الخليج التجاري في جلسة الاثنين الموافق 2026/8/10",
+      "date": "09/08/2026",
+      "related_symbols": [
+        "BGUC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_10_39_46.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17867&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الخليج التجاري",
+      "raas_al_mal": "300,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": "0.380",
+      "dividend_percentage": "50%",
+      "dividend_date": null,
+      "other_important_figures": [
+        "0.380 سعر السهم المعتمد",
+        "50% نسبة التوزيع"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على النص المترجم للإفصاح، مع ملاحظة أن تاريخ التداول المحدد هو 2026/8/10.",
+      "summary": "أعلنت هيئة الأوراق المالية العراقية عن إطلاق التداول على أسهم مصرف الخليج التجاري في جلسة يوم الاثنين الموافق 2026/8/10، وذلك بعد زيادة رأس مال المصرف ليصل إلى 300 مليار دينار عراقي، مع الإشارة إلى توزيع أرباح بنسبة 50% بواقع 0.380 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17866",
+      "type": "إفصاح",
+      "title": "تعديل موعد آخر جلسة قبل إجتماع الهيئة العامة الذي سيعقد يوم الجمعة 2026/8/14لشركة طريق الخازر للانتاج المواد الانشائية",
+      "date": "09/08/2026",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_7_50_29.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17866&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة طريق الخازر للانتاج المواد الانشائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/14",
+        "2026/8/12"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق المتعلق بتعديل موعد آخر جلسة تداول قبل انعقاد الهيئة العامة، مع ملاحظة أن النص الأصلي يحتوي على رموز غير واضحة ناتجة عن معالجة ملف PDF.",
+      "summary": "تعلن شركة طريق الخازر للانتاج المواد الانشائية عن تعديل موعد آخر جلسة تداول للأسهم قبل اجتماع الهيئة العامة للشركة المقرر عقده يوم الجمعة الموافق 2026/8/14، ليصبح الموعد الجديد لآخر جلسة تداول يوم الأربعاء الموافق 2026/8/12.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17865",
+      "type": "إفصاح",
+      "title": "تعديل موعد آخر جلسة قبل إجتماع الهيئة العامة الذي سيعقد يوم الاثنين 2026/8/17لشركة المعمورة العقارية",
+      "date": "09/08/2026",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_7_47_55.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17865&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المعمورة العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": "2026/08/12",
+      "other_important_figures": [
+        "تاريخ اجتماع الهيئة العامة: 2026/08/17"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق بتعديل موعد آخر جلسة تداول قبل انعقاد الهيئة العامة.",
+      "summary": "أعلنت شركة المعمورة العقارية عن تعديل موعد آخر جلسة تداول للأسهم قبل اجتماع الهيئة العامة للشركة، حيث تقرر أن يكون الموعد الجديد لآخر جلسة تداول هو يوم الأربعاء الموافق 2026/08/12، وذلك تمهيداً لانعقاد اجتماع الهيئة العامة المقرر يوم الاثنين الموافق 2026/08/17.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17864",
+      "type": "إفصاح",
+      "title": "تعديل موعد آخر جلسة قبل إجتماع الهيئة العامة الذي سيعقد يوم السبت 2026/8/15 لشركة مصرف العراقي الاسلامي",
+      "date": "09/08/2026",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_7_42_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17864&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف العراقي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/15"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق وتعديل موعد الجلسة، مع العلم أن النص الأصلي يعاني من رداءة في المسح الضوئي (OCR).",
+      "summary": "أعلن المصرف العراقي الإسلامي عن تعديل موعد آخر جلسة تداول للأسهم قبل اجتماع الهيئة العامة للشركة، حيث تم تحديد تاريخ 12 آب 2026 ليكون آخر موعد، وذلك تمهيداً لعقد اجتماع الهيئة العامة المقرر بتاريخ 15 آب 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17863",
+      "type": "إفصاح",
+      "title": "التقرير الشهري لسوق العراق للاوراق المالية لشهر تموز2026",
+      "date": "09/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_8_59_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17863&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "166655061356",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "125 عدد الشركات المدرجة",
+        "85 عدد الشركات المتداولة",
+        "120030310788 قيمة الأسهم المتداولة بالدينار العراقي",
+        "24342 عدد الصفقات المنفذة",
+        "1041.07 مؤشر ISX60",
+        "1267.67 مؤشر ISX15",
+        "21 عدد جلسات التداول"
+      ],
+      "confidence_note": "التقرير يمثل إفصاحاً دورياً شهرياً عاماً عن أداء سوق العراق للأوراق المالية وليس إفصاحاً مالياً خاصاً بشركة واحدة.",
+      "summary": "يستعرض التقرير الشهري لسوق العراق للأوراق المالية لشهر تموز 2026 أداء السوق خلال 21 جلسة تداول، حيث بلغ عدد الأسهم المتداولة 166.65 مليار سهم بقيمة إجمالية تجاوزت 120 مليار دينار عراقي. شهدت قيمة التداول ارتفاعاً بنسبة 54.9% مقارنة بشهر حزيران، بينما انخفض عدد الصفقات بنسبة 8.3%. أغلق مؤشر ISX60 عند 1041.07 نقطة بارتفاع 2.1%، في حين أغلق مؤشر ISX15 عند 1267.67 نقطة بانخفاض 0.48%.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17862",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف زين العراق الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "09/08/2026",
+      "related_symbols": [
+        "BZII"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_6_18_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17862&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف زين العراق الإسلامي للاستثمار والتمويل",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح الشركة للفصل الثاني لعام 2026، حيث أظهر النص الوارد رأسمال الشركة المسجل بـ 250 مليار دينار عراقي.",
+      "summary": "أفصح مصرف زين العراق الإسلامي للاستثمار والتمويل عن تقديمه للبيانات المالية الفصلية الخاصة بالربع الثاني المنتهي في 30 حزيران 2026 إلى سوق العراق للأوراق المالية، مع الإشارة إلى أن رأس مال المصرف يبلغ 250 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17861",
       "type": "إفصاح",
