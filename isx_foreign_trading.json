@@ -1,6 +1,24 @@
 {
   "BBOB": [
     {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 96385,
+      "value": 305540
+    },
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 9,
+      "shares": 3000000,
+      "value": 9500000
+    },
+    {
       "date": "30/07/2026",
       "sessionNumber": "133",
       "market": "النظامي",
@@ -2711,6 +2729,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 35,
+      "shares": 22999000,
+      "value": 49647850
+    },
     {
       "date": "05/08/2026",
       "sessionNumber": "135",
@@ -5974,6 +6001,24 @@
   ],
   "TASC": [
     {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 32,
+      "shares": 1717406,
+      "value": 27650761
+    },
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 12,
+      "shares": 1277000,
+      "value": 20568700
+    },
+    {
       "date": "05/08/2026",
       "sessionNumber": "135",
       "market": "النظامي",
@@ -8630,6 +8675,15 @@
   ],
   "BNOI": [
     {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 207776,
+      "value": 843570
+    },
+    {
       "date": "06/08/2026",
       "sessionNumber": "136",
       "market": "النظامي",
@@ -10782,6 +10836,15 @@
     }
   ],
   "IMAP": [
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 80000,
+      "value": 184000
+    },
     {
       "date": "28/07/2026",
       "sessionNumber": "131",
@@ -13583,6 +13646,15 @@
     }
   ],
   "BIIB": [
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 209231,
+      "value": 242707
+    },
     {
       "date": "23/06/2026",
       "sessionNumber": "108",
@@ -17363,6 +17435,15 @@
     }
   ],
   "NAME": [
+    {
+      "date": "09/08/2026",
+      "sessionNumber": "137",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 87500,
+      "value": 75250
+    },
     {
       "date": "03/07/2025",
       "sessionNumber": "113",
