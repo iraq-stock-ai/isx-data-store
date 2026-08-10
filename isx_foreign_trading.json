@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 18,
+      "shares": 5079000,
+      "value": 15959640
+    },
+    {
       "date": "09/08/2026",
       "sessionNumber": "137",
       "market": "النظامي",
@@ -2729,6 +2738,24 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 28701,
+      "value": 61133
+    },
+    {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1000000,
+      "value": 2130000
+    },
     {
       "date": "09/08/2026",
       "sessionNumber": "137",
@@ -6001,6 +6028,24 @@
   ],
   "TASC": [
     {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 65,
+      "shares": 3984364,
+      "value": 63970776
+    },
+    {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 175000,
+      "value": 2812500
+    },
+    {
       "date": "09/08/2026",
       "sessionNumber": "137",
       "market": "النظامي",
@@ -7929,6 +7974,15 @@
   ],
   "BIBI": [
     {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 9000000,
+      "value": 3240000
+    },
+    {
       "date": "02/08/2026",
       "sessionNumber": "134",
       "market": "النظامي",
@@ -8674,6 +8728,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 33,
+      "shares": 7767720,
+      "value": 30993202
+    },
     {
       "date": "09/08/2026",
       "sessionNumber": "137",
@@ -12207,6 +12270,15 @@
     }
   ],
   "BCOI": [
+    {
+      "date": "10/08/2026",
+      "sessionNumber": "138",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100673,
+      "value": 60403
+    },
     {
       "date": "30/07/2026",
       "sessionNumber": "133",
