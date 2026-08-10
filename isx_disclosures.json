@@ -1,6 +1,215 @@
 {
-  "last_known_story_id": 17867,
+  "last_known_story_id": 17875,
   "items": [
+    {
+      "id": "17875",
+      "type": "إفصاح",
+      "title": "عدم تنظيم جلسة التداول ليوم الاربعاء الموافق 2026/8/12",
+      "date": "10/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_10_1_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17875&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب جودة ملف المصدر، ولكن المضمون العام يشير إلى تعليق جلسة التداول.",
+      "summary": "إفصاح صادر عن سوق العراق للأوراق المالية يعلن فيه عن عدم تنظيم جلسة التداول ليوم الأربعاء الموافق 12 آب 2026، مع تحديد يوم الخميس الموافق 13 آب 2026 كموعد لاستئناف جلسات التداول الاعتيادية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17874",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة فندق بغداد في جلسة الثلاثاء الموافق 2026/8/11",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_9_57_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17874&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "فندق بغداد",
+      "raas_al_mal": "12200000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "50%",
+      "dividend_date": "2026/08/17",
+      "other_important_figures": [
+        "12.200",
+        "2026/08/11"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتاح، ويشير النص إلى إطلاق التداول على أسهم الشركة بعد زيادة رأس المال بنسبة 50% من خلال أسهم منحة، مع تحديد تاريخ استحقاق الأرباح والأسهم.",
+      "summary": "أعلنت هيئة الأوراق المالية العراقية عن استئناف التداول على أسهم شركة فندق بغداد في جلسة الثلاثاء الموافق 11 آب 2026، وذلك بعد تنفيذ قرار زيادة رأس مال الشركة بنسبة 50% عبر توزيع أسهم منحة، ليصبح رأس المال الجديد 12.2 مليار دينار عراقي، كما حددت الشركة تاريخ 17 آب 2026 كموعد لتوزيع الأرباح والأسهم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17873",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف ايلاف الإسلامي البيانات المالية السنوية لعام 2025",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "BELF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_6_27_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17873&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف إيلاف الإسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "العدد: 1935",
+        "التاريخ: 2026/8/5",
+        "السنة المالية المنتهية في 2025/12/31"
+      ],
+      "confidence_note": "رأس المال المذكور في النص هو 250 مليار دينار عراقي بناءً على البيانات الواردة في الإفصاح، وتم تحويل القيمة إلى صيغة رقمية.",
+      "summary": "أفصح مصرف إيلاف الإسلامي عن تسليمه للبيانات المالية السنوية للسنة المالية المنتهية في 31 ديسمبر 2025 إلى سوق العراق للأوراق المالية والبنك المركزي العراقي، وذلك بعد تدقيقها والمصادقة عليها من قبل مجلس المهنة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17872",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة بغداد للمشروبات الغازية المنعقد بتاريخ 2026/7/7",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "IBSD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_5_24_26.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17872&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة بغداد للمشروبات الغازية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "بسبب ضعف جودة النص المستخرج (OCR) وتداخل الرموز، لا يمكن استخراج أرقام مالية دقيقة من المحضر المرفق.",
+      "summary": "يتضمن المستند محضر اجتماع الهيئة العامة لشركة بغداد للمشروبات الغازية المنعقد بتاريخ 7 يوليو 2026. نظراً لعدم وضوح النص المستخرج تقنياً، لا يمكن تحديد القرارات المالية أو التوصيات المعتمدة في هذا الاجتماع.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17871",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة زين للتأمين البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "NZAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_5_20_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17871&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة زين للتأمين",
+      "raas_al_mal": "15000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ نهاية الربع الثاني: 30/06/2026",
+        "تاريخ الإفصاح: 05/08/2026"
+      ],
+      "confidence_note": "البيانات المالية المرفقة لم يتم تفصيل أرقامها في نص الإفصاح، وتم استخراج رأس المال من الهوية التعريفية للشركة المذكورة في الوثيقة.",
+      "summary": "أفصحت شركة زين للتأمين عن تقديم بياناتها المالية للفصل الثاني من العام المالي 2026، والتي تغطي الفترة المنتهية في 30 يونيو 2026، وذلك التزاماً بمتطلبات سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17870",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف حمورابي التجاري البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "BHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_5_11_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17870&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف حمورابي التجاري",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "رأس المال تم استخراجه من النص (391.000.000.000 دينار عراقي)، البيانات المالية لا تزال في مرحلة التقديم للفصل الثاني ولم يتضمن نص الإفصاح المرفق تفاصيل الأرقام المالية النهائية.",
+      "summary": "قدم مصرف حمورابي التجاري البيانات المالية المرحلية للفصل الثاني المنتهي في 2026/06/30 إلى سوق العراق للأوراق المالية، حيث تم إعدادها من قبل مراقب حسابات المصرف.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17869",
+      "type": "إفصاح",
+      "title": "افصاح- قدمت شركة مصرف اشور الدولي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "BASH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_5_4_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17869&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف آشور الدولي للاستثمار",
+      "raas_al_mal": "300000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        {
+          "description": "تاريخ البيانات المالية",
+          "value": "2026/06/30"
+        }
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح الشركة للفصل الثاني لعام 2026، ولا تتضمن الوثيقة المرفقة أرقام الأرباح أو المطلوبات.",
+      "summary": "أفصح مصرف آشور الدولي للاستثمار عن تقديمه للبيانات المالية المرحلية للفصل الثاني المنتهي في 2026/06/30 إلى سوق العراق للأوراق المالية، مع الإشارة إلى أن رأس مال المصرف يبلغ 300 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17868",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة الوطنية للصناعات المعدنية والدراجات البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "10/08/2026",
+      "related_symbols": [
+        "IMIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_4_57_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17868&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة الوطنية للصناعات المعدنية والدراجات",
+      "raas_al_mal": "5000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفصل الثاني لسنة 2026"
+      ],
+      "confidence_note": "تم استخراج البيانات المالية بناءً على نص الإفصاح المرفق، حيث أن الميزانية والجداول المالية المشار إليها في نص الإفصاح لم تُرفق كأرقام تفصيلية في النص المستخرج.",
+      "summary": "أفصحت الشركة الوطنية للصناعات المعدنية والدراجات عن تقديم بياناتها المالية للفصل الثاني من عام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، وتضمن الإفصاح الميزانية العامة وكشوفات التدفق النقدي والعمليات الجارية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17867",
       "type": "إفصاح",
