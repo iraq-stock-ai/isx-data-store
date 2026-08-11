@@ -1,6 +1,30 @@
 {
-  "last_known_story_id": 17883,
+  "last_known_story_id": 17884,
   "items": [
+    {
+      "id": "17884",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة الربيع في جلسة الثلاثاء الموافق 2026/8/11",
+      "date": "11/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_12_5_5.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17884&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الربيع للوساطة في بيع وشراء الأوراق المالية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "سعر السهم 70 دينار عراقي"
+      ],
+      "confidence_note": "الإفصاح يتعلق بتنفيذ أمر متقابل (صفقة خاصة) بعد موافقة هيئة الأوراق المالية، البيانات المالية للشركة غير واردة في النص.",
+      "summary": "أعلنت شركة الربيع للوساطة في بيع وشراء الأوراق المالية عن تنفيذ أمر متقابل (بيع وشراء) على أسهمها في سوق العراق للأوراق المالية بجلسة يوم الثلاثاء الموافق 11 أغسطس 2026، وذلك بسعر 70 ديناراً للسهم الواحد، بعد الحصول على موافقة هيئة الأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17883",
       "type": "إفصاح",
