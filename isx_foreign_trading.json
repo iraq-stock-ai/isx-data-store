@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 201000,
+      "value": 623100
+    },
+    {
       "date": "10/08/2026",
       "sessionNumber": "138",
       "market": "النظامي",
@@ -2738,6 +2747,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 153696,
+      "value": 326070
+    },
     {
       "date": "10/08/2026",
       "sessionNumber": "138",
@@ -5945,6 +5963,15 @@
   ],
   "BEFI": [
     {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 700000,
+      "value": 168000
+    },
+    {
       "date": "19/07/2026",
       "sessionNumber": "124",
       "market": "النظامي",
@@ -6027,6 +6054,24 @@
     }
   ],
   "TASC": [
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 82,
+      "shares": 3920443,
+      "value": 62756767
+    },
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 25900,
+      "value": 414400
+    },
     {
       "date": "10/08/2026",
       "sessionNumber": "138",
@@ -8728,6 +8773,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 14,
+      "shares": 2097260,
+      "value": 8368067
+    },
     {
       "date": "10/08/2026",
       "sessionNumber": "138",
@@ -12270,6 +12324,15 @@
     }
   ],
   "BCOI": [
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 250000,
+      "value": 150000
+    },
     {
       "date": "10/08/2026",
       "sessionNumber": "138",
@@ -17729,6 +17792,15 @@
   ],
   "FRSE": [
     {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 50000000,
+      "value": 1250000000
+    },
+    {
       "date": "23/07/2026",
       "sessionNumber": "128",
       "market": "النظامي",
@@ -17774,6 +17846,17 @@
       "trades": 1,
       "shares": 5000,
       "value": 4250
+    }
+  ],
+  "BINI": [
+    {
+      "date": "11/08/2026",
+      "sessionNumber": "139",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 60000000,
+      "value": 12000000
     }
   ]
 }
