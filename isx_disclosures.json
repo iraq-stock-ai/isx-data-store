@@ -1,6 +1,135 @@
 {
-  "last_known_story_id": 17884,
+  "last_known_story_id": 17890,
   "items": [
+    {
+      "id": "17890",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف العربية الاسلامي في جلسة الاحد الموافق 2026/8/16",
+      "date": "13/08/2026",
+      "related_symbols": [
+        "BAAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_10_39_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17890&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف العربية الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/08/16"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية بسبب الـ OCR، تم استخلاص البيانات بناءً على عنوان الإفصاح المرفق والتاريخ المذكور.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف العربية الاسلامي ابتداءً من جلسة يوم الأحد الموافق 16 أغسطس 2026، وذلك بعد استيفاء المتطلبات التنظيمية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17888",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الائتمان العراقي في جلسة الاحد الموافق 2026/8/16",
+      "date": "13/08/2026",
+      "related_symbols": [
+        "BROI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_9_41_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17888&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الائتمان العراقي",
+      "raas_al_mal": "346870000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "346870000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "345870000000"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق المتعلق بإطلاق التداول، مع ملاحظة وجود تباين طفيف في الأرقام المذكورة في نص الإفصاح المشوه",
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف الائتمان العراقي في جلسة يوم الأحد الموافق 16 أغسطس 2026، وذلك بعد استكمال إجراءات زيادة رأس مال المصرف ليصل إلى 346,870,000,000 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17887",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الانصاري الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "13/08/2026",
+      "related_symbols": [
+        "BANS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_9_4_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17887&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الانصاري الإسلامي للاستثمار والتمويل",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات من نص الإفصاح، ولم يتم ذكر أرقام مالية محددة في النص المرفق.",
+      "summary": "قام مصرف الأنصاري الإسلامي للاستثمار والتمويل بالإفصاح عن بياناته المالية الفصلية الخاصة بالفصل الثاني من عام 2026، وذلك التزاماً بتعليمات هيئة الأوراق المالية، حيث أرفق المصرف البيانات للفترة المنتهية في 30/6/2026 لتعزيز الشفافية والإفصاح.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17886",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة لشركة زين للتأمين المنعقد بتاريخ 2026/7/20",
+      "date": "13/08/2026",
+      "related_symbols": [
+        "NZAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_7_4_9.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17886&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة زين للتأمين",
+      "raas_al_mal": "15000000000",
+      "net_profit": "3453837",
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "660496380",
+        "30000000"
+      ],
+      "confidence_note": "تم استخراج البيانات من محضر اجتماع الهيئة العامة المنعقد بتاريخ 2026/07/20، وتضمن الإفصاح المصادقة على الحسابات الختامية للسنة المالية 2025.",
+      "summary": "عقدت شركة زين للتأمين اجتماع الهيئة العامة بتاريخ 20 يوليو 2026 للمصادقة على التقرير السنوي والحسابات الختامية للسنة المالية المنتهية في 31 ديسمبر 2025، حيث بلغ رأس مال الشركة 15 مليار دينار عراقي، وأظهرت البيانات المالية تحقيق صافي ربح بلغ 3,453,837 دينار عراقي، كما تم إبراء ذمة أعضاء مجلس الإدارة ومناقشة تقرير مراقب الحسابات.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17885",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة اسياسيل للاتصالات البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "13/08/2026",
+      "related_symbols": [
+        "TASC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_6_13_2.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17885&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "آسياسيل للاتصالات",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "الإفصاح عبارة عن رسالة تغطية لإرسال البيانات المالية ولم تتضمن الأرقام المالية داخل نص الكتاب.",
+      "summary": "قدمت شركة آسياسيل للاتصالات البيانات المالية الخاصة بالنصف الأول من السنة المالية المنتهية في 30 يونيو 2026 إلى سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17884",
       "type": "إفصاح",
