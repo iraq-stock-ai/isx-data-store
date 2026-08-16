@@ -1,6 +1,111 @@
 {
-  "last_known_story_id": 17890,
+  "last_known_story_id": 17893,
   "items": [
+    {
+      "id": "17893",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف العطاء الاسلامي في جلسة الاثنين الموافق 2026/8/17",
+      "date": "16/08/2026",
+      "related_symbols": [
+        "BLAD"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_11_20_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17893&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف العطاء الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/17"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إعلان سوق العراق للأوراق المالية بخصوص إطلاق التداول على أسهم الشركة في التاريخ المحدد.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن المباشرة بتداول أسهم مصرف العطاء الإسلامي في جلسة يوم الاثنين الموافق 17 آب 2026، وذلك بعد استيفاء المتطلبات القانونية والتنظيمية للإدراج.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17892",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الزيادة على شركة مصرف الاقتصاد للاستثمار والتمويل إعتباراً من جلسة الاثنين الموافق 2026/8/17",
+      "date": "16/08/2026",
+      "related_symbols": [
+        "BEFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_11_18_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17892&type=1",
+      "disclosure_type": "زيادة_راس_المال",
+      "company_name": "مصرف الاقتصاد للاستثمار والتمويل",
+      "raas_al_mal": "9000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "9000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/17"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، حيث تشير القيمة 9,000,000,000 إلى عدد أسهم الزيادة وليس رأس المال الكلي للشركة.",
+      "summary": "قررت سوق العراق للأوراق المالية إطلاق التداول على أسهم الزيادة لشركة مصرف الاقتصاد للاستثمار والتمويل، والبالغ عددها 9,000,000,000 سهم، وذلك ابتداءً من جلسة يوم الاثنين الموافق 17 آب 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17891",
+      "type": "إفصاح",
+      "title": "إيقاف التداول على أسهم الشركات المساهمة المدرجة إعتباراً من جلسة الاثنين الموافق 2026/8/17",
+      "date": "16/08/2026",
+      "related_symbols": [
+        "ABAP",
+        "AMAP",
+        "BAME",
+        "BBAY",
+        "BINT",
+        "BMFI",
+        "BNAI",
+        "BNOR",
+        "BSUC",
+        "BUND",
+        "BUOI",
+        "BWOR",
+        "BZII",
+        "HISH",
+        "HNTI",
+        "HPAL",
+        "HSAD",
+        "IELI",
+        "IICM",
+        "IMCM",
+        "ITLI",
+        "SBAG",
+        "SIGT",
+        "SILT",
+        "VBAT",
+        "VKHF",
+        "VMES",
+        "VZAF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_7_27_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17891&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/08/17"
+      ],
+      "confidence_note": "يتم إيقاف تداول أسهم مجموعة من الشركات المدرجة نظراً لعدم تزويد السوق بالقوائم المالية السنوية للعام 2025 في الموعد المحدد، وذلك تطبيقاً لقواعد الإدراج.",
+      "summary": "أعلنت هيئة الأوراق المالية في سوق العراق للأوراق المالية عن قرارها بإيقاف التداول على أسهم عدد من الشركات المساهمة المدرجة، وذلك اعتباراً من جلسة يوم الاثنين الموافق 17/8/2026، لعدم التزام هذه الشركات بتقديم قوائمها المالية السنوية لعام 2025 في الفترة القانونية المحددة.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17890",
       "type": "إفصاح",
