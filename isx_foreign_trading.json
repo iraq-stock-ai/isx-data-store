@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 28858,
+      "value": 89748
+    },
+    {
       "date": "13/08/2026",
       "sessionNumber": "140",
       "market": "النظامي",
@@ -2756,6 +2765,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 50000,
+      "value": 106000
+    },
     {
       "date": "11/08/2026",
       "sessionNumber": "139",
@@ -6064,6 +6082,24 @@
   ],
   "TASC": [
     {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 2358717,
+      "value": 37692297
+    },
+    {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 71770,
+      "value": 1146884
+    },
+    {
       "date": "13/08/2026",
       "sessionNumber": "140",
       "market": "النظامي",
@@ -8792,6 +8828,15 @@
   ],
   "BNOI": [
     {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 27050000,
+      "value": 108162883
+    },
+    {
       "date": "13/08/2026",
       "sessionNumber": "140",
       "market": "النظامي",
@@ -10989,6 +11034,15 @@
     }
   ],
   "IMAP": [
+    {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 271608,
+      "value": 624698
+    },
     {
       "date": "09/08/2026",
       "sessionNumber": "137",
@@ -14868,6 +14922,15 @@
     }
   ],
   "NHAM": [
+    {
+      "date": "16/08/2026",
+      "sessionNumber": "141",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 94160,
+      "value": 460442
+    },
     {
       "date": "24/05/2026",
       "sessionNumber": "91",
