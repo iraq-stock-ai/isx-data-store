@@ -1,6 +1,58 @@
 {
-  "last_known_story_id": 17893,
+  "last_known_story_id": 17895,
   "items": [
+    {
+      "id": "17895",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الشركة الاهلية للتامين في جلسة الثلاثاء الموافق 2026/8/18",
+      "date": "17/08/2026",
+      "related_symbols": [
+        "NAHF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_11_13_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17895&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة الاهلية للتامين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/08/18"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق الذي يشير إلى بدء تداول أسهم الشركة الاهلية للتامين في جلسة يوم الثلاثاء الموافق 2026/08/18، ولا يتضمن الإفصاح أرقاماً مالية محددة.",
+      "summary": "قررت سوق العراق للأوراق المالية إطلاق التداول على أسهم الشركة الأهلية للتأمين في جلسة يوم الثلاثاء الموافق 18 آب 2026، وذلك بناءً على متطلبات الإفصاح وقرارات الهيئة العامة للشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17894",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة طريق الخازر لانتاج وتجارة المواد الانشائية في جلسة الثلاثاء الموافق 2026/8/18",
+      "date": "17/08/2026",
+      "related_symbols": [
+        "IKHC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_10_36_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17894&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة طريق الخازر لانتاج وتجارة المواد الانشائية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/18"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق الذي يؤكد بدء تداول أسهم الشركة في التاريخ المحدد.",
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة طريق الخازر لإنتاج وتجارة المواد الإنشائية في جلسة التداول ليوم الثلاثاء الموافق 18 آب 2026، وذلك استكمالاً للإجراءات التنظيمية الخاصة بإدراج الشركة في السوق.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17893",
       "type": "إفصاح",
