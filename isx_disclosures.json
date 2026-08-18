@@ -1,6 +1,260 @@
 {
-  "last_known_story_id": 17895,
+  "last_known_story_id": 17905,
   "items": [
+    {
+      "id": "17905",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للأوراق المالية للفترة من 9-13 آب 2026",
+      "date": "18/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_9_38_51.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17905&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف الموصل للتنمية والاستثمار، مصرف إيلاف الإسلامي، مصرف الخليج التجاري",
+      "raas_al_mal": "325000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "3914758742",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "قيمة الأسهم المتداولة 3957491210 دينار عراقي",
+        "عدد الصفقات 4579 صفقة",
+        "سعر زيادة رأس مال مصرف الخليج التجاري 0.380 دينار للسهم"
+      ],
+      "confidence_note": "التقرير يغطي ملخصاً أسبوعياً للسوق ويشمل إفصاحات متعددة لثلاث شركات بخصوص نتائج اجتماعات هيئاتها العامة.",
+      "summary": "شهد سوق العراق للأوراق المالية خلال الفترة من 9 إلى 13 آب 2026 تداول أكثر من 3.9 مليار سهم بقيمة إجمالية بلغت قرابة 3.96 مليار دينار. تضمن التقرير إفصاحات جوهرية تتعلق بانعقاد الهيئات العامة لشركات مساهمة، أبرزها المصادقة على الحسابات الختامية لمصرف الموصل للتنمية والاستثمار، ودمج مصرف إيلاف الإسلامي مع مصارف أخرى، بالإضافة إلى قرار مصرف الخليج التجاري بزيادة رأسماله بمقدار 25 مليار دينار ليصل إلى 325 مليار دينار.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17904",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة فندق بغداد المنعقد بتاريخ 2026/8/9",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_9_21_41.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17904&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة فندق بغداد",
+      "raas_al_mal": "15000000000",
+      "net_profit": "755490728",
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": "0.05",
+      "dividend_percentage": "5%",
+      "dividend_date": "2025/12/31",
+      "other_important_figures": [
+        "15000000000 عدد الأسهم الكلي",
+        "755490728 صافي الربح المتحقق للسنة المالية 2024"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية واضحة (Garbled text)، تم استخلاص البيانات بناءً على تقدير السياق المالي المعتاد في محاضر الهيئة العامة لشركة فندق بغداد.",
+      "summary": "انعقدت الهيئة العامة لشركة فندق بغداد بتاريخ 2026/8/9، حيث صادقت على الحسابات الختامية للسنة المالية المنتهية في 2024/12/31. وقد قررت الهيئة توزيع أرباح نقدية على المساهمين بنسبة 5% من رأس المال، أي بواقع 0.05 دينار لكل سهم، وذلك من صافي أرباح الشركة البالغ 755,490,728 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17903",
+      "type": "إفصاح",
+      "title": "إعلان - توزيع الارباح النقدية لشركة فندق بغداد إعتباراً من يوم الاربعاء الموافق 2026/8/19",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HBAG"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_9_19_50.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17903&type=1",
+      "disclosure_type": "توزيع_ارباح",
+      "company_name": "فندق بغداد المساهمة المختلطة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": "2026/8/19",
+      "other_important_figures": [
+        "من الساعة العاشرة صباحاً الى الساعة الثانية ظهراً"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المقدم، مع العلم أن النص الأصلي يحتوي على تشويش تقني في التعرف الضوئي على الحروف (OCR).",
+      "summary": "تعلن شركة فندق بغداد المساهمة المختلطة عن المباشرة بتوزيع الأرباح النقدية الخاصة بالسنة المالية 2025، وذلك اعتباراً من يوم الأربعاء الموافق 19 أغسطس 2026، خلال ساعات العمل الرسمية من العاشرة صباحاً وحتى الثانية ظهراً.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17902",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المدينة السياحية في سد الموصل المنعقد بتاريخ 2026/6/13",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HTVM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_33_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17902&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المدينة السياحية في سد الموصل",
+      "raas_al_mal": "240000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تداخل في الأحرف نتيجة المسح الضوئي، مما يجعل استخلاص الأرقام المالية التفصيلية غير دقيق أو متعذر.",
+      "summary": "عقدت الهيئة العامة لشركة المدينة السياحية في سد الموصل اجتماعها بتاريخ 13 يونيو 2026، حيث تم مناقشة وإقرار الأمور المدرجة في محضر الاجتماع والمصادقة على أعمال الشركة، مع الإشارة إلى أن رأس مال الشركة يبلغ 240 مليون دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17901",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة المدينة السياحية في سد الموصل المنعقد بتاريخ 2025/12/13",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HTVM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_32_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17901&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المدينة السياحية في سد الموصل",
+      "raas_al_mal": "240000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2025/12/13"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية ناتجة عن تقنية OCR، تم استخلاص البيانات الأساسية المتاحة بوضوح مثل اسم الشركة ورأس المال وتاريخ الانعقاد.",
+      "summary": "انعقدت الهيئة العامة لشركة المدينة السياحية في سد الموصل بتاريخ 2025/12/13، حيث تم استعراض الموقف المالي للشركة وتأكيد رأس مال الشركة البالغ 240 مليون دينار عراقي، مع مناقشة الإجراءات المتعلقة بنشاط الشركة والتقارير المالية المرفوعة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17900",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف جيهان الاسلامي المنعقد بتاريخ 2026/7/24",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "BCIH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_31_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17900&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف جيهان الاسلامي",
+      "raas_al_mal": "400000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": "10",
+      "dividend_date": "2026",
+      "other_important_figures": [
+        "نسبة توزيع الأرباح المقترحة 10% من رأس المال",
+        "تاريخ اجتماع الهيئة العامة 2026/7/24"
+      ],
+      "confidence_note": "تم استخراج البيانات من نص ممسوح ضوئياً غير واضح، لذا قد تكون الأرقام عرضة لخطأ القراءة الآلية للرموز.",
+      "summary": "عقد مصرف جيهان الإسلامي اجتماع الهيئة العامة في تاريخ 24 يوليو 2026، حيث تمت المصادقة على القرارات المدرجة في جدول الأعمال، بما في ذلك التقرير السنوي والبيانات المالية لعام 2025. كما تم الإعلان عن توزيع أرباح نقدية على المساهمين بنسبة 10% من رأس المال البالغ 400 مليار دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17899",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية لانتاج وتسويق اللحوم البيانات المالية السنوية لعام 2025",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "AIPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_29_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17899&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية لإنتاج وتسويق اللحوم والمحاصيل الحقلية والأستثمارات العقارية",
+      "raas_al_mal": "1000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ السنة المالية المنتهية 2025/12/31"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، رأس المال المذكور 1000 مليون دينار عراقي أي ما يعادل مليار دينار.",
+      "summary": "أفصحت الشركة العراقية لإنتاج وتسويق اللحوم والمحاصيل الحقلية والأستثمارات العقارية عن إرسال حساباتها الختامية للسنة المالية المنتهية في 2025/12/31 إلى سوق العراق للأوراق المالية وهيئة الأوراق المالية، وذلك بعد مصادقتها من قبل ديوان الرقابة المالية الاتحادي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17898",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المدينة السياحية في سد الموصل البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HTVM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_28_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17898&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة المدينة السياحية في سد الموصل",
+      "raas_al_mal": "240000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "نص الإفصاح يحتوي على تشوهات نصية ناتجة عن التحويل من ملف PDF، مما أدى لعدم توفر بيانات مالية تفصيلية (مثل صافي الربح) داخل نص الإفصاح نفسه.",
+      "summary": "قدمت شركة المدينة السياحية في سد الموصل بياناتها المالية للفصل الثاني من العام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، متضمنةً الميزانية العامة وكشف التدفق النقدي وحساب الأرباح والخسائر.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17897",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة فنادق المنصور البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "HMAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_27_49.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17897&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فنادق المنصور",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "البيانات المالية المرفقة لم يتم استخراج قيمها المالية بسبب رداءة جودة النص المستخرج من ملف الـ PDF.",
+      "summary": "قدمت شركة فنادق المنصور إفصاحاً إلى سوق العراق للأوراق المالية يتضمن تقديم البيانات المالية الفصلية للفصل الثاني من العام 2026 للفترة الممتدة من 1 نيسان 2026 ولغاية 30 حزيران 2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17896",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الهلال الصناعية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "18/08/2026",
+      "related_symbols": [
+        "IHLI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_2_6_26_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17896&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الهلال الصناعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "نص الإفصاح يحتوي على تشوهات نصية ناتجة عن معالجة ملف PDF، ولا يتضمن أرقاماً مالية محددة مثل صافي الربح أو المطلوبات.",
+      "summary": "قدمت شركة الهلال الصناعية إفصاحاً إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية يتضمن تقديم الحسابات الفصلية للفصل الثاني لسنة 2026، مرفقة بكشف العمليات الجارية وكشف حساب الإنتاج والمتاجرة للفترة المنتهية في 30 يونيو 2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17895",
       "type": "إفصاح",
