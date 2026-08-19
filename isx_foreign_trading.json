@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "19/08/2026",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1800250,
+      "value": 5616780
+    },
+    {
       "date": "16/08/2026",
       "sessionNumber": "141",
       "market": "النظامي",
@@ -6091,6 +6100,24 @@
   ],
   "TASC": [
     {
+      "date": "19/08/2026",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 26,
+      "shares": 3463247,
+      "value": 55276247
+    },
+    {
+      "date": "19/08/2026",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 12569,
+      "value": 200726
+    },
+    {
       "date": "18/08/2026",
       "sessionNumber": "143",
       "market": "النظامي",
@@ -8863,6 +8890,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "19/08/2026",
+      "sessionNumber": "144",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 673654,
+      "value": 2660933
+    },
     {
       "date": "18/08/2026",
       "sessionNumber": "143",
