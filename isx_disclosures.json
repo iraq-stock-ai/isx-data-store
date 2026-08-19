@@ -1,6 +1,96 @@
 {
-  "last_known_story_id": 17905,
+  "last_known_story_id": 17909,
   "items": [
+    {
+      "id": "17909",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف العراقي الاسلامي في جلسة الخميس الموافق 2026/8/20",
+      "date": "19/08/2026",
+      "related_symbols": [
+        "BIIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_11_24_30.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17909&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف العراقي الإسلامي",
+      "raas_al_mal": "460,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "400,000,000,000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "1.030"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح الخاص بإطلاق تداول أسهم مصرف العراقي الإسلامي بعد زيادة رأس المال، السعر الافتتاحي المذكور هو 1.030 دينار عراقي.",
+      "summary": "قرر سوق العراق للأوراق المالية إطلاق التداول على أسهم المصرف العراقي الإسلامي في جلسة يوم الخميس الموافق 2026/8/20، وذلك بعد إتمام إجراءات زيادة رأس مال المصرف من 400 مليار دينار إلى 460 مليار دينار عراقي، بسعر افتتاحي قدره 1.030 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17908",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الاقتصاد للاستثمار والتمويل البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "19/08/2026",
+      "related_symbols": [
+        "BEFI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_10_21_28.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17908&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17907",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة إنتاج الالبسة الجاهزة البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "19/08/2026",
+      "related_symbols": [
+        "IRMC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_10_20_10.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17907&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة إنتاج الألبسة الجاهزة والتجارة العامة",
+      "raas_al_mal": "566600000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفصل الثاني لسنة 2026",
+        "تاريخ الفترة المالية من 01/04/2026 ولغاية 30/06/2026"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، ويلاحظ عدم وجود أرقام مالية تفصيلية للأرباح أو الديون في نص الإفصاح المقدم واقتصار الأمر على إرسال الميزانية المرفقة.",
+      "summary": "أفصحت شركة إنتاج الألبسة الجاهزة والتجارة العامة عن تقديم بياناتها المالية (الميزانية الفصلية) للفصل الثاني من عام 2026، والتي تغطي الفترة الممتدة من 1 نيسان 2026 لغاية 30 حزيران 2026، وذلك التزاماً بمتطلبات الإفصاح الخاصة بسوق العراق للأوراق المالية وهيئة الأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17906",
+      "type": "إفصاح",
+      "title": "تقييم أداء شركات الوساطة لشهر تموز 2026",
+      "date": "19/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_10_16_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17906&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "اعلى نسبة تداول لشركة وساطة بلغت 10.797%",
+        "إجمالي حجم تداول السوق لشهر تموز 2026 بلغ 240,049,587,460 دينار عراقي"
+      ],
+      "confidence_note": "هذا الإفصاح عبارة عن تقرير دوري يقيم أداء شركات الوساطة العاملة في سوق العراق للأوراق المالية لشهر تموز 2026، ولا يحتوي على بيانات مالية خاصة بشركة مدرجة بعينها بل يوضح حصص شركات الوساطة في التداولات.",
+      "summary": "يستعرض التقرير الصادر عن سوق العراق للأوراق المالية تقييم أداء شركات الوساطة لشهر تموز 2026، حيث تم تصنيف الشركات بناءً على نسب مساهمتها في إجمالي التداولات. يشير التقرير إلى تفاوت واضح في نشاط شركات الوساطة، حيث استحوذت الشركات الرائدة على حصة سوقية تتجاوز 10% من إجمالي حجم التداول، الذي وصل في مجموعه إلى أكثر من 240 مليار دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17905",
       "type": "إفصاح",
