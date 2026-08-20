@@ -1,6 +1,136 @@
 {
-  "last_known_story_id": 17909,
+  "last_known_story_id": 17914,
   "items": [
+    {
+      "id": "17914",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة المعمورة للاستثمارات العقارية في جلسة الاحد الموافق 2026/8/23",
+      "date": "20/08/2026",
+      "related_symbols": [
+        "SMRI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_9_48_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17914&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة المعمورة للاستثمارات العقارية",
+      "raas_al_mal": "22780000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": "2.760",
+      "dividend_percentage": "50%",
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ إطلاق التداول: 2026/8/23",
+        "تاريخ قرار الهيئة العامة: 2026/8/11"
+      ],
+      "confidence_note": "النص المستخرج مشوش، تم استنباط البيانات المالية من السياق المتاح وتاريخ إطلاق التداول.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن إطلاق التداول على أسهم شركة المعمورة للاستثمارات العقارية اعتباراً من يوم الأحد الموافق 2026/8/23، وذلك برأسمال مصرح به يبلغ 22,780,000,000 دينار عراقي، استناداً إلى قرارات الهيئة العامة للشركة وبنسبة توزيع أرباح تبلغ 50% وبواقع 2.760 دينار للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17913",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف حمورابي التجاري في يوم الاثنين الموافق 2026/9/7",
+      "date": "20/08/2026",
+      "related_symbols": [
+        "BHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_9_44_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17913&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف حمورابي التجاري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/7"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة ناتجة عن معالجة ملفات PDF، ولكن تم استخلاص المعلومات الأساسية المتعلقة بموعد اجتماع الهيئة العامة.",
+      "summary": "يعلن مصرف حمورابي التجاري عن عقد اجتماع للهيئة العامة في يوم الاثنين الموافق 7 سبتمبر 2026، وذلك للنظر في البنود المدرجة على جدول الأعمال وفقاً للأنظمة والتعليمات المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17912",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الجنوب الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "20/08/2026",
+      "related_symbols": [
+        "BJAB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_5_27_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17912&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الجنوب الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "الإفصاح إجرائي يتعلق بتقديم البيانات المالية للربع الثاني من عام 2026، ولا يتضمن أرقاماً مالية محددة داخل نص الإفصاح المرفق.",
+      "summary": "قام مصرف الجنوب الإسلامي بتقديم بياناته المالية للربع الثاني من عام 2026 إلى سوق العراق للأوراق المالية، حيث أشار المصرف إلى أن البيانات مدققة داخلياً ومطابقة للبيانات المرسلة إلى البنك المركزي العراقي، وتشمل قائمة المركز المالي، وكشف الأرباح والخسائر، وكشف التدفق النقدي للفترة المنتهية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17911",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف المال الاسلامي المنعقد بتاريخ 2026/7/5",
+      "date": "20/08/2026",
+      "related_symbols": [
+        "BMAL"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_5_26_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17911&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف المال الاسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": "15031329000",
+      "total_debts": "156813360507",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "1591690000",
+        "81660000"
+      ],
+      "confidence_note": "تم استخراج البيانات من نص إفصاح ممسوح ضوئياً يتضمن تشويشاً كبيراً، لذا الأرقام تقديرية بناءً على المعطيات الظاهرة في المحضر المصدق.",
+      "summary": "عقدت الهيئة العامة لمصرف المال الإسلامي اجتماعها بتاريخ 5 يوليو 2026، حيث تم التصديق على المحضر ومناقشة البيانات المالية للشركة. بلغ رأس مال المصرف 250 مليار دينار عراقي، في حين سجل صافي الربح مبلغاً قدره 15,031,329,000 دينار. كما تضمن الاجتماع استعراض المطلوبات المالية والديون المترتبة على المصرف والتي بلغت 156,813,360,507 دينار، ومناقشة المخصصات المتعلقة بالأرباح والخسائر للعام المالي المنصرم.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17910",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة مصرف العربية الاسلامي المنعقد بتاريخ 2026/7/17",
+      "date": "20/08/2026",
+      "related_symbols": [
+        "BAAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_4_5_24_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17910&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف العربية الاسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "237386853333"
+      ],
+      "confidence_note": "نص الإفصاح يحتوي على رموز غير واضحة وتداخل في النصوص نتيجة المسح الضوئي، مما أثر على دقة استخراج بعض الأرقام المالية التفصيلية.",
+      "summary": "انعقد اجتماع الهيئة العامة لشركة مصرف العربية الإسلامي بتاريخ 17 يوليو 2026، حيث تم مناقشة محضر الاجتماع والمصادقة عليه وفقاً لقانون الشركات رقم 21 لسنة 1997 وتعديلاته. تضمن الاجتماع استعراض تقارير الأداء ومناقشة البيانات المالية والمواضيع المدرجة في جدول الأعمال، مع الإشارة إلى رأس المال المصرح به للشركة وقدره 250 مليار دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17909",
       "type": "إفصاح",
