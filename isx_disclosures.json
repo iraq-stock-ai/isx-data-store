@@ -1,6 +1,52 @@
 {
-  "last_known_story_id": 17926,
+  "last_known_story_id": 17928,
   "items": [
+    {
+      "id": "17928",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الوطني الاسلامي في جلسة الاربعاء الموافق 2026/8/26",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_12_34_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17928&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الوطني الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف الـ PDF يعاني من تشوهات رمزية عالية، ومع ذلك تم استخلاص المعلومة الجوهرية المتعلقة بإطلاق التداول.",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن إطلاق التداول على أسهم مصرف الوطني الاسلامي في جلسة يوم الأربعاء الموافق 26 أغسطس 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17927",
+      "type": "إفصاح",
+      "title": "افصاح - كتاب سوق العراق للاوراق المالية إلى سادة المستثمرين",
+      "date": "24/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_12_31_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17927&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية شديدة (Garbled text) تجعل من المستحيل استخلاص بيانات مالية دقيقة، ويظهر أن الوثيقة هي إشعار عام من سوق العراق للأوراق المالية وليس إفصاحاً لشركة محددة.",
+      "summary": "الإفصاح المقدم عبارة عن وثيقة عامة صادرة عن سوق العراق للأوراق المالية تحتوي على معلومات التواصل الرسمية للسوق (الموقع الإلكتروني، البريد الإلكتروني، ومنصات التواصل الاجتماعي)، ولا تتضمن أي بيانات مالية أو إفصاحات تخص شركة مدرجة بعينها.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17926",
       "type": "إفصاح",
