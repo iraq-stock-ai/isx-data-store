@@ -1,6 +1,235 @@
 {
-  "last_known_story_id": 17917,
+  "last_known_story_id": 17926,
   "items": [
+    {
+      "id": "17926",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة انتاج الالبسة الجاهزة في جلسة الاربعاء الموافق 2026/8/26",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "IRMC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_10_49_58.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17926&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة انتاج الالبسة الجاهزة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "1198592658",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "سعر الافتتاح 2.210 دينار"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات في الرموز، لكن البيانات الأساسية المتعلقة بموعد التداول وعدد الأسهم وسعر الافتتاح واضحة.",
+      "summary": "قرر سوق العراق للأوراق المالية إطلاق التداول على أسهم شركة إنتاج الألبسة الجاهزة في جلسة يوم الأربعاء الموافق 26 أغسطس 2026، وذلك بعدد أسهم إجمالي يبلغ 1,198,592,658 سهماً، وبسعر افتتاحي قدره 2.210 دينار عراقي للسهم الواحد.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17925",
+      "type": "إفصاح",
+      "title": "محضر إجتماع الهيئة العامة المصدق لشركة الامين للاستثمار المالي المنعقد بتاريخ 2026/8/3",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "VAMF"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_9_39_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17925&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الأمين للاستثمار المالي",
+      "raas_al_mal": "10000000000",
+      "net_profit": "1086082987",
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": "0.08",
+      "dividend_percentage": "8%",
+      "dividend_date": "2026/08/03",
+      "other_important_figures": [
+        "الخسائر المتراكمة مبلغ 656114170 دينار",
+        "رصيد الاحتياطي القانوني 54304149 دينار"
+      ],
+      "confidence_note": "تم استخراج البيانات من نص الإفصاح المرفق والذي يتضمن محضر اجتماع الهيئة العامة المنعقد في 2026/8/3، حيث تم إقرار توزيع أرباح نقدية بنسبة 8% من رأس المال.",
+      "summary": "عقدت شركة الأمين للاستثمار المالي اجتماع الهيئة العامة بتاريخ 3 أغسطس 2026، حيث تمت المصادقة على الحسابات الختامية للشركة للسنة المالية المنتهية في 31/12/2025. تضمن القرار توزيع أرباح نقدية على المساهمين بنسبة 8% من رأس المال البالغ 10 مليار دينار عراقي، وذلك بعد تغطية الخسائر المتراكمة بمبلغ 656,114,170 دينار عراقي وتخصيص المبالغ القانونية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17924",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المصير للتأمين في يوم الثلاثاء الموافق 2026/9/15",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "NMAS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_8_57_43.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17924&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة المصير للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب ضعف جودة الـ OCR، تم استخراج التاريخ والمناسبة بناءً على البيانات الواردة في الطلب.",
+      "summary": "أعلنت شركة المصير للتأمين عن تحديد موعد عقد اجتماع الهيئة العامة للشركة يوم الثلاثاء الموافق 15 أيلول 2026، وذلك لمناقشة البنود المدرجة على جدول الأعمال وفقاً للأنظمة والتعليمات الخاصة بسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17923",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الباتك للتأمين في يوم الثلاثاء الموافق 2026/9/8",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "NBAT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_8_56_20.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17923&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الباتك للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/09/08"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على النص الوارد في طلب المستخدم وتأكيد موعد انعقاد الهيئة العامة لشركة الباتك للتأمين، نظراً لرداءة جودة النص المصور المرفق.",
+      "summary": "إعلان رسمي صادر عن سوق العراق للأوراق المالية يفيد بعقد اجتماع الهيئة العامة لشركة الباتك للتأمين في يوم الثلاثاء الموافق الثامن من شهر أيلول عام 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17922",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم الشركة العراقية لانتاج وتسويق اللحوم في جلسة الاربعاء الموافق 2026/8/26",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "AIPM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_8_54_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17922&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة العراقية لانتاج وتسويق اللحوم",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "4700000",
+      "dividend_per_share": null,
+      "dividend_percentage": "70%",
+      "dividend_date": null,
+      "other_important_figures": [
+        "سعر السهم المرجعي 4700 دينار"
+      ],
+      "confidence_note": "نظراً لرداءة النص المستخرج، تم استنتاج البيانات المتعلقة بعدد الأسهم ونسبة الأرباح المذكورة في النص المتناثر",
+      "summary": "أعلنت هيئة الأوراق المالية عن إطلاق التداول على أسهم الشركة العراقية لإنتاج وتسويق اللحوم في جلسة يوم الأربعاء الموافق 2026/8/26، وذلك بعد استكمال الإجراءات القانونية، حيث تم تحديد سعر مرجعي للسهم عند 4700 دينار، كما أشار الإفصاح إلى نسبة توزيع أرباح مقترحة بلغت 70%.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17921",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف آسيا العراق الاسلامي في يوم الخميس الموافق 2026/9/17",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "BAIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_8_52_10.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17921&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف آسيا العراق الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/17"
+      ],
+      "confidence_note": "نص الإفصاح الأصلي مشوه رقمياً (OCR error)، تم استخلاص المعلومة الرئيسية المتعلقة بموعد انعقاد اجتماع الهيئة العامة وفقاً لما ورد في نص المستخدم.",
+      "summary": "تقرر انعقاد اجتماع الهيئة العامة لشركة مصرف آسيا العراق الإسلامي في يوم الخميس الموافق 17 أيلول 2026، وذلك لمناقشة جدول الأعمال المقرر.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17920",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف السنام الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "BSAN"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_7_15_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17920&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف السنام الإسلامي",
+      "raas_al_mal": "350000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "رأس المال تم استنتاجه من الرقم 350 مليار دينار المذكور في نص الإفصاح، البيانات المالية مرفقة كملحق ولم يتضمن نص الخطاب المالي أرقام الأرباح أو الديون.",
+      "summary": "قام مصرف السنام الإسلامي بتقديم البيانات المالية المرحلية للفصل الثاني المنتهي في 30 يونيو 2026 إلى سوق العراق للأوراق المالية، وذلك امتثالاً لمتطلبات الإفصاح المالي المعمول بها.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17919",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الامين للتأمين البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "24/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_7_15_15.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17919&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الأمين للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف الـ PDF يحتوي على تشويش تقني كبير في البيانات الرقمية، لذا لم يتم استخراج القيم المالية لضمان الدقة.",
+      "summary": "أفصحت شركة الأمين للتأمين المساهمة الخاصة عن تقديم بياناتها المالية المرحلية للربع الثاني من عام 2026 إلى سوق العراق للأوراق المالية، وذلك بموجب خطاب رسمي يحمل الرقم 57 بتاريخ 2026/8/17.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17918",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف المتحد للاستثمار البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "24/08/2026",
+      "related_symbols": [
+        "BUND"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_7_14_33.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17918&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف المتحد للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح المصرف المتحد للاستثمار الخاص بالفصل الثاني لعام 2026، البيانات المالية المرفقة غير مدققة.",
+      "summary": "أفصح المصرف المتحد للاستثمار عن تقديمه للبيانات المالية المرحلية للفصل الثاني المنتهي في 30 يونيو 2026، والتي تشمل الميزانية العمومية غير المدققة وكشف الأرباح والخسائر وكشف التدفقات النقدية إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17917",
       "type": "إفصاح",
