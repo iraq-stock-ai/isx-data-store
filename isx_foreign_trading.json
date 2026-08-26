@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 250000,
+      "value": 780000
+    },
+    {
       "date": "23/08/2026",
       "sessionNumber": "146",
       "market": "النظامي",
@@ -6008,6 +6017,15 @@
   ],
   "BEFI": [
     {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1500000,
+      "value": 390000
+    },
+    {
       "date": "17/08/2026",
       "sessionNumber": "142",
       "market": "النظامي",
@@ -6108,6 +6126,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 30,
+      "shares": 1628885,
+      "value": 25661383
+    },
     {
       "date": "23/08/2026",
       "sessionNumber": "146",
@@ -8154,6 +8181,15 @@
   ],
   "BIBI": [
     {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1312170,
+      "value": 511746
+    },
+    {
       "date": "10/08/2026",
       "sessionNumber": "138",
       "market": "النظامي",
@@ -8418,6 +8454,15 @@
     }
   ],
   "BROI": [
+    {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 288106,
+      "value": 146934
+    },
     {
       "date": "17/08/2026",
       "sessionNumber": "142",
@@ -8917,6 +8962,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 3900000
+    },
     {
       "date": "24/08/2026",
       "sessionNumber": "147",
@@ -12577,6 +12631,15 @@
   ],
   "BCOI": [
     {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 935000,
+      "value": 547300
+    },
+    {
       "date": "17/08/2026",
       "sessionNumber": "142",
       "market": "النظامي",
@@ -14051,6 +14114,15 @@
     }
   ],
   "BIIB": [
+    {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 95156,
+      "value": 95156
+    },
     {
       "date": "09/08/2026",
       "sessionNumber": "137",
@@ -16827,6 +16899,15 @@
     }
   ],
   "FIDI": [
+    {
+      "date": "26/08/2026",
+      "sessionNumber": "148",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 789473680,
+      "value": 789473680
+    },
     {
       "date": "03/03/2026",
       "sessionNumber": "41",
