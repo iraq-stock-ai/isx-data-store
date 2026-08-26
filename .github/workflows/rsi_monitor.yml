@@ -1,0 +1,41 @@
+name: RSI Daily Monitor
+
+# يشتغل يوميًا بعد تحديث isx_history_all.json (كان آخر تحديث ~11:34 بتوقيت العراق
+# حسب سجل المستودع)، فنجدوله بعدها بهامش أمان كافٍ.
+# ملاحظة: أوقات GitHub Actions cron كلها UTC. توقيت العراق = UTC+3.
+# لو إشعار isx_history_all.json يجي حوالي 11:34 بتوقيت العراق (~08:34 UTC)،
+# نشغّل هذا الووركفلو الساعة 09:15 UTC (12:15 بتوقيت العراق) كهامش أمان.
+on:
+  schedule:
+    - cron: '15 9 * * 0,1,2,3,4'   # الأحد-الخميس (أيام تداول سوق العراق)، 09:15 UTC
+  workflow_dispatch: {}             # يسمح بتشغيل يدوي من تبويب Actions للاختبار
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run RSI monitor
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python rsi-monitor/rsi_monitor.py isx_history_all.json isx_rsi_lows.json
+
+      - name: Commit updated lows database
+        run: |
+          git config user.name "rsi-monitor-bot"
+          git config user.email "actions@github.com"
+          git add isx_rsi_lows.json
+          git diff --staged --quiet && echo "لا تغييرات لترحيلها" || git commit -m "تحديث قاعدة قيعان RSI - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
