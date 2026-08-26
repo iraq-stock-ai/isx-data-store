@@ -1,6 +1,244 @@
 {
-  "last_known_story_id": 17928,
+  "last_known_story_id": 17938,
   "items": [
+    {
+      "id": "17938",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف الدولي الإسلامي البيانات المالية السنوية لعام 2025",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_11_3_42.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17938&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الدولي الإسلامي",
+      "raas_al_mal": "260846000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "التقرير يخص البيانات المالية السنوية المنتهية في 2025/12/31، ولم يتم استخراج قيم الأرباح أو المطلوبات من نص الإفصاح المرفق.",
+      "summary": "قام المصرف الدولي الإسلامي بالإفصاح عن بياناته المالية السنوية للسنة المالية المنتهية في 31 ديسمبر 2025، مع الإشارة إلى أن رأس مال المصرف يبلغ مائتان وستون ملياراً وثمانمائة وستة وأربعون مليون دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17937",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة مصرف الدولي الاسلامي في جلسة الخميس الموافق 2026/8/27",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_11_1_21.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17937&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الدولي الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/8/27"
+      ],
+      "confidence_note": "البيانات المالية غير متوفرة في نص الإفصاح المقتصر على موعد بدء التداول.",
+      "summary": "أعلنت هيئة سوق العراق للأوراق المالية عن بدء تداول أسهم مصرف الدولي الإسلامي في جلسة يوم الخميس الموافق 27 أغسطس 2026، وذلك بناءً على كتاب هيئة الأوراق المالية الموجه للسوق.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17936",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم الشركة العراقية لضمان الودائع في جلسة الاربعاء الموافق 2026/8/26",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "FIDI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_10_41_23.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17936&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "الشركة العراقية لضمان الودائع",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "789,473,680",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق بتنفيذ صفقة تداول متقابل مقصود (Cross Trade).",
+      "summary": "أفصحت الشركة العراقية لضمان الودائع عن تنفيذ أمر تداول متقابل مقصود على أسهمها في جلسة يوم الأربعاء الموافق 26 أغسطس 2026، حيث بلغ عدد الأسهم المشمولة بالعملية 789,473,680 سهماً.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17935",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة الخليج للتأمين في يوم الاحد الموافق 2026/9/13",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "NGIR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_10_8_47.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17935&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة الخليج للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/13"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة بسبب جودة ملف PDF، ولكن تم استخلاص المعلومات الأساسية الخاصة بموعد اجتماع الهيئة العامة للشركة.",
+      "summary": "تعلن شركة الخليج للتأمين عن تحديد يوم الأحد الموافق 13 سبتمبر 2026 موعداً لعقد اجتماع الهيئة العامة للشركة، وذلك وفقاً للإفصاح المنشور عبر سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17934",
+      "type": "إفصاح",
+      "title": "سيتم إطلاق التداول على أسهم شركة الحمراء للتأمين في جلسة الخميس الموافق 2026/8/27",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_8_39_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17934&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": "40000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "25000000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "3.130"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على إفصاح إطلاق التداول؛ تمثل 25 مليار سهم الجزء المكتتب به من أصل رأس مال الشركة البالغ 40 مليار سهم، وسعر الافتتاح المذكور 3.130 دينار.",
+      "summary": "تقرر إطلاق التداول على أسهم شركة الحمراء للتأمين في سوق العراق للأوراق المالية اعتباراً من جلسة الخميس الموافق 2026/8/27، حيث يبلغ رأس مال الشركة 40 مليار دينار، وعدد الأسهم المتاحة للتداول 25 مليار سهم، مع سعر افتتاحي للسهم قدره 3.130 دينار.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17933",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة المصرف العربي العراق في يوم الاثنين الموافق 2026/10/5",
+      "date": "26/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_6_36_7.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17933&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "المصرف العربي الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/10/5"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق وتاريخ اجتماع الهيئة العامة المذكور فيه.",
+      "summary": "أعلن المصرف العربي الإسلامي عن عقد اجتماع الهيئة العامة في يوم الاثنين الموافق 5 تشرين الأول 2026، وذلك لمناقشة البنود المدرجة في جدول أعمال الاجتماع وفقاً للضوابط القانونية والأنظمة المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17932",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الحمراء للتأمين البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_6_34_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17932&type=1",
+      "pdf_extraction_status": "success_but_gemini_failed"
+    },
+    {
+      "id": "17931",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف نور العراق الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "BINI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_6_33_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17931&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف نور العراق الإسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/06/30"
+      ],
+      "confidence_note": "البيانات المالية المرفقة تمثل القوائم المختصرة والمراجعة للفصل الثاني لعام 2026 وفق المعيار المحاسبي الدولي 34.",
+      "summary": "أفصح مصرف نور العراق الإسلامي عن تقديمه للبيانات المالية المرحلية المختصرة والمراجعة للفترة المنتهية في 30 يونيو 2026، وذلك التزاماً بمتطلبات البنك المركزي العراقي وسوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17930",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف التجاري العراقي الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "BCOI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_6_32_52.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17930&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف التجاري العراقي الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية المنتهية في 30 حزيران 2026"
+      ],
+      "confidence_note": "البيانات المالية غير مرفقة في نص الإفصاح، الإفصاح يقتصر على إرسال القوائم المالية وتقرير مراقب الحسابات لسوق العراق للأوراق المالية.",
+      "summary": "أفصح المصرف التجاري العراقي الإسلامي عن تقديمه للقوائم المالية المرحلية الموحدة وتقرير مراقب الحسابات الخاص بالفترة المالية المنتهية في 30 حزيران 2026 إلى سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17929",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة المصرف الوطني الإسلامي البيانات المالية السنوية لعام 2025",
+      "date": "26/08/2026",
+      "related_symbols": [
+        "BNAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_3_6_19_6.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17929&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "المصرف الوطني الإسلامي",
+      "raas_al_mal": "400000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "البيانات المالية خاصة بالسنة المنتهية في 2025/12/31، وتم الإفصاح عن رأس المال المدفوع فقط بقيمة 400 مليار دينار عراقي.",
+      "summary": "قام المصرف الوطني الإسلامي بالإفصاح عن حساباته الختامية المدققة للسنة المالية المنتهية في 31 ديسمبر 2025، حيث تضمن الكتاب الموجه لسوق العراق للأوراق المالية تسليم نسخ من التقارير المالية لغرض النشر على الموقع الرسمي، مع الإشارة إلى أن رأس مال المصرف المدفوع يبلغ 400 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17928",
       "type": "إفصاح",
