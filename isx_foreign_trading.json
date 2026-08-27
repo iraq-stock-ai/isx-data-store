@@ -6127,6 +6127,15 @@
   ],
   "TASC": [
     {
+      "date": "27/08/2026",
+      "sessionNumber": "149",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 84,
+      "shares": 5781785,
+      "value": 91078439
+    },
+    {
       "date": "26/08/2026",
       "sessionNumber": "148",
       "market": "النظامي",
@@ -8180,6 +8189,15 @@
     }
   ],
   "BIBI": [
+    {
+      "date": "27/08/2026",
+      "sessionNumber": "149",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 390000
+    },
     {
       "date": "26/08/2026",
       "sessionNumber": "148",
@@ -15125,6 +15143,15 @@
     }
   ],
   "BNAI": [
+    {
+      "date": "27/08/2026",
+      "sessionNumber": "149",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 100000
+    },
     {
       "date": "24/05/2026",
       "sessionNumber": "91",
