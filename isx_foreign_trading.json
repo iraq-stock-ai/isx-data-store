@@ -6127,6 +6127,15 @@
   ],
   "TASC": [
     {
+      "date": "30/08/2026",
+      "sessionNumber": "150",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 47,
+      "shares": 3020896,
+      "value": 47539632
+    },
+    {
       "date": "27/08/2026",
       "sessionNumber": "149",
       "market": "النظامي",
@@ -15184,6 +15193,15 @@
   ],
   "NHAM": [
     {
+      "date": "30/08/2026",
+      "sessionNumber": "150",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 250000,
+      "value": 1205016
+    },
+    {
       "date": "16/08/2026",
       "sessionNumber": "141",
       "market": "الثاني",
@@ -17331,6 +17349,15 @@
     }
   ],
   "BAIB": [
+    {
+      "date": "30/08/2026",
+      "sessionNumber": "150",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5000,
+      "value": 4800
+    },
     {
       "date": "28/12/2025",
       "sessionNumber": "232",
