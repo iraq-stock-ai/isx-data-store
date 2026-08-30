@@ -1,6 +1,84 @@
 {
-  "last_known_story_id": 17943,
+  "last_known_story_id": 17946,
   "items": [
+    {
+      "id": "17946",
+      "type": "إفصاح",
+      "title": "تنفيذ أمر متقابل مقصود على أسهم شركة مصرف القابض الاسلامي في جلسة الاحد الموافق 2026/8/30",
+      "date": "30/08/2026",
+      "related_symbols": [
+        "BQAB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_10_41_44.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17946&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف القابض الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "33214000000",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "14,000,000,000"
+      ],
+      "confidence_note": "نص الإفصاح المستخرج يعاني من تشوهات نصية شديدة (OCR artifacts)، تم استنتاج عدد الأسهم بناءً على الأرقام الواردة في نص الإفصاح المذكور في عنوان الطلب والسياق العام للعملية.",
+      "summary": "إفصاح صادر عن شركة براعم الخير للوساطة المالية بخصوص تنفيذ أمر متقابل مقصود على أسهم مصرف القابض الإسلامي في جلسة الأحد الموافق 30/8/2026، حيث تم تداول عدد من الأسهم ضمن صفقة خاصة وفقاً للبيانات المتاحة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17945",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة العراقية للسجاد والمفروشات في يوم الاربعاء الموافق 2026/9/16",
+      "date": "30/08/2026",
+      "related_symbols": [
+        "IITC"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_8_23_36.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17945&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة العراقية للسجاد والمفروشات",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/16"
+      ],
+      "confidence_note": "البيانات المستخلصة من النص المشوش تشير بوضوح إلى تاريخ عقد اجتماع الهيئة العامة، مع تطابق اسم الشركة المذكور في طلب المستخدم.",
+      "summary": "تقرر عقد اجتماع الهيئة العامة للشركة العراقية للسجاد والمفروشات في يوم الأربعاء الموافق 16 سبتمبر 2026، وذلك للنظر في البنود المدرجة ضمن جدول أعمال الشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17944",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة للشركة العراقية للنقل البري في يوم الاثنين الموافق 2026/10/26",
+      "date": "30/08/2026",
+      "related_symbols": [
+        "SILT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_0_8_22_2.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17944&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "الشركة العراقية للنقل البري",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/10/26"
+      ],
+      "confidence_note": "تم استخراج البيانات من النص المرفق، والشركة هي الشركة العراقية للنقل البري، وموعد الاجتماع هو 26 تشرين الأول 2026.",
+      "summary": "أعلنت الشركة العراقية للنقل البري عن عقد اجتماع الهيئة العامة للشركة في يوم الاثنين الموافق 26/10/2026، وذلك لمناقشة المواضيع المدرجة على جدول الأعمال.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17943",
       "type": "إفصاح",
