@@ -1,6 +1,136 @@
 {
-  "last_known_story_id": 17946,
+  "last_known_story_id": 17951,
   "items": [
+    {
+      "id": "17951",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مصرف القرطاس الاسلامي في يوم الجمعة الموافق 2026/9/18",
+      "date": "31/08/2026",
+      "related_symbols": [
+        "BQUR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_11_6_25.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17951&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "مصرف القرطاس الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/18"
+      ],
+      "confidence_note": "تم استخراج المعلومات من نص الإفصاح المذكور، مع ملاحظة أن جودة النص الأصلي الوارد كـ OCR كانت ضعيفة جداً مما جعل استخراج الأرقام المالية الأخرى مستحيلاً.",
+      "summary": "يعلن مصرف القرطاس الإسلامي عن عقد اجتماع الهيئة العامة للشركة في يوم الجمعة الموافق 18 سبتمبر 2026، وذلك لمناقشة البنود المدرجة على جدول الأعمال وفقاً للأنظمة والتعليمات المتبعة في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17950",
+      "type": "إفصاح",
+      "title": "كتاب سوق العراق للاوراق المالية إلى شركة مصرف الطيف الاسلامي بشأن الافصاح عن الاحداث الجوهرية",
+      "date": "31/08/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_11_4_39.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17950&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الطيف الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية كبيرة ناتجة عن ضعف جودة ملف المصدر، مما يجعل استخراج الأرقام الدقيقة غير ممكن.",
+      "summary": "خطاب صادر عن سوق العراق للأوراق المالية موجه إلى مصرف الطيف الإسلامي يتعلق بطلب الإفصاح عن الأحداث الجوهرية. النص غير واضح بسبب رداءة جودة المستند الممسوح ضوئياً، ويقتصر على مخاطبات إجرائية روتينية بين السوق والشركة المعنية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17949",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة صناعة المواد الانشائية الحديثة يوم الخميس الموافق 2026/10/1",
+      "date": "31/08/2026",
+      "related_symbols": [
+        "IMCM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_10_45_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17949&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة صناعة المواد الانشائية الحديثة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/10/1"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق وتاريخ الاجتماع المحدد فيه.",
+      "summary": "أعلنت شركة صناعة المواد الإنشائية الحديثة عن دعوتها لعقد اجتماع الهيئة العامة العادي في يوم الخميس الموافق الأول من تشرين الأول لعام 2026، وذلك لمناقشة المواضيع المدرجة ضمن جدول أعمال الاجتماع وفقاً للضوابط المعمول بها في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17948",
+      "type": "إفصاح",
+      "title": "بدء الايداع على أسهم شركة الخير للتأمين أعتباراً من جلسة الثلاثاء الموافق 2026/9/1 في منصة الشركات غير المدرجة",
+      "date": "31/08/2026",
+      "related_symbols": [
+        "NKHA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_10_42_54.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17948&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة الخير للتأمين",
+      "raas_al_mal": "5,000,000,000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "ISIN: IQ000A42AH61",
+        "Ticker: NKHA"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المتعلق ببدء الإيداع في منصة الشركات غير المدرجة (OTC).",
+      "summary": "أعلنت سوق العراق للأوراق المالية عن بدء إيداع أسهم شركة الخير للتأمين في منصة الشركات غير المدرجة (OTC) اعتباراً من جلسة التداول يوم الثلاثاء الموافق 1 سبتمبر 2026. يبلغ رأس مال الشركة 5 مليار دينار عراقي، وتحمل الرمز (NKHA) والرمز الدولي (IQ000A42AH61).",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17947",
+      "type": "إفصاح",
+      "title": "التقرير الاسبوعي لسوق العراق للأوراق المالية للفترة من 23-27 آب 2026",
+      "date": "31/08/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_8_1_6_6_3.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17947&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "المصرف الوطني الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "2,758,007,861",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "قيمة الأسهم المتداولة: 3,126,992,011 دينار عراقي",
+        "عدد الصفقات: 3,912 صفقة",
+        "عدد الشركات المتداولة في منصة ISX-OTC: 17 شركة",
+        "قيمة التداول في منصة ISX-OTC: 915,877,761 دينار عراقي"
+      ],
+      "confidence_note": "التقرير يعكس حركة التداول العامة لسوق العراق للأوراق المالية للفترة من 23-27 آب 2026، مع إطلاق تداول أسهم المصرف الوطني الإسلامي بناءً على إفصاح هيئة الأوراق المالية.",
+      "summary": "صدر التقرير الأسبوعي لسوق العراق للأوراق المالية للفترة من 23 إلى 27 آب 2026، حيث شهد السوق أربع جلسات تداول، مع تعطل التداول يوم الثلاثاء 25 آب بمناسبة المولد النبوي الشريف. بلغ إجمالي قيمة الأسهم المتداولة 3.12 مليار دينار لعدد أسهم تجاوز 2.75 مليار سهم عبر 3,912 صفقة. تضمن التقرير قرارات هيئة الأوراق المالية المتعلقة بإيقاف تداول بعض الشركات لعدم التزامها بالإفصاح عن البيانات المالية، بينما تم استئناف التداول على أسهم المصرف الوطني الإسلامي. كما أشار التقرير إلى نشاط منصة ISX-OTC التي تضمنت 17 شركة مدرجة.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17946",
       "type": "إفصاح",
