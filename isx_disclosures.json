@@ -1,6 +1,313 @@
 {
-  "last_known_story_id": 17951,
+  "last_known_story_id": 17963,
   "items": [
+    {
+      "id": "17963",
+      "type": "إفصاح",
+      "title": "نقل تداول أسهم شركة الهلال الصناعية إلى المنصة النظامية إعتباراً من جلسة الاربعاء الموافق 2026/9/2",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "IHLI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_52_32.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17963&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "شركة الهلال الصناعية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/9/2"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المذكور في عنوان الطلب، حيث أن النص المستخرج من ملف PDF غير واضح تقنياً بسبب رداءة المسح الضوئي (OCR error).",
+      "summary": "قرر سوق العراق للأوراق المالية نقل تداول أسهم شركة الهلال الصناعية إلى المنصة النظامية، وذلك اعتباراً من جلسة التداول ليوم الأربعاء الموافق 2 سبتمبر 2026.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17962",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة صناعة المواد الانشائية الحديثة البيانات المالية السنوية لعام 2025",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "IMCM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_45_56.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17962&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة صناعة المواد الأنشائية الحديثة",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ المصادقة: 2026/08/27",
+        "فترة التقرير: السنة المالية المنتهية في 2025/12/31"
+      ],
+      "confidence_note": "الإفصاح يتعلق بتقديم البيانات المالية السنوية المدققة من قبل ديوان الرقابة المالية الاتحادية، مع توضيح الشركة لأسباب التأخير في تقديم البيانات.",
+      "summary": "قدمت شركة صناعة المواد الأنشائية الحديثة بياناتها المالية السنوية وتقرير الإدارة للسنة المالية المنتهية في 2025/12/31، بعد المصادقة عليها من قبل ديوان الرقابة المالية الاتحادية. وأوضحت الشركة أن التأخير في تقديم البيانات النهائية يعود إلى إجراءات التدقيق الخاصة بالديوان، مشيرة إلى التزامها بتسليم الصيغ الأولية للبيانات في وقت سابق.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17961",
+      "type": "إفصاح",
+      "title": "تعديل البيانات الفصلية للفصل الثاني لعام 2026 لشركة الحمراء للتأمين",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "NHAM"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_45_12.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17961&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الحمراء للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "الإفصاح يتعلق بتعديل فني في البيانات المالية نتيجة خلل في احتساب أقساط الإعادة، ولا يتضمن أرقاماً مالية محددة في متن الكتاب.",
+      "summary": "أعلنت شركة الحمراء للتأمين عن اعتماد نسخة معدلة من بياناتها المالية للفصل الثاني المنتهي في 2026/06/30، وذلك بدلاً من النسخة السابقة، بسبب وجود خلل فني في النظام يتعلق باحتساب أقساط الإعادة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17960",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية لانتاج البذور البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "AISP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_44_6.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17960&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية لإنتاج البذور",
+      "raas_al_mal": "5000000000",
+      "net_profit": null,
+      "total_debts": "15113103453",
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية: 2026/01/01 إلى 2026/03/31"
+      ],
+      "confidence_note": "تم استخراج العجز المالي بناءً على نص الإفصاح، علماً أن الرقم المذكور (15113103453) تمت صياغته في الإفصاح بعبارة '15113103453١ مليار' وهو ما يرجح كونه 15.11 مليار دينار عراقي.",
+      "summary": "أفصحت الشركة العراقية لإنتاج البذور عن بياناتها المالية للربع الأول من عام 2026، حيث أظهرت النتائج عجزاً مالياً قدره حوالي 15.11 مليار دينار عراقي، وعزت الشركة هذا العجز إلى عدم البدء باستلام إيرادات بيع محصول الحنطة حتى تاريخ إعداد الميزانية الفصلية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17959",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف كوردستان الدولي الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "BKUI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_42_57.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17959&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف كوردستان الدولي الاسلامي للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير واضح ومضطرب بسبب أخطاء في التعرف الضوئي على الحروف (OCR)، مما يجعل استخراج الأرقام المالية الدقيقة متعذراً.",
+      "summary": "قدم مصرف كوردستان الدولي الإسلامي للاستثمار البيانات المالية المرحلية الخاصة بالفصل الثاني المنتهي في حزيران 2026 إلى سوق العراق للأوراق المالية، وذلك ضمن متطلبات الإفصاح الدوري للشركات المدرجة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17958",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف العربية الاسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "BAAI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_42_8.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17958&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف العربية الاسلامي",
+      "raas_al_mal": "250000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "العدد الصادر: 1220",
+        "تاريخ الإفصاح: 2026/8/30"
+      ],
+      "confidence_note": "البيانات المالية الفصلية تم ذكرها كملحق ولم يتم إدراج أرقام الأداء المالي في نص الإفصاح المكتوب.",
+      "summary": "أفصح مصرف العربية الإسلامي لسوق العراق للأوراق المالية عن تقديمه للبيانات المالية المرحلية الخاصة بالفصل الثاني من العام 2026، وذلك بموجب كتاب رسمي صادر بتاريخ 30 آب 2026، مع الإشارة إلى أن رأس مال المصرف يبلغ 250 مليار دينار عراقي.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17957",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف الشرق الاوسط البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "BIME"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_41_31.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17957&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف الشرق الأوسط العراقي للاستثمار",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المنتهية في 30 يونيو 2026"
+      ],
+      "confidence_note": "تم استخراج البيانات من إفصاح مالي رسمي، ولا تحتوي الوثيقة المرفقة على الأرقام المالية النهائية بل تشير إلى إرفاق القوائم المالية.",
+      "summary": "أفصح مصرف الشرق الأوسط العراقي للاستثمار عن تقديم قوائمه المالية المرحلية للفترة المنتهية في 30 حزيران 2026 إلى سوق العراق للأوراق المالية، وذلك وفقاً للمتطلبات الإفصاحية المتبعة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17956",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة الخاتم للاتصالات البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "TZNI"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_39_48.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17956&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة الخاتم للاتصالات",
+      "raas_al_mal": "159785160000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "رأس المال تم استخراجه من النص المشوش، ويحتمل وجود خطأ في قراءة الأرقام نظراً لضعف جودة النص الأصلي.",
+      "summary": "أفصحت شركة الخاتم للاتصالات عن تقديم بياناتها المالية الخاصة بالنصف الأول من عام 2026 إلى هيئة الأوراق المالية وسوق العراق للأوراق المالية، وذلك في إطار الالتزام بمتطلبات الإفصاح الدوري للشركات المدرجة.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17955",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت الشركة العراقية للمنتجات الزراعية البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "AIRP"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_38_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17955&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "الشركة العراقية لإنتاج وتسويق المنتجات الزراعية",
+      "raas_al_mal": "360000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية: من 2026/01/01 لغاية 2026/06/30"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية بسبب تقنية الـ OCR، تم استنتاج اسم الشركة ورأس المال بناءً على المطابقة الدلالية.",
+      "summary": "أفصحت الشركة العراقية لإنتاج وتسويق المنتجات الزراعية عن تقديم بياناتها المالية الفصلية للفترة المنتهية في 2026/06/30، مؤكدة إعداد الحسابات وفقاً للنظام المحاسبي الموحد والمعايير المحاسبية والتقارير المالية الدولية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17954",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة رحاب كربلاء البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "HKAR"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_37_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17954&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة رحاب كربلاء للاستثمار والمقاولات العامة",
+      "raas_al_mal": "7950000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "تم استخراج البيانات من إفصاح مالي رسمي، مع ملاحظة وجود بعض التشوهات النصية الناتجة عن عملية المسح الضوئي (OCR) للوثيقة الأصلية.",
+      "summary": "قدمت شركة رحاب كربلاء للاستثمار والمقاولات العامة إفصاحاً يتضمن البيانات المالية الفصلية للفصل الثاني من عام 2026، حيث يتضمن المرفقات الميزانية العامة وكشف الأرباح والخسائر وكشف التدفق النقدي، وذلك امتثالاً لمتطلبات الإفصاح المالي في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17953",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف آشور الدولي البيانات المالية الفصلية للفصل الاول لعام 2026",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "BASH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_35_45.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17953&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف آشور الدولي للاستثمار",
+      "raas_al_mal": "300000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "تاريخ البيانات المالية: 2026/03/31",
+        "تاريخ ورود الإفصاح للسوق: 2026/08/03"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، ولا يحتوي النص على تفاصيل الأداء المالي (الأرباح أو الديون).",
+      "summary": "قدم مصرف آشور الدولي للاستثمار البيانات المالية المرحلية للفصل الأول من العام 2026 والمنتهية في 31 مارس 2026، وذلك التزاماً بمتطلبات الإفصاح في سوق العراق للأوراق المالية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17952",
+      "type": "إفصاح",
+      "title": "مديرية تنفيذ الكرادة - تحديد موعد مزايدة علنية",
+      "date": "01/09/2026",
+      "related_symbols": [
+        "BINT"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_2_9_35_0.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17952&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": "2026/9/16",
+      "other_important_figures": [
+        "24,645,000,000"
+      ],
+      "confidence_note": "النص غير واضح ويحتوي على رموز غير مفهومة، تم استنتاج طبيعة الإفصاح كونه مزايدة علنية من قبل مديرية تنفيذ الكرادة ولا يخص شركة مدرجة محددة بشكل واضح في السياق المتاح.",
+      "summary": "إعلان صادر عن مديرية تنفيذ الكرادة بخصوص تحديد موعد مزايدة علنية بتاريخ 2026/9/16 لبيع أسهم، مع إدراج قائمة بأرقام الأسهم والقيم المالية المرتبطة بها، حيث بلغ مجموعها 24,645,000,000 دينار عراقي.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17951",
       "type": "إفصاح",
