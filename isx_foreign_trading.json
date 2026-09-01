@@ -6127,6 +6127,15 @@
   ],
   "TASC": [
     {
+      "date": "01/09/2026",
+      "sessionNumber": "152",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 87,
+      "shares": 6856079,
+      "value": 107844575
+    },
+    {
       "date": "30/08/2026",
       "sessionNumber": "150",
       "market": "النظامي",
@@ -8989,6 +8998,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "01/09/2026",
+      "sessionNumber": "152",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 17,
+      "shares": 4698861,
+      "value": 18122716
+    },
     {
       "date": "26/08/2026",
       "sessionNumber": "148",
@@ -15192,6 +15210,15 @@
     }
   ],
   "NHAM": [
+    {
+      "date": "01/09/2026",
+      "sessionNumber": "152",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 14,
+      "shares": 1433455,
+      "value": 7095602
+    },
     {
       "date": "30/08/2026",
       "sessionNumber": "150",
