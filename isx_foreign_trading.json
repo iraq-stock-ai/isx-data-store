@@ -2793,6 +2793,15 @@
   ],
   "BMNS": [
     {
+      "date": "02/09/2026",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 212000
+    },
+    {
       "date": "16/08/2026",
       "sessionNumber": "141",
       "market": "النظامي",
@@ -6126,6 +6135,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "02/09/2026",
+      "sessionNumber": "153",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 13000,
+      "value": 203710
+    },
     {
       "date": "01/09/2026",
       "sessionNumber": "152",
