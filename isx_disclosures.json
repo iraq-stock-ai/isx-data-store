@@ -1,6 +1,43 @@
 {
-  "last_known_story_id": 17975,
+  "last_known_story_id": 17977,
   "items": [
+    {
+      "id": "17977",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مدينة العاب الكرخ السياحية في يوم الاربعاء الموافق 2026/9/30",
+      "date": "02/09/2026",
+      "related_symbols": [
+        "SKTA"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_3_10_57_35.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17977&type=1",
+      "summary": "{\n  \"disclosure_type\": \"اجتماع_هيئة_عامة\",\n  \"company_name\": \"شركة مدينة العاب الكرخ السياحية\",\n  \"raas_al_mal\": null,\n  \"net_profit\": null,\n  \"total_debts\": null,\n  \"traded_shares_quantity\": null,\n  \"dividend_per_share\": null,\n  \"dividend_percentage\": null,\n  \"dividend_date\": null,\n  \"other_important_figures\": [\n    \"2026/9/30\",\n    \"2026/9/24\"\n  ],\n  \"confidence_note\": \"تم استخراج البيانات بناءً على نص الإفصاح المرفق، مع ملاحظة وجود تداخل في النص الأصلي ناتج عن المسح الضوئي.\",\n  \"summary\": \"أعلنت شركة مدينة العاب الكرخ السياحية عن عقد اجتماع الهيئة العامة في يوم الأربعاء الموافق 2026/9/30 لمناقشة بنود جدول الأعمال، مع تحديد فترة توقف تداول الأسهم قبل موعد الاجتماع.\"\n}\n`\n`",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17976",
+      "type": "إفصاح",
+      "title": "إفصاح شركة مصرف الطيف الاسلامي على الاحداث الجوهرية",
+      "date": "02/09/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_3_6_59_27.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17976&type=1",
+      "disclosure_type": "حركة_تداول_خاصة",
+      "company_name": "مصرف الطيف الإسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "الإفصاح يتعلق برد الشركة على استفسار السوق حول أسباب انخفاض سعر السهم، ولا يحتوي على بيانات مالية رقمية.",
+      "summary": "أكد مصرف الطيف الإسلامي عدم وجود أي أحداث جوهرية غير معلنة أدت إلى انخفاض سعر سهم المصرف في جلستي 30 و31 آب 2026، موضحاً أن الانخفاض يعود لعوامل السوق المتعلقة بالعرض والطلب وتذبذب السيولة والوضع الاقتصادي العام، مع تأكيد التزام المصرف التام بمتطلبات الإفصاح والشفافية.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
     {
       "id": "17975",
       "type": "إفصاح",
