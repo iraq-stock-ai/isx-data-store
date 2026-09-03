@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "03/09/2026",
+      "sessionNumber": "154",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 75000,
+      "value": 225000
+    },
+    {
       "date": "26/08/2026",
       "sessionNumber": "148",
       "market": "النظامي",
@@ -15228,6 +15237,15 @@
     }
   ],
   "NHAM": [
+    {
+      "date": "03/09/2026",
+      "sessionNumber": "154",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 716545,
+      "value": 3582725
+    },
     {
       "date": "01/09/2026",
       "sessionNumber": "152",
