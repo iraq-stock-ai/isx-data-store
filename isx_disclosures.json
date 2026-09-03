@@ -1,6 +1,129 @@
 {
-  "last_known_story_id": 17977,
+  "last_known_story_id": 17982,
   "items": [
+    {
+      "id": "17982",
+      "type": "إفصاح",
+      "title": "إيقاف التداول على أسهم شركة مصرف الطيف الاسلامي إعتباراً من جلسة الخميس 2026/9/3",
+      "date": "03/09/2026",
+      "related_symbols": [
+        "BTIB"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_4_9_0_40.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17982&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "مصرف الطيف الاسلامي",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج يعاني من تشوهات نصية ناتجة عن التحويل، ولكن تم تأكيد إيقاف التداول من العنوان.",
+      "summary": "قررت هيئة الأوراق المالية إيقاف التداول على أسهم مصرف الطيف الإسلامي في سوق العراق للأوراق المالية اعتباراً من جلسة يوم الخميس الموافق 2026/9/3، وذلك وفقاً للإجراءات الرقابية المتبعة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17981",
+      "type": "إفصاح",
+      "title": "سيعقد إجتماع الهيئة العامة لشركة مدينة الالعاب والاستثمارات العقارية في يوم الخميس الموافق 2026/9/10",
+      "date": "03/09/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_4_6_26_34.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17981&type=1",
+      "disclosure_type": "اجتماع_هيئة_عامة",
+      "company_name": "شركة مدينة الألعاب والاستثمارات العقارية",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "2026/09/10"
+      ],
+      "confidence_note": "النص المستخرج يعاني من تداخل في الأحرف العربية والإنجليزية وتلف في البيانات الرقمية المالية الأساسية، تم استخلاص تاريخ الاجتماع فقط.",
+      "summary": "أعلنت شركة مدينة الألعاب والاستثمارات العقارية عن عزمها عقد اجتماع للهيئة العامة بتاريخ 10 سبتمبر 2026، وذلك لمناقشة البنود المدرجة ضمن جدول أعمال الشركة.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17980",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة فنادق عشتار البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "03/09/2026",
+      "related_symbols": [
+        "HISH"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_4_6_24_38.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17980&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "شركة فنادق عشتار السياحية",
+      "raas_al_mal": "7000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "50000 دينار عراقي قيمة غرامة إفصاح"
+      ],
+      "confidence_note": "تم استخراج البيانات بناءً على نص الإفصاح المرفق، يلاحظ وجود غرامة مالية مفروضة على الشركة بسبب الإفصاح.",
+      "summary": "أفصحت شركة فنادق عشتار السياحية (شركة مساهمة مختلطة) عن بياناتها المالية للفصل الثاني من العام 2026، وذلك وفقاً للمعايير المحاسبية الدولية، مع الإشارة إلى تحمل الشركة غرامة مالية قدرها 50 ألف دينار عراقي تتعلق بعملية الإفصاح.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17979",
+      "type": "إفصاح",
+      "title": "إفصاح - قدمت شركة مصرف المشرق العربي الإسلامي البيانات المالية الفصلية للفصل الثاني لعام 2026",
+      "date": "03/09/2026",
+      "related_symbols": [
+        "BAMS"
+      ],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_4_6_24_18.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17979&type=1",
+      "disclosure_type": "قوائم_مالية",
+      "company_name": "مصرف المشرق العربي الاسلامي",
+      "raas_al_mal": "300000000000",
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "الفترة المالية المنتهية في 30 يونيو 2026",
+        "تاريخ الإفصاح 31 أغسطس 2026"
+      ],
+      "confidence_note": "البيانات المالية المرفقة مع الإفصاح لم تكن مدرجة في النص النصي المستخرج، والإفصاح يقتصر على إرسال البيانات المرحلية المختصرة فقط.",
+      "summary": "قام مصرف المشرق العربي الإسلامي بتقديم بياناته المالية المرحلية المختصرة للفترة المنتهية في 30 يونيو 2026 إلى سوق العراق للأوراق المالية بموجب كتاب رسمي مؤرخ في 31 أغسطس 2026.",
+      "pdf_extraction_status": "success_via_ocr"
+    },
+    {
+      "id": "17978",
+      "type": "إفصاح",
+      "title": "الموافقة على إدراج وإيداع أسهم شركة أور الدولية للتأمين في سوق العراق للأوراق المالية - منصة الشركات غير المدرجة OTC",
+      "date": "03/09/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_4_6_7_24.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17978&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": "شركة أور الدولية للتأمين",
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [],
+      "confidence_note": "النص المستخرج من ملف PDF غير واضح ومعقد جداً بسبب أخطاء التعرف الضوئي على الحروف (OCR)، لذا تم استنتاج أن الإفصاح يتعلق بإدراج الشركة في منصة الشركات غير المدرجة (OTC) بناءً على عنوان الإفصاح المرفق في طلب المستخدم.",
+      "summary": "أعلن سوق العراق للأوراق المالية عن الموافقة على إدراج وإيداع أسهم شركة أور الدولية للتأمين في منصة الشركات غير المدرجة (OTC). يهدف هذا الإجراء إلى تنظيم وتداول أسهم الشركة وفقاً لضوابط ومتطلبات السوق المعتمدة لهذه المنصة.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17977",
       "type": "إفصاح",
