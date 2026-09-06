@@ -1,26 +1,11 @@
-name: تحديث بيانات ISX (أسعار + إفصاحات + أخبار)
+name: تحديث أسعار ISX
 
 on:
   schedule:
-    # ===== جدولة الأسعار: 4 محاولات، الأحد-الخميس فقط (أيام تداول ISX) =====
-    - cron: '0 11 * * 0-4'   # 2:00 عصراً بغداد (UTC+3) — بعد الإغلاق بساعة
-    - cron: '0 13 * * 0-4'   # 4:00 عصراً بغداد — احتياط أول
-    - cron: '0 17 * * 0-4'   # 8:00 مساءً بغداد — احتياط ثانٍ
-    - cron: '0 6 * * 0-4'    # 9:00 صباحاً بغداد اليوم التالي — يلتقط تقارير متأخرة
-
-    # ===== جدولة الإفصاحات وأخبار السوق: 11 مرة باليوم، كل 40 دقيقة =====
-    # محصورة بفترة 2 ظهراً - 8:45 مساءً بتوقيت بغداد فقط. بغداد UTC+3.
-    - cron: '5 11 * * 0-4'    # 2:05 عصراً بغداد
-    - cron: '45 11 * * 0-4'   # 2:45 عصراً بغداد
-    - cron: '25 12 * * 0-4'   # 3:25 عصراً بغداد
-    - cron: '5 13 * * 0-4'    # 4:05 عصراً بغداد
-    - cron: '45 13 * * 0-4'   # 4:45 عصراً بغداد
-    - cron: '25 14 * * 0-4'   # 5:25 عصراً بغداد
-    - cron: '5 15 * * 0-4'    # 6:05 مساءً بغداد
-    - cron: '45 15 * * 0-4'   # 6:45 مساءً بغداد
-    - cron: '25 16 * * 0-4'   # 7:25 مساءً بغداد
-    - cron: '5 17 * * 0-4'    # 8:05 مساءً بغداد
-    - cron: '45 17 * * 0-4'   # 8:45 مساءً بغداد
+    - cron: '0 11 * * 0-4'
+    - cron: '0 13 * * 0-4'
+    - cron: '0 17 * * 0-4'
+    - cron: '0 6 * * 0-4'
 
   workflow_dispatch: {}
 
@@ -28,9 +13,6 @@ permissions:
   contents: write
 
 jobs:
-  # ==============================================================================
-  # وظيفة 1: أسعار الأسهم - مستقلة تماماً. لو فشلت، لا تؤثر على أي وظيفة أخرى
-  # ==============================================================================
   update-prices:
     if: |
       github.event.schedule == '0 11 * * 0-4' ||
@@ -38,7 +20,9 @@ jobs:
       github.event.schedule == '0 17 * * 0-4' ||
       github.event.schedule == '0 6 * * 0-4' ||
       github.event_name == 'workflow_dispatch'
+
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -49,15 +33,16 @@ jobs:
       - name: تثبيت المكتبات
         run: pip install requests beautifulsoup4 openpyxl lxml
 
-      - name: تشغيل سكريبت الأسعار
-        run: python isx_daily_update.py --existing isx_history_all.json --output isx_history_all.json
+      - name: تحديث الأسعار
+        run: |
+          python isx_daily_update.py \
+            --existing isx_history_all.json \
+            --output isx_history_all.json
 
-      - name: فحص وجود تغييرات فعلية
+      - name: فحص التغييرات
         id: check_changes
-        # always() تضمن تنفيذ هذه الخطوة حتى لو فشلت الخطوة السابقة
         if: always()
         run: |
-          git status --porcelain
           if [ -n "$(git status --porcelain)" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
           else
@@ -70,119 +55,6 @@ jobs:
           git config user.name "isx-data-bot"
           git config user.email "actions@github.com"
           git add isx_history_all.json
-          git commit -m "تحديث تلقائي (أسعار) - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "تحديث تلقائي للأسعار - $(date -u +'%Y-%m-%d %H:%M UTC')"
           git pull --rebase
           git push
-
-      - name: تنبيه عند فشل الأسعار (لا يوقف باقي السكربتات)
-        if: failure()
-        run: |
-          echo "❌ فشل سكريبت الأسعار بهذه التشغيلة. سكربتات الإفصاحات والأخبار تعمل بشكل مستقل ولن تتأثر."
-
-  # ==============================================================================
-  # وظيفة 2: الأخبار الخارجية (Google News RSS) - مستقلة تماماً عن الأسعار
-  # ==============================================================================
-  update-external-news:
-    if: github.event.schedule == '0 17 * * 0-4' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 lxml
-
-      - name: تشغيل سكريبت الأخبار الخارجية
-        run: python news-pipeline/gemini_news_fetcher.py
-
-      - name: فحص وجود تغييرات فعلية
-        id: check_changes
-        if: always()
-        run: |
-          git status --porcelain
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Commit ورفع تحديثات الأخبار الخارجية
-        if: always() && steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.name "isx-data-bot"
-          git config user.email "actions@github.com"
-          git add isx_news.json
-          git commit -m "تحديث تلقائي (أخبار خارجية) - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase
-          git push
-
-      - name: تنبيه عند فشل الأخبار الخارجية
-        if: failure()
-        run: |
-          echo "❌ فشل سكريبت الأخبار الخارجية بهذه التشغيلة."
-
-  # ==============================================================================
-  # وظيفة 3: الإفصاحات وأخبار السوق (isx-iq.net + Gemini) - مستقلة تماماً
-  # ==============================================================================
-  process-disclosures-and-market-news:
-    if: |
-      github.event.schedule == '5 11 * * 0-4' ||
-      github.event.schedule == '45 11 * * 0-4' ||
-      github.event.schedule == '25 12 * * 0-4' ||
-      github.event.schedule == '5 13 * * 0-4' ||
-      github.event.schedule == '45 13 * * 0-4' ||
-      github.event.schedule == '25 14 * * 0-4' ||
-      github.event.schedule == '5 15 * * 0-4' ||
-      github.event.schedule == '45 15 * * 0-4' ||
-      github.event.schedule == '25 16 * * 0-4' ||
-      github.event.schedule == '5 17 * * 0-4' ||
-      github.event.schedule == '45 17 * * 0-4' ||
-      github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: تثبيت مكتبات النظام (Tesseract OCR بدعم العربية)
-        run: sudo apt-get update && sudo apt-get install -y tesseract-ocr tesseract-ocr-ara poppler-utils
-
-      - name: تثبيت المكتبات
-        run: pip install requests beautifulsoup4 lxml pdfplumber pytesseract pdf2image
-
-      # يعالج إفصاح أو خبر سوق واحد فقط (إن وُجد)، ثم يخرج
-      - name: جلب وتلخيص إفصاح/خبر واحد جديد
-        env:
-          GEMINI_DISCLOSURES_API_KEY: ${{ secrets.GEMINI_DISCLOSURES_API_KEY }}
-        run: python news-pipeline/fetch_and_summarize_isx.py --existing isx_disclosures.json --output isx_disclosures.json
-
-      - name: فحص وجود تغييرات فعلية
-        id: check_changes
-        if: always()
-        run: |
-          git status --porcelain
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Commit ورفع تحديثات الإفصاحات وأخبار السوق
-        if: always() && steps.check_changes.outputs.changed == 'true'
-        run: |
-          git config user.name "isx-data-bot"
-          git config user.email "actions@github.com"
-          git add isx_disclosures.json
-          git commit -m "تحديث تدريجي (إفصاحات/أخبار سوق) - $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git pull --rebase
-          git push
-
-      - name: تنبيه عند فشل معالجة الإفصاحات
-        if: failure()
-        run: |
-          echo "❌ حدث خطأ في معالجة الإفصاح أو الخبر، سيُعاد المحاولة بالتشغيلة القادمة."
