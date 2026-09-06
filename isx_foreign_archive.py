@@ -13,6 +13,9 @@ import openpyxl
 LIST_URL = "http://www.isx-iq.net/isxportal/portal/uploadedFilesList.html"
 BASE_URL = "http://www.isx-iq.net"
 
+# عدد الصفحات التي سيتم فحصها في أرشيف التقارير
+MAX_PAGES_TO_SEARCH = 5
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -52,37 +55,59 @@ def parse_date_ddmmyyyy(date_str: str):
         return None
 
 
-def get_today_daily_report():
-    """مطابقة حرفية لدالة get_today_daily_report() بسكربت الأسعار الأصلي."""
-    print(f"[بوابة 1] جاري فحص: {LIST_URL}")
-    resp = requests.get(LIST_URL, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    soup = BeautifulSoup(resp.content, "html.parser")
+def get_today_daily_report(max_pages: int = MAX_PAGES_TO_SEARCH):
+    """
+    البحث عن التقرير اليومي بالترتيب عبر صفحات الأرشيف (من الصفحة 1 إلى max_pages).
+    """
+    for page in range(1, max_pages + 1):
+        # بناء رابط الصفحة بناءً على رقمها
+        if page == 1:
+            page_url = LIST_URL
+        else:
+            page_url = f"{LIST_URL}?pageNo={page}"
 
-    table = soup.find("table")
-    if table is None:
-        raise QualityGateError("لم يُعثر على جدول الأرشيف بالصفحة الرئيسية.")
+        print(f"[بوابة 1] جاري فحص الصفحة {page}: {page_url}")
 
-    for row in table.find_all("tr"):
-        row_text = clean_text(row.get_text())
-        if "يومي" not in row_text or "التقرير اليومي" not in row_text:
+        try:
+            resp = requests.get(page_url, headers=HEADERS, timeout=20)
+            resp.raise_for_status()
+        except Exception as e:
+            print(f"[بوابة 1] ⚠️ تعذر فتح الصفحة {page}: {e}")
             continue
 
-        link_tag = row.find("a", href=True)
-        if not link_tag:
-            continue
-        href = link_tag["href"]
-        if ".xlsx" not in href.lower() and ".xls" not in href.lower():
+        soup = BeautifulSoup(resp.content, "html.parser")
+        table = soup.find("table")
+        if table is None:
             continue
 
-        date_match = re.search(r"(\d{2}/\d{2}/\d{4})", row_text)
-        session_date = date_match.group(1) if date_match else None
+        for row in table.find_all("tr"):
+            row_text = clean_text(row.get_text())
+            if "يومي" not in row_text and "التقرير اليومي" not in row_text:
+                continue
 
-        full_url = href if href.startswith("http") else BASE_URL + href
-        print(f"[بوابة 1] ✅ نجحت — تقرير يومي بتاريخ {session_date}: {full_url}")
-        return {"date": session_date, "url": full_url}
+            link_tag = row.find("a", href=True)
+            if not link_tag:
+                continue
 
-    raise QualityGateError("لم يُعثر على أي صف 'التقرير اليومي' بالصفحة الأولى من الأرشيف.")
+            href = link_tag["href"].strip()
+            if ".xlsx" not in href.lower() and ".xls" not in href.lower():
+                continue
+
+            date_match = re.search(r"(\d{2}/\d{2}/\d{4})", row_text)
+            session_date = date_match.group(1) if date_match else None
+
+            # بناء الرابط الكامل للملف بشكل آمن
+            if href.startswith("http"):
+                full_url = href
+            elif href.startswith("/"):
+                full_url = BASE_URL + href
+            else:
+                full_url = BASE_URL + "/" + href
+
+            print(f"[بوابة 1] ✅ نجحت (الصفحة {page}) — تقرير يومي بتاريخ {session_date}: {full_url}")
+            return {"date": session_date, "url": full_url, "page": page}
+
+    raise QualityGateError(f"لم يُعثر على أي صف 'التقرير اليومي' خلال فحص أول {max_pages} صفحات من الأرشيف.")
 
 
 def validate_report_date(report_date_str: str):
@@ -258,9 +283,6 @@ def parse_foreign_section(sheet, start_row_idx: int, market_label: str, directio
 
 
 def parse_daily_excel(excel_bytes: bytes) -> dict:
-    """يستخرج بيانات "غير العراقيين" وتصيغ القاموس النهائي.
-    اسم الدالة مطابق عمداً لسكربت الأسعار الأصلي (parse_daily_excel)
-    للحفاظ على نفس البنية العامة، رغم اختلاف المحتوى المُستخرَج."""
     wb = openpyxl.load_workbook(io.BytesIO(excel_bytes), data_only=True)
 
     session_number = "0"
@@ -288,8 +310,6 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
 
 
 def check_records_count(parsed: dict):
-    """مطابقة لروح دالة check_symbol_count() بسكربت الأسعار الأصلي،
-    لكن بحدود مختلفة تناسب طبيعة بيانات غير العراقيين (قد تكون صفراً)."""
     count = len(parsed["records"])
     if count > MAX_EXPECTED_RECORDS:
         raise QualityGateError(
@@ -302,8 +322,6 @@ def check_records_count(parsed: dict):
 
 
 def validate_records(parsed: dict) -> list:
-    """فحص جودة السجلات — مطابقة لروح دالة validate_records() الأصلية،
-    لكن بمعايير تناسب طبيعة هذه البيانات (لا أسعار Open/High/Low/Close هنا)."""
     valid = []
     rejected = []
 
@@ -372,9 +390,6 @@ def main():
         if symbol not in data:
             data[symbol] = []
 
-        # منع التكرار: لو نفس (date + direction) موجود مسبقاً لنفس
-        # الرمز، يُتجاهل — يمنع تكرار الإدخال لو اشتغل السكربت عدة
-        # مرات بنفس اليوم (2، 4، 6، 8 مساءً) ووجد نفس البيانات.
         duplicate = any(
             r.get("date") == report["date"] and r.get("direction") == rec["direction"]
             for r in data[symbol]
