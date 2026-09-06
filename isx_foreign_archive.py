@@ -57,14 +57,10 @@ def parse_date_ddmmyyyy(date_str: str):
 
 def get_today_daily_report(max_pages: int = MAX_PAGES_TO_SEARCH):
     """
-    البحث عن التقرير اليومي بالترتيب عبر صفحات الأرشيف (من الصفحة 1 إلى max_pages).
+    البحث عن التقرير اليومي بالترتيب عبر صفحات الأرشيف باستخدام رابط الترقيم الصحيح (d-447146-p).
     """
     for page in range(1, max_pages + 1):
-        # بناء رابط الصفحة بناءً على رقمها
-        if page == 1:
-            page_url = LIST_URL
-        else:
-            page_url = f"{LIST_URL}?pageNo={page}"
+        page_url = f"{LIST_URL}?d-447146-p={page}"
 
         print(f"[بوابة 1] جاري فحص الصفحة {page}: {page_url}")
 
@@ -96,7 +92,6 @@ def get_today_daily_report(max_pages: int = MAX_PAGES_TO_SEARCH):
             date_match = re.search(r"(\d{2}/\d{2}/\d{4})", row_text)
             session_date = date_match.group(1) if date_match else None
 
-            # بناء الرابط الكامل للملف بشكل آمن
             if href.startswith("http"):
                 full_url = href
             elif href.startswith("/"):
@@ -111,7 +106,6 @@ def get_today_daily_report(max_pages: int = MAX_PAGES_TO_SEARCH):
 
 
 def validate_report_date(report_date_str: str):
-    """مطابقة حرفية لدالة validate_report_date() بسكربت الأسعار الأصلي."""
     report_date = parse_date_ddmmyyyy(report_date_str)
     if report_date is None:
         raise QualityGateError(f"تعذّر تحليل تاريخ التقرير: '{report_date_str}'")
@@ -129,7 +123,6 @@ def validate_report_date(report_date_str: str):
 
 
 def download_excel(url: str):
-    """مطابقة حرفية لدالة download_excel() بسكربت الأسعار الأصلي."""
     print(f"[بوابة 3] جاري تحميل: {url}")
     try:
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -152,7 +145,6 @@ def extract_session_number(sheet) -> str:
 
 
 def extract_market_label(section_title_text: str, default_market: str = "النظامي") -> str:
-    """تعيين نوع السوق بدقة عالية عبر الكلمات المفتاحية."""
     txt = clean_text(section_title_text)
 
     if any(k in txt for k in ["غير المفصحة", "غير مفصحة", "الثالث", "otc"]):
