@@ -54,12 +54,7 @@ def parse_date_ddmmyyyy(date_str: str):
 def extract_report_from_page(soup, page_number):
     """
     البحث عن التقرير اليومي داخل صفحة واحدة من أرشيف ISX.
-
-    لا نعتمد على أول جدول فقط، لأن الصفحة قد تحتوي على أكثر من جدول
-    وقد يكون التقرير اليومي موجوداً في جدول آخر.
     """
-
-    # نفحص جميع الصفوف الموجودة في جميع الجداول
     for table in soup.find_all("table"):
         for row in table.find_all("tr"):
 
@@ -105,10 +100,6 @@ def extract_report_from_page(soup, page_number):
 
             session_date = date_match.group(1) if date_match else None
 
-            # بناء الرابط بشكل آمن سواء كان:
-            # /path/file.xls
-            # أو path/file.xls
-            # أو رابطاً كاملاً
             full_url = urljoin(BASE_URL + "/", href)
 
             print(
@@ -135,12 +126,7 @@ def extract_report_from_page(soup, page_number):
 
 def get_today_daily_report():
     """
-    البحث عن أحدث تقرير يومي في أرشيف ISX.
-
-    الصفحة الأولى قد تكون مسيطراً عليها بالتقارير الشهرية،
-    لذلك نفحص الصفحات بالتتابع حتى العثور على التقرير اليومي.
-
-    يتم فحص عدد محدود من الصفحات لمنع الدوران غير المنتهي.
+    البحث عن أحدث تقرير يومي في أرشيف ISX باستخدام معامل الترقيم الخاص بالموقع (d-447146-p).
     """
 
     print(
@@ -150,17 +136,12 @@ def get_today_daily_report():
     session = requests.Session()
     session.headers.update(HEADERS)
 
-    # سنجمع التقارير اليومية التي نعثر عليها
     candidates = []
 
     for page_number in range(1, MAX_ARCHIVE_PAGES + 1):
 
-        # الصفحة الأولى بدون parameter
-        if page_number == 1:
-            page_url = LIST_URL
-        else:
-            # محاولة نمط pagination المعتاد
-            page_url = f"{LIST_URL}?page={page_number}"
+        # استخدام الرابط الصحيح الذي يعتمده نظام Java DisplayTag في موقع ISX
+        page_url = f"{LIST_URL}?d-447146-p={page_number}"
 
         print(
             f"[بوابة 1] جاري فحص الصفحة {page_number}: {page_url}"
@@ -174,13 +155,9 @@ def get_today_daily_report():
             resp.raise_for_status()
 
         except requests.RequestException as e:
-
             print(
                 f"[بوابة 1] ⚠️ تعذر تحميل الصفحة {page_number}: {e}"
             )
-
-            # لا نوقف البرنامج فوراً إذا كانت صفحة لاحقة غير متاحة
-            # بل ننتقل للصفحة التالية.
             continue
 
         soup = BeautifulSoup(
@@ -196,10 +173,6 @@ def get_today_daily_report():
         if result:
             candidates.append(result)
 
-            # بما أننا نبحث من الصفحة الأولى إلى الأبعد،
-            # أول تقرير يومي هو عادةً الأحدث.
-            #
-            # لكننا لا نعود مباشرةً قبل التحقق من أن التاريخ صالح.
             report_date = parse_date_ddmmyyyy(
                 result.get("date")
             )
@@ -214,7 +187,7 @@ def get_today_daily_report():
                     today - report_date
                 ).days
 
-                # تقرير حديث ومعقول
+                # تقرير حديث ومعقول (خلال آخر 4 أيام)
                 if 0 <= diff_days <= 4:
 
                     print(
@@ -226,7 +199,6 @@ def get_today_daily_report():
 
                     return result
 
-                # إذا كان التاريخ غير حديث، نكمل البحث
                 print(
                     f"[بوابة 1] ⚠️ التقرير الموجود في الصفحة "
                     f"{page_number} تاريخه {result.get('date')} "
@@ -239,8 +211,6 @@ def get_today_daily_report():
                     f"لكن تعذر استخراج التاريخ، نتابع البحث."
                 )
 
-    # إذا لم نجد تقريراً حديثاً لكن وجدنا تقريراً يومياً
-    # نعيد أقرب مرشح حتى تتولى بوابة التاريخ التحقق النهائي.
     if candidates:
 
         print(
@@ -249,7 +219,6 @@ def get_today_daily_report():
             f"للنطاق المتوقع."
         )
 
-        # اختيار التقرير الذي يملك تاريخاً صالحاً والأقرب لليوم
         today = datetime.now(
             timezone.utc
         ).date()
@@ -285,7 +254,6 @@ def get_today_daily_report():
 
             return selected
 
-        # يوجد تقرير يومي لكن بدون تاريخ
         return candidates[0]
 
     raise QualityGateError(
@@ -360,56 +328,14 @@ def download_excel(url: str):
 
 
 def find_header_row_and_map(sheet):
-    """
-    البحث بالأسماء العربية المتوقعة من ملف الإكسل
-    وربطها بالمفاتيح الإنجليزية للـ JSON التاريخي.
-    """
-
     HEADER_ALIASES = {
-        "open": [
-            "افتتاح",
-            "فتح",
-            "سعر الفتح"
-        ],
-
-        "high": [
-            "اعلى سعر",
-            "أعلى سعر",
-            "أعلى",
-            "اعلى"
-        ],
-
-        "low": [
-            "ادنى سعر",
-            "أدنى سعر",
-            "أدنى",
-            "ادنى"
-        ],
-
-        "close": [
-            "سعر الاغلاق",
-            "سعر الإغلاق",
-            "اغلاق",
-            "إغلاق",
-            "سعر القفل"
-        ],
-
-        "volume": [
-            "الاسهم المتداولة",
-            "الأسهم المتداولة",
-            "حجم التداول"
-        ],
-
-        "value": [
-            "القيمة المتداولة",
-            "القيمة المتدوالة",
-            "قيمة التداول"
-        ],
-
-        "trades": [
-            "الصفقات",
-            "عدد الصفقات"
-        ],
+        "open": ["افتتاح", "فتح", "سعر الفتح"],
+        "high": ["اعلى سعر", "أعلى سعر", "أعلى", "اعلى"],
+        "low": ["ادنى سعر", "أدنى سعر", "أدنى", "ادنى"],
+        "close": ["سعر الاغلاق", "سعر الإغلاق", "اغلاق", "إغلاق", "سعر القفل"],
+        "volume": ["الاسهم المتداولة", "الأسهم المتداولة", "حجم التداول"],
+        "value": ["القيمة المتداولة", "القيمة المتدوالة", "قيمة التداول"],
+        "trades": ["الصفقات", "عدد الصفقات"],
     }
 
     SYMBOL_HEADER_ALIASES = [
@@ -447,7 +373,6 @@ def find_header_row_and_map(sheet):
             if text in SYMBOL_HEADER_ALIASES:
                 symbol_col = col_idx
 
-        # التحقق من الأعمدة المالية الأساسية
         core_fields = {
             "open",
             "high",
@@ -455,9 +380,7 @@ def find_header_row_and_map(sheet):
             "close"
         }
 
-        if core_fields.issubset(
-            col_map.keys()
-        ):
+        if core_fields.issubset(col_map.keys()):
             return (
                 row_idx,
                 col_map,
@@ -499,12 +422,6 @@ def extract_session_date_from_excel(sheet) -> str:
 
 
 def parse_daily_excel(excel_bytes: bytes) -> dict:
-    """
-    تستخرج البيانات وتصيغ القاموس النهائي
-    بالمفاتيح الإنجليزية المتوافقة مع
-    أرشيف الـ JSON التاريخي.
-    """
-
     try:
         wb = openpyxl.load_workbook(
             io.BytesIO(excel_bytes),
@@ -570,10 +487,7 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
 
                 candidate = row_str[symbol_col]
 
-                if pure_symbol_pattern.match(
-                    candidate
-                ):
-
+                if pure_symbol_pattern.match(candidate):
                     symbol = candidate
 
             if not symbol:
@@ -595,12 +509,9 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
                         symbol = text
                         break
 
-                    m = bracket_pattern.search(
-                        text
-                    )
+                    m = bracket_pattern.search(text)
 
                     if m:
-
                         symbol = m.group(1)
                         break
 
@@ -612,9 +523,7 @@ def parse_daily_excel(excel_bytes: bytes) -> dict:
 
             def get_field(field_name):
 
-                col = col_map.get(
-                    field_name
-                )
+                col = col_map.get(field_name)
 
                 if (
                     col is None
@@ -667,10 +576,6 @@ def check_symbol_count(day_data: dict):
 
 
 def validate_records(day_data: dict):
-    """
-    فحص جودة السجلات بناءً على
-    التسميات الجديدة المتوافقة.
-    """
 
     valid = {}
     rejected = []
@@ -681,22 +586,12 @@ def validate_records(day_data: dict):
 
             v = r.get(key)
 
-            if v in (
-                None,
-                "-",
-                ""
-            ):
+            if v in (None, "-", ""):
                 return None
 
             try:
-                return float(
-                    str(v).replace(",", "")
-                )
-
-            except (
-                ValueError,
-                TypeError
-            ):
+                return float(str(v).replace(",", ""))
+            except (ValueError, TypeError):
                 return None
 
         high = as_float("high")
@@ -710,34 +605,19 @@ def validate_records(day_data: dict):
             and low is not None
             and high < low
         ):
-
-            problems.append(
-                f"High({high}) < Low({low})"
-            )
+            problems.append(f"High({high}) < Low({low})")
 
         if (
             close is not None
             and high is not None
             and low is not None
-            and not (
-                low <= close <= high
-            )
+            and not (low <= close <= high)
         ):
-
-            problems.append(
-                f"Close({close}) "
-                f"خارج النطاق [{low}, {high}]"
-            )
+            problems.append(f"Close({close}) خارج النطاق [{low}, {high}]")
 
         if problems:
-
-            rejected.append(
-                f"{symbol}: "
-                + " | ".join(problems)
-            )
-
+            rejected.append(f"{symbol}: " + " | ".join(problems))
         else:
-
             valid[symbol] = r
 
     ratio = (
@@ -774,17 +654,9 @@ def load_existing(path: str) -> dict:
         return {}
 
     try:
-
-        with open(
-            path,
-            "r",
-            encoding="utf-8"
-        ) as f:
-
+        with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
-
     except Exception as e:
-
         raise QualityGateError(
             f"تعذر قراءة ملف JSON الحالي: {e}"
         )
@@ -794,32 +666,16 @@ def save_json(data: dict, path: str):
 
     tmp_path = path + ".tmp"
 
-    with open(
-        tmp_path,
-        "w",
-        encoding="utf-8"
-    ) as f:
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    os.replace(
-        tmp_path,
-        path
-    )
+    os.replace(tmp_path, path)
 
 
 def main():
 
     parser = argparse.ArgumentParser(
-        description=(
-            "التحديث اليومي التلقائي "
-            "لأرشيف أسهم ISX"
-        )
+        description="التحديث اليومي التلقائي لأرشيف أسهم ISX"
     )
 
     parser.add_argument(
@@ -835,34 +691,23 @@ def main():
     args = parser.parse_args()
 
     try:
-
         # بوابة 1
         report = get_today_daily_report()
 
         # بوابة 2
-        validate_report_date(
-            report["date"]
-        )
+        validate_report_date(report["date"])
 
         # بوابة 3
-        excel_bytes = download_excel(
-            report["url"]
-        )
+        excel_bytes = download_excel(report["url"])
 
         # تحليل Excel
-        day_data = parse_daily_excel(
-            excel_bytes
-        )
+        day_data = parse_daily_excel(excel_bytes)
 
         # بوابة 4
-        check_symbol_count(
-            day_data
-        )
+        check_symbol_count(day_data)
 
         # بوابات 5 + 6
-        valid_data = validate_records(
-            day_data
-        )
+        valid_data = validate_records(day_data)
 
     except QualityGateError as e:
 
@@ -880,9 +725,7 @@ def main():
         "جاري الدمج مع ملف الـ JSON التاريخي..."
     )
 
-    data = load_existing(
-        args.existing
-    )
+    data = load_existing(args.existing)
 
     existing_dates = {
         sym: {
@@ -905,40 +748,24 @@ def main():
         record["date"] = record_date
 
         if symbol not in data:
-
             data[symbol] = []
             existing_dates[symbol] = set()
 
-        if (
-            record_date
-            in existing_dates[symbol]
-        ):
+        if record_date in existing_dates[symbol]:
             continue
 
-        data[symbol].insert(
-            0,
-            record
-        )
-
-        existing_dates[symbol].add(
-            record_date
-        )
-
+        data[symbol].insert(0, record)
+        existing_dates[symbol].add(record_date)
         added_count += 1
 
     if added_count == 0:
-
         print(
             "لا توجد سجلات جديدة لإضافتها. "
             "الملف يبقى كما هو دون تعديل."
         )
-
         sys.exit(0)
 
-    save_json(
-        data,
-        args.output
-    )
+    save_json(data, args.output)
 
     print(
         "\n✅ تم التحديث بنجاح! "
