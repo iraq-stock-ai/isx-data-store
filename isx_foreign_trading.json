@@ -6145,6 +6145,15 @@
   ],
   "TASC": [
     {
+      "date": "06/09/2026",
+      "sessionNumber": "155",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 26,
+      "shares": 618583,
+      "value": 9742682
+    },
+    {
       "date": "02/09/2026",
       "sessionNumber": "153",
       "market": "النظامي",
@@ -15237,6 +15246,15 @@
     }
   ],
   "NHAM": [
+    {
+      "date": "06/09/2026",
+      "sessionNumber": "155",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 89008,
+      "value": 445040
+    },
     {
       "date": "03/09/2026",
       "sessionNumber": "154",
