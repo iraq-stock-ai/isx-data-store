@@ -1,6 +1,60 @@
 {
-  "last_known_story_id": 17982,
+  "last_known_story_id": 17984,
   "items": [
+    {
+      "id": "17984",
+      "type": "إفصاح",
+      "title": "التقرير الشهري لسوق العراق للأوراق المالية لشهر آب 2026",
+      "date": "06/09/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_0_11_19_14.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17984&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": "50,932,049,712",
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": null,
+      "other_important_figures": [
+        "عدد الشركات المدرجة: 125",
+        "عدد الشركات التي تم تداول أسهمها: 82",
+        "قيمة الأسهم المتداولة: 22,032,034,576 دينار",
+        "عدد الصفقات المنفذة: 19174",
+        "مؤشر ISX60: 1006.76 نقطة",
+        "مؤشر ISX15: 1243.40 نقطة"
+      ],
+      "confidence_note": "البيانات مستخرجة من التقرير الشهري الرسمي لسوق العراق للأوراق المالية لشهر آب 2026، وتتعلق بأداء السوق العام وليس إفصاحاً لشركة محددة.",
+      "summary": "يستعرض التقرير الشهري لسوق العراق للأوراق المالية لشهر آب 2026 أداء السوق، حيث بلغ عدد الشركات المدرجة 125 شركة، منها 82 شركة شهدت تداولاً بأسهمها. سجل السوق تداول 50.93 مليار سهم بقيمة إجمالية بلغت 22.03 مليار دينار عراقي من خلال 19174 صفقة. كما أظهر التقرير انخفاضاً في مؤشرات الأسعار مقارنة بشهر تموز، حيث أغلق مؤشر ISX60 عند 1006.76 نقطة ومؤشر ISX15 عند 1243.40 نقطة، مع التأكيد على التزام السوق بالأنظمة واللوائح الرقابية الصادرة عن هيئة الأوراق المالية.",
+      "pdf_extraction_status": "success"
+    },
+    {
+      "id": "17983",
+      "type": "إفصاح",
+      "title": "تقييم أداء شركات الوساطة لشهر آب 2026",
+      "date": "06/09/2026",
+      "related_symbols": [],
+      "pdf_url": "http://www.isx-iq.net/isxportal/files/story0_126_9_0_11_6_1.pdf",
+      "url": "http://www.isx-iq.net/isxportal/portal/storyDetails.html?storyId=17983&type=1",
+      "disclosure_type": "اخرى",
+      "company_name": null,
+      "raas_al_mal": null,
+      "net_profit": null,
+      "total_debts": null,
+      "traded_shares_quantity": null,
+      "dividend_per_share": null,
+      "dividend_percentage": null,
+      "dividend_date": "2026",
+      "other_important_figures": [
+        "17.579",
+        "44,098,859,715"
+      ],
+      "confidence_note": "يحتوي النص على جداول إحصائية مقطعية لتقييم أداء شركات الوساطة لشهر آب 2026، ولا يتضمن بيانات مالية لشركة مفردة أو قرارات توزيعات أرباح.",
+      "summary": "تقرير صادر عن سوق العراق للأوراق المالية يتضمن تصنيفاً وتقييماً لأداء شركات الوساطة العاملة في السوق لشهر آب 2026، حيث يوضح الجدول التبادلات التجارية وحجم النشاط لكل شركة وساطة مرتبة وفق معايير التقييم المعتمدة من قبل السوق.",
+      "pdf_extraction_status": "success"
+    },
     {
       "id": "17982",
       "type": "إفصاح",
