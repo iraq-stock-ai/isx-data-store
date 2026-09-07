@@ -2802,6 +2802,15 @@
   ],
   "BMNS": [
     {
+      "date": "07/09/2026",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 2000000,
+      "value": 4200000
+    },
+    {
       "date": "02/09/2026",
       "sessionNumber": "153",
       "market": "النظامي",
@@ -6144,6 +6153,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "07/09/2026",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 32,
+      "shares": 1443685,
+      "value": 22738247
+    },
     {
       "date": "06/09/2026",
       "sessionNumber": "155",
@@ -13209,6 +13227,15 @@
   ],
   "BGUC": [
     {
+      "date": "07/09/2026",
+      "sessionNumber": "156",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 55000,
+      "value": 18150
+    },
+    {
       "date": "17/08/2026",
       "sessionNumber": "142",
       "market": "النظامي",
@@ -15246,6 +15273,15 @@
     }
   ],
   "NHAM": [
+    {
+      "date": "07/09/2026",
+      "sessionNumber": "156",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 95078,
+      "value": 475390
+    },
     {
       "date": "06/09/2026",
       "sessionNumber": "155",
