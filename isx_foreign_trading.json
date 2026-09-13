@@ -6190,6 +6190,15 @@
   ],
   "TASC": [
     {
+      "date": "13/09/2026",
+      "sessionNumber": "160",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 20191,
+      "value": 316942
+    },
+    {
       "date": "09/09/2026",
       "sessionNumber": "158",
       "market": "النظامي",
@@ -12517,6 +12526,15 @@
   ],
   "ITLI": [
     {
+      "date": "13/09/2026",
+      "sessionNumber": "160",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 829652,
+      "value": 1037065
+    },
+    {
       "date": "16/07/2026",
       "sessionNumber": "123",
       "market": "الشركات غير المفصحة",
@@ -18559,6 +18577,17 @@
       "trades": 2,
       "shares": 60000000,
       "value": 12000000
+    }
+  ],
+  "BQUR": [
+    {
+      "date": "13/09/2026",
+      "sessionNumber": "160",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 100000,
+      "value": 104000
     }
   ]
 }
