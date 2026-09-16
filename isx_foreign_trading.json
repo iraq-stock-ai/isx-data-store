@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "16/09/2026",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 34137,
+      "value": 98997
+    },
+    {
       "date": "15/09/2026",
       "sessionNumber": "162",
       "market": "النظامي",
@@ -9151,6 +9160,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "16/09/2026",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 684236,
+      "value": 2570885
+    },
     {
       "date": "15/09/2026",
       "sessionNumber": "162",
@@ -18633,6 +18651,17 @@
       "trades": 2,
       "shares": 100000,
       "value": 104000
+    }
+  ],
+  "AMEF": [
+    {
+      "date": "16/09/2026",
+      "sessionNumber": "163",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1907,
+      "value": 10488
     }
   ]
 }
