@@ -6217,6 +6217,15 @@
   ],
   "TASC": [
     {
+      "date": "17/09/2026",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 242800,
+      "value": 3824100
+    },
+    {
       "date": "15/09/2026",
       "sessionNumber": "162",
       "market": "النظامي",
@@ -9160,6 +9169,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "17/09/2026",
+      "sessionNumber": "164",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 247646,
+      "value": 941054
+    },
     {
       "date": "16/09/2026",
       "sessionNumber": "163",
