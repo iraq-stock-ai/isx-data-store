@@ -6262,6 +6262,15 @@
   ],
   "TASC": [
     {
+      "date": "24/09/2026",
+      "sessionNumber": "169",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 4255,
+      "value": 64590
+    },
+    {
       "date": "23/09/2026",
       "sessionNumber": "168",
       "market": "النظامي",
