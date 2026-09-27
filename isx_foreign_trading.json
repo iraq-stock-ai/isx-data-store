@@ -2856,6 +2856,15 @@
   ],
   "BMNS": [
     {
+      "date": "27/09/2026",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 16,
+      "shares": 98500000,
+      "value": 198466278
+    },
+    {
       "date": "23/09/2026",
       "sessionNumber": "168",
       "market": "النظامي",
@@ -6261,6 +6270,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "27/09/2026",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 92,
+      "shares": 36838644,
+      "value": 555132535
+    },
     {
       "date": "24/09/2026",
       "sessionNumber": "169",
@@ -15963,6 +15981,15 @@
     }
   ],
   "AIPM": [
+    {
+      "date": "27/09/2026",
+      "sessionNumber": "170",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100000,
+      "value": 465000
+    },
     {
       "date": "20/07/2026",
       "sessionNumber": "125",
