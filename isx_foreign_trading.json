@@ -6271,6 +6271,15 @@
   ],
   "TASC": [
     {
+      "date": "28/09/2026",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 15000,
+      "value": 223500
+    },
+    {
       "date": "27/09/2026",
       "sessionNumber": "170",
       "market": "النظامي",
@@ -11620,6 +11629,15 @@
   ],
   "IMAP": [
     {
+      "date": "28/09/2026",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 93268,
+      "value": 208920
+    },
+    {
       "date": "22/09/2026",
       "sessionNumber": "167",
       "market": "النظامي",
@@ -14137,6 +14155,15 @@
     }
   ],
   "BASH": [
+    {
+      "date": "28/09/2026",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 779657,
+      "value": 241693
+    },
     {
       "date": "01/07/2026",
       "sessionNumber": "113",
@@ -16920,6 +16947,15 @@
     }
   ],
   "BWAI": [
+    {
+      "date": "28/09/2026",
+      "sessionNumber": "171",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100000,
+      "value": 13000
+    },
     {
       "date": "23/04/2026",
       "sessionNumber": "70",
