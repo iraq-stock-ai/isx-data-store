@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1710000,
+      "value": 4873500
+    },
+    {
       "date": "22/09/2026",
       "sessionNumber": "167",
       "market": "النظامي",
@@ -6271,6 +6280,24 @@
   ],
   "TASC": [
     {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 20,
+      "shares": 1832621,
+      "value": 27495865
+    },
+    {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 20000,
+      "value": 300000
+    },
+    {
       "date": "28/09/2026",
       "sessionNumber": "171",
       "market": "النظامي",
@@ -9268,6 +9295,24 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 18,
+      "shares": 3062637,
+      "value": 11331756
+    },
+    {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 10000,
+      "value": 37000
+    },
     {
       "date": "22/09/2026",
       "sessionNumber": "167",
@@ -18486,6 +18531,15 @@
     }
   ],
   "HISH": [
+    {
+      "date": "04/10/2026",
+      "sessionNumber": "173",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 9,
+      "shares": 116284,
+      "value": 1081441
+    },
     {
       "date": "29/07/2026",
       "sessionNumber": "132",
