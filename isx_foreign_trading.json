@@ -2865,6 +2865,24 @@
   ],
   "BMNS": [
     {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 39479,
+      "value": 78958
+    },
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 9590000,
+      "value": 18988200
+    },
+    {
       "date": "27/09/2026",
       "sessionNumber": "170",
       "market": "النظامي",
@@ -6170,6 +6188,15 @@
   ],
   "BEFI": [
     {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 233983,
+      "value": 51476
+    },
+    {
       "date": "26/08/2026",
       "sessionNumber": "148",
       "market": "النظامي",
@@ -6279,6 +6306,24 @@
     }
   ],
   "TASC": [
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 70,
+      "shares": 4771683,
+      "value": 70863071
+    },
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 58000,
+      "value": 864200
+    },
     {
       "date": "05/10/2026",
       "sessionNumber": "174",
@@ -9322,6 +9367,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 8,
+      "shares": 500000,
+      "value": 1825000
+    },
     {
       "date": "04/10/2026",
       "sessionNumber": "173",
@@ -16953,6 +17007,15 @@
   ],
   "SNUC": [
     {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 4000,
+      "value": 2280
+    },
+    {
       "date": "05/10/2026",
       "sessionNumber": "174",
       "market": "النظامي",
@@ -17089,6 +17152,15 @@
     }
   ],
   "HKAR": [
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 175000,
+      "value": 70000
+    },
     {
       "date": "05/10/2026",
       "sessionNumber": "174",
@@ -17798,6 +17870,15 @@
     }
   ],
   "IHLI": [
+    {
+      "date": "06/10/2026",
+      "sessionNumber": "175",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 4801000,
+      "value": 6952128
+    },
     {
       "date": "26/02/2026",
       "sessionNumber": "38",
