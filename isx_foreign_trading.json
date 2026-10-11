@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "11/10/2026",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 1451492,
+      "value": 4127722
+    },
+    {
       "date": "08/10/2026",
       "sessionNumber": "177",
       "market": "النظامي",
@@ -2891,6 +2900,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "11/10/2026",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 39,
+      "shares": 155000000,
+      "value": 317374425
+    },
     {
       "date": "08/10/2026",
       "sessionNumber": "177",
@@ -6351,6 +6369,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "11/10/2026",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 73950,
+      "value": 1115905
+    },
     {
       "date": "08/10/2026",
       "sessionNumber": "177",
@@ -13865,6 +13892,15 @@
     }
   ],
   "BGUC": [
+    {
+      "date": "11/10/2026",
+      "sessionNumber": "178",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 1873913,
+      "value": 562215
+    },
     {
       "date": "05/10/2026",
       "sessionNumber": "174",
