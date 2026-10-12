@@ -8658,6 +8658,15 @@
   ],
   "BIBI": [
     {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 4800,
+      "value": 1776
+    },
+    {
       "date": "27/08/2026",
       "sessionNumber": "149",
       "market": "النظامي",
@@ -8949,6 +8958,15 @@
     }
   ],
   "BROI": [
+    {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "الثاني",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 1162486,
+      "value": 546368
+    },
     {
       "date": "07/10/2026",
       "sessionNumber": "176",
@@ -9475,6 +9493,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 1280390,
+      "value": 4737443
+    },
     {
       "date": "08/10/2026",
       "sessionNumber": "177",
@@ -13893,6 +13920,15 @@
   ],
   "BGUC": [
     {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 171599,
+      "value": 51479
+    },
+    {
       "date": "11/10/2026",
       "sessionNumber": "178",
       "market": "النظامي",
@@ -14643,6 +14679,15 @@
     }
   ],
   "TZNI": [
+    {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 30767,
+      "value": 112914
+    },
     {
       "date": "05/10/2026",
       "sessionNumber": "174",
@@ -18022,6 +18067,15 @@
   ],
   "HBAY": [
     {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 10370,
+      "value": 1037000
+    },
+    {
       "date": "26/02/2026",
       "sessionNumber": "38",
       "market": "النظامي",
@@ -18537,6 +18591,15 @@
   ],
   "IIEW": [
     {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 20000,
+      "value": 96000
+    },
+    {
       "date": "07/10/2026",
       "sessionNumber": "176",
       "market": "النظامي",
@@ -18715,6 +18778,15 @@
     }
   ],
   "IICM": [
+    {
+      "date": "12/10/2026",
+      "sessionNumber": "179",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 509940,
+      "value": 764910
+    },
     {
       "date": "08/10/2026",
       "sessionNumber": "177",
