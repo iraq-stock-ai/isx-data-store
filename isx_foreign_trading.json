@@ -6370,6 +6370,15 @@
   ],
   "TASC": [
     {
+      "date": "13/10/2026",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 519396,
+      "value": 7920789
+    },
+    {
       "date": "11/10/2026",
       "sessionNumber": "178",
       "market": "النظامي",
@@ -13920,6 +13929,15 @@
   ],
   "BGUC": [
     {
+      "date": "13/10/2026",
+      "sessionNumber": "180",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 1000000,
+      "value": 310000
+    },
+    {
       "date": "12/10/2026",
       "sessionNumber": "179",
       "market": "النظامي",
@@ -18779,6 +18797,15 @@
   ],
   "IICM": [
     {
+      "date": "13/10/2026",
+      "sessionNumber": "180",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 239977,
+      "value": 383963
+    },
+    {
       "date": "12/10/2026",
       "sessionNumber": "179",
       "market": "الشركات غير المفصحة",
@@ -19483,6 +19510,17 @@
       "trades": 1,
       "shares": 800,
       "value": 264
+    }
+  ],
+  "HNTI": [
+    {
+      "date": "13/10/2026",
+      "sessionNumber": "180",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 356329,
+      "value": 3138695
     }
   ]
 }
