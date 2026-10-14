@@ -8667,6 +8667,15 @@
   ],
   "BIBI": [
     {
+      "date": "14/10/2026",
+      "sessionNumber": "181",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 5042,
+      "value": 1966
+    },
+    {
       "date": "12/10/2026",
       "sessionNumber": "179",
       "market": "النظامي",
