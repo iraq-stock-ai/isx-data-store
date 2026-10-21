@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "21/10/2026",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 200000,
+      "value": 542000
+    },
+    {
       "date": "20/10/2026",
       "sessionNumber": "185",
       "market": "النظامي",
@@ -6296,6 +6305,15 @@
   ],
   "BEFI": [
     {
+      "date": "21/10/2026",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2500000,
+      "value": 525000
+    },
+    {
       "date": "06/10/2026",
       "sessionNumber": "175",
       "market": "النظامي",
@@ -9066,6 +9084,15 @@
     }
   ],
   "BROI": [
+    {
+      "date": "21/10/2026",
+      "sessionNumber": "186",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 2432986,
+      "value": 1119173
+    },
     {
       "date": "19/10/2026",
       "sessionNumber": "184",
@@ -15167,6 +15194,15 @@
     }
   ],
   "BIIB": [
+    {
+      "date": "21/10/2026",
+      "sessionNumber": "186",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 3000000,
+      "value": 2760000
+    },
     {
       "date": "20/10/2026",
       "sessionNumber": "185",
