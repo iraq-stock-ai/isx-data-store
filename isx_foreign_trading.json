@@ -6305,6 +6305,15 @@
   ],
   "BEFI": [
     {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 3000000,
+      "value": 660000
+    },
+    {
       "date": "21/10/2026",
       "sessionNumber": "186",
       "market": "النظامي",
@@ -6432,6 +6441,15 @@
     }
   ],
   "TASC": [
+    {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 72,
+      "shares": 10000000,
+      "value": 150072639
+    },
     {
       "date": "20/10/2026",
       "sessionNumber": "185",
@@ -9637,6 +9655,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 18750,
+      "value": 65812
+    },
     {
       "date": "20/10/2026",
       "sessionNumber": "185",
@@ -13237,6 +13264,15 @@
   ],
   "ITLI": [
     {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 3000000,
+      "value": 3540006
+    },
+    {
       "date": "13/09/2026",
       "sessionNumber": "160",
       "market": "الشركات غير المفصحة",
@@ -13337,6 +13373,15 @@
     }
   ],
   "BINT": [
+    {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 4000000,
+      "value": 580000
+    },
     {
       "date": "20/10/2026",
       "sessionNumber": "185",
@@ -15194,6 +15239,15 @@
     }
   ],
   "BIIB": [
+    {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 3000000,
+      "value": 2700000
+    },
     {
       "date": "21/10/2026",
       "sessionNumber": "186",
@@ -19676,6 +19730,15 @@
     }
   ],
   "BINI": [
+    {
+      "date": "22/10/2026",
+      "sessionNumber": "187",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 308098,
+      "value": 61619
+    },
     {
       "date": "11/08/2026",
       "sessionNumber": "139",
