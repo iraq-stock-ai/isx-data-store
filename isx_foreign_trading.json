@@ -15851,6 +15851,15 @@
   ],
   "BIME": [
     {
+      "date": "25/10/2026",
+      "sessionNumber": "188",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 23,
+      "shares": 115000000,
+      "value": 7824474
+    },
+    {
       "date": "05/10/2026",
       "sessionNumber": "174",
       "market": "النظامي",
@@ -16856,6 +16865,15 @@
     }
   ],
   "BSUC": [
+    {
+      "date": "25/10/2026",
+      "sessionNumber": "188",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 58,
+      "shares": 137563133,
+      "value": 27512626
+    },
     {
       "date": "13/08/2026",
       "sessionNumber": "140",
