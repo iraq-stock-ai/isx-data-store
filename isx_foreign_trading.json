@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "26/10/2026",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 2000000,
+      "value": 5268745
+    },
+    {
       "date": "21/10/2026",
       "sessionNumber": "186",
       "market": "النظامي",
@@ -15851,6 +15860,15 @@
   ],
   "BIME": [
     {
+      "date": "26/10/2026",
+      "sessionNumber": "189",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 22214766,
+      "value": 1555033
+    },
+    {
       "date": "25/10/2026",
       "sessionNumber": "188",
       "market": "النظامي",
@@ -16865,6 +16883,15 @@
     }
   ],
   "BSUC": [
+    {
+      "date": "26/10/2026",
+      "sessionNumber": "189",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 51,
+      "shares": 67436867,
+      "value": 13487373
+    },
     {
       "date": "25/10/2026",
       "sessionNumber": "188",
@@ -19671,6 +19698,15 @@
   ],
   "BJAB": [
     {
+      "date": "26/10/2026",
+      "sessionNumber": "189",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 30000,
+      "value": 28800
+    },
+    {
       "date": "27/10/2024",
       "sessionNumber": "197",
       "market": "الثاني",
@@ -19748,6 +19784,15 @@
     }
   ],
   "BINI": [
+    {
+      "date": "26/10/2026",
+      "sessionNumber": "189",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 1191902,
+      "value": 262218
+    },
     {
       "date": "22/10/2026",
       "sessionNumber": "187",
