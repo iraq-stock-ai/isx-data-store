@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 1000000,
+      "value": 2640000
+    },
+    {
       "date": "26/10/2026",
       "sessionNumber": "189",
       "market": "النظامي",
@@ -2945,6 +2954,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 100000000,
+      "value": 195000000
+    },
     {
       "date": "20/10/2026",
       "sessionNumber": "185",
@@ -14163,6 +14181,15 @@
   ],
   "BGUC": [
     {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 3,
+      "shares": 2091567,
+      "value": 627470
+    },
+    {
       "date": "20/10/2026",
       "sessionNumber": "185",
       "market": "النظامي",
@@ -15249,6 +15276,15 @@
   ],
   "BIIB": [
     {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 500000,
+      "value": 440000
+    },
+    {
       "date": "22/10/2026",
       "sessionNumber": "187",
       "market": "النظامي",
@@ -15859,6 +15895,15 @@
     }
   ],
   "BIME": [
+    {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 28897095,
+      "value": 2022796
+    },
     {
       "date": "26/10/2026",
       "sessionNumber": "189",
@@ -16883,6 +16928,15 @@
     }
   ],
   "BSUC": [
+    {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "الشركات غير المفصحة",
+      "direction": "sell",
+      "trades": 120,
+      "shares": 74192245,
+      "value": 14838449
+    },
     {
       "date": "26/10/2026",
       "sessionNumber": "189",
@@ -19234,6 +19288,15 @@
     }
   ],
   "SBPT": [
+    {
+      "date": "27/10/2026",
+      "sessionNumber": "190",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 577,
+      "value": 10386
+    },
     {
       "date": "23/07/2026",
       "sessionNumber": "128",
