@@ -6469,6 +6469,15 @@
   ],
   "TASC": [
     {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 82,
+      "shares": 13074104,
+      "value": 196379972
+    },
+    {
       "date": "22/10/2026",
       "sessionNumber": "187",
       "market": "النظامي",
@@ -9129,6 +9138,15 @@
     }
   ],
   "BROI": [
+    {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1567014,
+      "value": 733524
+    },
     {
       "date": "21/10/2026",
       "sessionNumber": "186",
@@ -14181,6 +14199,24 @@
   ],
   "BGUC": [
     {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 17149581,
+      "value": 4973378
+    },
+    {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 10000000,
+      "value": 2900000
+    },
+    {
       "date": "27/10/2026",
       "sessionNumber": "190",
       "market": "النظامي",
@@ -15896,6 +15932,15 @@
   ],
   "BIME": [
     {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 12,
+      "shares": 39111861,
+      "value": 2737830
+    },
+    {
       "date": "27/10/2026",
       "sessionNumber": "190",
       "market": "النظامي",
@@ -16928,6 +16973,15 @@
     }
   ],
   "BSUC": [
+    {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 80,
+      "shares": 20000000,
+      "value": 4000000
+    },
     {
       "date": "27/10/2026",
       "sessionNumber": "190",
@@ -19926,6 +19980,17 @@
       "trades": 3,
       "shares": 356329,
       "value": 3138695
+    }
+  ],
+  "OMWJ": [
+    {
+      "date": "28/10/2026",
+      "sessionNumber": "191",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 100,
+      "value": 10700
     }
   ]
 }
