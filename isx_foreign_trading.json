@@ -2955,6 +2955,15 @@
   ],
   "BMNS": [
     {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 54,
+      "shares": 23000000,
+      "value": 42922316
+    },
+    {
       "date": "27/10/2026",
       "sessionNumber": "190",
       "market": "النظامي",
@@ -6469,6 +6478,15 @@
   ],
   "TASC": [
     {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 107,
+      "shares": 11801963,
+      "value": 175818473
+    },
+    {
       "date": "28/10/2026",
       "sessionNumber": "191",
       "market": "النظامي",
@@ -9138,6 +9156,15 @@
     }
   ],
   "BROI": [
+    {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1000000,
+      "value": 470000
+    },
     {
       "date": "28/10/2026",
       "sessionNumber": "191",
@@ -14199,6 +14226,15 @@
   ],
   "BGUC": [
     {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 10170000,
+      "value": 2949300
+    },
+    {
       "date": "28/10/2026",
       "sessionNumber": "191",
       "market": "النظامي",
@@ -15932,6 +15968,15 @@
   ],
   "BIME": [
     {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 22888139,
+      "value": 1602169
+    },
+    {
       "date": "28/10/2026",
       "sessionNumber": "191",
       "market": "النظامي",
@@ -16973,6 +17018,15 @@
     }
   ],
   "BSUC": [
+    {
+      "date": "29/10/2026",
+      "sessionNumber": "192",
+      "market": "الشركات غير المفصحة",
+      "direction": "buy",
+      "trades": 93,
+      "shares": 75807755,
+      "value": 15161551
+    },
     {
       "date": "28/10/2026",
       "sessionNumber": "191",
