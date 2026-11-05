@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 450000,
+      "value": 1147500
+    },
+    {
       "date": "01/11/2026",
       "sessionNumber": "193",
       "market": "النظامي",
@@ -6505,6 +6514,24 @@
   ],
   "TASC": [
     {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 99,
+      "shares": 7548397,
+      "value": 105718992
+    },
+    {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 2000000,
+      "value": 28000000
+    },
+    {
       "date": "02/11/2026",
       "sessionNumber": "194",
       "market": "النظامي",
@@ -9772,6 +9799,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 450000,
+      "value": 1422000
+    },
     {
       "date": "02/11/2026",
       "sessionNumber": "194",
@@ -14288,6 +14324,15 @@
     }
   ],
   "BGUC": [
+    {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 300000
+    },
     {
       "date": "03/11/2026",
       "sessionNumber": "195",
@@ -20153,6 +20198,17 @@
       "trades": 1,
       "shares": 100,
       "value": 10700
+    }
+  ],
+  "FISH": [
+    {
+      "date": "05/11/2026",
+      "sessionNumber": "197",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 4000,
+      "value": 4000
     }
   ]
 }
