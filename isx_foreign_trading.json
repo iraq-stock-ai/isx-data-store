@@ -6514,6 +6514,15 @@
   ],
   "TASC": [
     {
+      "date": "08/11/2026",
+      "sessionNumber": "198",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 10,
+      "shares": 2630000,
+      "value": 36795000
+    },
+    {
       "date": "05/11/2026",
       "sessionNumber": "197",
       "market": "النظامي",
@@ -13782,6 +13791,15 @@
     }
   ],
   "BCOI": [
+    {
+      "date": "08/11/2026",
+      "sessionNumber": "198",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 10000,
+      "value": 5000
+    },
     {
       "date": "02/11/2026",
       "sessionNumber": "194",
