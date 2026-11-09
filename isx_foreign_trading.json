@@ -14343,6 +14343,15 @@
   ],
   "BGUC": [
     {
+      "date": "09/11/2026",
+      "sessionNumber": "199",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 100000000,
+      "value": 29000000
+    },
+    {
       "date": "05/11/2026",
       "sessionNumber": "197",
       "market": "النظامي",
