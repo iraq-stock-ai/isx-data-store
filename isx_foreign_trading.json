@@ -6514,6 +6514,24 @@
   ],
   "TASC": [
     {
+      "date": "10/11/2026",
+      "sessionNumber": "200",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 27,
+      "shares": 3000000,
+      "value": 41856393
+    },
+    {
+      "date": "10/11/2026",
+      "sessionNumber": "200",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 5,
+      "shares": 3000000,
+      "value": 41950000
+    },
+    {
       "date": "08/11/2026",
       "sessionNumber": "198",
       "market": "النظامي",
@@ -14343,6 +14361,15 @@
   ],
   "BGUC": [
     {
+      "date": "10/11/2026",
+      "sessionNumber": "200",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 500001,
+      "value": 145000
+    },
+    {
       "date": "09/11/2026",
       "sessionNumber": "199",
       "market": "النظامي",
@@ -19322,6 +19349,15 @@
   ],
   "IKLV": [
     {
+      "date": "10/11/2026",
+      "sessionNumber": "200",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 9201000,
+      "value": 23017550
+    },
+    {
       "date": "08/10/2026",
       "sessionNumber": "177",
       "market": "النظامي",
@@ -19567,6 +19603,15 @@
     }
   ],
   "SBPT": [
+    {
+      "date": "10/11/2026",
+      "sessionNumber": "200",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 5,
+      "shares": 400000,
+      "value": 7200000
+    },
     {
       "date": "27/10/2026",
       "sessionNumber": "190",
