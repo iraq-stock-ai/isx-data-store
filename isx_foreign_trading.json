@@ -6514,6 +6514,15 @@
   ],
   "TASC": [
     {
+      "date": "11/11/2026",
+      "sessionNumber": "201",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 13,
+      "shares": 2500000,
+      "value": 34925000
+    },
+    {
       "date": "10/11/2026",
       "sessionNumber": "200",
       "market": "النظامي",
@@ -19603,6 +19612,15 @@
     }
   ],
   "SBPT": [
+    {
+      "date": "11/11/2026",
+      "sessionNumber": "201",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 17,
+      "shares": 602000,
+      "value": 10550250
+    },
     {
       "date": "10/11/2026",
       "sessionNumber": "200",
