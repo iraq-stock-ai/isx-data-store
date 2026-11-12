@@ -14370,6 +14370,15 @@
   ],
   "BGUC": [
     {
+      "date": "12/11/2026",
+      "sessionNumber": "202",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 54534518,
+      "value": 15815010
+    },
+    {
       "date": "10/11/2026",
       "sessionNumber": "200",
       "market": "النظامي",
@@ -19612,6 +19621,15 @@
     }
   ],
   "SBPT": [
+    {
+      "date": "12/11/2026",
+      "sessionNumber": "202",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 15,
+      "shares": 348000,
+      "value": 5921200
+    },
     {
       "date": "11/11/2026",
       "sessionNumber": "201",
