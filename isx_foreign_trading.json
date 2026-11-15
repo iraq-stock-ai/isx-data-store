@@ -19367,6 +19367,15 @@
   ],
   "IKLV": [
     {
+      "date": "15/11/2026",
+      "sessionNumber": "203",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 10400000,
+      "value": 26000000
+    },
+    {
       "date": "10/11/2026",
       "sessionNumber": "200",
       "market": "النظامي",
@@ -19621,6 +19630,15 @@
     }
   ],
   "SBPT": [
+    {
+      "date": "15/11/2026",
+      "sessionNumber": "203",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 11,
+      "shares": 450000,
+      "value": 7650000
+    },
     {
       "date": "12/11/2026",
       "sessionNumber": "202",
