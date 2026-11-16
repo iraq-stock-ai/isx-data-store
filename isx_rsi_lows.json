@@ -22,7 +22,7 @@
       "BHAM",
       "BAME"
     ],
-    "last_run": "2026-11-15T20:05:40Z"
+    "last_run": "2026-11-16T23:36:48Z"
   },
   "symbols": {
     "BROI": {
@@ -30,12 +30,12 @@
       "min_rsi_date": "2025-05-08",
       "close_at_min_rsi": 0.77,
       "last_rsi": 30.6719,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.45,
-      "records_used": 894,
+      "records_used": 895,
       "excluded_zero_close": 26,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AAHP": {
       "min_rsi": 15.9647,
@@ -47,7 +47,7 @@
       "records_used": 242,
       "excluded_zero_close": 103,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "NAHF": {
       "min_rsi": 26.9459,
@@ -59,31 +59,31 @@
       "records_used": 76,
       "excluded_zero_close": 145,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "NHAM": {
       "min_rsi": 19.1565,
       "min_rsi_date": "2026-10-25",
       "close_at_min_rsi": 2.87,
       "last_rsi": 35.6658,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 3.05,
-      "records_used": 186,
+      "records_used": 187,
       "excluded_zero_close": 100,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AIRP": {
       "min_rsi": 14.0848,
       "min_rsi_date": "2025-02-19",
       "close_at_min_rsi": 13.6,
       "last_rsi": 34.4246,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 10.7,
-      "records_used": 375,
+      "records_used": 376,
       "excluded_zero_close": 126,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SIGT": {
       "min_rsi": 15.0905,
@@ -95,43 +95,43 @@
       "records_used": 308,
       "excluded_zero_close": 29,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HTVM": {
       "min_rsi": 26.2581,
       "min_rsi_date": "2026-10-28",
       "close_at_min_rsi": 10.0,
-      "last_rsi": 34.2184,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 10.0,
-      "records_used": 240,
+      "last_rsi": 54.2346,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 12.0,
+      "records_used": 241,
       "excluded_zero_close": 78,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BIBI": {
       "min_rsi": 13.733,
       "min_rsi_date": "2024-11-28",
       "close_at_min_rsi": 0.26,
       "last_rsi": 37.6202,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.36,
-      "records_used": 931,
+      "records_used": 932,
       "excluded_zero_close": 31,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BEFI": {
       "min_rsi": 25.5214,
       "min_rsi_date": "2023-03-20",
       "close_at_min_rsi": 0.13,
-      "last_rsi": 48.3009,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 0.22,
-      "records_used": 652,
+      "last_rsi": 35.6216,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.21,
+      "records_used": 653,
       "excluded_zero_close": 28,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BNAI": {
       "min_rsi": 14.4812,
@@ -143,19 +143,19 @@
       "records_used": 128,
       "excluded_zero_close": 130,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IHLI": {
       "min_rsi": 13.1056,
       "min_rsi_date": "2026-04-19",
       "close_at_min_rsi": 1.3,
-      "last_rsi": 26.5504,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.2,
-      "records_used": 438,
+      "last_rsi": 28.5599,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.21,
+      "records_used": 439,
       "excluded_zero_close": 60,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HBAY": {
       "min_rsi": 21.0578,
@@ -167,19 +167,19 @@
       "records_used": 481,
       "excluded_zero_close": 93,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SBPT": {
       "min_rsi": 12.1556,
       "min_rsi_date": "2026-01-14",
       "close_at_min_rsi": 23.0,
-      "last_rsi": 24.7838,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 17.1,
-      "records_used": 1049,
+      "last_rsi": 23.8658,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 17.0,
+      "records_used": 1050,
       "excluded_zero_close": 16,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IBPM": {
       "min_rsi": 34.3195,
@@ -191,7 +191,7 @@
       "records_used": 131,
       "excluded_zero_close": 145,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BAMS": {
       "min_rsi": 42.3729,
@@ -203,19 +203,19 @@
       "records_used": 19,
       "excluded_zero_close": 149,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BMNS": {
       "min_rsi": 11.4293,
       "min_rsi_date": "2025-03-05",
       "close_at_min_rsi": 1.48,
-      "last_rsi": 24.8631,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.77,
-      "records_used": 1123,
+      "last_rsi": 23.8258,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.76,
+      "records_used": 1124,
       "excluded_zero_close": 5,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BTIB": {
       "min_rsi": 0.0,
@@ -227,7 +227,7 @@
       "records_used": 355,
       "excluded_zero_close": 83,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BANS": {
       "min_rsi": 0.0,
@@ -239,55 +239,55 @@
       "records_used": 32,
       "excluded_zero_close": 141,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BASH": {
       "min_rsi": 15.3967,
       "min_rsi_date": "2025-09-10",
       "close_at_min_rsi": 0.21,
-      "last_rsi": 31.4862,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 0.26,
-      "records_used": 861,
+      "last_rsi": 27.7597,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.25,
+      "records_used": 862,
       "excluded_zero_close": 20,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HBAG": {
       "min_rsi": 17.7719,
       "min_rsi_date": "2024-07-02",
       "close_at_min_rsi": 10.0,
-      "last_rsi": 44.1054,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 12.25,
-      "records_used": 808,
+      "last_rsi": 46.1899,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 12.3,
+      "records_used": 809,
       "excluded_zero_close": 54,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HPAL": {
       "min_rsi": 25.2361,
       "min_rsi_date": "2021-06-08",
       "close_at_min_rsi": 7.79,
-      "last_rsi": 43.3843,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 18.9,
-      "records_used": 330,
+      "last_rsi": 43.2117,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 18.89,
+      "records_used": 331,
       "excluded_zero_close": 23,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SKTA": {
       "min_rsi": 6.5425,
       "min_rsi_date": "2021-02-04",
       "close_at_min_rsi": 3.26,
       "last_rsi": 44.1857,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 4.35,
-      "records_used": 912,
+      "records_used": 913,
       "excluded_zero_close": 43,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HKAR": {
       "min_rsi": 6.1141,
@@ -299,7 +299,7 @@
       "records_used": 287,
       "excluded_zero_close": 127,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IMCM": {
       "min_rsi": 22.7406,
@@ -311,103 +311,103 @@
       "records_used": 144,
       "excluded_zero_close": 37,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HISH": {
       "min_rsi": 12.3403,
       "min_rsi_date": "2025-01-15",
       "close_at_min_rsi": 9.36,
       "last_rsi": 38.6882,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 9.0,
-      "records_used": 868,
+      "records_used": 869,
       "excluded_zero_close": 14,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "TASC": {
       "min_rsi": 14.9516,
       "min_rsi_date": "2021-12-01",
       "close_at_min_rsi": 6.79,
-      "last_rsi": 21.969,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 13.5,
-      "records_used": 1190,
+      "last_rsi": 20.4794,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 13.37,
+      "records_used": 1191,
       "excluded_zero_close": 0,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SAEI": {
       "min_rsi": 22.9552,
       "min_rsi_date": "2025-10-12",
       "close_at_min_rsi": 1.47,
       "last_rsi": 25.4731,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 1.1,
-      "records_used": 490,
+      "records_used": 491,
       "excluded_zero_close": 39,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "TZNI": {
       "min_rsi": 20.4417,
       "min_rsi_date": "2025-03-13",
       "close_at_min_rsi": 2.2,
-      "last_rsi": 33.7387,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 3.42,
-      "records_used": 522,
+      "last_rsi": 32.4748,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 3.4,
+      "records_used": 523,
       "excluded_zero_close": 17,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IMOS": {
       "min_rsi": 21.8222,
       "min_rsi_date": "2021-12-07",
       "close_at_min_rsi": 4.51,
-      "last_rsi": 34.9054,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 5.6,
-      "records_used": 824,
+      "last_rsi": 33.1646,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 5.5,
+      "records_used": 825,
       "excluded_zero_close": 22,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IITC": {
       "min_rsi": 20.1832,
       "min_rsi_date": "2023-01-09",
       "close_at_min_rsi": 14.0,
       "last_rsi": 34.0663,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 17.0,
-      "records_used": 714,
+      "records_used": 715,
       "excluded_zero_close": 65,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BNOI": {
       "min_rsi": 8.7462,
       "min_rsi_date": "2022-05-25",
       "close_at_min_rsi": 1.03,
-      "last_rsi": 26.8384,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 3.0,
-      "records_used": 1174,
+      "last_rsi": 29.9682,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 3.03,
+      "records_used": 1175,
       "excluded_zero_close": 9,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BIIB": {
       "min_rsi": 13.0997,
       "min_rsi_date": "2025-08-21",
       "close_at_min_rsi": 1.01,
-      "last_rsi": 40.5249,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 0.87,
-      "records_used": 883,
+      "last_rsi": 46.8725,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.89,
+      "records_used": 884,
       "excluded_zero_close": 7,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BUND": {
       "min_rsi": 5.1846,
@@ -419,43 +419,43 @@
       "records_used": 631,
       "excluded_zero_close": 72,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "INCP": {
       "min_rsi": 17.8705,
       "min_rsi_date": "2021-08-18",
       "close_at_min_rsi": 2.3,
-      "last_rsi": 34.8386,
-      "last_rsi_date": "2026-11-12",
-      "last_close": 1.72,
-      "records_used": 603,
+      "last_rsi": 48.722,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.8,
+      "records_used": 604,
       "excluded_zero_close": 33,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "NDSA": {
       "min_rsi": 19.204,
       "min_rsi_date": "2022-05-17",
       "close_at_min_rsi": 0.39,
       "last_rsi": 39.7509,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.65,
-      "records_used": 310,
+      "records_used": 311,
       "excluded_zero_close": 118,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BSUC": {
       "min_rsi": 0.0,
       "min_rsi_date": "2021-04-25",
       "close_at_min_rsi": 0.39,
       "last_rsi": 49.882,
-      "last_rsi_date": "2026-11-12",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.21,
-      "records_used": 969,
+      "records_used": 970,
       "excluded_zero_close": 23,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BTRI": {
       "min_rsi": 13.7829,
@@ -467,7 +467,7 @@
       "records_used": 140,
       "excluded_zero_close": 124,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BKUI": {
       "min_rsi": 0.0,
@@ -479,7 +479,7 @@
       "records_used": 273,
       "excluded_zero_close": 72,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BINI": {
       "min_rsi": 11.8924,
@@ -491,19 +491,19 @@
       "records_used": 125,
       "excluded_zero_close": 128,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BLAD": {
       "min_rsi": 16.0839,
       "min_rsi_date": "2026-07-09",
       "close_at_min_rsi": 0.09,
       "last_rsi": 36.8187,
-      "last_rsi_date": "2026-11-12",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.07,
-      "records_used": 465,
+      "records_used": 466,
       "excluded_zero_close": 104,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BIDB": {
       "min_rsi": 100.0,
@@ -515,7 +515,7 @@
       "records_used": 23,
       "excluded_zero_close": 156,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BTRU": {
       "min_rsi": 50.0,
@@ -527,7 +527,7 @@
       "records_used": 38,
       "excluded_zero_close": 156,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HSAD": {
       "min_rsi": 40.0191,
@@ -539,7 +539,7 @@
       "records_used": 145,
       "excluded_zero_close": 96,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "VAMF": {
       "min_rsi": 30.7157,
@@ -551,31 +551,31 @@
       "records_used": 106,
       "excluded_zero_close": 137,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "NAME": {
-      "min_rsi": 28.6531,
-      "min_rsi_date": "2025-10-22",
-      "close_at_min_rsi": 0.85,
-      "last_rsi": 32.2741,
-      "last_rsi_date": "2026-11-09",
-      "last_close": 0.75,
-      "records_used": 425,
+      "min_rsi": 23.0718,
+      "min_rsi_date": "2026-11-16",
+      "close_at_min_rsi": 0.68,
+      "last_rsi": 23.0718,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.68,
+      "records_used": 426,
       "excluded_zero_close": 47,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SBAG": {
       "min_rsi": 20.5825,
       "min_rsi_date": "2026-02-05",
       "close_at_min_rsi": 0.85,
-      "last_rsi": 65.7506,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.34,
-      "records_used": 145,
+      "last_rsi": 70.8785,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.36,
+      "records_used": 146,
       "excluded_zero_close": 68,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "VKHF": {
       "min_rsi": 16.6667,
@@ -587,7 +587,7 @@
       "records_used": 55,
       "excluded_zero_close": 147,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "VZAF": {
       "min_rsi": 23.5294,
@@ -599,7 +599,7 @@
       "records_used": 38,
       "excluded_zero_close": 147,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IMCI": {
       "min_rsi": 52.4598,
@@ -611,31 +611,31 @@
       "records_used": 61,
       "excluded_zero_close": 159,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IMIB": {
       "min_rsi": 24.2301,
       "min_rsi_date": "2024-04-21",
       "close_at_min_rsi": 1.75,
-      "last_rsi": 39.7279,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.86,
-      "records_used": 532,
+      "last_rsi": 38.6795,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.85,
+      "records_used": 533,
       "excluded_zero_close": 97,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AISP": {
       "min_rsi": 15.6321,
       "min_rsi_date": "2025-03-12",
       "close_at_min_rsi": 7.25,
-      "last_rsi": 48.9594,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 5.11,
-      "records_used": 996,
+      "last_rsi": 42.6245,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 5.03,
+      "records_used": 997,
       "excluded_zero_close": 19,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IIDP": {
       "min_rsi": 17.9837,
@@ -647,7 +647,7 @@
       "records_used": 643,
       "excluded_zero_close": 20,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IFCM": {
       "min_rsi": 13.3801,
@@ -659,31 +659,31 @@
       "records_used": 955,
       "excluded_zero_close": 2,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IKLV": {
       "min_rsi": 13.7413,
       "min_rsi_date": "2023-08-17",
       "close_at_min_rsi": 1.3,
       "last_rsi": 39.0967,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 2.5,
-      "records_used": 823,
+      "records_used": 824,
       "excluded_zero_close": 47,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IMAP": {
       "min_rsi": 13.3503,
       "min_rsi_date": "2022-08-02",
       "close_at_min_rsi": 1.45,
-      "last_rsi": 41.4207,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 2.17,
-      "records_used": 1133,
+      "last_rsi": 61.6678,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 2.26,
+      "records_used": 1134,
       "excluded_zero_close": 7,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SMOF": {
       "min_rsi": 13.2591,
@@ -695,7 +695,7 @@
       "records_used": 615,
       "excluded_zero_close": 86,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SNUC": {
       "min_rsi": 20.4908,
@@ -707,19 +707,19 @@
       "records_used": 392,
       "excluded_zero_close": 101,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IHFI": {
       "min_rsi": 10.951,
       "min_rsi_date": "2024-08-15",
       "close_at_min_rsi": 1.5,
-      "last_rsi": 42.9622,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 0.97,
-      "records_used": 365,
+      "last_rsi": 39.0388,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.88,
+      "records_used": 366,
       "excluded_zero_close": 111,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BUOI": {
       "min_rsi": 19.2435,
@@ -731,19 +731,19 @@
       "records_used": 185,
       "excluded_zero_close": 119,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IBSD": {
       "min_rsi": 12.2776,
       "min_rsi_date": "2022-12-27",
       "close_at_min_rsi": 3.3,
-      "last_rsi": 20.9454,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 5.74,
-      "records_used": 1205,
+      "last_rsi": 14.5339,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 5.55,
+      "records_used": 1206,
       "excluded_zero_close": 0,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BELF": {
       "min_rsi": 19.9493,
@@ -755,19 +755,19 @@
       "records_used": 285,
       "excluded_zero_close": 90,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BBOB": {
       "min_rsi": 15.708,
       "min_rsi_date": "2026-02-03",
       "close_at_min_rsi": 2.93,
-      "last_rsi": 26.529,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 2.44,
-      "records_used": 1193,
+      "last_rsi": 28.54,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 2.45,
+      "records_used": 1194,
       "excluded_zero_close": 11,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BIME": {
       "min_rsi": 9.824,
@@ -779,19 +779,19 @@
       "records_used": 1014,
       "excluded_zero_close": 24,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BGUC": {
       "min_rsi": 7.6813,
       "min_rsi_date": "2025-09-01",
       "close_at_min_rsi": 0.27,
       "last_rsi": 43.1504,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.29,
-      "records_used": 1052,
+      "records_used": 1053,
       "excluded_zero_close": 5,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HMAN": {
       "min_rsi": 18.3084,
@@ -803,31 +803,31 @@
       "records_used": 625,
       "excluded_zero_close": 73,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HASH": {
       "min_rsi": 19.9855,
       "min_rsi_date": "2026-02-12",
       "close_at_min_rsi": 27.0,
-      "last_rsi": 28.42,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 21.5,
-      "records_used": 458,
+      "last_rsi": 32.4668,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 22.0,
+      "records_used": 459,
       "excluded_zero_close": 73,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AMAP": {
       "min_rsi": 29.0966,
       "min_rsi_date": "2026-09-15",
       "close_at_min_rsi": 0.31,
-      "last_rsi": 44.1504,
-      "last_rsi_date": "2026-11-12",
-      "last_close": 0.33,
-      "records_used": 174,
+      "last_rsi": 40.099,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 0.32,
+      "records_used": 175,
       "excluded_zero_close": 71,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IRMC": {
       "min_rsi": 8.0321,
@@ -839,19 +839,19 @@
       "records_used": 770,
       "excluded_zero_close": 69,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IKHC": {
       "min_rsi": 16.3544,
       "min_rsi_date": "2025-06-03",
       "close_at_min_rsi": 1.28,
-      "last_rsi": 59.8912,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.2,
-      "records_used": 488,
+      "last_rsi": 45.1952,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.1,
+      "records_used": 489,
       "excluded_zero_close": 45,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "NGIR": {
       "min_rsi": 4.2002,
@@ -863,7 +863,7 @@
       "records_used": 301,
       "excluded_zero_close": 95,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AMEF": {
       "min_rsi": 2.9371,
@@ -875,55 +875,55 @@
       "records_used": 229,
       "excluded_zero_close": 142,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "AIPM": {
       "min_rsi": 18.9989,
       "min_rsi_date": "2025-02-06",
       "close_at_min_rsi": 5.1,
       "last_rsi": 28.0321,
-      "last_rsi_date": "2026-11-12",
+      "last_rsi_date": "2026-11-16",
       "last_close": 4.17,
-      "records_used": 692,
+      "records_used": 693,
       "excluded_zero_close": 67,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IELI": {
       "min_rsi": 16.9565,
       "min_rsi_date": "2025-10-07",
       "close_at_min_rsi": 1.07,
-      "last_rsi": 34.5513,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.2,
-      "records_used": 175,
+      "last_rsi": 46.8549,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.26,
+      "records_used": 176,
       "excluded_zero_close": 43,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "ITLI": {
       "min_rsi": 17.2912,
       "min_rsi_date": "2026-03-04",
       "close_at_min_rsi": 1.17,
       "last_rsi": 30.7856,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 1.14,
-      "records_used": 214,
+      "records_used": 215,
       "excluded_zero_close": 11,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IICM": {
       "min_rsi": 12.3554,
       "min_rsi_date": "2025-03-11",
       "close_at_min_rsi": 1.0,
-      "last_rsi": 39.2016,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 1.5,
-      "records_used": 526,
+      "last_rsi": 47.3804,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 1.55,
+      "records_used": 527,
       "excluded_zero_close": 34,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "IIEW": {
       "min_rsi": 16.6241,
@@ -935,43 +935,43 @@
       "records_used": 287,
       "excluded_zero_close": 112,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BCOI": {
       "min_rsi": 7.5968,
       "min_rsi_date": "2021-11-28",
       "close_at_min_rsi": 0.48,
       "last_rsi": 37.22,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.49,
-      "records_used": 1139,
+      "records_used": 1140,
       "excluded_zero_close": 3,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BINT": {
       "min_rsi": 14.9619,
       "min_rsi_date": "2024-05-12",
       "close_at_min_rsi": 0.27,
       "last_rsi": 44.3024,
-      "last_rsi_date": "2026-11-12",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.13,
-      "records_used": 424,
+      "records_used": 425,
       "excluded_zero_close": 84,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "SMRI": {
       "min_rsi": 9.6614,
       "min_rsi_date": "2023-05-30",
       "close_at_min_rsi": 8.89,
-      "last_rsi": 62.7887,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 2.55,
-      "records_used": 1113,
+      "last_rsi": 51.527,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 2.32,
+      "records_used": 1114,
       "excluded_zero_close": 3,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "VWIF": {
       "min_rsi": 22.6415,
@@ -983,7 +983,7 @@
       "records_used": 68,
       "excluded_zero_close": 142,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "HNTI": {
       "min_rsi": 16.6619,
@@ -995,19 +995,19 @@
       "records_used": 484,
       "excluded_zero_close": 94,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "ABAP": {
       "min_rsi": 18.5554,
       "min_rsi_date": "2025-11-04",
       "close_at_min_rsi": 3.62,
       "last_rsi": 48.3565,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 8.0,
-      "records_used": 200,
+      "records_used": 201,
       "excluded_zero_close": 44,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BWAI": {
       "min_rsi": 27.2522,
@@ -1019,7 +1019,7 @@
       "records_used": 134,
       "excluded_zero_close": 22,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BBAY": {
       "min_rsi": 18.6507,
@@ -1031,7 +1031,7 @@
       "records_used": 49,
       "excluded_zero_close": 159,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BCIH": {
       "min_rsi": 0.0,
@@ -1043,7 +1043,7 @@
       "records_used": 126,
       "excluded_zero_close": 156,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BQAB": {
       "min_rsi": 0.0,
@@ -1055,7 +1055,7 @@
       "records_used": 26,
       "excluded_zero_close": 151,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BMUI": {
       "min_rsi": 50.0,
@@ -1067,19 +1067,19 @@
       "records_used": 41,
       "excluded_zero_close": 156,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BMFI": {
       "min_rsi": 7.3214,
       "min_rsi_date": "2024-11-04",
       "close_at_min_rsi": 0.15,
       "last_rsi": 21.7453,
-      "last_rsi_date": "2026-11-15",
+      "last_rsi_date": "2026-11-16",
       "last_close": 0.1,
-      "records_used": 940,
+      "records_used": 941,
       "excluded_zero_close": 52,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BRTB": {
       "min_rsi": 61.2903,
@@ -1091,7 +1091,7 @@
       "records_used": 15,
       "excluded_zero_close": 156,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "BAIB": {
       "min_rsi": 0.0,
@@ -1103,19 +1103,19 @@
       "records_used": 158,
       "excluded_zero_close": 146,
       "data_quality_warning": true,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     },
     "OMWJ": {
-      "min_rsi": 55.6391,
-      "min_rsi_date": "2026-11-15",
-      "close_at_min_rsi": 124.0,
-      "last_rsi": 55.6391,
-      "last_rsi_date": "2026-11-15",
-      "last_close": 124.0,
-      "records_used": 15,
+      "min_rsi": 55.1922,
+      "min_rsi_date": "2026-11-16",
+      "close_at_min_rsi": 123.0,
+      "last_rsi": 55.1922,
+      "last_rsi_date": "2026-11-16",
+      "last_close": 123.0,
+      "records_used": 16,
       "excluded_zero_close": 0,
       "data_quality_warning": false,
-      "last_updated": "2026-11-15T20:05:40Z"
+      "last_updated": "2026-11-16T23:36:48Z"
     }
   }
 }
