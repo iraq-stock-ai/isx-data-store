@@ -19367,6 +19367,15 @@
   ],
   "IKLV": [
     {
+      "date": "16/11/2026",
+      "sessionNumber": "204",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 1,
+      "shares": 6000000,
+      "value": 15000000
+    },
+    {
       "date": "15/11/2026",
       "sessionNumber": "203",
       "market": "النظامي",
