@@ -6514,6 +6514,15 @@
   ],
   "TASC": [
     {
+      "date": "17/11/2026",
+      "sessionNumber": "205",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 4,
+      "shares": 78523,
+      "value": 1083617
+    },
+    {
       "date": "11/11/2026",
       "sessionNumber": "201",
       "market": "النظامي",
@@ -19366,6 +19375,15 @@
     }
   ],
   "IKLV": [
+    {
+      "date": "17/11/2026",
+      "sessionNumber": "205",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 6,
+      "shares": 5488295,
+      "value": 13720822
+    },
     {
       "date": "16/11/2026",
       "sessionNumber": "204",
