@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "19/11/2026",
+      "sessionNumber": "207",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 54850,
+      "value": 139125
+    },
+    {
       "date": "05/11/2026",
       "sessionNumber": "197",
       "market": "النظامي",
@@ -19375,6 +19384,15 @@
     }
   ],
   "IKLV": [
+    {
+      "date": "19/11/2026",
+      "sessionNumber": "207",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 6,
+      "shares": 5944900,
+      "value": 14862250
+    },
     {
       "date": "18/11/2026",
       "sessionNumber": "206",
