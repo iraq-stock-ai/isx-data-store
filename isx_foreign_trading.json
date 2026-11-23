@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 4000000,
+      "value": 10300000
+    },
+    {
       "date": "19/11/2026",
       "sessionNumber": "207",
       "market": "النظامي",
@@ -2981,6 +2990,15 @@
     }
   ],
   "BMNS": [
+    {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 4000000,
+      "value": 7520000
+    },
     {
       "date": "01/11/2026",
       "sessionNumber": "193",
@@ -9292,6 +9310,15 @@
   ],
   "BROI": [
     {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 2913194,
+      "value": 1310937
+    },
+    {
       "date": "29/10/2026",
       "sessionNumber": "192",
       "market": "الثاني",
@@ -9862,6 +9889,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 8,
+      "shares": 4600000,
+      "value": 13817000
+    },
     {
       "date": "05/11/2026",
       "sessionNumber": "197",
@@ -13846,6 +13882,15 @@
   ],
   "BCOI": [
     {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 3500000,
+      "value": 1680000
+    },
+    {
       "date": "08/11/2026",
       "sessionNumber": "198",
       "market": "النظامي",
@@ -14396,6 +14441,15 @@
     }
   ],
   "BGUC": [
+    {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 1000000,
+      "value": 290000
+    },
     {
       "date": "12/11/2026",
       "sessionNumber": "202",
@@ -19393,6 +19447,15 @@
     }
   ],
   "IKLV": [
+    {
+      "date": "23/11/2026",
+      "sessionNumber": "209",
+      "market": "النظامي",
+      "direction": "sell",
+      "trades": 2,
+      "shares": 4555100,
+      "value": 11387750
+    },
     {
       "date": "19/11/2026",
       "sessionNumber": "207",
