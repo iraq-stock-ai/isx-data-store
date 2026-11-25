@@ -9890,6 +9890,15 @@
   ],
   "BNOI": [
     {
+      "date": "25/11/2026",
+      "sessionNumber": "211",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 9,
+      "shares": 5275000,
+      "value": 16239250
+    },
+    {
       "date": "24/11/2026",
       "sessionNumber": "210",
       "market": "النظامي",
