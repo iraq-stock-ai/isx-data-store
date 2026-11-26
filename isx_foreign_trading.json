@@ -1,6 +1,15 @@
 {
   "BBOB": [
     {
+      "date": "26/11/2026",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 4,
+      "shares": 1605329,
+      "value": 4072341
+    },
+    {
       "date": "23/11/2026",
       "sessionNumber": "209",
       "market": "النظامي",
@@ -6541,6 +6550,15 @@
   ],
   "TASC": [
     {
+      "date": "26/11/2026",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 41680,
+      "value": 593941
+    },
+    {
       "date": "22/11/2026",
       "sessionNumber": "208",
       "market": "النظامي",
@@ -9310,6 +9328,15 @@
   ],
   "BROI": [
     {
+      "date": "26/11/2026",
+      "sessionNumber": "212",
+      "market": "الثاني",
+      "direction": "buy",
+      "trades": 1,
+      "shares": 86806,
+      "value": 43403
+    },
+    {
       "date": "23/11/2026",
       "sessionNumber": "209",
       "market": "الثاني",
@@ -9889,6 +9916,15 @@
     }
   ],
   "BNOI": [
+    {
+      "date": "26/11/2026",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 3,
+      "shares": 650000,
+      "value": 2049250
+    },
     {
       "date": "25/11/2026",
       "sessionNumber": "211",
@@ -14459,6 +14495,15 @@
     }
   ],
   "BGUC": [
+    {
+      "date": "26/11/2026",
+      "sessionNumber": "212",
+      "market": "النظامي",
+      "direction": "buy",
+      "trades": 2,
+      "shares": 1249397,
+      "value": 362325
+    },
     {
       "date": "23/11/2026",
       "sessionNumber": "209",
